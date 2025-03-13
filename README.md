@@ -1,7 +1,5 @@
 # Hi there! 👋
 
-Welcome to my GitHub profile!
-
 ## About Me
 - 💻 Interested in Web Development & Blockchain
 - 🎶 Music enthusiast, inspired by Sayuri (Sanketsu Shoujo Sayuri)
