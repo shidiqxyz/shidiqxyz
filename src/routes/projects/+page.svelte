@@ -27,28 +27,29 @@
     const nodes = [
         {
             title: "Avail",
-            description: "Menjalankan node validator untuk jaringan Avail.",
+            description:
+                "Menjalankan node validator untuk jaringan Avail pada saat testnet.",
             link: "https://www.availproject.org/",
             status: "Active",
         },
         {
             title: "PolymerLabs",
             description:
-                "Kontribusi pada jaringan PolymerLabs sebagai node operator.",
+                "Kontribusi pada jaringan PolymerLabs sebagai node operator pada saat testnet.",
             link: "https://www.polymerlabs.org/",
             status: "Active",
         },
         {
             title: "Lava",
             description:
-                "Menyediakan layanan RPC melalui jaringan Lava Network.",
+                "Menyediakan layanan RPC melalui jaringan Lava Network pada saat testnet.",
             link: "https://www.lavanet.xyz/",
             status: "Active",
         },
         {
             title: "Nillion",
             description:
-                "Berpartisipasi dalam jaringan komputasi privat Nillion.",
+                "Berpartisipasi dalam jaringan komputasi privat Nillion pada saat testnet.",
             link: "https://nillion.com/",
             status: "Active",
         },
@@ -118,12 +119,12 @@
         </div>
     </div>
 
-    <!-- Nodes Section -->
+    <!-- Testnet Section -->
     <div class="space-y-8">
         <h2
             class="text-2xl font-bold text-gray-900 dark:text-gray-100 flex items-center gap-2"
         >
-            <span class="text-green-500">#</span> Nodes
+            <span class="text-gray-500">#</span> Testnet
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             {#each nodes as node}
@@ -131,26 +132,23 @@
                     href={node.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="group block p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-green-500 dark:hover:border-green-500 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
+                    class="group block p-6 bg-gray-50 dark:bg-gray-800/50 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-gray-500 dark:hover:border-gray-500 transition-all duration-300 hover:shadow-lg hover:-translate-y-1"
                 >
                     <div class="flex justify-between items-start mb-4">
                         <h3
-                            class="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-green-500 transition-colors"
+                            class="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-gray-500 transition-colors"
                         >
                             {node.title}
                         </h3>
                         <span
-                            class="flex items-center gap-1.5 px-2 py-1 rounded-full bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400 text-xs font-medium"
+                            class="flex items-center gap-1.5 px-2 py-1 rounded-full bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 text-xs font-medium"
                         >
                             <span class="relative flex h-2 w-2">
                                 <span
-                                    class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"
-                                ></span>
-                                <span
-                                    class="relative inline-flex rounded-full h-2 w-2 bg-green-500"
+                                    class="relative inline-flex rounded-full h-2 w-2 bg-gray-500"
                                 ></span>
                             </span>
-                            {node.status}
+                            Finished
                         </span>
                     </div>
                     <p class="text-gray-600 dark:text-gray-400">
