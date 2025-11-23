@@ -10,7 +10,7 @@ Sebenarnya tulisan ini terlalu awal untuk rencana tahunan (meskipun biasanya ren
 
 Untuk rencana tahun depan, saya berencana untuk bisa mendapatkan $1k per bulan dari bounty hunting pada *smart contract*.
 
-Karena *that industry*, saat *hack season* saat gila. Seperti contoh kasus kemarin.
+Karena *that industry*, saat *hack season* sangat gila. Seperti contoh kasus kemarin.
 
 Salah satu protocol defi Balancer kena hack sekitar $128 juta USD[^1]. Itu uang yang sangat banyak untuk seseorang (jika uang sebanyak itu disimpan di SBN dengan return 6% per tahun berapa duit yang didapat tuh?).
 
