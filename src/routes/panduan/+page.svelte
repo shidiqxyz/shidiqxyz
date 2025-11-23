@@ -225,4 +225,53 @@ function sapa(nama) {"{"}
             </table>
         </div>
     </div>
+
+    <h3>Referensi / Catatan Kaki</h3>
+    <p>
+        Gunakan tanda kurung siku dengan angka <code>[^1]</code> untuk membuat referensi
+        otomatis.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Markdown:</p>
+            <pre><code
+                    >Menurut data[^1]...
+
+[^1]: Judul Referensi</code
+                ></pre>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Hasil:</p>
+            <p>
+                Menurut data<sup
+                    ><a
+                        href="#user-content-fn-1"
+                        id="user-content-fnref-1"
+                        data-footnote-ref
+                        aria-describedby="footnote-label"
+                        class="text-blue-600 dark:text-blue-400">1</a
+                    ></sup
+                >...
+            </p>
+            <section
+                data-footnotes
+                class="footnotes mt-4 pt-4 border-t border-gray-200 dark:border-gray-700"
+            >
+                <ol
+                    class="list-decimal pl-5 text-sm text-gray-600 dark:text-gray-400"
+                >
+                    <li id="user-content-fn-1">
+                        <p>
+                            Judul Referensi <a
+                                href="#user-content-fnref-1"
+                                data-footnote-backref
+                                class="text-blue-600 dark:text-blue-400 hover:underline"
+                                >↩</a
+                            >
+                        </p>
+                    </li>
+                </ol>
+            </section>
+        </div>
+    </div>
 </article>
