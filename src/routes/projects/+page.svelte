@@ -2,30 +2,25 @@
     const projects = [
         {
             title: "Sayuri Archive",
-            description:
-                "Arsip lengkap karya dan perjalanan Sayuri (Sanketsu Shoujo Sayuri).",
+            description: "Arsip dari blog (Sanketsu Shoujo Sayuri).",
             link: "https://www.sayuri-archive.com/",
-            tags: ["Archive", "Music", "Community"],
         },
         {
             title: "TukangSeblak",
-            description:
-                "Platform untuk memesan seblak dengan mudah dan cepat.",
+            description: "Tool-tools sederhana.",
             link: "https://tukangseblak.vercel.app/",
-            tags: ["Web App", "Commerce"],
         },
         {
             title: "Ramalan Haru",
             description:
                 "Aplikasi ramalan sederhana untuk hiburan sehari-hari.",
             link: "https://ramalan-haru.vercel.app/",
-            tags: ["Entertainment", "Fun"],
         },
         {
             title: "gensynImpek_bot",
-            description: "Bot Telegram untuk membantu pemain Genshin Impact.",
+            description:
+                "Bot Telegram untuk membantu cek kontibusi project Gensyn.",
             link: "https://t.me/gensynImpek_bot/",
-            tags: ["Telegram Bot", "Gaming"],
         },
     ];
 
@@ -118,15 +113,6 @@
                     >
                         {project.description}
                     </p>
-                    <div class="flex flex-wrap gap-2">
-                        {#each project.tags as tag}
-                            <span
-                                class="px-2 py-1 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-md"
-                            >
-                                {tag}
-                            </span>
-                        {/each}
-                    </div>
                 </a>
             {/each}
         </div>
