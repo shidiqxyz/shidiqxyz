@@ -1,4 +1,5 @@
 import { error } from '@sveltejs/kit';
+import { calculateReadingTime } from '$lib/utils/readingTime';
 
 export async function load({ params }) {
     try {
@@ -14,9 +15,24 @@ export async function load({ params }) {
             }
         }
 
+        // Calculate reading time from the component
+        let readingTime = 0;
+        try {
+            const rendered = post.default.render();
+            if (rendered && rendered.html) {
+                readingTime = calculateReadingTime(rendered.html);
+            }
+        } catch {
+            // If render fails, default to 0
+            readingTime = 0;
+        }
+
         return {
             content: post.default,
-            meta: post.metadata
+            meta: {
+                ...post.metadata,
+                readingTime
+            }
         };
     } catch (e) {
         throw error(404, `Could not find ${params.slug}`);

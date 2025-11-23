@@ -7,8 +7,11 @@
 
     <p>
         Blog ini menggunakan file Markdown (<code>.md</code>) untuk konten
-        artikel. Berikut adalah panduan lengkap cara membuat artikel baru.
+        artikel. Berikut adalah panduan lengkap dan contoh format yang bisa
+        digunakan.
     </p>
+
+    <hr />
 
     <h2>1. Persiapan File</h2>
     <p>
@@ -62,63 +65,164 @@ description: "Deskripsi singkat untuk SEO dan preview."
         </ul>
     </div>
 
-    <h2>3. Penulisan Konten</h2>
+    <h2>3. Struktur & Format Konten</h2>
 
-    <h3>Judul & Heading</h3>
     <div
-        class="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 mb-4"
+        class="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800 mb-8"
     >
         <p class="text-red-800 dark:text-red-200 font-bold m-0">
             ⚠️ JANGAN gunakan Heading 1 (<code># Judul</code>) di dalam konten!
         </p>
         <p class="text-red-800 dark:text-red-200 text-sm mt-1">
             Judul artikel sudah otomatis diambil dari metadata <code>title</code
-            > dan ditampilkan sebagai H1. Gunakan mulai dari H2 untuk sub-judul.
+            > dan ditampilkan sebagai H1.
         </p>
     </div>
 
-    <pre><code
-            >## Sub Judul (H2)
-### Sub Sub Judul (H3)</code
-        ></pre>
+    <h3>Heading (Judul Bagian)</h3>
+    <p>Gunakan Heading 2 untuk bagian utama dan Heading 3 untuk sub-bagian.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Markdown:</p>
+            <pre><code
+                    >## Bagian Utama
+### Sub Bagian</code
+                ></pre>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Hasil:</p>
+            <h2 class="mt-0 text-2xl font-bold">Bagian Utama</h2>
+            <h3 class="text-xl font-bold">Sub Bagian</h3>
+        </div>
+    </div>
+
+    <h3>Format Teks</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Markdown:</p>
+            <pre><code
+                    >**Teks Tebal**
+*Teks Miring*
+~~Teks Dicoret~~
+`Kode Inline`</code
+                ></pre>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Hasil:</p>
+            <p><strong>Teks Tebal</strong></p>
+            <p><em>Teks Miring</em></p>
+            <p><del>Teks Dicoret</del></p>
+            <p><code>Kode Inline</code></p>
+        </div>
+    </div>
+
+    <h3>Daftar (Lists)</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Markdown:</p>
+            <pre><code
+                    >- Poin satu
+- Poin dua
+  - Sub poin
+
+1. Langkah pertama
+2. Langkah kedua</code
+                ></pre>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Hasil:</p>
+            <ul class="list-disc pl-5 mb-4">
+                <li>Poin satu</li>
+                <li>
+                    Poin dua
+                    <ul class="list-disc pl-5">
+                        <li>Sub poin</li>
+                    </ul>
+                </li>
+            </ul>
+            <ol class="list-decimal pl-5">
+                <li>Langkah pertama</li>
+                <li>Langkah kedua</li>
+            </ol>
+        </div>
+    </div>
+
+    <h3>Kutipan (Blockquote)</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Markdown:</p>
+            <pre><code
+                    >> "Menulis adalah bekerja untuk keabadian."
+>
+> — Pramoedya Ananta Toer</code
+                ></pre>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Hasil:</p>
+            <blockquote class="border-l-4 border-gray-300 pl-4 italic">
+                "Menulis adalah bekerja untuk keabadian."
+                <br />
+                <br />
+                — Pramoedya Ananta Toer
+            </blockquote>
+        </div>
+    </div>
+
+    <h3>Kode (Code Block)</h3>
+    <p>
+        Gunakan tiga backtick (<code>```</code>) diikuti nama bahasa
+        pemrogramannya.
+    </p>
+    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mb-8">
+        <pre><code
+                >```javascript
+function sapa(nama) {"{"} 
+  console.log(`Halo, ${"${"}nama}!`);
+{"}"}
+```</code
+            ></pre>
+    </div>
 
     <h3>Gambar</h3>
     <p>
-        1. Simpan file gambar di folder <code>static/images/</code>.<br />
-        2. Panggil gambar menggunakan path absolut mulai dari
-        <code>/images/</code>.
+        Simpan gambar di folder <code>static/images/</code> dan panggil dengan path
+        absolut.
     </p>
-    <div class="not-prose bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-        <p class="font-mono text-sm mb-2 text-gray-500">Contoh:</p>
-        <code class="block">![Keterangan Gambar](/images/nama-file.jpg)</code>
+    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mb-8">
+        <pre><code>![Deskripsi Gambar](/images/nama-file.jpg)</code></pre>
     </div>
 
-    <h3>List (Daftar)</h3>
-    <p><strong>Unordered List (Bullet):</strong></p>
-    <pre><code
-            >- Item satu
-- Item dua
-  - Sub item</code
-        ></pre>
-
-    <p><strong>Ordered List (Angka):</strong></p>
-    <pre><code
-            >1. Langkah pertama
-2. Langkah kedua</code
-        ></pre>
-
-    <h3>Blockquote (Kutipan)</h3>
-    <p>Gunakan tanda <code>&gt;</code> untuk membuat kutipan.</p>
-    <pre><code>&gt; Ini adalah kutipan bijak.</code></pre>
-
-    <h3>Format Lainnya</h3>
-    <ul>
-        <li><strong>Tebal</strong>: <code>**Teks**</code></li>
-        <li><em>Miring</em>: <code>*Teks*</code></li>
-        <li>Coret: <code>~~Teks~~</code></li>
-        <li>Link: <code>[Teks](https://example.com)</code></li>
-        <li>Kode Inline: <code>`kode`</code></li>
-        <li>Blok Kode: <code>```javascript</code></li>
-        <li>Garis Pembatas: <code>---</code> (tiga strip)</li>
-    </ul>
+    <h3>Tabel</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Markdown:</p>
+            <pre><code
+                    >| Fitur | Status |
+| :--- | :--- |
+| Markdown | ✅ Oke |
+| Svelte | ✅ Oke |</code
+                ></pre>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Hasil:</p>
+            <table class="w-full text-left border-collapse">
+                <thead>
+                    <tr>
+                        <th class="border-b p-2">Fitur</th>
+                        <th class="border-b p-2">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="p-2 border-b">Markdown</td>
+                        <td class="p-2 border-b">✅ Oke</td>
+                    </tr>
+                    <tr>
+                        <td class="p-2">Svelte</td>
+                        <td class="p-2">✅ Oke</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
 </article>
