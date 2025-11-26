@@ -86,6 +86,8 @@ Salah satu resouce yang temukan adalah Khan Academy[^4]. Namun sayangnya itu bah
 
 Sembari berjalan, saya akan cari course yang tepat dengan kondisi saya.
 
+Sedikit tambahan untuk dalam hal ini saya mengetahui teknis yang sangat minim saat memulai ini. Dan juga income saya 0 (nol) untuk saat ini.
+
 [^1]: [Blockchain Security Path](https://github.com/shidiqxyz/blockhain-security-path)
 [^2]: [Cyfrin](https://updraft.cyfrin.io/dashboard)
 [^3]: [Patrick Collins](https://x.com/PatrickAlphaC)

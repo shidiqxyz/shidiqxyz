@@ -1,5 +1,5 @@
 # Shidiq's Blog
-
+git
 Welcome to my personal blog repository! This project is built with [SvelteKit](https://kit.svelte.dev/) and serves as a platform for my thoughts and learning process.
 
 ## About Me
