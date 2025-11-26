@@ -3,11 +3,11 @@ import { getPosts } from '$lib/utils/posts';
 export const prerender = true;
 
 export async function GET() {
-    const posts = await getPosts();
-    const siteUrl = 'https://shidiq.blog';
-    const pages = ['about', 'pemikiran', 'proses', 'panduan'];
+  const posts = await getPosts();
+  const siteUrl = 'https://shidiq.xyz';
+  const pages = ['about', 'pemikiran', 'proses', 'panduan'];
 
-    const xml = `<?xml version="1.0" encoding="UTF-8" ?>
+  const xml = `<?xml version="1.0" encoding="UTF-8" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>${siteUrl}</loc>
@@ -15,32 +15,32 @@ export async function GET() {
     <priority>1.0</priority>
   </url>
   ${pages
-            .map(
-                (page) => `
+      .map(
+        (page) => `
   <url>
     <loc>${siteUrl}/${page}</loc>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   `
-            )
-            .join('')}
+      )
+      .join('')}
   ${posts
-            .map(
-                (post) => `
+      .map(
+        (post) => `
   <url>
     <loc>${siteUrl}/blog/${post.slug}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   `
-            )
-            .join('')}
+      )
+      .join('')}
 </urlset>`;
 
-    return new Response(xml, {
-        headers: {
-            'Content-Type': 'application/xml'
-        }
-    });
+  return new Response(xml, {
+    headers: {
+      'Content-Type': 'application/xml'
+    }
+  });
 }

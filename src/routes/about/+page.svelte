@@ -13,8 +13,8 @@
 		content="Tentang shidiq - seseorang yang berusaha untuk hidup."
 	/>
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://shidiq.blog/about" />
-	<meta property="og:image" content="https://shidiq.blog/og-image.png" />
+	<meta property="og:url" content="https://shidiq.xyz/about" />
+	<meta property="og:image" content="https://shidiq.xyz/og-image.png" />
 
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image" />
@@ -23,7 +23,7 @@
 		name="twitter:description"
 		content="Tentang shidiq - seseorang yang berusaha untuk hidup."
 	/>
-	<meta name="twitter:image" content="https://shidiq.blog/og-image.png" />
+	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
 
 <article class="prose prose-lg dark:prose-invert">

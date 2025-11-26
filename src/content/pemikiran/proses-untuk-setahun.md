@@ -54,7 +54,7 @@ Hal ini bisa saya terapkan terhadap rencana pembelajaran saya. Untuk *breakdown*
 
 [^1]: [Balancer Suffers $128M Smart Contract Exploit](https://finance.yahoo.com/news/balancer-suffers-128m-smart-contract-142655037.html)
 [^2]: [You Are NOT Dumb, You Just Lack the Prerequisites](https://lelouch.dev/blog/you-are-probably-not-dumb/)
-[^3]: [Shidiq.Blog](https://www.shidiq.blog/)
+[^3]: [Shidiq.Blog](https://www.shidiq.xyz/)
 [^4]: [Google Antygravity](https://antigravity.google/)
 [^5]: [Fireship](https://www.youtube.com/@Fireship)
 [^6]: [Cursor](https://cursor.com/)

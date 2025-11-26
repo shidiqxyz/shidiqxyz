@@ -1,7 +1,7 @@
 export const prerender = true;
 
 export async function GET() {
-    const siteUrl = 'https://shidiq.blog';
+    const siteUrl = 'https://shidiq.xyz';
 
     const robotsTxt = `User-agent: *
 Allow: /
