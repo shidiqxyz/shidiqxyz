@@ -65,7 +65,7 @@
 				},
 			],
 			description: data.meta.description,
-		})}
+		}).replace(/</g, "\\u003c")}
 	</script>`}
 </svelte:head>
 
