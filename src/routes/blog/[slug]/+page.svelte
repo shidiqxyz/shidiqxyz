@@ -47,6 +47,26 @@
 			<meta property="article:tag" content={tag} />
 		{/each}
 	{/if}
+
+	<!-- Schema.org JSON-LD -->
+	{@html `<script type="application/ld+json">
+		${JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "BlogPosting",
+			headline: data.meta.title,
+			image: ["https://shidiq.blog/og-image.png"],
+			datePublished: data.meta.date,
+			dateModified: data.meta.date,
+			author: [
+				{
+					"@type": "Person",
+					name: "shidiq",
+					url: "https://shidiq.blog/about",
+				},
+			],
+			description: data.meta.description,
+		})}
+	</script>`}
 </svelte:head>
 
 <article
