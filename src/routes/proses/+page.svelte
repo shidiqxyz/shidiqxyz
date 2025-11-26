@@ -5,6 +5,32 @@
 
 <svelte:head>
 	<title>Proses - shidiq</title>
+	<meta
+		name="description"
+		content="Catatan perjalanan, eksperimen, dan dokumentasi belajar."
+	/>
+
+	<!-- Open Graph -->
+	<meta property="og:site_name" content="shidiq" />
+	<meta property="og:title" content="Proses - shidiq" />
+	<meta
+		property="og:description"
+		content="Catatan perjalanan, eksperimen, dan dokumentasi belajar."
+	/>
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://shidiq.xyz/proses" />
+	<meta property="og:image" content="https://shidiq.xyz/og-image.png" />
+	<meta property="og:image:width" content="1200" />
+	<meta property="og:image:height" content="630" />
+
+	<!-- Twitter Card -->
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:title" content="Proses - shidiq" />
+	<meta
+		name="twitter:description"
+		content="Catatan perjalanan, eksperimen, dan dokumentasi belajar."
+	/>
+	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
 
 <section class="space-y-12">
