@@ -192,6 +192,32 @@ function sapa(nama) {"{"}
         <pre><code>![Deskripsi Gambar](/images/nama-file.jpg)</code></pre>
     </div>
 
+    <h3>Mengatur Ukuran dan Posisi Gambar</h3>
+    <p>
+        Anda bisa mengatur ukuran dan posisi gambar langsung di Markdown dengan
+        menambahkan parameter di URL gambar:
+    </p>
+    <ul class="list-disc pl-5 mb-4">
+        <li><code>?w=300</code> : Mengatur lebar (width)</li>
+        <li><code>?h=200</code> : Mengatur tinggi (height)</li>
+        <li><code>?a=center</code> : Posisi tengah</li>
+        <li><code>?a=left</code> : Posisi kiri (float left)</li>
+        <li><code>?a=right</code> : Posisi kanan (float right)</li>
+    </ul>
+    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mb-8">
+        <div class="mb-4">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Markdown:</p>
+            <pre><code>![Deskripsi](/images/nama-file.jpg?w=300&a=center)</code
+                ></pre>
+        </div>
+        <div>
+            <p class="text-sm text-gray-500 mb-2 font-mono">Hasil HTML:</p>
+            <pre><code
+                    >&lt;img src="..." style="width: 300px; display: block; margin: 0 auto;" ... /&gt;</code
+                ></pre>
+        </div>
+    </div>
+
     <h3>Tabel</h3>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
