@@ -7,7 +7,7 @@
 	<title>Proses - shidiq</title>
 	<meta
 		name="description"
-		content="Catatan perjalanan, eksperimen, dan dokumentasi belajar."
+		content="Catatan perjalanan, eksperimen, dan dokumentasi proses belajar di bidang teknologi, blockchain, dan pengembangan diri."
 	/>
 
 	<!-- Open Graph -->
@@ -15,7 +15,7 @@
 	<meta property="og:title" content="Proses - shidiq" />
 	<meta
 		property="og:description"
-		content="Catatan perjalanan, eksperimen, dan dokumentasi belajar."
+		content="Catatan perjalanan, eksperimen, dan dokumentasi proses belajar di bidang teknologi, blockchain, dan pengembangan diri."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://shidiq.xyz/proses" />
@@ -28,7 +28,7 @@
 	<meta name="twitter:title" content="Proses - shidiq" />
 	<meta
 		name="twitter:description"
-		content="Catatan perjalanan, eksperimen, dan dokumentasi belajar."
+		content="Catatan perjalanan, eksperimen, dan dokumentasi proses belajar di bidang teknologi, blockchain, dan pengembangan diri."
 	/>
 	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>

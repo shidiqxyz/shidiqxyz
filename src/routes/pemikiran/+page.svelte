@@ -7,7 +7,7 @@
 	<title>Pemikiran - shidiq</title>
 	<meta
 		name="description"
-		content="Refleksi, opini, dan perenungan filosofis."
+		content="Refleksi, opini, dan perenungan filosofis tentang kehidupan, teknologi, dan pengembangan diri sebagai seorang pembelajar."
 	/>
 
 	<!-- Open Graph -->
@@ -15,7 +15,7 @@
 	<meta property="og:title" content="Pemikiran - shidiq" />
 	<meta
 		property="og:description"
-		content="Refleksi, opini, dan perenungan filosofis."
+		content="Refleksi, opini, dan perenungan filosofis tentang kehidupan, teknologi, dan pengembangan diri sebagai seorang pembelajar."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://shidiq.xyz/pemikiran" />
@@ -28,7 +28,7 @@
 	<meta name="twitter:title" content="Pemikiran - shidiq" />
 	<meta
 		name="twitter:description"
-		content="Refleksi, opini, dan perenungan filosofis."
+		content="Refleksi, opini, dan perenungan filosofis tentang kehidupan, teknologi, dan pengembangan diri sebagai seorang pembelajar."
 	/>
 	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
