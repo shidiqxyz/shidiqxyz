@@ -3,17 +3,8 @@ import { calculateReadingTime } from '$lib/utils/readingTime';
 
 export async function load({ params }) {
     try {
-        // Try to find the post in both categories
-        let post;
-        try {
-            post = await import(`../../../content/pemikiran/${params.slug}.md`);
-        } catch {
-            try {
-                post = await import(`../../../content/proses/${params.slug}.md`);
-            } catch {
-                throw error(404, `Could not find ${params.slug}`);
-            }
-        }
+        // Use category from URL to load the correct post
+        const post = await import(`../../../../content/${params.category}/${params.slug}.md`);
 
         // Calculate reading time from the component
         let readingTime = 0;
@@ -31,10 +22,12 @@ export async function load({ params }) {
             content: post.default,
             meta: {
                 ...post.metadata,
+                slug: params.slug,
+                category: params.category,
                 readingTime
             }
         };
     } catch (e) {
-        throw error(404, `Could not find ${params.slug}`);
+        throw error(404, `Could not find ${params.category}/${params.slug}`);
     }
 }

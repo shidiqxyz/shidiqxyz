@@ -78,6 +78,8 @@ Karena resource yang ada di cyfrin itu sudah cukup lengkap. Jika dilihat dalam d
 
 ## Matematika
 
+Alasan yang paling kuat karena *my math isn't mathing* (get it? :P).
+
 Kebutuhan akan pengetahuan ini sangat diperlukan dalam pembelajaran ini. Karena ketika saya melihat beberapa paper-paper yang berhubungan dengan blockchain dan smart contract, seringkali ada matematika yang digunakan dalam penjelasan. Ada simbol-simbol yang tidak saya pahami.
 
 Namun, yang belum saya ketahui adalah dalam sekup apa matematika yang diperlukan dalam pembelajaran ini? Apakah hanya matematika tahap dasar saja? Atau ada matematika yang tingkat lanjut?

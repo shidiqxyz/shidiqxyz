@@ -29,7 +29,7 @@ export async function GET() {
       .map(
         (post) => `
   <url>
-    <loc>${siteUrl}/blog/${post.slug}</loc>
+    <loc>${siteUrl}/blog/${post.category}/${post.slug}</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
