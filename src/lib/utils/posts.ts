@@ -5,21 +5,24 @@ export interface Post {
     category: string;
     tags: string[];
     slug: string;
+    content: string;
 }
 
 export async function getPosts() {
     let posts: Post[] = [];
 
     const paths = import.meta.glob('/src/content/*/*.md', { eager: true });
+    const rawPaths = import.meta.glob('/src/content/*/*.md', { as: 'raw', eager: true });
 
     for (const path in paths) {
         const file = paths[path];
         const slug = path.split('/').at(-1)?.replace('.md', '');
         const category = path.split('/').at(-2);
+        const content = rawPaths[path];
 
         if (file && typeof file === 'object' && 'metadata' in file && slug && category) {
-            const metadata = file.metadata as Omit<Post, 'slug' | 'category'>;
-            const post = { ...metadata, slug, category } as Post;
+            const metadata = file.metadata as Omit<Post, 'slug' | 'category' | 'content'>;
+            const post = { ...metadata, slug, category, content } as Post;
             posts.push(post);
         }
     }
