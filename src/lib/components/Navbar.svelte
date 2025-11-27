@@ -255,6 +255,16 @@
 
 	<!-- Search Overlay -->
 	{#if searchOpen}
+		<!-- Backdrop Button -->
+		<button
+			class="fixed inset-0 z-40 bg-transparent cursor-default"
+			on:click={toggleSearch}
+			on:keydown={(e) => e.key === "Escape" && toggleSearch()}
+			transition:fade={{ duration: 150 }}
+			aria-label="Close search overlay"
+			tabindex="-1"
+		></button>
+		<!-- Search Box -->
 		<div
 			class="absolute top-full left-0 right-0 mt-2 mx-4 md:mx-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-50 rounded-xl border border-gray-200 dark:border-gray-800 shadow-xl"
 			transition:fly={{ y: -10, duration: 150 }}
