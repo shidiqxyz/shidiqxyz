@@ -3,7 +3,7 @@ title: "Proses Hari ke 1"
 date: "2025-11-29 12:09"
 category: "proses"
 tags: []
-description: "Sepertinya hari ini lebih banyak waktu saya habiskan untuk menonton mahouka dibanding untuk belaja"
+description: "Sepertinya hari ini lebih banyak waktu saya habiskan untuk menonton mahouka dibanding untuk belajar"
 draft: false
 ---
 
@@ -26,3 +26,5 @@ Seperti biasa ngantuk, jadi hal yang muncul ketika pertama kali belajar (padahal
 Disini penjelasan awal mengenai cara menggunakan website [cyfrin](https://updraft.cyfrin.io/). Seperti fitur A, B, C dan lainnya. Ada salah satu penekanan yang menarik ketika saya mencoba course-course dari luar. Mengenai laju pembelajaran, penekanan yang diberikan bahwa setiap orang memiliki laju pembelajaran yang berbeda-beda.
 
 *I think for this course, learn it at slow pace is the best way to go*.
+
+Ahh, satu hal lagi penggunaan AI di singgung disini. Katanya kita akan menggunakan AI dalam pembelajaran, ChatGPT, Claude, Gemini dan sebagainya. Namun, diharuskan untuk mengecek fakta yang sesungguhnya, AI kemungkinan untuk berhalusinasi itu nyata. Makanya mengecek fakta perlu dilakukan (seperti saya korban kehaluan AI).
