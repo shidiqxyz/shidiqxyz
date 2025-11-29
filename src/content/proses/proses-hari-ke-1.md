@@ -3,7 +3,7 @@ title: "Proses Hari ke 1"
 date: "2025-11-29 12:09"
 category: "proses"
 tags: []
-description: ""
+description: "Sepertinya hari ini lebih banyak waktu saya habiskan untuk menonton mahouka dibanding untuk belaja"
 draft: false
 ---
 
