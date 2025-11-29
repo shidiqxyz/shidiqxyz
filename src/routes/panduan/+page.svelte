@@ -69,6 +69,7 @@ date: "2023-11-23"
 category: "pemikiran" 
 tags: ["tag1", "tag2"]
 description: "Deskripsi singkat untuk SEO dan preview."
+draft: false
 ---</code
             ></pre>
     </div>
@@ -87,6 +88,10 @@ description: "Deskripsi singkat untuk SEO dan preview."
             <li>
                 <strong>date</strong>: Gunakan format ISO
                 <code>YYYY-MM-DD</code>.
+            </li>
+            <li>
+                <strong>draft</strong>: (Opsional) Set <code>true</code> jika artikel
+                belum siap dipublikasikan.
             </li>
         </ul>
     </div>
@@ -170,6 +175,39 @@ description: "Deskripsi singkat untuk SEO dan preview."
                 <li>Langkah pertama</li>
                 <li>Langkah kedua</li>
             </ol>
+        </div>
+    </div>
+
+    <h3>Daftar Tugas (Task Lists)</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+        <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Markdown:</p>
+            <pre><code
+                    >- [x] Tugas selesai
+- [ ] Tugas belum selesai</code
+                ></pre>
+        </div>
+        <div class="border border-gray-200 dark:border-gray-700 p-4 rounded-lg">
+            <p class="text-sm text-gray-500 mb-2 font-mono">Hasil:</p>
+            <ul class="list-none pl-0">
+                <li class="flex items-center gap-2">
+                    <input
+                        type="checkbox"
+                        checked
+                        disabled
+                        class="rounded text-blue-600"
+                    />
+                    <span>Tugas selesai</span>
+                </li>
+                <li class="flex items-center gap-2">
+                    <input
+                        type="checkbox"
+                        disabled
+                        class="rounded text-blue-600"
+                    />
+                    <span>Tugas belum selesai</span>
+                </li>
+            </ul>
         </div>
     </div>
 
@@ -325,5 +363,24 @@ function sapa(nama) {"{"}
                 </ol>
             </section>
         </div>
+    </div>
+
+    <h3>Komponen Svelte</h3>
+    <p>
+        Anda bisa menggunakan komponen Svelte di dalam file Markdown. Pastikan
+        untuk mengimpornya terlebih dahulu di dalam tag <code
+            >&lt;script&gt;</code
+        >.
+    </p>
+    <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg mb-8">
+        <pre><code
+                >&lt;script&gt;
+  import Button from '$lib/components/Button.svelte';
+&lt;/script&gt;
+
+# Judul
+
+&lt;Button&gt;Klik Saya&lt;/Button&gt;</code
+            ></pre>
     </div>
 </article>

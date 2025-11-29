@@ -79,10 +79,17 @@
             class="flex items-center gap-3 text-sm text-gray-500 dark:text-gray-400 mb-4"
         >
             <time datetime={data.meta.date}>
-                {new Date(data.meta.date).toLocaleDateString("id-ID", {
+                {new Date(data.meta.date).toLocaleString("id-ID", {
                     year: "numeric",
                     month: "long",
                     day: "numeric",
+                })}
+            </time>
+            <span>•</span>
+            <time datetime={data.meta.date}>
+                {new Date(data.meta.date).toLocaleString("id-ID", {
+                    hour: "2-digit",
+                    minute: "2-digit",
                 })}
             </time>
             <span>•</span>

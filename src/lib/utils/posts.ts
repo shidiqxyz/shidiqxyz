@@ -6,13 +6,14 @@ export interface Post {
     tags: string[];
     slug: string;
     content: string;
+    draft?: boolean;
 }
 
 export async function getPosts() {
     let posts: Post[] = [];
 
     const paths = import.meta.glob('/src/content/*/*.md', { eager: true });
-    const rawPaths = import.meta.glob('/src/content/*/*.md', { as: 'raw', eager: true });
+    const rawPaths = import.meta.glob('/src/content/*/*.md', { query: '?raw', import: 'default', eager: true });
 
     for (const path in paths) {
         const file = paths[path];
@@ -22,6 +23,12 @@ export async function getPosts() {
 
         if (file && typeof file === 'object' && 'metadata' in file && slug && category) {
             const metadata = file.metadata as Omit<Post, 'slug' | 'category' | 'content'>;
+
+            // Skip drafts in production
+            if (metadata.draft && !import.meta.env.DEV) {
+                continue;
+            }
+
             const post = { ...metadata, slug, category, content } as Post;
             posts.push(post);
         }
