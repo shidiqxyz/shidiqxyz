@@ -33,7 +33,7 @@
 </svelte:head>
 
 <section class="space-y-12">
-	<div class="space-y-10">
+	<div class="space-y-6">
 		{#each data.posts as post}
 			<PostCard {post} />
 		{/each}
