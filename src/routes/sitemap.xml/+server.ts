@@ -30,6 +30,7 @@ export async function GET() {
         (post) => `
   <url>
     <loc>${siteUrl}/blog/${post.category}/${post.slug}</loc>
+    <lastmod>${new Date(post.date).toISOString()}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

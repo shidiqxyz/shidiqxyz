@@ -1,6 +1,27 @@
 <script lang="ts">
 	import PostCard from "$lib/components/PostCard.svelte";
+	import Pagination from "$lib/components/Pagination.svelte";
+	import { page } from "$app/stores";
+	import { goto } from "$app/navigation";
+
 	export let data;
+
+	const itemsPerPage = 5;
+
+	$: currentPage = Number($page.url.searchParams.get("page")) || 1;
+	$: totalPages = Math.ceil(data.posts.length / itemsPerPage);
+	$: paginatedPosts = data.posts.slice(
+		(currentPage - 1) * itemsPerPage,
+		currentPage * itemsPerPage,
+	);
+
+	function handlePageChange(event: CustomEvent) {
+		const newPage = event.detail.page;
+		const url = new URL($page.url);
+		url.searchParams.set("page", String(newPage));
+		goto(url.toString());
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}
 </script>
 
 <svelte:head>
@@ -45,9 +66,11 @@
 		</p>
 	</div>
 
-	<div class="space-y-10">
-		{#each data.posts as post}
+	<div class="space-y-6">
+		{#each paginatedPosts as post}
 			<PostCard {post} />
 		{/each}
 	</div>
+
+	<Pagination {currentPage} {totalPages} on:change={handlePageChange} />
 </section>

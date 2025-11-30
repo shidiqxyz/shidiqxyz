@@ -1,13 +1,34 @@
 <script lang="ts">
 	import PostCard from "$lib/components/PostCard.svelte";
+	import Pagination from "$lib/components/Pagination.svelte";
+	import { page } from "$app/stores";
+	import { goto } from "$app/navigation";
+
 	export let data;
+
+	const itemsPerPage = 5;
+
+	$: currentPage = Number($page.url.searchParams.get("page")) || 1;
+	$: totalPages = Math.ceil(data.posts.length / itemsPerPage);
+	$: paginatedPosts = data.posts.slice(
+		(currentPage - 1) * itemsPerPage,
+		currentPage * itemsPerPage,
+	);
+
+	function handlePageChange(event: CustomEvent) {
+		const newPage = event.detail.page;
+		const url = new URL($page.url);
+		url.searchParams.set("page", String(newPage));
+		goto(url.toString());
+		window.scrollTo({ top: 0, behavior: "smooth" });
+	}
 </script>
 
 <svelte:head>
 	<title>Proses - shidiq</title>
 	<meta
 		name="description"
-		content="Catatan perjalanan, eksperimen, dan dokumentasi proses belajar di bidang teknologi, blockchain, dan pengembangan diri."
+		content="Dokumentasi perjalanan belajar, eksperimen teknis, dan catatan pengembangan skill baru."
 	/>
 
 	<!-- Open Graph -->
@@ -15,7 +36,7 @@
 	<meta property="og:title" content="Proses - shidiq" />
 	<meta
 		property="og:description"
-		content="Catatan perjalanan, eksperimen, dan dokumentasi proses belajar di bidang teknologi, blockchain, dan pengembangan diri."
+		content="Dokumentasi perjalanan belajar, eksperimen teknis, dan catatan pengembangan skill baru."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://shidiq.xyz/proses" />
@@ -28,7 +49,7 @@
 	<meta name="twitter:title" content="Proses - shidiq" />
 	<meta
 		name="twitter:description"
-		content="Catatan perjalanan, eksperimen, dan dokumentasi proses belajar di bidang teknologi, blockchain, dan pengembangan diri."
+		content="Dokumentasi perjalanan belajar, eksperimen teknis, dan catatan pengembangan skill baru."
 	/>
 	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
@@ -41,13 +62,15 @@
 			Proses
 		</h1>
 		<p class="text-gray-600 dark:text-gray-400 max-w-lg">
-			Catatan perjalanan, eksperimen, dan dokumentasi belajar.
+			Dokumentasi perjalanan belajar dan eksperimen teknis.
 		</p>
 	</div>
 
-	<div class="space-y-10">
-		{#each data.posts as post}
+	<div class="space-y-6">
+		{#each paginatedPosts as post}
 			<PostCard {post} />
 		{/each}
 	</div>
+
+	<Pagination {currentPage} {totalPages} on:change={handlePageChange} />
 </section>
