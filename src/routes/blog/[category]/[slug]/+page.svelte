@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from "svelte";
+    import TableOfContents from "$lib/components/TableOfContents.svelte";
 
     export let data;
 
@@ -70,56 +71,67 @@
 	</script>`}
 </svelte:head>
 
-<article
-    bind:this={articleElement}
-    class="prose prose-lg dark:prose-invert max-w-none"
->
-    <div class="mb-8 not-prose">
-        <div
-            class="flex flex-col sm:flex-row sm:items-center gap-y-1 gap-x-3 text-sm text-gray-500 dark:text-gray-400 mb-4"
-        >
-            <div class="flex items-center gap-2">
-                <time datetime={data.meta.date}>
-                    {new Date(data.meta.date).toLocaleString("id-ID", {
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                    })}
-                </time>
-                <span>•</span>
-                <time datetime={data.meta.date}>
-                    {new Date(data.meta.date).toLocaleString("id-ID", {
-                        hour: "2-digit",
-                        minute: "2-digit",
-                    })}
-                </time>
-            </div>
+<div class="relative">
+    <!-- Desktop TOC (Right Side, Relative to Article) -->
+    <aside class="hidden xl:block absolute left-full top-0 h-full ml-8 w-56">
+        <div class="sticky top-24">
+            <TableOfContents contentElement={articleElement} />
+        </div>
+    </aside>
 
-            <span class="hidden sm:inline">•</span>
-
-            <div class="flex items-center gap-2">
-                <span class="capitalize text-blue-600 dark:text-blue-400"
-                    >{data.meta.category}</span
-                >
-                {#if readingTime > 0}
+    <article
+        bind:this={articleElement}
+        class="prose prose-lg dark:prose-invert max-w-none"
+    >
+        <div class="mb-8 not-prose">
+            <div
+                class="flex flex-col sm:flex-row sm:items-center gap-y-1 gap-x-3 text-sm text-gray-500 dark:text-gray-400 mb-4"
+            >
+                <div class="flex items-center gap-2">
+                    <time datetime={data.meta.date}>
+                        {new Date(data.meta.date).toLocaleString("id-ID", {
+                            year: "numeric",
+                            month: "long",
+                            day: "numeric",
+                        })}
+                    </time>
                     <span>•</span>
-                    <span>{readingTime} menit baca</span>
-                {/if}
+                    <time datetime={data.meta.date}>
+                        {new Date(data.meta.date).toLocaleString("id-ID", {
+                            hour: "2-digit",
+                            minute: "2-digit",
+                        })}
+                    </time>
+                </div>
+
+                <span class="hidden sm:inline">•</span>
+
+                <div class="flex items-center gap-2">
+                    <span class="capitalize text-blue-600 dark:text-blue-400"
+                        >{data.meta.category}</span
+                    >
+                    {#if readingTime > 0}
+                        <span>•</span>
+                        <span>{readingTime} menit baca</span>
+                    {/if}
+                </div>
+            </div>
+            <h1
+                class="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4"
+            >
+                {data.meta.title}
+            </h1>
+            <div class="flex flex-wrap gap-2">
+                {#each data.meta.tags as tag}
+                    <span
+                        class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-md text-gray-600 dark:text-gray-300"
+                    >
+                        #{tag}
+                    </span>
+                {/each}
             </div>
         </div>
-        <h1 class="text-4xl font-bold text-gray-900 dark:text-gray-100 mb-4">
-            {data.meta.title}
-        </h1>
-        <div class="flex flex-wrap gap-2">
-            {#each data.meta.tags as tag}
-                <span
-                    class="px-2 py-1 text-xs bg-gray-100 dark:bg-gray-800 rounded-md text-gray-600 dark:text-gray-300"
-                >
-                    #{tag}
-                </span>
-            {/each}
-        </div>
-    </div>
 
-    <svelte:component this={data.content} />
-</article>
+        <svelte:component this={data.content} />
+    </article>
+</div>

@@ -3,7 +3,7 @@ title: "Sebuah Roadmap"
 date: "2025-11-25"
 category: "pemikiran" 
 tags: []
-description: "Ini adalah ekpresi saya saat memikirkan untuk membuat roadmap ini"
+description: "Ini adalah ekpresi saya saat memikirkan untuk membuat roadmap ini."
 ---
 
 ![Monkey](/images/pemikiran/sebuah-roadmap/monkey.webp?w=600&a=center)
@@ -12,7 +12,7 @@ Ini adalah ekpresi saya saat memikirkan untuk membuat roadmap ini. (Ini cara bik
 
 Seperti dalam tulisan sebelumnya yang sudah disinggung, bahwa saya sudah membuat repo di github[^1] sebelumnya. Namun, sepertinya perlu dibuat ulang untuk roadmapnya. Karena belum begitu terstruktur dan kurang detail.
 
-Disini saya mengkuti prinsip dari [lelouch.dev](https://lelouch.dev/). Pada tulisan [The Thought Process Behind My Learning Plan](https://lelouch.dev/blog/building-a-roadmap/). Setidaknya ia menyebut 7 hal yang perlu dipenuhi dalam rencana pembelajaran. 
+Disini saya mengkuti prinsip dari [lelouch.dev](https://lelouch.dev/). Pada tulisan The Thought Process Behind My Learning Plan[^2]. Setidaknya ia menyebut 7 hal yang perlu dipenuhi dalam rencana pembelajaran. 
 
 ### Pertama, yaitu apa hasil akhir yang ingin dicapai dalam pembelajaran ini?
 
@@ -72,7 +72,7 @@ Jadinya, bukan sama sekali tidak menggunakan AI. Hanya lebih bijak dalam penggun
 
 Sangat aneh jika dikatakan, bahwa tulisan ini adalah sebuah roadmap. Mungkin lebih enak jika disebut banyangan saya terhadap roadmap yang akan saya pelajari itu.
 
-Untuk beberapa bulan ke depan, saya akan mempelajari materi dari Cyfrin[^2]. Course yang dibuat oleh Patrick Collins[^3] salah satu advisor di Chainlink (sekarang entah masih atau tidak gak tau saya).
+Untuk beberapa bulan ke depan, saya akan mempelajari materi dari Cyfrin[^3]. Course yang dibuat oleh Patrick Collins[^4] salah satu advisor di Chainlink (sekarang entah masih atau tidak gak tau saya).
 
 Karena resource yang ada di cyfrin itu sudah cukup lengkap. Jika dilihat dalam daftarnya (tinggal belajar aja yang serius). Dari tahap beginner hingga expert ada topik yang disampaikan.
 
@@ -84,14 +84,15 @@ Kebutuhan akan pengetahuan ini sangat diperlukan dalam pembelajaran ini. Karena 
 
 Namun, yang belum saya ketahui adalah dalam sekup apa matematika yang diperlukan dalam pembelajaran ini? Apakah hanya matematika tahap dasar saja? Atau ada matematika yang tingkat lanjut?
 
-Salah satu resouce yang temukan adalah Khan Academy[^4]. Namun sayangnya itu bahasa Inggris. Untuk bahasa Indonesia saya baru menemukan di Zenius[^5] dalam bentuk video learning. Yang sayangnya berbayar jika ingin belajar.
+Salah satu resouce yang temukan adalah Khan Academy[^5]. Namun sayangnya itu bahasa Inggris. Untuk bahasa Indonesia saya baru menemukan di Zenius[^6] dalam bentuk video learning. Yang sayangnya berbayar jika ingin belajar.
 
 Sembari berjalan, saya akan cari course yang tepat dengan kondisi saya.
 
 Sedikit tambahan untuk dalam hal ini saya mengetahui teknis yang sangat minim saat memulai ini. Dan juga income saya 0 (nol) untuk saat ini.
 
 [^1]: [Blockchain Security Path](https://github.com/shidiqxyz/blockhain-security-path)
-[^2]: [Cyfrin](https://updraft.cyfrin.io/dashboard)
-[^3]: [Patrick Collins](https://x.com/PatrickAlphaC)
-[^4]: [Khan Academy](https://www.khanacademy.org/)
-[^5]: [Zenius](https://www.zenius.net/)
+[^2]: [The Thought Process Behind My Learning Plan](https://lelouch.dev/blog/building-a-roadmap/)
+[^3]: [Cyfrin](https://updraft.cyfrin.io/dashboard)
+[^4]: [Patrick Collins](https://x.com/PatrickAlphaC)
+[^5]: [Khan Academy](https://www.khanacademy.org/)
+[^6]: [Zenius](https://www.zenius.net/)

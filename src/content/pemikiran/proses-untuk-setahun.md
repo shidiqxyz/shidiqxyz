@@ -3,7 +3,7 @@ title: "Proses untuk setahun"
 date: "2025-11-23"
 category: "pemikiran" 
 tags: []
-description: "Sebenarnya tulisan ini terlalu awal untuk rencana tahunan"
+description: "Sebenarnya tulisan ini terlalu awal untuk rencana tahunan."
 ---
 
 Sebenarnya tulisan ini terlalu awal untuk rencana tahunan (meskipun biasanya rencana doang tanpa eksekusi yang baik).
@@ -48,7 +48,7 @@ Niat saya sudah ada sejak tahun lalu, namun dengan tidak adanya sistem pembelaja
 
 Ada beberapa hal lainnya yang saya harus siapkan agar hal ini bisa terwujud. Seperti sistem pembelajaran, bagaimana cara belajarnya, dan beberapa hal yang lainnya yang belum saya pikirkan.
 
-Salah satu referensi yang akan saya gunakan yang berasal dari [lelouch.dev](https://lelouch.dev/) juga. Pada artikenya yang berjudul [The Thought Process Behind My Learning Plan](https://lelouch.dev/blog/building-a-roadmap/).
+Salah satu referensi yang akan saya gunakan yang berasal dari [lelouch.dev](https://lelouch.dev/) juga. Pada artikenya yang berjudul The Thought Process Behind My Learning Plan[^8].
 
 Hal ini bisa saya terapkan terhadap rencana pembelajaran saya. Untuk *breakdown* rencana pembelajaran saya, saya akan membuat dalam tulisan lainnya.
 
@@ -59,3 +59,4 @@ Hal ini bisa saya terapkan terhadap rencana pembelajaran saya. Untuk *breakdown*
 [^5]: [Fireship](https://www.youtube.com/@Fireship)
 [^6]: [Cursor](https://cursor.com/)
 [^7]: [Blockchain Security Path](https://github.com/shidiqxyz/blockhain-security-path)
+[^8]: [The Thought Process Behind My Learning Plan](https://lelouch.dev/blog/building-a-roadmap/)

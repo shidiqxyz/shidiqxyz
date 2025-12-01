@@ -321,6 +321,33 @@ function sapa(nama) {"{"}
         Gunakan tanda kurung siku dengan angka <code>[^1]</code> untuk membuat referensi
         otomatis.
     </p>
+
+    <div
+        class="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800 mb-8"
+    >
+        <h4 class="text-blue-800 dark:text-blue-200 font-bold mt-0 mb-2">
+            Kapan menggunakan Link vs Footnote?
+        </h4>
+        <ul class="mb-0 text-blue-800 dark:text-blue-200 text-sm">
+            <li>
+                <strong>Link Biasa</strong>: Jika hanya ingin mengarahkan
+                pembaca ke sebuah website secara umum.
+                <br />Contoh: <code>[Google](https://google.com)</code>
+            </li>
+            <li class="mt-2">
+                <strong>Footnote</strong>: Jika merujuk ke sesuatu yang lebih
+                spesifik seperti:
+                <ul class="list-disc pl-5 mt-1">
+                    <li>Halaman tertentu dari website</li>
+                    <li>Artikel atau tulisan akademis</li>
+                    <li>Paragraf atau bagian spesifik</li>
+                    <li>
+                        Definisi atau konsep yang perlu dipertanggungjawabkan
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <div class="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
             <p class="text-sm text-gray-500 mb-2 font-mono">Markdown:</p>

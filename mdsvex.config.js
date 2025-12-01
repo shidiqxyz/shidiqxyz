@@ -4,6 +4,34 @@ import remarkFootnotes from 'remark-footnotes';
 
 import visit from 'unist-util-visit';
 
+// Custom plugin to add IDs to headings (replaces rehype-slug)
+function rehypeAddHeadingIds() {
+	return (tree) => {
+		visit(tree, 'element', (node) => {
+			if (['h1', 'h2', 'h3', 'h4', 'h5', 'h6'].includes(node.tagName)) {
+				// Get text content from the heading
+				let text = '';
+				visit(node, 'text', (textNode) => {
+					text += textNode.value;
+				});
+
+				// Create slug from text (simple version)
+				const slug = text
+					.toLowerCase()
+					.trim()
+					.replace(/[^\w\s-]/g, '') // Remove special chars
+					.replace(/\s+/g, '-')      // Replace spaces with hyphens
+					.replace(/-+/g, '-');      // Replace multiple hyphens with single
+
+				if (!node.properties) {
+					node.properties = {};
+				}
+				node.properties.id = slug;
+			}
+		});
+	};
+}
+
 function rehypeImgSize() {
 	return (tree) => {
 		visit(tree, 'element', (node) => {
@@ -47,7 +75,7 @@ const config = defineConfig({
 		dashes: 'oldschool'
 	},
 	remarkPlugins: [remarkGfm, [remarkFootnotes, { inlineNotes: true }]],
-	rehypePlugins: [rehypeImgSize]
+	rehypePlugins: [rehypeAddHeadingIds, rehypeImgSize]
 });
 
 export default config;
