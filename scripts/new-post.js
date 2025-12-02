@@ -5,6 +5,7 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = path.join(__dirname, '../src/content');
+const STATIC_IMAGES_DIR = path.join(__dirname, '../static/images');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -100,6 +101,13 @@ draft: false
 `;
 
     fs.writeFileSync(targetPath, content);
+
+    // Create corresponding images folder in static/images/{category}/{slug}
+    const imageDir = path.join(STATIC_IMAGES_DIR, category, slug);
+    if (!fs.existsSync(imageDir)) {
+        fs.mkdirSync(imageDir, { recursive: true });
+        console.log(`📁 Folder gambar dibuat: ${imageDir}`);
+    }
 
     console.log(`\n✅ Artikel berhasil dibuat!`);
     console.log(`📂 Path: ${targetPath}`);
