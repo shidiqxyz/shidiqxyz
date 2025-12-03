@@ -30,7 +30,7 @@ Ada beberapa poin yang penting disini.
 - Seperti ini saya mempunyai gambar anime yang akan dikirim ke si Billy. Nah disini ketika saya mengirim file tersebut ke si Billy, maka si Billy akan mempunyai file yang sama dengan saya.
 - Namun ini akan menjadi masalah jika dalam uang, kita dapat saling mengirim uang yang sama ke dua pihak tanpa ada batasan. 
 - Pada tahun 1980, ada yang mencoba untuk membuat digital currency. DigiCash namun ada permasalah lainnya, bahwa uang digital ini terkontrol secara terpusat oleh DigiCash. DigiCash bisa membekukan, menolak dan sensor pengguna (*like a bank right*).
-- Dalam Computer Science, masalah ini dinamakan The Byzantine Generals Problem.
+- Dalam Computer Science, masalah ini dinamakan The Byzantine Generals Problem[^4].
 - Byzantine Generals Problem adalah masalah dalam sistem terdistribusi tentang bagaimana mencapai consensus ketika beberapa node bisa gagal, mengirim informasi salah, atau berperilaku jahat. (Kalo gak paham, saya juga masih pusing dengernya)
 - Sekarang dilanjut ke Ethereum. Salah satu kelebihannya adalah mempunyai smart contract.
 - Dalam course tadi jelasin pakai analogi, Bitcoin itu kayak kalkulator sedangkan Ethereum itu komputer.
