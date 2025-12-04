@@ -20,4 +20,6 @@ Sekarang untuk course blockchain memasuki bagian penggunaan dari blockchain itu 
 - DAPP adalah aplikasi yang dijalankan di atas blockchain.
 - Web3 merupakan istilah yang digunakan untuk upgrade dari web2. Yang menambahkan untuk kepemilikan data oleh pengguna.
 
+Untuk matematika, menlanjutkan materi untuk kelas 2. Ini baru memasuki hitungan puluhan 1 - 50.
+
 [^1]: [Use Cases Of Blockchains](https://updraft.cyfrin.io/courses/blockchain-basics/what-is-a-blockchain/use-cases-of-blockchains)
