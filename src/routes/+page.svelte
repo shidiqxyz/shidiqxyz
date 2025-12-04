@@ -6,7 +6,7 @@
 
 	export let data;
 
-	const itemsPerPage = 6;
+	const itemsPerPage = 7;
 
 	$: currentPage = Number($page.url.searchParams.get("page")) || 1;
 	$: totalPages = Math.ceil(data.posts.length / itemsPerPage);

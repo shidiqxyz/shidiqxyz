@@ -27,7 +27,7 @@ Saya mencarinya menggunakan ChatGPT. Saya minta untuk memberikan link yang bisa 
 |-------|---------|----------|
 | Kelas 1 | SD | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-I.pdf) |
 | Kelas 2 | SD | [Download PDF](https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-ii) |
-| Kelas 3 | SD | [Download PDF](https://buku.kemendikdasmen.go.id/katalog/Matematika-untuk-SDMI-Kelas-III) |
+| Kelas 3 | SD | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_III.pdf) |
 | Kelas 4 | SD | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-IV.pdf) |
 | Kelas 5 | SD | [Download PDF](https://repo.mahadewa.ac.id/id/eprint/661/1/BUKU%20SISWA%20MATEMATIKA%20KELAS%20V%20SD.pdf) |
 | Kelas 6 | SD | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_VI.pdf) |
@@ -37,6 +37,9 @@ Saya mencarinya menggunakan ChatGPT. Saya minta untuk memberikan link yang bisa 
 | Kelas 10 | SMA | [Download PDF](https://sman20-jkt.sch.id/E-Learning/siswa_merdeka/MATEMATIKA-BS-KLS_X_Rev.pdf) |
 | Kelas 11 | SMA | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XI.pdf) |
 | Kelas 12 | SMA | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XII.pdf) |
+
+**Link Alternatif:**  
+Jika link di atas ada yang tidak berfungsi, bisa download semua modul matematika kelas 1-12 di Google Drive: [Download Semua Modul (Kelas 1-12)](https://drive.google.com/drive/folders/1bfALWoLIhzF_XUsw6hZdBTvu9jLxGC0x?usp=sharing)
 
 Ketika saya coba modul kelas 1. Berbeda sekali dengan kelas 1 Sekolah Dasar yang saya ingat. Sepertinya ini suatu perkembangan dari modul kelas 1 Sekolah Dasar (mungkin, saya gak tau sebenarnya).
 
