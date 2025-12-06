@@ -18,6 +18,13 @@ Untuk belajar blockchain dan smart contract, saya menggunakan course dari **Cyfr
 1. **Blockchain Basics** - Memahami fundamental blockchain dari awal
    - Link: [Blockchain Basics Course](https://updraft.cyfrin.io/courses/blockchain-basics)
 
+### Web3 Security
+
+Untuk memperdalam keamanan smart contract, saya menggunakan resource dari Immunefi:
+
+- **Immunefi Learn** - Platform belajar keamanan Web3 dan bug bounty
+  - Link: [https://immunefi.com/learn/](https://immunefi.com/learn/)
+
 ---
 
 ## Matematika

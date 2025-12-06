@@ -51,24 +51,24 @@
     {/if}
 
     <!-- Schema.org JSON-LD -->
-    {@html `<script type="application/ld+json">
-		${JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "BlogPosting",
-            headline: data.meta.title,
-            image: ["https://shidiq.xyz/og-image.png"],
-            datePublished: data.meta.date,
-            dateModified: data.meta.date,
-            author: [
-                {
-                    "@type": "Person",
-                    name: "shidiq",
-                    url: "https://shidiq.xyz/about",
-                },
-            ],
-            description: data.meta.description,
-        })}
-	</script>`}
+    <script type="application/ld+json">
+		{@html JSON.stringify({
+			'@context': 'https://schema.org',
+			'@type': 'BlogPosting',
+			headline: data.meta.title,
+			image: ['https://shidiq.xyz/og-image.png'],
+			datePublished: data.meta.date,
+			dateModified: data.meta.date,
+			author: [
+				{
+					'@type': 'Person',
+					name: 'shidiq',
+					url: 'https://shidiq.xyz/about'
+				}
+			],
+			description: data.meta.description
+		}).replace(/</g, '\\u003c')}
+    </script>
 </svelte:head>
 
 <div class="relative">
