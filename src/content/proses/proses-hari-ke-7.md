@@ -33,4 +33,10 @@ DON terdiri dari beberapa node yang saling berkomunikasi dan saling memverifikas
 
 Salah satu produk yang menawarkan DON yaitu [Chainlink](https://chain.link/).
 
+Matematika memasuki topik posisi, seperti atas, bawah, kanan, kiri, depan dan belakang.
+
+Memahami cara kerja posisi itu seperti apa? Terus dengan mencontohkan dengan barang ini disebelah mana dari posisi kita.
+
+Selanjutnya mengenai pola. Pola itu adalah ada sesuatu hal yang berulang-ulang. Disini ada bermacam-macam pola. Pola bentuk, warna, gerakan dan suara.
+
 [^1]: [The Oracle Problem](https://updraft.cyfrin.io/courses/blockchain-basics/what-is-a-blockchain/the-oracle-problem)
