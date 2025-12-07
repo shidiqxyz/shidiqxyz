@@ -133,5 +133,90 @@
         </div>
 
         <svelte:component this={data.content} />
+
+        <!-- Previous / Next Navigation -->
+        {#if data.prevPost || data.nextPost}
+            <nav
+                class="mt-14 pt-8 border-t border-gray-200 dark:border-gray-800 not-prose"
+            >
+                <div class="flex flex-col sm:flex-row justify-between gap-4">
+                    <!-- Previous Post (Older) -->
+                    <div class="flex-1">
+                        {#if data.prevPost}
+                            <a
+                                href="/blog/{data.meta.category}/{data.prevPost
+                                    .slug}"
+                                class="group flex flex-col p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+                            >
+                                <span
+                                    class="text-sm text-gray-500 dark:text-gray-400 mb-1 flex items-center gap-1"
+                                >
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M15 19l-7-7 7-7"
+                                        />
+                                    </svg>
+                                    Sebelumnya
+                                </span>
+                                <span
+                                    class="text-base font-medium text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2"
+                                >
+                                    {data.prevPost.title}
+                                </span>
+                            </a>
+                        {:else}
+                            <div></div>
+                        {/if}
+                    </div>
+
+                    <!-- Next Post (Newer) -->
+                    <div class="flex-1">
+                        {#if data.nextPost}
+                            <a
+                                href="/blog/{data.meta.category}/{data.nextPost
+                                    .slug}"
+                                class="group flex flex-col p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-blue-500 dark:hover:border-blue-500 transition-colors text-right"
+                            >
+                                <span
+                                    class="text-sm text-gray-500 dark:text-gray-400 mb-1 flex items-center justify-end gap-1"
+                                >
+                                    Selanjutnya
+                                    <svg
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        class="h-4 w-4"
+                                        fill="none"
+                                        viewBox="0 0 24 24"
+                                        stroke="currentColor"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9 5l7 7-7 7"
+                                        />
+                                    </svg>
+                                </span>
+                                <span
+                                    class="text-base font-medium text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2"
+                                >
+                                    {data.nextPost.title}
+                                </span>
+                            </a>
+                        {:else}
+                            <div></div>
+                        {/if}
+                    </div>
+                </div>
+            </nav>
+        {/if}
     </article>
 </div>

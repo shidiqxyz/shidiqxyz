@@ -69,13 +69,30 @@ function rehypeImgSize() {
 	};
 }
 
+// Custom plugin to open external links in new tab
+function rehypeExternalLinks() {
+	return (tree) => {
+		visit(tree, 'element', (node) => {
+			if (node.tagName === 'a' && node.properties && node.properties.href) {
+				const href = node.properties.href;
+				// Check if it's an external link (starts with http:// or https://)
+				if (href.startsWith('http://') || href.startsWith('https://')) {
+					node.properties.target = '_blank';
+					node.properties.rel = 'noopener noreferrer';
+				}
+			}
+		});
+	};
+}
+
 const config = defineConfig({
 	extensions: ['.md', '.svx'],
 	smartypants: {
 		dashes: 'oldschool'
 	},
 	remarkPlugins: [remarkGfm, [remarkFootnotes, { inlineNotes: true }]],
-	rehypePlugins: [rehypeAddHeadingIds, rehypeImgSize]
+	rehypePlugins: [rehypeAddHeadingIds, rehypeImgSize, rehypeExternalLinks]
 });
 
 export default config;
+

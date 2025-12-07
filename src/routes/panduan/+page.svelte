@@ -378,14 +378,7 @@ function sapa(nama) {"{"}
                     class="list-decimal pl-5 text-sm text-gray-600 dark:text-gray-400"
                 >
                     <li id="user-content-fn-1">
-                        <p>
-                            Judul Referensi <a
-                                href="#user-content-fnref-1"
-                                data-footnote-backref
-                                class="text-blue-600 dark:text-blue-400 hover:underline"
-                                >↩</a
-                            >
-                        </p>
+                        <p>Judul Referensi</p>
                     </li>
                 </ol>
             </section>
