@@ -7,6 +7,8 @@ description: "Sepertinya, hari minggu tepat untuk menjadi hari libur. Atau mungk
 draft: false
 ---
 
+![eren-yeager](/images/proses/proses-hari-ke-8/eren-yeager.gif?width=600&a=center)
+
 Sepertinya, hari minggu tepat untuk menjadi hari libur. Atau mungkin sabtu dan minggu bisa libur dahulu? Ya, akan saya pikir-pikir terlebih dahulu saja. 
 
 Namun, poinnya itu bahwa libur itu suatu hal yang penting. Beristirahat tidak melakukan apa-apa.
