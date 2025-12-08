@@ -3,7 +3,7 @@ title: "Proses Hari ke 8"
 date: "2025-12-08 06:32"
 category: "proses"
 tags: []
-description: ""
+description: "Sepertinya, hari minggu tepat untuk menjadi hari libur. Atau mungkin sabtu dan minggu bisa libur dahulu?"
 draft: false
 ---
 
