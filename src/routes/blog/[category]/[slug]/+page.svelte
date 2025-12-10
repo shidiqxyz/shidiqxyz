@@ -165,7 +165,7 @@
                                             d="M15 19l-7-7 7-7"
                                         />
                                     </svg>
-                                    Sebelumnya
+                                    Previous
                                 </span>
                                 <span
                                     class="text-base font-medium text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2"
@@ -189,7 +189,7 @@
                                 <span
                                     class="text-sm text-gray-500 dark:text-gray-400 mb-1 flex items-center justify-end gap-1"
                                 >
-                                    Selanjutnya
+                                    Next
                                     <svg
                                         xmlns="http://www.w3.org/2000/svg"
                                         class="h-4 w-4"

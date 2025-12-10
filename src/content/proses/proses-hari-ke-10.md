@@ -3,7 +3,7 @@ title: "Proses Hari ke 10"
 date: "2025-12-10 11:12"
 category: "proses"
 tags: []
-description: ""
+description: "Hari ini dimulai dengan membaca tweet dari user @deadrosesxyz dalam yang memenangkan bounty 40k dari immunefi."
 draft: false
 ---
 
