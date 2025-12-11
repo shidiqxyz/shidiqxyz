@@ -1,6 +1,6 @@
 ---
 title: "Materi Belajar"
-date: "2025-12-11 11:10"
+date: "2025-12-04 04:52"
 category: "pemikiran"
 tags: []
 description: "Kumpulan materi dan sumber belajar yang saya gunakan untuk belajar blockchain, smart contract, keamanan Web3, dan matematika dari dasar."
