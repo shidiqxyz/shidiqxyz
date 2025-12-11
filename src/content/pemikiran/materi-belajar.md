@@ -1,29 +1,96 @@
 ---
 title: "Materi Belajar"
-date: "2025-12-04 04:52"
+date: "2025-12-11 11:10"
 category: "pemikiran"
 tags: []
-description: "Kumpulan materi dan sumber belajar yang saya gunakan untuk belajar blockchain dan matematika dari dasar."
+description: "Kumpulan materi dan sumber belajar yang saya gunakan untuk belajar blockchain, smart contract, keamanan Web3, dan matematika dari dasar."
 draft: false
 ---
 
-Berikut adalah kumpulan materi dan sumber belajar yang saya gunakan dalam perjalanan belajar saya. Semua materi ini gratis dan bisa diakses oleh siapa saja.
+Berikut adalah kumpulan materi dan sumber belajar yang saya gunakan dalam perjalanan belajar.  
+Semua materi ini **gratis**, berkualitas, dan bisa diakses oleh siapa saja.
+
+---
 
 ## Blockchain dan Smart Contract
 
-Untuk belajar blockchain dan smart contract, saya menggunakan course dari **Cyfrin Updraft**. Platform ini menyediakan pembelajaran gratis yang sangat komprehensif tentang blockchain, smart contract, dan Web3 development.
+Untuk belajar blockchain dan smart contract, saya menggunakan beberapa sumber utama seperti **Cyfrin Updraft**, **Mastering Ethereum**, video kursus dari FreeCodeCamp, serta dokumentasi teknis seperti **Ethereum Yellow Paper**.
 
-### Course yang Saya Ikuti:
+### Cyfrin Updraft — Course yang Saya Ikuti
 
-1. **Blockchain Basics** - Memahami fundamental blockchain dari awal
-   - Link: [Blockchain Basics Course](https://updraft.cyfrin.io/courses/blockchain-basics)
+1. **Blockchain Basics** — Memahami fundamental blockchain dari awal  
+   Link: https://updraft.cyfrin.io/courses/blockchain-basics
 
-### Web3 Security
+---
 
-Untuk memperdalam keamanan smart contract, saya menggunakan resource dari Immunefi:
+## Sumber Bacaan Teknis
 
-- **Immunefi Learn** - Platform belajar keamanan Web3 dan bug bounty
-  - Link: [https://immunefi.com/learn/](https://immunefi.com/learn/)
+### Mastering Ethereum
+| Kategori | Link |
+|---------|------|
+| Mastering Ethereum (Buku Resmi) | https://github.com/ethereumbook/ethereumbook |
+
+### Ethereum Yellow Paper
+Dokumen formal spesifikasi Ethereum — lebih teknis dan matematis.
+
+| Kategori | Link |
+|---------|------|
+| Yellow Paper (PDF Resmi) | https://ethereum.github.io/yellowpaper/paper.pdf |
+| Yellow Paper Repo (LaTeX Source) | https://github.com/ethereum/yellowpaper |
+
+---
+
+## Video Pembelajaran
+
+### FreeCodeCamp Web3 & Solidity Courses
+| Judul Video | Link |
+|-------------|------|
+| Learn Blockchain, Solidity, and Full Stack Web3 Development | https://www.youtube.com/watch?v=gyMwXuJrbJQ |
+| Solidity, Blockchain, and Smart Contract Course (Beginner to Expert) | https://www.youtube.com/watch?v=M576WGiDBdQ |
+
+### Smart Contract Programmer – Hacking Solidity
+| Judul | Link |
+|-------|------|
+| Reentrancy \| Hack Solidity (0.6) | https://www.youtube.com/watch?v=4Mm3BCyHtDY |
+| Hack Solidity Playlist | https://www.youtube.com/playlist?list=PLO5VPQH6OWdWsCgXJT9UuzgbC8SPvTRi5 |
+
+---
+
+## Web3 Security & Bug Bounty
+
+### Immunefi Learn
+Untuk memperdalam keamanan smart contract dan bug bounty:
+
+- Link: https://immunefi.com/learn/
+
+### Secureum (Web3 Security Bootcamp)
+| Kategori | Link |
+|---------|------|
+| Secureum Articles | https://secureum.substack.com/ |
+| Secureum Videos | https://www.youtube.com/@SecureumVide |
+
+---
+
+## CTF (Capture The Flag) — Latihan Hacking Smart Contract
+
+### Daftar CTF
+| CTF | Link |
+|-----|------|
+| Ethernaut | https://ethernaut.openzeppelin.com |
+| Damn Vulnerable DeFi | https://damnvulnerabledefi.xyz |
+| Capture the Ether | https://capturetheether.com |
+| Paradigm CTF | https://ctf.paradigm.xyz |
+
+---
+
+## Bug Bounty Platforms
+
+### Daftar Platform
+| Platform | Link |
+|---------|------|
+| Code4rena | https://code4rena.com/ |
+| Sherlock | https://app.sherlock.xyz/overview |
+| Immunefi | https://immunefi.com/ |
 
 ---
 
