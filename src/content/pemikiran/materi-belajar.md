@@ -67,7 +67,7 @@ Untuk memperdalam keamanan smart contract dan bug bounty:
 | Kategori | Link |
 |---------|------|
 | Secureum Articles | https://secureum.substack.com/ |
-| Secureum Videos | https://www.youtube.com/@SecureumVide |
+| Secureum Videos | https://www.youtube.com/@SecureumVideos |
 
 ---
 

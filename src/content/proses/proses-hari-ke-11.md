@@ -61,7 +61,7 @@ Saya akan menaruhnya disini, agar saya mudah aksesnya nanti.
 | Kategori | Link |
 |---------|------|
 | Secureum Articles | https://secureum.substack.com/ |
-| Secureum Videos | https://www.youtube.com/@SecureumVide |
+| Secureum Videos | https://www.youtube.com/@SecureumVideos |
 
 ---
 
