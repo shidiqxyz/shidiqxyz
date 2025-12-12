@@ -7,7 +7,7 @@ description: "Akhirnya lanjut juga belajar Cyfrin course."
 draft: false
 ---
 
-![anime-shrug](/images/proses/proses-hari-ke-12/anime-shrug.gif?width=600&a=center)
+![anime-shrug](/images/proses/2025/12/proses-hari-ke-12/anime-shrug.gif?width=600&a=center)
 
 Akhirnya lanjut juga belajar Cyfrin course. 
 

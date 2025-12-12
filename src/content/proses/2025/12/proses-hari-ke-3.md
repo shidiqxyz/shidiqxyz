@@ -7,7 +7,7 @@ description: "Saya akan memulai dengan matematika kelas 1 SD. Melanjutkan yang k
 draft: false
 ---
 
-![bocchi](/images/proses/proses-hari-ke-3/bocchi.gif?width=600&a=center)
+![bocchi](/images/proses/2025/12/proses-hari-ke-3/bocchi.gif?width=600&a=center)
 
 Saya akan memulai dengan matematika kelas 1 SD. Melanjutkan yang kemarin. Sepertinya saya akan membereskan buku modul ini.
 

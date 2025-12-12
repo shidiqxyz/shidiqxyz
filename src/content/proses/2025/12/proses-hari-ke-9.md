@@ -7,7 +7,7 @@ description: "Diawali dengan lemas hari ini, mungkin ada beberapa sebab mengakib
 draft: false
 ---
 
-![ouvindo-música](/images/proses/proses-hari-ke-9/ouvindo-música.gif?width=600&a=center)
+![ouvindo-música](/images/proses/2025/12/proses-hari-ke-9/ouvindo-música.gif?width=600&a=center)
 
 Diawali dengan lemas hari ini, mungkin ada beberapa sebab mengakibatkan hal ini. Makanan, istirahat dan terlalu banyak doomscrolling???
 

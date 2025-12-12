@@ -12,13 +12,25 @@ export interface Post {
 export async function getPosts() {
     let posts: Post[] = [];
 
-    const paths = import.meta.glob('/src/content/*/*.md', { eager: true });
-    const rawPaths = import.meta.glob('/src/content/*/*.md', { query: '?raw', import: 'default', eager: true });
+    // Use recursive glob to find all markdown files in any subdirectory
+    const paths = import.meta.glob('/src/content/**/*.md', { eager: true });
+
+    // For raw content, we also need to match the same recursive pattern
+    // Note: In newer Vite, we might not need the second glob if we don't use 'content' string directly from it here,
+    // but preserving original logic structure.
+    const rawPaths = import.meta.glob('/src/content/**/*.md', { query: '?raw', import: 'default', eager: true });
 
     for (const path in paths) {
         const file = paths[path];
+        // Slug is just the filename without extension
         const slug = path.split('/').at(-1)?.replace('.md', '');
-        const category = path.split('/').at(-2);
+
+        // Category is always the folder directly under /src/content/
+        // path example: /src/content/proses/2025/12/pag.md -> parts[3] is 'proses'
+        // path example: /src/content/pemikiran/idea.md -> parts[3] is 'pemikiran'
+        const pathParts = path.split('/');
+        const category = pathParts[3];
+
         const content = rawPaths[path];
 
         if (file && typeof file === 'object' && 'metadata' in file && slug && category) {

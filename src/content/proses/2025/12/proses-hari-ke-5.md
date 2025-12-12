@@ -7,7 +7,7 @@ description: "Sekarang untuk course blockchain memasuki bagian penggunaan dari b
 draft: false
 ---
 
-![konata](/images/proses/proses-hari-ke-5/konata.gif?width=600&a=center)
+![konata](/images/proses/2025/12/proses-hari-ke-5/konata.gif?width=600&a=center)
 
 Sekarang untuk course blockchain memasuki bagian penggunaan dari blockchain itu sendiri, dalam bagian Use Cases Of Blockchains[^1].
 

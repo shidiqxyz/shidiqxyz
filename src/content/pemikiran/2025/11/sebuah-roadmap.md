@@ -6,7 +6,7 @@ tags: []
 description: "Ini adalah ekpresi saya saat memikirkan untuk membuat roadmap ini."
 ---
 
-![Monkey](/images/pemikiran/sebuah-roadmap/monkey.webp?w=600&a=center)
+![Monkey](/images/pemikiran/2025/11/sebuah-roadmap/monkey.webp?w=600&a=center)
 
 Ini adalah ekpresi saya saat memikirkan untuk membuat roadmap ini. (Ini cara bikinnya gimana?)
 
@@ -32,7 +32,7 @@ Setelah tahu apa saja yang diperlukan, saya harus memetakan bagaimana cara mempe
 
 Kurang lebihnya pemetaannya seperti ini:
 
-![Map](/images/pemikiran/sebuah-roadmap/carbon.png?w=600&a=center)
+![Map](/images/pemikiran/2025/11/sebuah-roadmap/carbon.png?w=600&a=center)
 
 ### Keempat, menentukan gaya belajar.
 
@@ -60,7 +60,7 @@ Mungkin topik ini perdebatan antara pro dan kontra. Namun disini saya pasti meng
 
 Sekup penggunaanya akan menjadi perhatian dalam penggunaan AI. Jadinya, tidak keseluruhan menggunakan AI (meskipun jika ingin cepat dan mudah gunakan itu, tetapi jika otak tidak digunakan nanti akan tumpul).
 
-![Brainroot](/images/pemikiran/sebuah-roadmap/brain.jpg?w=600&a=center)
+![Brainroot](/images/pemikiran/2025/11/sebuah-roadmap/brain.jpg?w=600&a=center)
 
 Meskipun jujur, ketika saya membuat kode sebelumnya kebanyakannya dari AI (ini adalah perwujudan dari kebodohan dan kemalasan penulis). Hanya sedikit sekali andil saya dalam kode-kode di github saya.
 

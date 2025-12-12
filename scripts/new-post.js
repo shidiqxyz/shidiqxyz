@@ -44,8 +44,7 @@ async function main() {
         if (!title) console.log('Judul tidak boleh kosong!');
     }
 
-    // 2. Category (Required, default to pemikiran if empty? No, user said input user)
-    // Let's show available categories
+    // 2. Category (Required)
     const categories = fs.readdirSync(CONTENT_DIR).filter(f => fs.statSync(path.join(CONTENT_DIR, f)).isDirectory());
     console.log(`Kategori tersedia: ${categories.join(', ')}`);
 
@@ -71,12 +70,17 @@ async function main() {
     const tags = tagsInput ? tagsInput.split(',').map(t => t.trim()).filter(t => t) : [];
 
     // 5. Date (Automatic)
-    const dateStr = formatDate(new Date());
+    const date = new Date();
+    const dateStr = formatDate(date);
+    const year = date.getFullYear().toString();
+    const month = (date.getMonth() + 1).toString().padStart(2, '0');
 
     // Generate Content
     const slug = slugify(title);
     const filename = `${slug}.md`;
-    const targetDir = path.join(CONTENT_DIR, category);
+
+    // Create nested path: src/content/{category}/{year}/{month}/
+    const targetDir = path.join(CONTENT_DIR, category, year, month);
     const targetPath = path.join(targetDir, filename);
 
     if (!fs.existsSync(targetDir)) {
@@ -84,7 +88,7 @@ async function main() {
     }
 
     if (fs.existsSync(targetPath)) {
-        console.error(`\nError: File ${filename} sudah ada di kategori ${category}!`);
+        console.error(`\nError: File ${filename} sudah ada di kategori ${category}/${year}/${month}!`);
         rl.close();
         process.exit(1);
     }
@@ -102,15 +106,17 @@ draft: false
 
     fs.writeFileSync(targetPath, content);
 
-    // Create corresponding images folder in static/images/{category}/{slug}
-    const imageDir = path.join(STATIC_IMAGES_DIR, category, slug);
+    // Create corresponding images folder in static/images/{category}/{year}/{month}/{slug}
+    const imageDir = path.join(STATIC_IMAGES_DIR, category, year, month, slug);
     if (!fs.existsSync(imageDir)) {
         fs.mkdirSync(imageDir, { recursive: true });
         console.log(`📁 Folder gambar dibuat: ${imageDir}`);
     }
 
     console.log(`\n✅ Artikel berhasil dibuat!`);
-    console.log(`📂 Path: ${targetPath}`);
+    console.log(`📂 Path Content: ${targetPath}`);
+    console.log(`📂 Path Image: ${imageDir}`);
+    console.log(`\nTips: Gambar untuk artikel ini simpan di folder image di atas.`);
 
     rl.close();
 }

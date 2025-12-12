@@ -7,7 +7,7 @@ description: "Tidak, ternyata tidak selesai modul metematika kelas satu sekolah 
 draft: false
 ---
 
-![anime-vtuber](/images/proses/proses-hari-ke-4/anime-vtuber.gif?width=600&a=center)
+![anime-vtuber](/images/proses/2025/12/proses-hari-ke-4/anime-vtuber.gif?width=600&a=center)
 
 Tidak, ternyata tidak selesai modul metematika kelas satu sekolah dasar kemarin. Namun hari ini baru diselesaikan. Cukup mengesalkan untuk membereskan modul ini. Mungkin, karena sangat dasar sekali infomasi yang diberikan. Sepertinya hal yang sewajarnya bagi anak kelas satu sekolah dasar, dapat diselesaikan dalam waktu satu tahun. Namun, bagi saya cukup tiga hari saja (target dari sehari melambat ke tiga hari).
 

@@ -7,7 +7,7 @@ description: "Kayaknya hari ini untuk course dari cyfrin tidak dilanjut dulu. Ka
 draft: false
 ---
 
-![maomao](/images/proses/proses-hari-ke-11/maomao.gif?width=600&a=center)
+![maomao](/images/proses/2025/12/proses-hari-ke-11/maomao.gif?width=600&a=center)
 
 Kayaknya hari ini untuk course dari cyfrin tidak dilanjut dulu. Karena bosan kali dan malas jadinya perlu melakukan pencarian-pencarian lagi dalam bidang ini.
 

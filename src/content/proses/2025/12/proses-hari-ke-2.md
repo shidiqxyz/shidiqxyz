@@ -7,7 +7,7 @@ description: "Setelah hari kemarin libur (setelah nonton agak laen, ternyata cap
 draft: false
 ---
 
-![bocchi](/images/proses/proses-hari-ke-2/bocchi.gif?width=600&a=center)
+![bocchi](/images/proses/2025/12/proses-hari-ke-2/bocchi.gif?width=600&a=center)
 
 Setelah hari kemarin libur (setelah nonton agak laen, ternyata cape juga nonton film komedi tidak berhenti-henti tertawa), saya akan lanjut prosesnya.
 

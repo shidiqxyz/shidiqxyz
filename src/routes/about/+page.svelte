@@ -30,10 +30,11 @@
 
 <article class="prose prose-lg dark:prose-invert">
 	<h1>About Me</h1>
+	<p>Halo!</p>
 	<p>
-		Halo! Perkenalkan nama saya Muhamad Shidiq Maulana. Saya adalah
-		seseorang yang bingung dengan kehidupannya sendiri. Ibarat seperti orang
-		linglung jika ditanyai untuk arah jalan yang benar.
+		Perkenalkan nama saya Muhamad Shidiq Maulana. Saya adalah seseorang yang
+		bingung dengan kehidupannya sendiri. Ibarat seperti orang linglung jika
+		ditanyai untuk arah jalan yang benar.
 	</p>
 	<p>
 		Saya cukup menyukai beberapa hal yang ada di dunia ini. Saya suka
@@ -52,6 +53,22 @@
 	<h2>Kontak</h2>
 	<p>Anda bisa menghubungi saya melalui media sosial berikut:</p>
 	<div class="not-prose flex flex-col gap-3">
+		<a
+			href="mailto:hi@shidiq.xyz"
+			class="flex items-center gap-3 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors group"
+		>
+			<svg
+				viewBox="0 0 24 24"
+				aria-hidden="true"
+				class="h-5 w-5 fill-current group-hover:text-black dark:group-hover:text-white"
+			>
+				<path
+					d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+				></path>
+			</svg>
+			<span>Email (hi@shidiq.xyz)</span>
+		</a>
+
 		<a
 			href="https://x.com/shidiqxyz"
 			target="_blank"

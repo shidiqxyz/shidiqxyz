@@ -7,7 +7,7 @@ description: "Sepertinya hari ini lebih banyak waktu saya habiskan untuk menonto
 draft: false
 ---
 
-![tehee](/images/proses/proses-hari-ke-1/tehee-tehehe.gif?width=600&a=center)
+![tehee](/images/proses/2025/11/proses-hari-ke-1/tehee-tehehe.gif?width=600&a=center)
 
 Sepertinya hari ini lebih banyak waktu saya habiskan untuk menonton mahouka dibanding untuk belajar.
 
