@@ -1,6 +1,8 @@
 <script lang="ts">
-    import { onMount } from "svelte";
+    import { onMount, mount } from "svelte";
     import TableOfContents from "$lib/components/TableOfContents.svelte";
+    import ReadingProgress from "$lib/components/ReadingProgress.svelte";
+    import CopyButton from "$lib/components/CopyButton.svelte";
 
     export let data;
 
@@ -13,9 +15,34 @@
                 articleElement.innerText || articleElement.textContent || "";
             const wordCount = text.trim().split(/\s+/).length;
             readingTime = Math.ceil(wordCount / 200); // 200 words per minute
+
+            // Mount CopyButton to all code blocks
+            const codeBlocks = articleElement.querySelectorAll("pre");
+            codeBlocks.forEach((block) => {
+                // Create a container for the button
+                const buttonContainer = document.createElement("div");
+                // Make sure block is relative so button is positioned correctly
+                if (getComputedStyle(block).position === "static") {
+                    block.style.position = "relative";
+                }
+                block.appendChild(buttonContainer);
+
+                // Get the code text
+                const code =
+                    block.querySelector("code")?.innerText || block.innerText;
+
+                mount(CopyButton, {
+                    target: buttonContainer,
+                    props: {
+                        text: code,
+                    },
+                });
+            });
         }
     });
 </script>
+
+<ReadingProgress />
 
 <svelte:head>
     <title>{data.meta.title} - shidiq</title>

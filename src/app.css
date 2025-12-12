@@ -46,4 +46,18 @@
   .footnotes a[href*="fnref"] {
     @apply hidden;
   }
+
+  /* Table Responsiveness
+     - Global: Enable horizontal scroll container
+     - Mobile: Force horizontal scrolling by preventing text wrap
+  */
+  .prose table {
+    @apply block overflow-x-auto;
+  }
+
+  @media (max-width: 768px) {
+    .prose table {
+      @apply whitespace-nowrap;
+    }
+  }
 }

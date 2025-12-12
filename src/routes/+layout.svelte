@@ -2,6 +2,7 @@
 	import "../app.css";
 	import Navbar from "$lib/components/Navbar.svelte";
 	import Footer from "$lib/components/Footer.svelte";
+	import BackToTop from "$lib/components/BackToTop.svelte";
 	import { page } from "$app/stores";
 </script>
 
@@ -14,4 +15,5 @@
 		<slot />
 	</main>
 	<Footer />
+	<BackToTop />
 </div>
