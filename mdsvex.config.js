@@ -1,6 +1,7 @@
 import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 import remarkGfm from 'remark-gfm';
 import remarkFootnotes from 'remark-footnotes';
+import remarkGithubBlockquoteAlert from 'remark-github-blockquote-alert';
 
 import visit from 'unist-util-visit';
 
@@ -90,7 +91,7 @@ const config = defineConfig({
 	smartypants: {
 		dashes: 'oldschool'
 	},
-	remarkPlugins: [remarkGfm, [remarkFootnotes, { inlineNotes: true }]],
+	remarkPlugins: [remarkGfm, [remarkFootnotes, { inlineNotes: true }], remarkGithubBlockquoteAlert],
 	rehypePlugins: [rehypeAddHeadingIds, rehypeImgSize, rehypeExternalLinks]
 });
 

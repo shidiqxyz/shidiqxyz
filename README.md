@@ -1,71 +1,25 @@
-# Shidiq's Blog
+# Muhamad Shidiq Maulana (@shidiqxyz)
 
-Welcome to my personal blog repository! This project is built with [SvelteKit](https://kit.svelte.dev/) and serves as a platform for my thoughts and learning process.
+Hai, saya Shidiq. Saya sedang dalam perjalanan "Proses" untuk menjadi seorang **Smart Contract Auditor** dan **Bug Hunter**.
 
-## About Me
+Saat ini saya sedang fokus mempelajari:
+- **Blockchain & Smart Contract** (Solidity, Ethereum EVM)
+- **Web3 Security** (Vulnerabilities, Auditing)
+- **Matematika** (Mulai dari dasar untuk menunjang pemahaman kriptografi & blockchain)
 
-👋 **Hi there!**
+Repo ini (Blog) berfungsi sebagai "Second Brain" atau dokumentasi digital dari apa yang saya pelajari (materi) dan apa yang saya alami (proses) setiap harinya.
 
-- 💻 **Interested in:** Web Development & Blockchain
-- 🎶 **Music enthusiast:** Inspired by Sayuri (Sanketsu Shoujo Sayuri)
-- 🌏 **Learning:** Japanese & English
+## Sumber Belajar Utama
+- **Cyfrin Updraft** (Blockchain Basics, Solidity)
+- **Mastering Ethereum** (Andreas M. Antonopoulos & Gavin Wood)
+- **Secureum**
+- **Buku Matematika Sekolah** (SD - SMA)
 
-### Projects
-- 🔗 **Sayuri Archive**
-- 🔗 **TukangSeblak**
-
-### Contact Me
-- 🐦 **X (Twitter):** [@shidiqxyz](https://x.com/shidiqxyz)
-- ✈️ **Telegram:** [@shidiqxyz](https://t.me/shidiqxyz)
-- 🐙 **GitHub:** [@shidiqxyz](https://github.com/shidiqxyz)
-- 📘 **Facebook:** [Muhamad Shidiq Maulana](https://www.facebook.com/muhamad.shidiq.m)
-- 📸 **Instagram:** [@muhamad.shidiq.m](https://www.instagram.com/muhamad.shidiq.m/)
-- 🌐 **Website:** [shidiq.xyz](https://shidiq.xyz)
+## Hubungi Saya
+- 🐦 [Twitter/X](https://x.com/shidiqxyz)
+- 🐙 [GitHub](https://github.com/shidiqxyz)
+- 🌐 [Website](https://shidiq.xyz)
+- 📸 [Instagram](https://www.instagram.com/muhamad.shidiq.m/)
 
 ---
-
-## Features
-
-- 📝 **Markdown-based Content:** Blog posts are written in Markdown for easy editing.
-- 🌙 **Dark Mode:** Built-in dark mode support.
-- 📱 **Responsive Design:** Looks good on mobile and desktop.
-- 📡 **SEO Ready:** Includes RSS Feed (`/rss.xml`) and Sitemap (`/sitemap.xml`).
-- 📖 **Documentation:** Includes a guide (`/panduan`) for writing new articles.
-
-## Tech Stack
-
-- **Framework:** SvelteKit
-- **Styling:** Tailwind CSS
-- **Content:** MDSvex (Markdown for Svelte)
-- **Icons:** Lucide Svelte & SVGs
-
-## Developing
-
-1.  **Install dependencies:**
-    ```bash
-    npm install
-    ```
-
-2.  **Start the development server:**
-    ```bash
-    npm run dev
-    ```
-
-3.  **Open your browser:**
-    Navigate to `http://localhost:5173`
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with:
-
-```bash
-npm run preview
-```
-
-Thanks for visiting! 🚀
+*"My math isn't mathing, but I'm working on it."*
