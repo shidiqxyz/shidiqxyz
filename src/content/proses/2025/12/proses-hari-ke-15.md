@@ -7,6 +7,8 @@ description: "Hari ini dilanjutkan unsur-unsur bangun datar."
 draft: false
 ---
 
+![jade-unjaded](/images/proses/2025/12/proses-hari-ke-15/jade-unjaded.gif?width=600&a=center)
+
 Hari ini dilanjutkan unsur-unsur bangun datar.
 
 Diawali dengan dengan penjelasan sisi yang ada pada bangun datar.
@@ -44,4 +46,6 @@ Jenis-jenis sudut:
 - Sudut lancip = sudut ukuranya kurang dari 90° dan lebih dari 0°
 - Sudut tumpul = sudut ukuranya lebih dari 90° dan kurang dari 180°
 - Sudut refleks = sudut ukuranya lebih dari 180° dan kurang dari 360°
+
+Garus tegak lurus dan garis sejajar.
 
