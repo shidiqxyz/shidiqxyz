@@ -13,7 +13,6 @@ Buat file `.md` baru di dalam folder kategori dengan struktur tahun dan bulan:
 - `src/content/pemikiran/[Tahun]/[Bulan]/` - Untuk opini atau pemikiran.
 - `src/content/proses/[Tahun]/[Bulan]/` - Untuk dokumentasi teknis atau proses belajar.
 
-> [!TIP]
 > **Tips:** Gunakan script `npm run new` untuk membuat folder dan file secara otomatis.
 
 ## 2. Metadata (Frontmatter)
@@ -31,7 +30,6 @@ draft: false
 ---
 ```
 
-> [!IMPORTANT]
 > **Aturan Penting:**
 > - **category**: Harus persis sama dengan nama folder ("pemikiran" atau "proses").
 > - **date**: Gunakan format ISO `YYYY-MM-DD`.
@@ -39,7 +37,6 @@ draft: false
 
 ## 3. Struktur & Format Konten
 
-> [!CAUTION]
 > **JANGAN gunakan Heading 1 (`# Judul`) di dalam konten!**
 >
 > Judul artikel sudah otomatis diambil dari metadata `title` dan ditampilkan sebagai H1.
@@ -62,24 +59,6 @@ Gunakan Heading 2 untuk bagian utama dan Heading 3 untuk sub-bagian.
 | `~~Teks Dicoret~~` | ~~Teks Dicoret~~ |
 | `` `Kode Inline` `` | `Kode Inline` |
 
-### Alerts (Kotak Info)
-
-Anda bisa menggunakan syntax GitHub Alerts untuk membuat kotak informasi yang menarik.
-
-> [!NOTE]
-> Ini adalah `> [!NOTE]`. Berguna untuk informasi tambahan.
-
-> [!TIP]
-> Ini adalah `> [!TIP]`. Berguna untuk saran atau tips.
-
-> [!IMPORTANT]
-> Ini adalah `> [!IMPORTANT]`. Berguna untuk poin penting.
-
-> [!WARNING]
-> Ini adalah `> [!WARNING]`. Berguna untuk peringatan yang tidak kritis.
-
-> [!CAUTION]
-> Ini adalah `> [!CAUTION]`. Berguna untuk peringatan bahaya atau kesalahan fatal.
 
 ### Daftar (Lists)
 
@@ -144,7 +123,6 @@ Contoh: `![Deskripsi](/path/img.jpg?w=300&a=center)`
 
 Gunakan tanda kurung siku dengan angka `[^1]` untuk membuat referensi otomatis.
 
-> [!NOTE]
 > **Kapan menggunakan Link vs Footnote?**
 >
 > - **Link Biasa**: `[Google](https://google.com)` untuk navigasi umum.
@@ -154,6 +132,33 @@ Contoh penggunaan:
 Menurut data[^1] yang valid...
 
 [^1]: Judul Referensi
+
+### Matematika (LaTeX)
+
+Anda dapat menulis notasi matematika menggunakan format LaTeX.
+
+- **Inline** (di dalam kalimat): Gunakan tanda dollar satu `$`.
+- **Block** (paragraf sendiri): Gunakan tanda dollar dua `$$`.
+
+**Contoh:**
+
+```latex
+Rumus Pythagoras adalah $a^2 + b^2 = c^2$.
+
+Persamaan kuadrat:
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+```
+
+**Hasil:**
+
+Rumus Pythagoras adalah $a^2 + b^2 = c^2$.
+
+Persamaan kuadrat:
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
 
 ### Komponen Svelte
 
