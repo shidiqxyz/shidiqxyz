@@ -47,5 +47,12 @@ Jenis-jenis sudut:
 - Sudut tumpul = sudut ukuranya lebih dari 90° dan kurang dari 180°
 - Sudut refleks = sudut ukuranya lebih dari 180° dan kurang dari 360°
 
-Garus tegak lurus dan garis sejajar.
+Garis tegak lurus dan garis sejajar.
 
+Garis tegak lurus adalah garis yang saling berpotongan dan membentuk sudut siku-siku (90°).
+
+Notasi garis tegak lurus adalah $⟂$.
+
+Garis sejajar adalah terletak pada satu bidang dan tidak saling berpotongan. Jarak antara kedua garis tersebut selalu sama.
+
+Notasi garis sejajar adalah $∥$.
