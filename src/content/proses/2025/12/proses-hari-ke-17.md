@@ -3,7 +3,7 @@ title: "Proses Hari ke 17"
 date: "2025-12-19 15:27"
 category: "proses"
 tags: []
-description: ""
+description: "Kembali ke course cyfrin mengenai blockchain basic."
 draft: false
 ---
 
