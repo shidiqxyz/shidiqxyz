@@ -1,5 +1,14 @@
 <script>
 	import "../app.css";
+	import "@fontsource/inter/400.css";
+	import "@fontsource/inter/500.css";
+	import "@fontsource/inter/600.css";
+	import "@fontsource/inter/700.css";
+	import "@fontsource/merriweather/400.css";
+	import "@fontsource/merriweather/400-italic.css";
+	import "@fontsource/merriweather/700.css";
+	import "@fontsource/merriweather/700-italic.css";
+	import "katex/dist/katex.min.css";
 	import Navbar from "$lib/components/Navbar.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 	import BackToTop from "$lib/components/BackToTop.svelte";
@@ -8,12 +17,7 @@
 
 <svelte:head>
 	<link rel="canonical" href={$page.url.href} />
-	<link
-		rel="stylesheet"
-		href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css"
-		integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV"
-		crossorigin="anonymous"
-	/>
+	<link rel="canonical" href={$page.url.href} />
 </svelte:head>
 <div class="min-h-screen px-4 sm:px-6 lg:px-8 mx-auto max-w-3xl flex flex-col">
 	<Navbar />

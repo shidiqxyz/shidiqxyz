@@ -47,21 +47,7 @@ Cryptographic signatures memungkinkan siapa pun memverifikasi bahwa sebuah pesan
 
 Alur :
 
-Seed Phrase
-   ↓ (hash + derivation)
-Private Key
-   ↓ (ECC math)
-Public Key
-   ↓ (Keccak-256 hash)
-Wallet Address
-
-Message / Transaction
-   ↓ (hash)
-Message Hash
-   ↓ (sign with private key)
-Digital Signature
-   ↓ (verify with public key + re-hash)
-Valid / Invalid
+![carbon](/images/proses/2025/12/proses-hari-ke-19/carbon.png?width=600&a=center)
 
 
 [^1]: [How PoW Blockchains Work](https://updraft.cyfrin.io/courses/blockchain-basics/blockchain-architecture/how-pow-blockchains-work)

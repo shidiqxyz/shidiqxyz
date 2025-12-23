@@ -33,8 +33,12 @@
 		"vite": "^7.2.2"
 	},
 	"dependencies": {
+		"@fontsource/inter": "^5.2.8",
+		"@fontsource/merriweather": "^5.2.11",
+		"mdast-util-to-string": "^4.0.0",
 		"remark-footnotes": "^2.0.0",
 		"remark-gfm": "^1.0.0",
+		"shiki": "^3.20.0",
 		"unist-util-visit": "^2.0.3"
 	}
 }

@@ -6,16 +6,10 @@
 
     export let data;
 
-    let readingTime = 0;
     let articleElement: HTMLElement;
 
     onMount(() => {
         if (articleElement) {
-            const text =
-                articleElement.innerText || articleElement.textContent || "";
-            const wordCount = text.trim().split(/\s+/).length;
-            readingTime = Math.ceil(wordCount / 200); // 200 words per minute
-
             // Mount CopyButton to all code blocks
             const codeBlocks = articleElement.querySelectorAll("pre");
             codeBlocks.forEach((block) => {
@@ -137,9 +131,9 @@
                     <span class="capitalize text-blue-600 dark:text-blue-400"
                         >{data.meta.category}</span
                     >
-                    {#if readingTime > 0}
+                    {#if data.meta.readingTime > 0}
                         <span>•</span>
-                        <span>{readingTime} menit baca</span>
+                        <span>{data.meta.readingTime} menit baca</span>
                     {/if}
                 </div>
             </div>

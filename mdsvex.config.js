@@ -4,8 +4,26 @@ import remarkFootnotes from 'remark-footnotes';
 import remarkGithubBlockquoteAlert from 'remark-github-blockquote-alert';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import { remarkReadingTime } from './src/lib/remark/reading-time.js';
+import { highlightCode } from './src/lib/remark/highlighter.js';
 
 import visit from 'unist-util-visit';
+
+// ... (keep plugins)
+
+const config = defineConfig({
+	extensions: ['.md', '.svx'],
+	smartypants: {
+		dashes: 'oldschool'
+	},
+	highlight: {
+		highlighter: highlightCode
+	},
+	remarkPlugins: [remarkGfm, [remarkFootnotes, { inlineNotes: true }], remarkGithubBlockquoteAlert, remarkMath, remarkReadingTime],
+	rehypePlugins: [rehypeAddHeadingIds, rehypeImgSize, rehypeExternalLinks, [rehypeKatex, { output: 'html' }]]
+});
+
+export default config;
 
 // Custom plugin to add IDs to headings (replaces rehype-slug)
 function rehypeAddHeadingIds() {
@@ -88,14 +106,5 @@ function rehypeExternalLinks() {
 	};
 }
 
-const config = defineConfig({
-	extensions: ['.md', '.svx'],
-	smartypants: {
-		dashes: 'oldschool'
-	},
-	remarkPlugins: [remarkGfm, [remarkFootnotes, { inlineNotes: true }], remarkGithubBlockquoteAlert, remarkMath],
-	rehypePlugins: [rehypeAddHeadingIds, rehypeImgSize, rehypeExternalLinks, [rehypeKatex, { output: 'html' }]]
-});
 
-export default config;
 

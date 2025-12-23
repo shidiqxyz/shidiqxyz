@@ -95,3 +95,19 @@
     @apply bg-red-50 border-red-500 text-red-800 dark:bg-red-900/20 dark:border-red-500 dark:text-red-200;
   }
 }
+
+/* Shiki Dual Theme Support */
+html.dark .shiki,
+html.dark .shiki span {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+  /* Optional, if you also want font styles */
+  font-style: var(--shiki-dark-font-style) !important;
+  font-weight: var(--shiki-dark-font-weight) !important;
+  text-decoration: var(--shiki-dark-text-decoration) !important;
+}
+
+/* Pre block styling override to match container */
+.prose pre {
+  @apply rounded-none m-0 border-none bg-inherit p-4 overflow-x-auto;
+}
