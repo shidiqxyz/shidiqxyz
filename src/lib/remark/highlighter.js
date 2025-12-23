@@ -11,7 +11,7 @@ async function getHighlighter() {
     if (!highlighter) {
         highlighter = await createHighlighter({
             themes: ['github-dark', 'github-light'],
-            langs: ['javascript', 'typescript', 'svelte', 'html', 'css', 'json', 'bash', 'markdown', 'diff', 'solidity', 'python', 'yaml', 'sql', 'go', 'rust', 'java', 'c', 'cpp']
+            langs: ['javascript', 'typescript', 'svelte', 'html', 'css', 'json', 'bash', 'markdown', 'diff', 'solidity', 'python', 'yaml', 'sql', 'go', 'rust', 'java', 'c', 'cpp', 'latex', 'tex']
         });
     }
     return highlighter;
