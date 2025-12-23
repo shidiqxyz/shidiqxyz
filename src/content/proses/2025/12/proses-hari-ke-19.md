@@ -3,7 +3,7 @@ title: "Proses Hari ke 19"
 date: "2025-12-23 10:38"
 category: "proses"
 tags: []
-description: ""
+description: "Memasuki bagian How PoW Blockchains Work."
 draft: false
 ---
 
