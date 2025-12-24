@@ -7,7 +7,7 @@ description: "Berlanjut ke How PoS Blockchains Work."
 draft: false
 ---
 
-![comfy-emote](/images/proses/2025/12/proses-hari-ke-20/comfy-emote.png?width=600&a=center)
+![comfy-emote](/images/proses/2025/12/proses-hari-ke-20/comfy-emote.gif?width=600&a=center)
 
 Berlanjut ke How PoS Blockchains Work[^1].
 
