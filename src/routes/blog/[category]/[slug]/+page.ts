@@ -30,16 +30,19 @@ export async function load({ params }) {
     const post = await modules[matchPath]() as any;
 
     try {
-        // Calculate reading time from the component
-        let readingTime = 0;
-        try {
-            const rendered = post.default.render();
-            if (rendered && rendered.html) {
-                readingTime = calculateReadingTime(rendered.html);
+        // Use reading time from metadata (remark plugin) or calculate it manually as fallback
+        let readingTime = post.metadata.readingTime;
+
+        if (!readingTime) {
+            try {
+                const rendered = post.default.render();
+                if (rendered && rendered.html) {
+                    readingTime = calculateReadingTime(rendered.html);
+                }
+            } catch {
+                // If render fails and no metadata, default to 0
+                readingTime = 0;
             }
-        } catch {
-            // If render fails, default to 0
-            readingTime = 0;
         }
 
         // Get all posts from the same category for prev/next navigation

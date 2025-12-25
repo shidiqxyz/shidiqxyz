@@ -9,7 +9,13 @@ draft: false
 
 ![frieren](/images/proses/2025/12/proses-hari-ke-10/frieren.gif?width=600&a=center)
 
-Hari ini dimulai dengan membaca tweet dari user @deadrosesxyz dalam yang memenangkan bounty 40k dari immunefi[^1]. 
+Hari ini dimulai dengan membaca tweet dari user @deadrosesxyz dalam yang memenangkan bounty 40k dari immunefi. 
+
+<script>
+  import Tweet from '$lib/components/Tweet.svelte';
+</script>
+
+<Tweet tweetLink="https://twitter.com/deadrosesxyz/status/1995892777926709658" />
 
 Ia bercerita menggunakan AI yang telah dituning oleh dirinya sendiri untuk melakukan bounty hunting.
 
@@ -22,5 +28,3 @@ Ada beberapa tweet yang menarik saya temukan, seperti proses dari awal hingga me
 Itu sebenarnya sesuai dengan target saya tahun ini. Namun setiap orang mempunyai perjalanannya masing-masing. Ada yang lebih lambat maupun lebih cepat (harapannya sih tiba-tiba dapet 7 figure).
 
 Kurang lebih ke motivasi saja sih dalam tweetnya. Ada beberapa hal teknikal, tetapi saya lewatkan saja karena belum mencapai itu.
-
-[^1]: [tweet](https://x.com/deadrosesxyz/status/1995892777926709658)

@@ -1,173 +1,208 @@
+<script>
+  import YouTube from '$lib/components/YouTube.svelte';
+  import Button from '$lib/components/Button.svelte';
+  import InlineToc from '$lib/components/InlineToc.svelte';
+  import Tweet from '$lib/components/Tweet.svelte';
+</script>
 
+# Wiki & Panduan Penulisan
 
-# Panduan Penulisan Artikel
-
-Blog ini menggunakan file Markdown (`.md`) untuk konten artikel. Berikut adalah panduan lengkap dan contoh format yang bisa digunakan.
+Selamat datang di pusat dokumentasi teknis untuk blog ini. Halaman ini dirancang sebagai referensi lengkap untuk menulis, mengelola, dan mempublikasikan artikel dengan standar kualitas tinggi.
 
 ---
 
-## 1. Persiapan File
+<InlineToc title="Daftar Isi Wiki" />
 
-Buat file `.md` baru di dalam folder kategori dengan struktur tahun dan bulan:
+---
 
-- `src/content/pemikiran/[Tahun]/[Bulan]/` - Untuk opini atau pemikiran.
-- `src/content/proses/[Tahun]/[Bulan]/` - Untuk dokumentasi teknis atau proses belajar.
+## 1. Workflow Penulisan
 
-> **Tips:** Gunakan script `npm run new` untuk membuat folder dan file secara otomatis.
+Ikuti alur kerja ini untuk menjaga kerapian repositori.
+
+### Langkah 1: Buat Draft Baru
+Gunakan script otomatis untuk membuat folder dan file dengan struktur tanggal yang benar.
+
+```bash
+npm run new
+```
+*Script ini akan meminta input Judul dan Kategori, lalu membuat file di `src/content/[kategori]/[tahun]/[bulan]/[slug].md`.*
+
+### Langkah 2: Menulis & Preview
+Jalankan server lokal untuk melihat tulisan Anda secara *real-time*.
+```bash
+npm run dev
+```
+Buka `http://localhost:5173` di browser Anda.
+
+### Langkah 3: Publikasi
+Setelah selesai, ubah status `draft: true` menjadi `draft: false` di metadata, lalu lakukan commit ke GitHub.
+
+---
 
 ## 2. Metadata (Frontmatter)
 
-Setiap file **wajib** diawali dengan metadata di antara tiga tanda strip (`---`).
+Setiap artikel **wajib** memiliki blok metadata di paling atas file.
 
 ```yaml
 ---
-title: "Judul Artikel Anda"
-date: "2023-11-23"
-category: "pemikiran" 
-tags: ["tag1", "tag2"]
-description: "Deskripsi singkat untuk SEO dan preview."
+title: "Mengapa Kopi itu Hitam?"
+date: "2025-12-24 20:30"
+category: "pemikiran"
+tags: ["sains", "filosofi", "kopi"]
+description: "Sebuah eksplorasi mendalam tentang warna kopi dari sudut pandang kimia dan eksistensialis."
 draft: false
 ---
 ```
 
-> **Aturan Penting:**
-> - **category**: Harus persis sama dengan nama folder ("pemikiran" atau "proses").
-> - **date**: Gunakan format ISO `YYYY-MM-DD`.
-> - **draft**: (Opsional) Set `true` jika artikel belum siap dipublikasikan.
+### Penjelasan Field
+
+| Field | Tipe | Wajib? | Keterangan |
+| :--- | :--- | :--- | :--- |
+| `title` | String | Ya | Judul utama artikel. (Otomatis jadi H1). |
+| `date` | String | Ya | Format: `YYYY-MM-DD` atau `YYYY-MM-DD HH:mm`. |
+| `category` | String | Ya | Pilihan: `pemikiran` (opini) atau `proses` (jurnal/teknis). |
+| `tags` | Array | Tidak | Maksimal 4-5 tag relevan. Huruf kecil semua. |
+| `description`| String | Ya | Wajib untuk SEO & Preview Link (Twitter/WA). Max 160 karakter. |
+| `draft` | Boolean| Ya | `true`: Hanya tampil di dev mode. `false`: Live di production. |
+
+---
 
 ## 3. Struktur & Format Konten
 
-> **JANGAN gunakan Heading 1 (`# Judul`) di dalam konten!**
->
-> Judul artikel sudah otomatis diambil dari metadata `title` dan ditampilkan sebagai H1.
+### Hierarki Heading
+Gunakan **Heading 2** untuk bab utama dan **Heading 3** untuk sub-bab.
 
-### Heading (Judul Bagian)
+> **PENTING:** Jangan gunakan Heading 1 (`#`), karena sudah dipakai untuk Judul Artikel.
 
-Gunakan Heading 2 untuk bagian utama dan Heading 3 untuk sub-bagian.
+### Teks & Penekanan
+- **Bold**: `**Teks Tebal**` untuk poin penting.
+- *Italic*: `*Teks Miring*` untuk istilah asing atau penekanan halus.
+- `Code`: `` `Teks Code` `` untuk istilah teknis atau path file.
 
-| Markdown | Hasil |
-| :--- | :--- |
-| `## Bagian Utama` | **Bagian Utama** (H2) |
-| `### Sub Bagian` | **Sub Bagian** (H3) |
+### Daftar (List)
+Gunakan daftar untuk memecah dinding teks (wall of text).
 
-### Format Teks
+**Unordered List (Poin)**
+- Gunakan `-` atau `*`.
+- Cocok untuk item yang tidak berurutan.
 
-| Markdown | Hasil |
-| :--- | :--- |
-| `**Teks Tebal**` | **Teks Tebal** |
-| `*Teks Miring*` | *Teks Miring* |
-| `~~Teks Dicoret~~` | ~~Teks Dicoret~~ |
-| `` `Kode Inline` `` | `Kode Inline` |
-
-
-### Daftar (Lists)
-
-**Unordered List:**
-- Poin satu
-- Poin dua
-  - Sub poin
-
-**Ordered List:**
-1. Langkah pertama
-2. Langkah kedua
-
-### Daftar Tugas (Task Lists)
-
-- [x] Tugas selesai
-- [ ] Tugas belum selesai
+**Ordered List (Angka)**
+1. Gunakan angka `1.`.
+2. Cocok untuk tutorial atau langkah-langkah.
 
 ### Kutipan (Blockquote)
+Gunakan `>` untuk mengutip kalimat penting atau memberikan catatan.
 
-> "Menulis adalah bekerja untuk keabadian."
->
-> — Pramoedya Ananta Toer
+> "Kode adalah puisi yang dieksekusi oleh mesin."
 
-### Kode (Code Block)
+---
 
-Gunakan tiga backtick (```) diikuti nama bahasa pemrogramannya.
+## 4. Manajemen Gambar
 
-```javascript
-function sapa(nama) {
-  console.log(`Halo, ${nama}!`);
-}
-```
+Blog ini memiliki sistem optimasi gambar otomatis. Simpan gambar Anda di folder `static/images/`.
 
-### Gambar
+### Struktur Folder Gambar
+Disarankan mengikuti struktur artikel agar rapi:
+`static/images/[kategori]/[tahun]/[bulan]/[slug]/nama-file.jpg`
 
-Simpan gambar di folder `static/images/[kategori]/[Tahun]/[Bulan]/[Slug]/`. Panggil dengan path absolut yang dimulai dari `/images/...`.
+### Cara Penggunaan
+Panggil gambar menggunakan path absolut dari root web (tanpa `static`).
 
 ```markdown
-![Deskripsi Gambar](/images/proses/2025/12/judul-artikel/nama-file.jpg)
+![Keterangan Gambar](/images/pemikiran/2025/12/kopi/biji-kopi.jpg?w=800&a=center)
 ```
 
-**Mengatur Ukuran dan Posisi:**
-Tambahkan parameter di URL gambar:
-- `?w=300` : Lebar (width)
-- `?h=200` : Tinggi (height)
-- `?a=center` : Posisi tengah
-- `?a=left` : Posisi kiri
-- `?a=right` : Posisi kanan
+### Query Parameters (Magic!)
+Anda bisa mengatur tampilan gambar langsung dari URL-nya:
 
-Contoh: `![Deskripsi](/path/img.jpg?w=300&a=center)`
+| Param | Fungsi | Contoh | Keterangan |
+| :--- | :---: | :--- | :--- |
+| `w` | Width | `?w=400` | Mengatur lebar gambar dalam pixel. |
+| `h` | Height| `?h=300` | Mengatur tinggi gambar (jarang dipakai, biasanya auto). |
+| `a` | Align | `?a=center` | Posisi: `left`, `center`, atau `right`. |
 
-### Tabel
+**Contoh Penerapan:**
+- **Gambar Full**: `?w=800&a=center` (Standar)
+- **Gambar Kecil di Kanan**: `?w=300&a=right` (Teks akan mengalir di kirinya)
 
-```markdown
-| Fitur | Status |
-| :--- | :--- |
-| Markdown | ✅ Oke |
-| Svelte | ✅ Oke |
+---
+
+## 5. Embed & Komponen
+
+### YouTube
+Video akan otomatis responsif. Cukup ambil ID videonya.
+
+```html
+<script>
+  import YouTube from '$lib/components/YouTube.svelte';
+</script>
+
+<YouTube id="dQw4w9WgXcQ" />
 ```
 
-### Referensi / Catatan Kaki
+<YouTube id="dQw4w9WgXcQ" />
 
-Gunakan tanda kurung siku dengan angka `[^1]` untuk membuat referensi otomatis.
+### Tweet Embed (X)
+Sematkan cuitan dari X (Twitter) menggunakan komponen `<Tweet />`.
 
-> **Kapan menggunakan Link vs Footnote?**
->
-> - **Link Biasa**: `[Google](https://google.com)` untuk navigasi umum.
-> - **Footnote**: `[^1]` untuk referensi spesifik, sitasi, atau penjelasan tambahan.
+```html
+<script>
+  import Tweet from '$lib/components/Tweet.svelte';
+</script>
 
-Contoh penggunaan:
-Menurut data[^1] yang valid...
-
-[^1]: Judul Referensi
-
-### Matematika (LaTeX)
-
-Anda dapat menulis notasi matematika menggunakan format LaTeX.
-
-- **Inline** (di dalam kalimat): Gunakan tanda dollar satu `$`.
-- **Block** (paragraf sendiri): Gunakan tanda dollar dua `$$`.
-
-**Contoh:**
-
-```latex
-Rumus Pythagoras adalah $a^2 + b^2 = c^2$.
-
-Persamaan kuadrat:
-$$
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-$$
+<Tweet tweetLink="https://twitter.com/jack/status/20" />
 ```
 
-**Hasil:**
+**Hasil (Live Preview):**
 
-Rumus Pythagoras adalah $a^2 + b^2 = c^2$.
+<Tweet tweetLink="https://twitter.com/jack/status/20" />
 
-Persamaan kuadrat:
-$$
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-$$
-
-### Komponen Svelte
-
-Anda bisa menggunakan komponen Svelte di dalam file Markdown. Pastikan untuk mengimpornya terlebih dahulu di dalam tag `<script>`.
+### Tombol (Button)
+Gunakan komponen `Button` untuk Call to Action (CTA).
 
 ```html
 <script>
   import Button from '$lib/components/Button.svelte';
 </script>
 
-<Button>Klik Saya</Button>
+<div class="flex gap-4 my-4">
+  <Button href="#">Download File</Button>
+  <Button variant="outline" href="#">Dokumentasi</Button>
+</div>
 ```
+
+<div class="flex gap-4 my-4">
+  <Button href="#">Download File</Button>
+  <Button variant="outline" href="#">Dokumentasi</Button>
+</div>
+
+---
+
+## 6. SEO Best Practices
+
+Agar tulisan Anda mudah ditemukan di Google:
+
+1.  **Judul Menarik**: Gunakan kata kunci di awal judul. Hindari *clickbait* berlebihan.
+2.  **Deskripsi Jelas**: Isi field `description` dengan rangkuman padat yang memancing klik.
+3.  **URL (Slug)**: Nama file `.md` akan menjadi URL. Gunakan kata kunci, pisahkan dengan strip.
+    - Buruk: `tulisan-saya-1.md`
+    - Bagus: `cara-optimasi-seo-blog.md`
+4.  **Alt Text Gambar**: Selalu isi deskripsi gambar dalam tanda kurung siku `![Deskripsi ini penting untuk SEO]`.
+
+---
+
+## 7. Troubleshooting
+
+**Masalah**: *Halaman error 500 atau blank saat dibuka.*
+**Solusi**:
+- Cek format YAML di metadata. Pastikan indentasi benar dan tidak ada tanda petik yang lupa ditutup.
+- Pastikan format tanggal benar `YYYY-MM-DD`.
+
+**Masalah**: *Gambar tidak muncul.*
+**Solusi**:
+- Pastikan path diawali dengan `/`.
+- Cek nama folder dan file (case-sensitive). `Foto.jpg` tidak sama dengan `foto.jpg`.
+
+**Masalah**: *Komponen Svelte error.*
+**Solusi**:
+- Pastikan sudah import komponen di dalam tag `<script>` di paling atas file.

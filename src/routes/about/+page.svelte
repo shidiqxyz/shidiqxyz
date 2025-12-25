@@ -33,13 +33,14 @@
 	<p>Halo!</p>
 	<p>
 		Perkenalkan nama saya Muhamad Shidiq Maulana. Saya adalah seseorang yang
-		bingung dengan kehidupannya sendiri. Ibarat seperti orang linglung jika
-		ditanyai untuk arah jalan yang benar.
+		bingung dengan kehidupannya sendiri.
 	</p>
 	<p>
 		Saya cukup menyukai beberapa hal yang ada di dunia ini. Saya suka
-		menulis, membaca, menonton film maupun anime, menggambar, mengobrol.
+		menulis, membaca, menonton film maupun anime, menggambar, mendengarkan
+		musik, dan mengobrol.
 	</p>
+	<p>Ada beberapa anime yang saya sukai. Seperti Chikyu, dan Kino no Tabi.</p>
 	<p>
 		Salah satu tujuan dari blog ini. Untuk mendokumentasi perjalanan dan
 		pemikiran saya. Setidaknya hal-hal seperti ini perlu dibuat menjadi

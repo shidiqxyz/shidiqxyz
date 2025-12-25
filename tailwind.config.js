@@ -19,6 +19,8 @@ export default {
                         '--tw-prose-invert-body': theme('colors.gray.300'),
                         '--tw-prose-invert-headings': theme('colors.white'),
                         '--tw-prose-invert-links': theme('colors.blue.400'),
+                        'blockquote p:first-of-type::before': { content: 'none' },
+                        'blockquote p:last-of-type::after': { content: 'none' },
                     },
                 },
             }),

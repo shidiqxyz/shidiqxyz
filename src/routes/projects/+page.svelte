@@ -53,6 +53,13 @@
             link: "https://nillion.com/",
             status: "Active",
         },
+        {
+            title: "Gensyn",
+            description:
+                "Berkontribusi dalam penyediaan komputasi terdesentralisasi untuk pelatihan model Machine Learning pada fase testnet.",
+            link: "https://www.gensyn.ai/",
+            status: "Active",
+        },
     ];
 </script>
 

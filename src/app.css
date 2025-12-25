@@ -61,39 +61,6 @@
     }
   }
 
-  /* GitHub Alerts Global Style */
-  .markdown-alert {
-    @apply border-l-4 p-4 mb-4 rounded-r-lg;
-  }
-
-  .markdown-alert-title {
-    @apply font-bold flex items-center gap-2 mb-2;
-  }
-
-  /* Note - Blue */
-  .markdown-alert-note {
-    @apply bg-blue-50 border-blue-500 text-blue-800 dark:bg-blue-900/20 dark:border-blue-500 dark:text-blue-200;
-  }
-
-  /* Tip - Green */
-  .markdown-alert-tip {
-    @apply bg-green-50 border-green-500 text-green-800 dark:bg-green-900/20 dark:border-green-500 dark:text-green-200;
-  }
-
-  /* Important - Purple */
-  .markdown-alert-important {
-    @apply bg-purple-50 border-purple-500 text-purple-800 dark:bg-purple-900/20 dark:border-purple-500 dark:text-purple-200;
-  }
-
-  /* Warning - Yellow */
-  .markdown-alert-warning {
-    @apply bg-yellow-50 border-yellow-500 text-yellow-800 dark:bg-yellow-900/20 dark:border-yellow-500 dark:text-yellow-200;
-  }
-
-  /* Caution - Red */
-  .markdown-alert-caution {
-    @apply bg-red-50 border-red-500 text-red-800 dark:bg-red-900/20 dark:border-red-500 dark:text-red-200;
-  }
 }
 
 /* Shiki Dual Theme Support */
