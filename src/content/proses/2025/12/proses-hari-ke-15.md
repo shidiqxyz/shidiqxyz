@@ -55,4 +55,4 @@ Notasi garis tegak lurus adalah $⟂$.
 
 Garis sejajar adalah terletak pada satu bidang dan tidak saling berpotongan. Jarak antara kedua garis tersebut selalu sama.
 
-Notasi garis sejajar adalah $∥$.
+Notasi garis sejajar adalah ∥.

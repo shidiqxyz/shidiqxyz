@@ -32,3 +32,4 @@ Setidaknya ada 2 video yang membuat saya terkesima mengenai gagasan perlambatan 
 **The Art of Slowing Down - Life Of Riza**
 
 <YouTube id="Up16ERpUvx4" />
+

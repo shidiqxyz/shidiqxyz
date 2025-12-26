@@ -176,6 +176,39 @@ Gunakan komponen `Button` untuk Call to Action (CTA).
   <Button variant="outline" href="#">Dokumentasi</Button>
 </div>
 
+### Simbol Matematika (LaTeX)
+Blog ini mendukung penulisan simbol matematika menggunakan sintaks LaTeX.
+
+**Inline Math** (dalam kalimat):
+Gunakan `$...$` untuk rumus dalam teks.
+
+```markdown
+Rumus Pythagoras: $a^2 + b^2 = c^2$
+```
+
+**Hasil**: Rumus Pythagoras: $a^2 + b^2 = c^2$
+
+**Block Math** (rumus terpisah):
+Gunakan `$$...$$` untuk rumus yang ditampilkan secara terpisah (center).
+
+```markdown
+$$
+\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+```
+
+**Hasil**:
+
+$$
+\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+**Contoh Lainnya:**
+- Pecahan: `$\frac{1}{2}$` → $\frac{1}{2}$
+- Akar: `$\sqrt{16}$` → $\sqrt{16}$
+- Sigma: `$\sum_{i=1}^{n} i$` → $\sum_{i=1}^{n} i$
+- Integral: `$\int_{0}^{\infty} e^{-x} dx$` → $\int_{0}^{\infty} e^{-x} dx$
+
 ---
 
 ## 6. SEO Best Practices
