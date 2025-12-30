@@ -2,7 +2,7 @@ import { defineMDSveXConfig as defineConfig } from 'mdsvex';
 import remarkGfm from 'remark-gfm';
 import remarkFootnotes from 'remark-footnotes';
 import remarkMath from 'remark-math';
-import rehypeKatex from 'rehype-katex';
+import rehypeKatex from 'rehype-katex-svelte';
 import { remarkReadingTime } from './src/lib/remark/reading-time.js';
 import { highlightCode } from './src/lib/remark/highlighter.js';
 
@@ -19,7 +19,7 @@ const config = defineConfig({
 		highlighter: highlightCode
 	},
 	remarkPlugins: [remarkGfm, [remarkFootnotes, { inlineNotes: true }], remarkMath, remarkReadingTime],
-	rehypePlugins: [rehypeAddHeadingIds, rehypeImgSize, rehypeExternalLinks, [rehypeKatex, { output: 'html' }]]
+	rehypePlugins: [rehypeAddHeadingIds, rehypeImgSize, rehypeExternalLinks, rehypeKatex]
 });
 
 export default config;

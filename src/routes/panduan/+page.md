@@ -25,7 +25,9 @@ Gunakan script otomatis untuk membuat folder dan file dengan struktur tanggal ya
 ```bash
 npm run new
 ```
-*Script ini akan meminta input Judul dan Kategori, lalu membuat file di `src/content/[kategori]/[tahun]/[bulan]/[slug].md`.*
+*Script ini akan meminta input Judul dan Kategori, lalu:*
+1. Membuat file draft di `src/content/[kategori]/[tahun]/[bulan]/[slug].md`.
+2. **Otomatis membuat folder gambar** di `static/images/[kategori]/[tahun]/[bulan]/[slug]/`.
 
 ### Langkah 2: Menulis & Preview
 Jalankan server lokal untuk melihat tulisan Anda secara *real-time*.
@@ -90,6 +92,14 @@ Gunakan daftar untuk memecah dinding teks (wall of text).
 1. Gunakan angka `1.`.
 2. Cocok untuk tutorial atau langkah-langkah.
 
+### Tabel
+Tabel data memiliki fitur **horizontal scroll** otomatis di layar kecil (HP), sehingga tidak akan merusak layout halaman.
+
+| Fitur | Status | Keterangan |
+| :--- | :--- | :--- |
+| Responsive | ✅ | Scrollable di mobile |
+| Styling | ✅ | Minimalis & bersih |
+
 ### Kutipan (Blockquote)
 Gunakan `>` untuk mengutip kalimat penting atau memberikan catatan.
 
@@ -102,7 +112,11 @@ Gunakan `>` untuk mengutip kalimat penting atau memberikan catatan.
 Blog ini memiliki sistem optimasi gambar otomatis. Simpan gambar Anda di folder `static/images/`.
 
 ### Struktur Folder Gambar
-Disarankan mengikuti struktur artikel agar rapi:
+Tidak perlu repot membuat folder manual. Saat Anda menjalankan `npm run new`, sistem **otomatis membuatkan folder khusus** untuk gambar artikel tersebut.
+
+Silakan cek output terminal untuk melihat lokasi foldernya, lalu letakkan semua gambar artikel di sana.
+
+Struktur path otomatis:
 `static/images/[kategori]/[tahun]/[bulan]/[slug]/nama-file.jpg`
 
 ### Cara Penggunaan
@@ -177,37 +191,115 @@ Gunakan komponen `Button` untuk Call to Action (CTA).
 </div>
 
 ### Simbol Matematika (LaTeX)
-Blog ini mendukung penulisan simbol matematika menggunakan sintaks LaTeX.
+Blog ini mendukung penulisan simbol matematika menggunakan sintaks **LaTeX** (via KaTeX). Berikut adalah panduan lengkap berdasarkan kategori penggunaannya.
 
-**Inline Math** (dalam kalimat):
-Gunakan `$...$` untuk rumus dalam teks.
+#### 1. Dasar LaTeX
+Konsep fundamental untuk menulis matematika.
 
-```markdown
-Rumus Pythagoras: $a^2 + b^2 = c^2$
+**Pangkat & Indeks**
+Gunakan `^` untuk pangkat dan `_` untuk indeks (subscript).
+- `$x^2$` → $x^2$
+- `$a_1$` → $a_1$
+- `$x^{2a}$` → $x^{2a}$ (Gunakan `{}` jika lebih dari satu karakter)
+
+**Pecahan**
+Gunakan `\frac{pembilang}{penyebut}`.
+- `\frac{1}{2}` → $\frac{1}{2}$
+- `\frac{a+b}{c}` → $\frac{a+b}{c}$
+
+**Akar**
+Gunakan `\sqrt{}`.
+- `\sqrt{x}` → $\sqrt{x}$
+- `\sqrt[3]{27}` → $\sqrt[3]{27}$ (Akar pangkat 3)
+
+#### 2. Operator Matematika
+Simbol-simbol operasi aritmatika dan relasi.
+
+| Jenis | Simbol | Kode LaTeX |
+| :--- | :--- | :--- |
+| **Aritmatika** | $\times$ | `\times` |
+| | $\div$ | `\div` |
+| | $\pm$ | `\pm` |
+| | $\cdot$ | `\cdot` |
+| **Dasar** | $<$ | `$<$` atau `&lt;` |
+| | $>$ | `$>$` atau `&gt;` |
+| **Relasi** | $\leq$ | `\leq` |
+| | $\geq$ | `\geq` |
+| | $\neq$ | `\neq` |
+| | $\approx$ | `\approx` |
+| **Khusus** | $\sum$ | `\sum` (Sigma) |
+| | $\prod$ | `\prod` (Product) |
+
+#### 3. Notasi Khusus (Kalkulus)
+Penulisan limit, turunan, dan integral.
+
+**Limit**
+Gunakan `\lim_{x \to \infty}`.
+
+$$
+\lim_{x \to \infty} \frac{1}{x} = 0
+$$
+
+Kode:
+```latex
+$$
+\lim_{x \to \infty} \frac{1}{x} = 0
+$$
 ```
 
-**Hasil**: Rumus Pythagoras: $a^2 + b^2 = c^2$
+**Integral**
+Gunakan `\int` untuk integral tak tentu dan `\int_{a}^{b}` untuk integral tentu.
+$$ \int_{0}^{1} x^2 dx $$
+Kode:
+```latex
+$$ \int_{0}^{1} x^2 dx $$
+```
 
-**Block Math** (rumus terpisah):
-Gunakan `$$...$$` untuk rumus yang ditampilkan secara terpisah (center).
+**Turunan (Fraksi)**
+$$ f'(x) = 2x $$
+Kode:
+```latex
+$$ f'(x) = 2x $$
+```
 
-```markdown
+#### 4. Matriks
+
+**Matriks**
+- `bmatrix`: Kurung siku `[]`
+- `pmatrix`: Kurung biasa `()`
+
+Contoh `bmatrix`:
 $$
-\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}
+$$
+Kode:
+```latex
+$$
+\begin{bmatrix}
+1 & 0 \\
+0 & 1
+\end{bmatrix}
 $$
 ```
 
-**Hasil**:
+<!-- Sistem Persamaan (Cases) sementara dinonaktifkan karena isu parser -->
 
-$$
-\frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
-$$
+#### 5. Simbol Yunani & Khusus
+Huruf Yunani sering digunakan sebagai variabel dalam fisika dan matematika.
 
-**Contoh Lainnya:**
-- Pecahan: `$\frac{1}{2}$` → $\frac{1}{2}$
-- Akar: `$\sqrt{16}$` → $\sqrt{16}$
-- Sigma: `$\sum_{i=1}^{n} i$` → $\sum_{i=1}^{n} i$
-- Integral: `$\int_{0}^{\infty} e^{-x} dx$` → $\int_{0}^{\infty} e^{-x} dx$
+| Nama | Huruf Kecil | Kode | Huruf Besar | Kode |
+| :--- | :--- | :--- | :--- | :--- |
+| Alpha | $\alpha$ | `\alpha` | | |
+| Beta | $\beta$ | `\beta` | | |
+| Theta | $\theta$ | `\theta` | $\Theta$ | `\Theta` |
+| Pi | $\pi$ | `\pi` | $\Pi$ | `\Pi` |
+| Lambda | $\lambda$ | `\lambda` | $\Lambda$ | `\Lambda` |
+| Sigma | $\sigma$ | `\sigma` | $\Sigma$ | `\Sigma` |
+| Delta | $\delta$ | `\delta` | $\Delta$ | `\Delta` |
+| Infinity | $\infty$ | `\infty` | | |
 
 ---
 
