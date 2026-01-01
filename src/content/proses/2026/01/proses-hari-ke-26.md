@@ -1,5 +1,5 @@
 ---
-title: "Proses Hari ke 25"
+title: "Proses Hari ke 26"
 date: "2026-01-01 19:24"
 category: "proses"
 tags: []
@@ -7,7 +7,7 @@ description: "Sekarang di lanjut ke blockchain lagi."
 draft: false
 ---
 
-![nonono-anime-no](/images/proses/2026/01/proses-hari-ke-25/nonono-anime-no.gif?width=600&a=center)
+![nonono-anime-no](/images/proses/2026/01/proses-hari-ke-26/nonono-anime-no.gif?width=600&a=center)
 
 Sekarang di lanjut ke blockchain lagi.
 
