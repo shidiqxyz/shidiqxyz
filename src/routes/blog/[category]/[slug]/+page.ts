@@ -2,9 +2,30 @@ import { error } from '@sveltejs/kit';
 import { calculateReadingTime } from '$lib/utils/readingTime';
 import { getPostsByCategory } from '$lib/utils/posts';
 
+/**
+ * Mengekstrak URL gambar pertama dari konten markdown
+ * Format yang didukung: ![alt](url) atau ![alt](url?params)
+ */
+function extractFirstImage(content: string): string | null {
+    // Regex untuk mencocokkan gambar markdown: ![alt](url)
+    const imageRegex = /!\[[^\]]*\]\(([^)\s]+)/;
+    const match = content.match(imageRegex);
+
+    if (match && match[1]) {
+        let imageUrl = match[1];
+        // Hapus query params seperti ?width=600&a=center
+        imageUrl = imageUrl.split('?')[0];
+        return imageUrl;
+    }
+
+    return null;
+}
+
 export async function load({ params }) {
     // 1. Find the file path using glob, same as we do in posts.ts
     const modules = import.meta.glob('/src/content/**/*.md');
+    // Also get raw content for extracting first image
+    const rawModules = import.meta.glob('/src/content/**/*.md', { query: '?raw', import: 'default', eager: true });
 
     let matchPath: string | undefined;
 
@@ -28,6 +49,10 @@ export async function load({ params }) {
     }
 
     const post = await modules[matchPath]() as any;
+    const rawContent = rawModules[matchPath] as string;
+
+    // Ekstrak gambar pertama dari konten markdown
+    const firstImage = extractFirstImage(rawContent);
 
     try {
         // Use reading time from metadata (remark plugin) or calculate it manually as fallback
@@ -65,7 +90,8 @@ export async function load({ params }) {
                 ...post.metadata,
                 slug: params.slug,
                 category: params.category,
-                readingTime
+                readingTime,
+                firstImage
             },
             prevPost,
             nextPost

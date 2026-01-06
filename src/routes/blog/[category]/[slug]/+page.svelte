@@ -52,7 +52,12 @@
         content="https://shidiq.xyz/blog/{data.meta.category}/{data.meta.slug ||
             ''}"
     />
-    <meta property="og:image" content="https://shidiq.xyz/og-image.png" />
+    <meta
+        property="og:image"
+        content={data.meta.firstImage
+            ? `https://shidiq.xyz${data.meta.firstImage}`
+            : "https://shidiq.xyz/og-image.png"}
+    />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
 
@@ -60,7 +65,12 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={data.meta.title} />
     <meta name="twitter:description" content={data.meta.description} />
-    <meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
+    <meta
+        name="twitter:image"
+        content={data.meta.firstImage
+            ? `https://shidiq.xyz${data.meta.firstImage}`
+            : "https://shidiq.xyz/og-image.png"}
+    />
 
     <!-- Article metadata -->
     <meta property="article:published_time" content={data.meta.date} />
@@ -77,7 +87,7 @@
 			'@context': 'https://schema.org',
 			'@type': 'BlogPosting',
 			headline: data.meta.title,
-			image: ['https://shidiq.xyz/og-image.png'],
+			image: [data.meta.firstImage ? `https://shidiq.xyz${data.meta.firstImage}` : 'https://shidiq.xyz/og-image.png'],
 			datePublished: data.meta.date,
 			dateModified: data.meta.date,
 			author: [
