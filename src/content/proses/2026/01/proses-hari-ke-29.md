@@ -3,7 +3,7 @@ title: "Proses Hari ke 29"
 date: "2026-01-06 10:57"
 category: "proses"
 tags: []
-description: "Hari ini saya akan pindah belajar ke matematika."
+description: "Hari ini saya akan rotasi belajar ke matematika."
 draft: false
 ---
 
