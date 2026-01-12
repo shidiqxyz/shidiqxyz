@@ -8,6 +8,7 @@
  *   --dry-run       Tampilkan file yang akan dikonversi tanpa eksekusi
  *   --keep-original Jangan hapus file asli setelah konversi
  *   --quality=N     Set kualitas WebP (1-100, default: 80)
+ *   --min-size=N    Minimum ukuran file GIF untuk dikonversi dalam KB (default: 500)
  *   --gif-only      Hanya konversi GIF
  *   --static-only   Hanya konversi gambar statis (PNG, JPG)
  */
@@ -35,6 +36,9 @@ const GIF_ONLY = args.includes('--gif-only');
 const STATIC_ONLY = args.includes('--static-only');
 const qualityArg = args.find(a => a.startsWith('--quality='));
 const QUALITY = qualityArg ? parseInt(qualityArg.split('=')[1]) : 80;
+const minSizeArg = args.find(a => a.startsWith('--min-size='));
+const MIN_GIF_SIZE_KB = minSizeArg ? parseInt(minSizeArg.split('=')[1]) : 500;
+const MIN_GIF_SIZE_BYTES = MIN_GIF_SIZE_KB * 1024;
 
 // Extension kategorisasi
 const ANIMATED_EXTENSIONS = ['.gif'];
@@ -277,6 +281,7 @@ async function main() {
     }
     log(`⚙️  Quality: ${QUALITY}`, 'dim');
     log(`⚙️  Keep Original: ${KEEP_ORIGINAL ? 'Ya' : 'Tidak'}`, 'dim');
+    log(`⚙️  Min GIF Size: ${MIN_GIF_SIZE_KB} KB`, 'dim');
     console.log('');
 
     // Proses setiap gambar
@@ -297,6 +302,13 @@ async function main() {
 
         const originalSize = await getFileSizeBytes(imagePath);
         totalOriginalBytes += originalSize;
+
+        // Skip GIF di bawah threshold
+        if (isAnimated(imagePath) && originalSize < MIN_GIF_SIZE_BYTES) {
+            log(`  └─ ⏭️  Skipped: GIF < ${MIN_GIF_SIZE_KB} KB (${formatBytes(originalSize)})`, 'yellow');
+            skippedCount++;
+            continue;
+        }
 
         if (DRY_RUN) {
             log(`  └─ Size: ${formatBytes(originalSize)}`, 'dim');

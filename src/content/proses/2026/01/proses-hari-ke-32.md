@@ -45,3 +45,63 @@ $$
 = 5\frac{2}{4}
 = 5\frac{1}{2}
 $$
+
+
+Contoh merubah pecahan campuran ke pecahan murni, dilanjutkan membandingkan urutan pecahan dari terkecil hingga terbesar.
+
+Diketahui panjang lompatan:
+
+$$
+1)\; 2\frac{3}{4}\ \text{m} 
+$$
+$$
+2)\; 3\frac{1}{2}\ \text{m} 
+$$
+$$
+3)\; \frac{7}{8}\ \text{m}
+$$
+
+Ubah ke pecahan murni (pecahan biasa)
+
+$$
+2\frac{3}{4} = \frac{2 \times 4 + 3}{4} = \frac{11}{4}
+$$
+
+$$
+3\frac{1}{2} = \frac{3 \times 2 + 1}{2} = \frac{7}{2}
+$$
+
+$$
+\frac{7}{8} = \frac{7}{8}
+$$
+
+Tentukan penyebut yang sama
+
+Penyebut dari pecahan-pecahan tersebut adalah:
+
+- 4
+- 2
+- 8
+
+Kelipatan Persekutuan Terkecil (KPK) dari 4, 2, dan 8 adalah 8.
+Jadi semua pecahan diubah agar penyebutnya menjadi 8.
+
+Menyamakan penyebut
+
+$$
+\frac{11}{4} = \frac{11 \times 2}{4 \times 2} = \frac{22}{8}
+$$
+
+$$
+\frac{7}{2} = \frac{7 \times 4}{2 \times 4} = \frac{28}{8}
+$$
+
+$$
+\frac{7}{8} = \frac{7}{8}
+$$
+
+Bandingkan pecahan
+
+$$
+\frac{7}{8}\ \text{m} < 2\frac{3}{4}\ \text{m} < 3\frac{1}{2}\ \text{m}
+$$
