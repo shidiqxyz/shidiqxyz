@@ -3,7 +3,7 @@ title: "Proses Hari ke 3"
 date: "2025-12-02 02:25"
 category: "proses"
 tags: []
-description: "Saya akan memulai dengan matematika kelas 1 SD. Melanjutkan yang kemarin. Sepertinya saya akan membereskan buku modul ini."
+description: "Saya akan memulai dengan matematika kelas 1 SD."
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 4"
 date: "2025-12-03 01:11"
 category: "proses"
 tags: []
-description: "Tidak, ternyata tidak selesai modul metematika kelas satu sekolah dasar kemarin. Namun hari ini baru diselesaikan."
+description: "Tidak, ternyata tidak selesai modul metematika kelas satu sekolah dasar kemarin."
 draft: false
 ---
 

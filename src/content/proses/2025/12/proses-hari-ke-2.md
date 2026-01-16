@@ -3,7 +3,7 @@ title: "Proses Hari ke 2"
 date: "2025-12-01 05:13"
 category: "proses"
 tags: []
-description: "Setelah hari kemarin libur (setelah nonton agak laen, ternyata cape juga nonton film komedi tidak berhenti-henti tertawa), saya akan lanjut prosesnya."
+description: "Setelah hari kemarin libur."
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 9"
 date: "2025-12-09 06:27"
 category: "proses"
 tags: []
-description: "Diawali dengan lemas hari ini, mungkin ada beberapa sebab mengakibatkan hal ini. Makanan, istirahat dan terlalu banyak doomscrolling???"
+description: "Diawali dengan lemas hari ini, mungkin ada beberapa sebab mengakibatkan hal ini."
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 11"
 date: "2025-12-11 08:24"
 category: "proses"
 tags: []
-description: "Kayaknya hari ini untuk course dari cyfrin tidak dilanjut dulu. Karena bosan kali dan malas jadinya perlu melakukan pencarian-pencarian lagi dalam bidang ini."
+description: "Kayaknya hari ini untuk course dari cyfrin tidak dilanjut dulu."
 draft: false
 ---
 
