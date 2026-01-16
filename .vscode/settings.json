@@ -1,15 +1,5 @@
 {
     "css.lint.unknownAtRules": "ignore",
     "scss.lint.unknownAtRules": "ignore",
-    "less.lint.unknownAtRules": "ignore",
-    "background.fullscreen": {
-        "images": [
-            "D:/Wallpaper/109508.jpg",
-        ],
-        "opacity": 0.1,
-        "size": "cover",
-        "position": "center",
-        "interval": 0,
-        "random": false
-    }
+    "less.lint.unknownAtRules": "ignore"
 }

@@ -3,6 +3,7 @@
     import TableOfContents from "$lib/components/TableOfContents.svelte";
     import ReadingProgress from "$lib/components/ReadingProgress.svelte";
     import CopyButton from "$lib/components/CopyButton.svelte";
+    import Lightbox from "$lib/components/Lightbox.svelte";
 
     export let data;
 
@@ -251,3 +252,5 @@
         {/if}
     </article>
 </div>
+
+<Lightbox contentElement={articleElement} />

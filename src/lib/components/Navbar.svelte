@@ -48,9 +48,9 @@
 </script>
 
 <header
-	class="py-6 md:py-8 mb-4 md:mb-6 border-b border-gray-100 dark:border-gray-800 relative"
+	class="py-4 md:py-5 mb-3 md:mb-4 border-b border-gray-100 dark:border-gray-800 relative"
 >
-	<div class="mb-6 md:mb-8">
+	<div class="mb-3 md:mb-4">
 		<h1
 			class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-2"
 		>

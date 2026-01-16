@@ -78,3 +78,12 @@ html.dark .shiki span {
 .prose pre {
   @apply rounded-none m-0 border-none bg-inherit p-4 overflow-x-auto;
 }
+
+/* Lightbox - clickable images */
+.prose img:not(a img) {
+  @apply cursor-zoom-in transition-transform duration-200;
+}
+
+.prose img:not(a img):hover {
+  @apply scale-[1.02];
+}
