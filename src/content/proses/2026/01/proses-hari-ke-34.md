@@ -16,7 +16,9 @@ Bahasanya membahas mengenai lifecycle dari transaksi di Ethereum.
 Seperti contoh sederhana ini.
 
 Initial state: A memiliki 10 ETH, B memiliki 0 ETH.
+
 Transaction: A mengirimkan 5 ETH ke B.
+
 Final state: A memiliki 5 ETH, B memiliki 5 ETH.
 
 [^1]: [The Lifecycle Of A Transaction](https://updraft.cyfrin.io/courses/blockchain-basics/blockchain-architecture/the-lifecycle-of-a-transaction)

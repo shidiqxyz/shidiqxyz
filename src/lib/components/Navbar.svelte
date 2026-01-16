@@ -52,7 +52,7 @@
 >
 	<div class="mb-3 md:mb-4">
 		<h1
-			class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-2"
+			class="text-2xl md:text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 mb-2 font-heading"
 		>
 			<a
 				href="/"
