@@ -7,7 +7,7 @@ description: "Memasuki keliling bangun datar."
 draft: false
 ---
 
-![k-on](https://media.tenor.com/BtSP3PZk1MMAAAAi/k-on.gif?width=600&a=center)
+![k-on](/images/proses/2026/01/proses-hari-ke-38/k-on.gif?width=600&a=center)
 
 ## Memasuki keliling bangun datar.
 
