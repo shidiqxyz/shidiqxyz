@@ -108,23 +108,21 @@ function rehypeExternalLinks() {
 }
 
 // Custom plugin to handle colocated images
-// Transforms relative paths like ./image.jpg to /src/content/category/post-slug/image.jpg
+// Transforms relative paths like ./image.jpg to /content/category/year/month/week/post-slug/image.jpg
+// Images are served from static/content/ in production (copied by copy-content-images.js)
 function rehypeColocatedImages() {
 	return (tree, file) => {
 		// Get the file path from vfile
 		const filePath = file.filename || file.path;
 		if (!filePath) return;
 
-		// Get the directory of the markdown file
-		const fileDir = path.dirname(filePath);
+		// Calculate the relative path from content folder
+		// filePath example: D:\webshit\blog\src\content\proses\2026\01\03\proses-hari-ke-40\index.md
+		// We need to extract: /content/proses/2026/01/03/proses-hari-ke-40
+		const contentIndex = filePath.indexOf('content');
+		if (contentIndex === -1) return;
 
-		// Calculate the relative path from project root
-		// filePath example: D:\webshit\blog\src\content\proses\proses-hari-ke-40\index.md
-		// We need to extract: /src/content/proses/proses-hari-ke-40
-		const srcIndex = filePath.indexOf('src');
-		if (srcIndex === -1) return;
-
-		const relativeDirFromSrc = path.dirname(filePath.slice(srcIndex)).replace(/\\/g, '/');
+		const relativeDirFromContent = path.dirname(filePath.slice(contentIndex)).replace(/\\/g, '/');
 
 		visit(tree, 'element', (node) => {
 			if (node.tagName === 'img' && node.properties && node.properties.src) {
@@ -134,12 +132,13 @@ function rehypeColocatedImages() {
 				if (src.startsWith('./') || src.startsWith('../')) {
 					// Remove the ./ prefix and construct absolute path
 					const imageName = src.replace(/^\.\//, '').replace(/^\.\.\//g, '');
-					const absolutePath = `/${relativeDirFromSrc}/${imageName}`;
+					const absolutePath = `/${relativeDirFromContent}/${imageName}`;
 					node.properties.src = absolutePath;
 				}
 			}
 		});
 	};
 }
+
 
 
