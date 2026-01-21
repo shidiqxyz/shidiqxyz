@@ -7,6 +7,7 @@ import { remarkReadingTime } from './src/lib/remark/reading-time.js';
 import { highlightCode } from './src/lib/remark/highlighter.js';
 
 import visit from 'unist-util-visit';
+import path from 'path';
 
 // ... (keep plugins)
 
@@ -19,10 +20,11 @@ const config = defineConfig({
 		highlighter: highlightCode
 	},
 	remarkPlugins: [remarkGfm, [remarkFootnotes, { inlineNotes: true }], remarkMath, remarkReadingTime],
-	rehypePlugins: [rehypeAddHeadingIds, rehypeImgSize, rehypeExternalLinks, rehypeKatex]
+	rehypePlugins: [rehypeAddHeadingIds, rehypeColocatedImages, rehypeImgSize, rehypeExternalLinks, rehypeKatex]
 });
 
 export default config;
+
 
 // Custom plugin to add IDs to headings (replaces rehype-slug)
 function rehypeAddHeadingIds() {
@@ -105,5 +107,39 @@ function rehypeExternalLinks() {
 	};
 }
 
+// Custom plugin to handle colocated images
+// Transforms relative paths like ./image.jpg to /src/content/category/post-slug/image.jpg
+function rehypeColocatedImages() {
+	return (tree, file) => {
+		// Get the file path from vfile
+		const filePath = file.filename || file.path;
+		if (!filePath) return;
+
+		// Get the directory of the markdown file
+		const fileDir = path.dirname(filePath);
+
+		// Calculate the relative path from project root
+		// filePath example: D:\webshit\blog\src\content\proses\proses-hari-ke-40\index.md
+		// We need to extract: /src/content/proses/proses-hari-ke-40
+		const srcIndex = filePath.indexOf('src');
+		if (srcIndex === -1) return;
+
+		const relativeDirFromSrc = path.dirname(filePath.slice(srcIndex)).replace(/\\/g, '/');
+
+		visit(tree, 'element', (node) => {
+			if (node.tagName === 'img' && node.properties && node.properties.src) {
+				const src = node.properties.src;
+
+				// Only transform relative paths (starting with ./)
+				if (src.startsWith('./') || src.startsWith('../')) {
+					// Remove the ./ prefix and construct absolute path
+					const imageName = src.replace(/^\.\//, '').replace(/^\.\.\//g, '');
+					const absolutePath = `/${relativeDirFromSrc}/${imageName}`;
+					node.properties.src = absolutePath;
+				}
+			}
+		});
+	};
+}
 
 

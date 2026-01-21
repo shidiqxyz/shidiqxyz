@@ -22,14 +22,18 @@ export async function getPosts() {
 
     for (const path in paths) {
         const file = paths[path];
-        // Slug is just the filename without extension
-        const slug = path.split('/').at(-1)?.replace('.md', '');
+        // Support both folder structure (index.md) and legacy file structure
+        const pathParts = path.split('/');
+        const filename = pathParts.at(-1);
+        const slug = filename === 'index.md'
+            ? pathParts.at(-2)  // folder name for colocation structure
+            : filename?.replace('.md', '');  // legacy: filename without extension
 
         // Category is always the folder directly under /src/content/
-        // path example: /src/content/proses/2025/12/pag.md -> parts[3] is 'proses'
+        // path example: /src/content/proses/post-name/index.md -> parts[3] is 'proses'
         // path example: /src/content/pemikiran/idea.md -> parts[3] is 'pemikiran'
-        const pathParts = path.split('/');
         const category = pathParts[3];
+
 
         const content = rawPaths[path];
 

@@ -5,7 +5,6 @@ import { fileURLToPath } from 'node:url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const CONTENT_DIR = path.join(__dirname, '../src/content');
-const STATIC_IMAGES_DIR = path.join(__dirname, '../static/images');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -34,8 +33,13 @@ function formatDate(date) {
     return `${year}-${month}-${day} ${hours}:${minutes}`;
 }
 
+function getWeekOfMonth(day) {
+    // Week 1: day 1-7, Week 2: day 8-14, etc.
+    return Math.ceil(day / 7).toString().padStart(2, '0');
+}
+
 async function main() {
-    console.log('--- Buat Artikel Baru ---');
+    console.log('--- Buat Artikel Baru ---\n');
 
     // 1. Title (Required)
     let title = '';
@@ -74,24 +78,24 @@ async function main() {
     const dateStr = formatDate(date);
     const year = date.getFullYear().toString();
     const month = (date.getMonth() + 1).toString().padStart(2, '0');
+    const week = getWeekOfMonth(date.getDate());
 
-    // Generate Content
+    // Generate slug
     const slug = slugify(title);
-    const filename = `${slug}.md`;
 
-    // Create nested path: src/content/{category}/{year}/{month}/
-    const targetDir = path.join(CONTENT_DIR, category, year, month);
-    const targetPath = path.join(targetDir, filename);
+    // Create nested path: src/content/{category}/{year}/{month}/{week}/{slug}/
+    // Using colocation structure: folder with index.md + images
+    const postDir = path.join(CONTENT_DIR, category, year, month, week, slug);
+    const targetPath = path.join(postDir, 'index.md');
 
-    if (!fs.existsSync(targetDir)) {
-        fs.mkdirSync(targetDir, { recursive: true });
-    }
-
-    if (fs.existsSync(targetPath)) {
-        console.error(`\nError: File ${filename} sudah ada di kategori ${category}/${year}/${month}!`);
+    if (fs.existsSync(postDir)) {
+        console.error(`\nError: Folder ${slug} sudah ada di ${category}/${year}/${month}/${week}/!`);
         rl.close();
         process.exit(1);
     }
+
+    // Create post folder
+    fs.mkdirSync(postDir, { recursive: true });
 
     const content = `---
 title: "${title}"
@@ -106,17 +110,11 @@ draft: false
 
     fs.writeFileSync(targetPath, content);
 
-    // Create corresponding images folder in static/images/{category}/{year}/{month}/{slug}
-    const imageDir = path.join(STATIC_IMAGES_DIR, category, year, month, slug);
-    if (!fs.existsSync(imageDir)) {
-        fs.mkdirSync(imageDir, { recursive: true });
-        console.log(`📁 Folder gambar dibuat: ${imageDir}`);
-    }
-
     console.log(`\n✅ Artikel berhasil dibuat!`);
-    console.log(`📂 Path Content: ${targetPath}`);
-    console.log(`📂 Path Image: ${imageDir}`);
-    console.log(`\nTips: Gambar untuk artikel ini simpan di folder image di atas.`);
+    console.log(`📂 Path: ${postDir}`);
+    console.log(`📝 File: ${targetPath}`);
+    console.log(`\n📸 Gambar simpan di folder yang sama: ${postDir}`);
+    console.log(`   Referensi gambar dengan: ![alt](./nama-gambar.jpg)`);
 
     rl.close();
 }

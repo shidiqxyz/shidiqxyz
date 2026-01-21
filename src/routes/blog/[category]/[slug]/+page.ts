@@ -30,12 +30,15 @@ export async function load({ params }) {
     let matchPath: string | undefined;
 
     for (const path in modules) {
-        // Check if slug matches
-        const fileSlug = path.split('/').at(-1)?.replace('.md', '');
+        // Support both folder structure (index.md) and legacy file structure
+        const pathParts = path.split('/');
+        const filename = pathParts.at(-1);
+        const fileSlug = filename === 'index.md'
+            ? pathParts.at(-2)  // folder name for colocation structure
+            : filename?.replace('.md', '');  // legacy: filename without extension
 
         // Check if category matches (must be the top-level folder under content)
-        // path: /src/content/process/2025/12/slug.md -> parts[3] = process
-        const pathParts = path.split('/');
+        // path: /src/content/proses/post-name/index.md -> parts[3] = proses
         const fileCategory = pathParts[3];
 
         if (fileSlug === params.slug && fileCategory === params.category) {
