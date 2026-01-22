@@ -21,7 +21,6 @@
 
 <svelte:head>
 	<link rel="canonical" href={$page.url.href} />
-	<link rel="canonical" href={$page.url.href} />
 </svelte:head>
 <div class="min-h-screen px-4 sm:px-6 lg:px-8 mx-auto max-w-4xl flex flex-col">
 	<Navbar />

@@ -2,6 +2,16 @@ import { getPosts } from '$lib/utils/posts';
 
 export const prerender = true;
 
+// Escape XML entities to prevent injection
+function escapeXml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
 export async function GET() {
   const posts = await getPosts();
   const siteUrl = 'https://shidiq.xyz';
@@ -17,11 +27,11 @@ export async function GET() {
       .map(
         (post) => `
     <item>
-      <title>${post.title}</title>
-      <link>${siteUrl}/blog/${post.category}/${post.slug}</link>
-      <description>${post.description}</description>
+      <title>${escapeXml(post.title)}</title>
+      <link>${siteUrl}/blog/${encodeURIComponent(post.category)}/${encodeURIComponent(post.slug)}</link>
+      <description>${escapeXml(post.description)}</description>
       <pubDate>${new Date(post.date).toUTCString()}</pubDate>
-      <guid>${siteUrl}/blog/${post.category}/${post.slug}</guid>
+      <guid>${siteUrl}/blog/${encodeURIComponent(post.category)}/${encodeURIComponent(post.slug)}</guid>
     </item>
     `
       )

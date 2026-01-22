@@ -3,6 +3,9 @@
 	"private": true,
 	"version": "0.0.1",
 	"type": "module",
+	"overrides": {
+		"katex": "^0.16.27"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"prebuild": "node scripts/copy-content-images.js",
@@ -23,6 +26,7 @@
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/typography": "^0.5.19",
 		"autoprefixer": "^10.4.22",
+		"baseline-browser-mapping": "^2.9.17",
 		"katex": "^0.16.27",
 		"lucide-svelte": "^0.554.0",
 		"mdsvex": "^0.12.6",
