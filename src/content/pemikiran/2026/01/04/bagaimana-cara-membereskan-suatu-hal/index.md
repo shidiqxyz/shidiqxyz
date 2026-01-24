@@ -56,5 +56,3 @@ Sedangkan diri ini tidak bisa?
 Jika seseorang tahu bagaimana cara membereskan suatu hal ini, bisa hubungi saya.
 
 Saya ingin tahu, bagaimana pendekatan dari orang lain untuk menyelesaikan masalah ini.
-
-Saya sangat apresiasi jika kalian bisa memberikan saran.
