@@ -35,6 +35,7 @@
 		"rehype-katex-svelte": "^1.2.0",
 		"remark-github-blockquote-alert": "^2.0.1",
 		"remark-math": "^3.0.1",
+		"sharp": "^0.34.5",
 		"svelte": "^5.43.8",
 		"svelte-check": "^4.3.4",
 		"tailwindcss": "^3.4.18",
@@ -42,15 +43,9 @@
 		"vite": "^7.2.2"
 	},
 	"dependencies": {
-		"@fontsource/geist-sans": "^5.2.5",
 		"@fontsource/inter": "^5.2.8",
 		"@fontsource/merriweather": "^5.2.11",
 		"@fontsource/outfit": "^5.2.8",
-		"@fontsource/plus-jakarta-sans": "^5.2.8",
-		"@fontsource/poppins": "^5.2.7",
-		"@fontsource/sora": "^5.2.8",
-		"@fontsource/source-sans-pro": "^5.2.5",
-		"@fontsource/space-grotesk": "^5.2.10",
 		"mdast-util-to-string": "^4.0.0",
 		"remark-footnotes": "^2.0.0",
 		"remark-gfm": "^1.0.0",
