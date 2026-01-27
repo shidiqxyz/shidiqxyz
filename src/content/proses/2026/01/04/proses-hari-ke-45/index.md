@@ -36,10 +36,12 @@ Funginya, sebagai gas fee untuk membayar biaya transaksi ketika kita membuat tra
 Biasanya menggunakan implementasi dari ERC-20.
 
 Stablecoin: USDC
-Utulity: LINK
-Gov Token: UNI
-Reward: UNI
 
+Utulity: LINK
+
+Gov Token: UNI
+
+Reward: UNI
 
 ### NFTs
 
