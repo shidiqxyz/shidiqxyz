@@ -3,7 +3,7 @@ title: "Proses Hari ke 47"
 date: "2026-01-28 12:42"
 category: "proses"
 tags: []
-description: ""
+description: "Scalability, Rollup Stages and etc."
 draft: false
 ---
 
