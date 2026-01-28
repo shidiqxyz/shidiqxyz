@@ -3,6 +3,30 @@
   import Button from '$lib/components/Button.svelte';
   import InlineToc from '$lib/components/InlineToc.svelte';
   import Tweet from '$lib/components/Tweet.svelte';
+  import Mermaid from '$lib/components/Mermaid.svelte';
+
+  const flowchartExample = `flowchart TD
+    A[Kotak] --> B[Kotak Lain]
+    B --> C{Keputusan}
+    C -->|Ya| D[Hasil A]
+    C -->|Tidak| E[Hasil B]`;
+
+  const flowchartLR = `flowchart LR
+    A[Start] --> B[Step 1]
+    B --> C[Step 2]
+    C --> D[End]`;
+
+  const sequenceExample = `sequenceDiagram
+    participant A as Alice
+    participant B as Bob
+    A->>B: Hello Bob!
+    B-->>A: Hi Alice!`;
+
+  const pieExample = `pie title Waktu Belajar
+    "Coding" : 40
+    "Membaca" : 30
+    "Latihan" : 20
+    "Istirahat" : 10`;
 </script>
 
 # Wiki & Panduan Penulisan
@@ -303,7 +327,115 @@ Huruf Yunani sering digunakan sebagai variabel dalam fisika dan matematika.
 
 ---
 
-## 6. SEO Best Practices
+## 6. Mermaid Flowchart
+
+Blog ini mendukung diagram flowchart interaktif menggunakan Mermaid. **Klik diagram untuk zoom fullscreen**.
+
+### Cara Penggunaan
+
+Definisikan chart di dalam tag `<script>` sebagai variable, lalu panggil komponen `<Mermaid />`.
+
+```html
+<script>
+  import Mermaid from '$lib/components/Mermaid.svelte';
+
+  const myChart = `flowchart TD
+    A[Start] --> B[Process]
+    B --> C[End]`;
+</script>
+
+<Mermaid chart={myChart} />
+```
+
+> ⚠️ **Penting:** Definisi chart HARUS ada di dalam `<script>` tag untuk menghindari error parsing mdsvex.
+
+### Contoh Flowchart (Top-Down)
+
+```
+flowchart TD
+    A[Kotak] --> B[Kotak Lain]
+    B --> C{Keputusan}
+    C -->|Ya| D[Hasil A]
+    C -->|Tidak| E[Hasil B]
+```
+
+<Mermaid chart={flowchartExample} />
+
+### Contoh Flowchart (Left-Right)
+
+```
+flowchart LR
+    A[Start] --> B[Step 1]
+    B --> C[Step 2]
+    C --> D[End]
+```
+
+<Mermaid chart={flowchartLR} />
+
+### Sequence Diagram
+
+```
+sequenceDiagram
+    participant A as Alice
+    participant B as Bob
+    A->>B: Hello Bob!
+    B-->>A: Hi Alice!
+```
+
+<Mermaid chart={sequenceExample} />
+
+### Pie Chart
+
+```
+pie title Waktu Belajar
+    "Coding" : 40
+    "Membaca" : 30
+    "Latihan" : 20
+    "Istirahat" : 10
+```
+
+<Mermaid chart={pieExample} />
+
+### Bentuk Node
+
+| Sintaks | Bentuk |
+|---------|--------|
+| `A[Text]` | Kotak |
+| `A(Text)` | Kotak bulat |
+| `A([Text])` | Stadium |
+| `A{Text}` | Diamond/Keputusan |
+| `A{{Text}}` | Hexagon |
+| `A[[Text]]` | Subroutine |
+| `A[(Text)]` | Database |
+
+### Jenis Panah
+
+| Sintaks | Deskripsi |
+|---------|-----------|
+| `-->` | Panah solid |
+| `---` | Garis tanpa panah |
+| `-.->` | Panah putus-putus |
+| `==>` | Panah tebal |
+| `--text-->` | Panah dengan label |
+
+### Arah Flowchart
+
+| Kode | Arah |
+|------|------|
+| `TD` / `TB` | Top to Down/Bottom |
+| `BT` | Bottom to Top |
+| `LR` | Left to Right |
+| `RL` | Right to Left |
+
+### Tips
+1. Nama node harus unik (A, B, C, atau nama deskriptif)
+2. Klik diagram untuk **zoom fullscreen**
+3. Tekan **Escape** untuk menutup zoom
+4. Preview diagram di [Mermaid Live Editor](https://mermaid.live/)
+
+---
+
+## 7. SEO Best Practices
 
 Agar tulisan Anda mudah ditemukan di Google:
 
@@ -316,7 +448,7 @@ Agar tulisan Anda mudah ditemukan di Google:
 
 ---
 
-## 7. Troubleshooting
+## 8. Troubleshooting
 
 **Masalah**: *Halaman error 500 atau blank saat dibuka.*
 **Solusi**:
