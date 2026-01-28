@@ -100,3 +100,13 @@ Dilanjutkan bagaimana cara menggunakan zkSync.
 Dari ganti rpc dengan [Chainlist](https://chainlist.org/).
 
 Bridge ETH dari L1 ke L2 menggunakan [zkSync Bridge](https://portal.zksync.io/bridge/) di testnet.
+
+## Beres course Blockchain Basics
+
+![photo_2026-01-28_18-20-51](./photo_2026-01-28_18-20-51.jpg?width=600&a=center)
+
+Tidak buruk hasilnya, dari 30 pertanyaan yang benar 28.
+
+Dan ini archivement dari course Blockchain Basics.
+
+![photo_2026-01-28_18-23-00](./photo_2026-01-28_18-23-00.jpg?width=600&a=center)
