@@ -25,6 +25,46 @@ Semua materi ini **gratis**, berkualitas, dan bisa diakses oleh siapa saja.
 
 ---
 
+### 🎯 Smart Contract Learning Path
+
+**🟩 Beginner Track**
+
+| Materi | Deskripsi | Link |
+|--------|-----------|------|
+| Basics of Solidity | RareSkills intro to Solidity | [Link](https://rareskills.io/learn-solidity) |
+| Smart Contract Development | Cyfrin Solidity course | [Kursus](https://updraft.cyfrin.io/courses/solidity) |
+| Solidity Style Guide | Best practices for clean code | [Artikel](https://rareskills.io/post/solidity-style-guide) |
+| Solidity Beginner Mistakes | Common pitfalls to avoid | [Artikel](https://rareskills.io/post/solidity-beginner-mistakes) |
+| Foundry Fundamentals | Cyfrin Foundry course | [Kursus](https://updraft.cyfrin.io/courses/foundry) |
+| Foundry Testing | Testing with Foundry | [Artikel](https://rareskills.io/post/foundry-testing-solidity) |
+| Solidity Events | Understanding Ethereum events | [Artikel](https://rareskills.io/post/ethereum-events) |
+| ERC 4626 | Tokenized vault standard | [Artikel](https://rareskills.io/post/erc4626) |
+
+**🟦 Intermediate Track**
+
+| Materi | Deskripsi | Link |
+|--------|-----------|------|
+| Advanced Foundry | Cyfrin advanced course | [Kursus](https://updraft.cyfrin.io/courses/advanced-foundry) |
+| Invariant Testing | Fuzz testing patterns | [Artikel](https://rareskills.io/post/invariant-testing-solidity) |
+| Solidity Best Practices | ConsenSys security recommendations | [Docs](https://consensysdiligence.github.io/smart-contract-best-practices/development-recommendations/) |
+| Function Selectors | Understanding function selectors | [Artikel](https://rareskills.io/post/function-selector) |
+| EOAs, CREATE & CREATE2 | Address derivation | [Artikel](https://rareskills.io/post/ethereum-address-derivation) |
+| Solidity Staticcall | Low-level staticcall | [Artikel](https://rareskills.io/post/solidity-staticcall) |
+| Low Level Call | Low-level call patterns | [Artikel](https://rareskills.io/post/low-level-call-solidity) |
+
+**🟥 Advanced Track**
+
+| Materi | Deskripsi | Link |
+|--------|-----------|------|
+| Proxy Patterns | Upgrade patterns guide | [Link](https://rareskills.io/proxy-patterns) |
+| Smart Contract Security | Cyfrin security course | [Kursus](https://updraft.cyfrin.io/courses/security) |
+| Gas Optimization | Optimizing gas usage | [Artikel](https://rareskills.io/post/gas-optimization) |
+| Smart Contract Security | RareSkills security guide | [Artikel](https://rareskills.io/post/smart-contract-security) |
+| Diamond Proxy | EIP-2535 implementation | [Artikel](https://rareskills.io/post/diamond-proxy) |
+| Awesome Diamonds | Diamond resources collection | [GitHub](https://github.com/mudgen/awesome-diamonds) |
+
+---
+
 ### 📖 Buku & Referensi
 
 | Materi | Deskripsi | Link |
@@ -61,15 +101,43 @@ Semua materi ini **gratis**, berkualitas, dan bisa diakses oleh siapa saja.
 
 ---
 
+### 📺 Web3 YouTube Channels
+
+| Channel | Deskripsi | Link |
+|---------|-----------|------|
+| Dapp University | Tutorials on blockchain dev, smart contracts, and full-stack web3 | [YouTube](https://www.youtube.com/c/DappUniversity) |
+| Smart Contract Programmer | In-depth Solidity & smart contract topics | [YouTube](https://www.youtube.com/c/SmartContractProgrammer) |
+| EatTheBlocks | Ethereum, Solidity, and dApp dev tutorials | [YouTube](https://www.youtube.com/c/EatTheBlocks) |
+
+---
+
 ### 🔐 Security & Hacking
+
+**Video & Tutorials:**
 
 | Materi | Deskripsi | Link |
 |--------|-----------|------|
 | Hack Solidity Playlist | Tutorial vulnerabilities smart contract | [Playlist](https://www.youtube.com/playlist?list=PLO5VPQH6OWdWsCgXJT9UuzgbC8SPvTRi5) |
 | Reentrancy Attack | Contoh serangan reentrancy | [Video](https://www.youtube.com/watch?v=4Mm3BCyHtDY) |
-| Immunefi Learn | Fundamental keamanan Web3 | [Link](https://immunefi.com/learn/) |
 | Secureum Articles | Deep dive security | [Substack](https://secureum.substack.com/) |
 | Secureum Videos | Video bootcamp security | [YouTube](https://www.youtube.com/@SecureumVideos) |
+| CryptoZombies | Free interactive Solidity lessons | [Link](https://cryptozombies.io/) |
+
+**Resources & Documentation:**
+
+| Materi | Deskripsi | Link |
+|--------|-----------|------|
+| Immunefi Learn | Fundamental keamanan Web3 | [Link](https://immunefi.com/learn/) |
+| Trail of Bits | Security research & publications | [Docs](https://trailofbits.com/docs/) |
+| OpenZeppelin Docs | Ethereum dev & security documentation | [Docs](https://docs.openzeppelin.com/) |
+
+**Community & Socials:**
+
+| Materi | Deskripsi | Link |
+|--------|-----------|------|
+| CodeHawks | Smart contract security research & audit community | [Twitter](https://x.com/CodeHawks) |
+| SoloditOfficial | Blockchain vulnerabilities database | [Twitter](https://x.com/SoloditOfficial) |
+| pashov | Public bug findings & threads | [Twitter](https://x.com/pashov) |
 
 ---
 
@@ -94,9 +162,51 @@ Semua materi ini **gratis**, berkualitas, dan bisa diakses oleh siapa saja.
 
 ---
 
+### 💼 Web3 Jobs & Career
+
+**Job Boards:**
+
+| Platform | Link |
+|----------|------|
+| Crypto Careers | [Link](https://crypto-careers.com) |
+| Web3 Career | [Link](https://web3.career) |
+| Cryptocurrency Jobs | [Link](https://cryptocurrencyjobs.co) |
+| Crypto Jobs List | [Link](https://cryptojobslist.com) |
+| BeInCrypto Jobs | [Link](https://beincrypto.com/jobs/) |
+| Job Stash | [Link](https://jobstash.xyz/jobs) |
+| Remote3 | [Link](https://remote3.co) |
+| Midnight Careers | [Link](https://midnight.network/careers) |
+| Dragonfly Jobs | [Link](https://jobs.dragonfly.xyz/jobs) |
+| Block Careers | [Link](https://block.xyz/careers/jobs) |
+| Solana Jobs | [Link](https://jobs.solana.com/jobs) |
+| Avax Jobs | [Link](https://jobs.avax.network/jobs) |
+| Ethereum Job Board | [Link](https://ethereumjobboard.com/jobs) |
+
+**Contest & Bounty Sites:**
+
+| Platform | Link |
+|----------|------|
+| Super Team | [Link](https://earn.superteam.fun/all/?tab=bounties) |
+| Scribble DAO | [Link](https://scribble.network/) |
+| Wizz HQ | [Link](https://wizzhq.xyz) |
+| First Dollar | [Link](https://app.firstdollar.money) |
+| Rova | [Link](https://rova.xyz/) |
+
+---
+
 ## 📐 Matematika
 
 Buku matematika kurikulum merdeka dari Kemdikbud untuk semua jenjang.
+
+### 🎬 Video Pembelajaran
+
+| Materi | Deskripsi | Link |
+|--------|-----------|------|
+| Pre-Algebra | Full course playlist | [Playlist](https://www.youtube.com/playlist?list=PL0o_zxa4K1BVoTlaXWFcFZ7fU3RvmFMMG) |
+| Pre-Calculus | Full course (FreeCodeCamp) | [Video](https://www.youtube.com/watch?v=eI4an8aSsgw) |
+| FreeCodeCamp Math | Math playlist collection | [Playlist](https://www.youtube.com/playlist?list=PLWKjhJtqVAbl5SlE6aBHzUVZ1e6q1Wz0v) |
+
+---
 
 ### 🏫 SD (Kelas 1-6)
 
@@ -132,3 +242,125 @@ Buku matematika kurikulum merdeka dari Kemdikbud untuk semua jenjang.
 ---
 
 > 📦 **Link Alternatif:** Jika link di atas ada yang tidak berfungsi, semua modul matematika bisa didownload di [Google Drive (Kelas 1-12)](https://drive.google.com/drive/folders/1bfALWoLIhzF_XUsw6hZdBTvu9jLxGC0x?usp=sharing)
+
+### Roadmap Matematika
+
+Ini merupakan roadmap matematika dari pra-kuliah, S1, awal S2.
+
+<script>
+import Mermaid from '$lib/components/Mermaid.svelte';
+
+const mathRoadmap = `flowchart TD
+    P0[Aritmetika Dasar]
+    P1[Aljabar Dasar]
+    P2[Trigonometri Dasar]
+    P3[Logika dan Himpunan Dasar]
+    P4[Pra Pemrograman]
+    P5[Matematika SMA Lanjutan]
+
+    P0 --> P1 --> P5
+    P1 --> P2 --> P5
+    P3 --> P5
+    P4 --> AC
+
+    A[Matematika Dasar]
+    B[Kalkulus Diferensial]
+    C[Kalkulus Integral]
+    D[Kalkulus Peubah Banyak]
+    E[Aljabar Linear Elementer]
+    F[Aljabar Linear]
+    G[Matematika Diskret]
+
+    P5 --> A
+    P3 --> G
+
+    A --> B --> C --> D
+    A --> E --> F
+    A --> G
+
+    H[Pengantar Statistika]
+    I[Pengantar Teori Peluang]
+    J[Pengantar Statistika Matematis]
+
+    G --> H
+    C --> I
+    H --> J
+    I --> J
+
+    K[Pengantar Analisis Real]
+    L[Analisis Real]
+    M[Fungsi Vektor]
+    N[Persamaan Diferensial Biasa]
+    O[Persamaan Diferensial Parsial]
+    P[Fungsi Kompleks]
+    Q[Pengantar Teori Grup]
+    R[Pengantar Teori Ring]
+
+    C --> K --> L
+    D --> M
+    C --> N --> O
+    L --> P
+    F --> Q --> R
+
+    S[Metode Numerik]
+    T[Pemrograman Linear]
+    U[Riset Operasi]
+    V[Teori Antrian]
+    W[Teori Keputusan]
+    X[Pemodelan Matematis]
+    Y[Pemodelan dan Visualisasi Data]
+    Z[Matematika Keuangan]
+    AA[Matematika Aktuaria]
+    AB[Pengantar Analisis Jaringan]
+
+    N --> S
+    F --> T --> U
+    I --> V
+    J --> W
+    N --> X
+    H --> Y
+    C --> Z
+    I --> AA
+    G --> AB
+
+    AC[Algoritma dan Pemrograman]
+    AD[Praktikum Komputasi dan Pemrograman]
+    AE[Praktikum Visualisasi dan Optimasi]
+    AF[Data Mining]
+
+    AC --> AD
+    AD --> AE
+    H --> AF
+    Y --> AF
+
+    L1[Metode Pembuktian]
+    L2[Topologi Dasar]
+    L3[Teori Ukuran]
+    L4[Integral Lebesgue]
+    L5[Analisis Fungsional]
+    L6[Aljabar Abstrak Lanjut]
+
+    G --> L1
+    L --> L2
+    L --> L3 --> L4 --> L5
+    R --> L6
+
+    P6[Proses Stokastik]
+    P7[Rantai Markov]
+    P8[Statistika Inferensial Lanjut]
+
+    I --> P6 --> P7
+    J --> P8
+    P6 --> AA
+    P8 --> AF
+
+    C1[Optimisasi Nonlinear]
+    C2[Scientific Computing]
+    C3[Metode Elemen Hingga]
+
+    S --> C1
+    S --> C2
+    O --> C3`;
+</script>
+
+<Mermaid chart={mathRoadmap} />

@@ -17,6 +17,19 @@
 	import Footer from "$lib/components/Footer.svelte";
 	import BackToTop from "$lib/components/BackToTop.svelte";
 	import { page } from "$app/stores";
+	import { onMount } from "svelte";
+	import { browser } from "$app/environment";
+
+	onMount(async () => {
+		if (browser) {
+			const mermaid = (await import("mermaid")).default;
+			mermaid.initialize({
+				startOnLoad: true,
+				theme: "default",
+				securityLevel: "loose",
+			});
+		}
+	});
 </script>
 
 <svelte:head>

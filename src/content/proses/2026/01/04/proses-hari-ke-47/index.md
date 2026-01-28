@@ -103,7 +103,7 @@ Bridge ETH dari L1 ke L2 menggunakan [zkSync Bridge](https://portal.zksync.io/br
 
 ## Beres course Blockchain Basics
 
-![photo_2026-01-28_18-20-51](./photo_2026-01-28_18-20-51.jpg?width=600&a=center)
+![photo_2026-01-28_18-20-51](./photo_2026-01-28_18-20-51.jpg?width=00&a=center)
 
 Tidak buruk hasilnya, dari 30 pertanyaan yang benar 28.
 
