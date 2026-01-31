@@ -3,7 +3,7 @@ title: "Sebuah tulisan singkat untuk mitos Sisyphus"
 date: "2026-01-31 22:16"
 category: "pemikiran"
 tags: []
-description: "Beberapa hari yang lalu saya baru menyelesaikan buku mitos Sisyphus yang ditulis oleh Albert Camus. "
+description: "Beberapa hari yang lalu saya baru menyelesaikan buku mitos Sisyphus yang ditulis oleh Albert Camus."
 draft: false
 ---
 
