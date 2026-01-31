@@ -7,7 +7,7 @@ description: "Sekarang berlanjut course Web3 Wallet Security Basics."
 draft: false
 ---
 
-![anime-pick-me](anime-pick-me.gif?width=600&a=center)
+![anime-pick-me](./anime-pick-me.gif?width=600&a=center)
 
 Sekarang berlanjut course Web3 Wallet Security Basics.
 
