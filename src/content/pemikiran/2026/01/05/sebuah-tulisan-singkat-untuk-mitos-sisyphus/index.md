@@ -145,14 +145,12 @@ Dalam A Happy Death, Camus menulis:
 >
 > "Apakah aku harus bunuh diri atau minum secangkir kopi?"
 
-Pertanyaan ini terdengar ringan, hampir bercanda. Namun di dalamnya tersimpan sikap filosofis yang sangat serius. 
+Pertanyaan ini terdengar ringan, sperti sebuah candaan. Namun di dalamnya tersimpan sikap filosofis yang sangat serius. 
 
-Bukan memilih mati karena hidup tak bermakna, tetapi memilih tetap hidup melalui tindakan paling sederhana.
+Bukan memilih mati karena hidup tak bermakna, melainkan memilih tetap hidup melalui tindakan yang paling sederhana.
 
 Dan pada akhirnya, sikap itu mencapai bentuk paling jernih dalam sosok Sisyphus:
 
 > "The struggle itself toward the heights is enough to fill a man's heart. One must imagine Sisyphus happy."
 >
 > "Perjuangan itu sendiri menuju puncak sudah cukup untuk mengisi hati manusia. Kita harus membayangkan Sisyphus bahagia."
-
-Bukan karena batu itu akan sampai, melainkan karena ia tetap mendorongnya.
