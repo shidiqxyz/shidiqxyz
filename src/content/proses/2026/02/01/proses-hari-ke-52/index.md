@@ -90,7 +90,7 @@ $$\frac{1}{2} = 0,5$$
 
 ### Membandingkan Desimal
 
-Untuk membandingkan desimal, kita bisa menggunakan tanda <, >, atau =.
+Untuk membandingkan desimal, kita bisa menggunakan tanda &lt; , &gt;, atau =.
 
 Contohnya:
 
@@ -102,7 +102,7 @@ $$0,5 = 0,5$$
 
 ### Mengurutkan Desimal
 
-Untuk mengurutkan desimal, kita bisa menggunakan tanda <, >, atau =.
+Untuk mengurutkan desimal, kita bisa menggunakan tanda &lt; , &gt;, atau =.
 
 Contohnya:
 
