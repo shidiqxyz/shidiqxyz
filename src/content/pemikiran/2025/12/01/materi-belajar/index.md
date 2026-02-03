@@ -192,6 +192,19 @@ Semua materi ini **gratis**, berkualitas, dan bisa diakses oleh siapa saja.
 | First Dollar | [Link](https://app.firstdollar.money) |
 | Rova | [Link](https://rova.xyz/) |
 
+### 🔒 Best GitHub Repos to Learn Web3 Security (2026)
+
+| Repository | Fokus | Link |
+|------------|-------|------|
+| Awesome Solana Security | Keamanan ekosistem Solana | [GitHub](https://github.com/0xMacro/awesome-solana-security) |
+| Web3 Bounties & Exploits | Kumpulan bug bounty & exploit nyata | [GitHub](https://github.com/ArsenSecurity/Bounties-Exploit-Bugs) |
+| Awesome Move Security | Security untuk Move (Aptos/Sui) | [GitHub](https://github.com/Monethic/awesome-move-security) |
+| DeFiHack Labs | Studi kasus hack DeFi lengkap | [GitHub](https://github.com/DeFiHackLabs) |
+| Awesome Smart Contracts | Koleksi resource smart contract | [GitHub](https://github.com/shafu0x/awesome-smart-contracts) |
+| Blockchain Attack Vectors | Pola serangan blockchain umum | [GitHub](https://github.com/ImmuneBytes-Security-Audit/Blockchain-Attack-Vectors) |
+| Smart Contract Vulnerabilities | Database vulnerability Solidity | [GitHub](https://github.com/kadenzipfel/smart-contract-vulnerabilities) |
+| Web3 Audit Skills | Roadmap skill auditor Web3 | [GitHub](https://github.com/0x-Shashi/WEB3-AUDIT-SKILLS) |
+
 ---
 
 ## 📐 Matematika
@@ -203,7 +216,6 @@ Buku matematika kurikulum merdeka dari Kemdikbud untuk semua jenjang.
 | Materi | Deskripsi | Link |
 |--------|-----------|------|
 | Pre-Algebra | Full course playlist | [Playlist](https://www.youtube.com/playlist?list=PL0o_zxa4K1BVoTlaXWFcFZ7fU3RvmFMMG) |
-| Pre-Calculus | Full course (FreeCodeCamp) | [Video](https://www.youtube.com/watch?v=eI4an8aSsgw) |
 | FreeCodeCamp Math | Math playlist collection | [Playlist](https://www.youtube.com/playlist?list=PLWKjhJtqVAbl5SlE6aBHzUVZ1e6q1Wz0v) |
 
 ---
