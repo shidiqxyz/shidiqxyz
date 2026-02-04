@@ -3,13 +3,13 @@ title: "Proses Hari ke 54"
 date: "2026-02-04 17:46"
 category: "proses"
 tags: []
-description: ""
+description: "Kini berlanjut ke course ZK."
 draft: false
 ---
 
 ![meowbah-meowbahh](./meowbah-meowbahh.gif?width=600&a=center)
 
-Kini berkajut ke course ZK.
+Kini berlanjut ke course ZK.
 
 [Fundamentals of Zero-Knowledge Proofs (ZKPs)](https://updraft.cyfrin.io/courses/fundamentals-of-zero-knowledge-proofs) yang pasti untuk pemula.
 
