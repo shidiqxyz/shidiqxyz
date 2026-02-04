@@ -3,7 +3,7 @@ title: "Proses Hari ke 51"
 date: "2026-02-01 16:55"
 category: "proses"
 tags: []
-description: ""
+description: "Social Recovery"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 52"
 date: "2026-02-02 21:00"
 category: "proses"
 tags: []
-description: "Perkalian dan Pembagian Pecahan serta Desimal"
+description: "Perkalian dan Pembagian Pecahan serta Desimal."
 draft: false
 ---
 

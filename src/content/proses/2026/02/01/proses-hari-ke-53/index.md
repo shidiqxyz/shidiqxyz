@@ -3,7 +3,7 @@ title: "Proses Hari ke 53"
 date: "2026-02-03 11:47"
 category: "proses"
 tags: []
-description: "Rasio, Kubus dan Balok dan Peluang"
+description: "Rasio, Kubus dan Balok dan Peluang."
 draft: false
 ---
 
