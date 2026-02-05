@@ -6,254 +6,231 @@ tags: []
 description: "Kumpulan materi dan sumber belajar."
 draft: false
 ---
+# Blockchain & Smart Contract — Curated Learning Path
 
-Berikut adalah kumpulan materi dan sumber belajar yang saya gunakan dalam perjalanan belajar.  
-Semua materi ini **gratis**, berkualitas, dan bisa diakses oleh siapa saja.
-
----
-
-## 🔗 Blockchain & Smart Contract
-
-### 📚 Dasar & Fondasi
-
-| Materi | Deskripsi | Link |
-|--------|-----------|------|
-| Blockchain Basics | Fundamental blockchain dari awal (Cyfrin Updraft) | [Kursus](https://updraft.cyfrin.io/courses/blockchain-basics) |
-| Mastering Ethereum | Buku referensi lengkap untuk developer | [GitHub](https://github.com/ethereumbook/ethereumbook) |
-| Ethereum Yellow Paper | Spesifikasi teknis & matematis Ethereum | [PDF](https://ethereum.github.io/yellowpaper/paper.pdf) |
-| Yellow Paper Source | Repository LaTeX source | [GitHub](https://github.com/ethereum/yellowpaper) |
+Kumpulan resource Web3, Solidity, dan Smart Contract Security yang disusun
+berdasarkan **learning path**: dari fundamental → development → security → karier.
 
 ---
 
-### 🎯 Smart Contract Learning Path
-
-**🟩 Beginner Track**
+## Dasar & Fondasi Blockchain
 
 | Materi | Deskripsi | Link |
-|--------|-----------|------|
-| Basics of Solidity | RareSkills intro to Solidity | [Link](https://rareskills.io/learn-solidity) |
-| Smart Contract Development | Cyfrin Solidity course | [Kursus](https://updraft.cyfrin.io/courses/solidity) |
-| Solidity Style Guide | Best practices for clean code | [Artikel](https://rareskills.io/post/solidity-style-guide) |
-| Solidity Beginner Mistakes | Common pitfalls to avoid | [Artikel](https://rareskills.io/post/solidity-beginner-mistakes) |
-| Foundry Fundamentals | Cyfrin Foundry course | [Kursus](https://updraft.cyfrin.io/courses/foundry) |
-| Foundry Testing | Testing with Foundry | [Artikel](https://rareskills.io/post/foundry-testing-solidity) |
-| Solidity Events | Understanding Ethereum events | [Artikel](https://rareskills.io/post/ethereum-events) |
-| ERC 4626 | Tokenized vault standard | [Artikel](https://rareskills.io/post/erc4626) |
-
-**🟦 Intermediate Track**
-
-| Materi | Deskripsi | Link |
-|--------|-----------|------|
-| Advanced Foundry | Cyfrin advanced course | [Kursus](https://updraft.cyfrin.io/courses/advanced-foundry) |
-| Invariant Testing | Fuzz testing patterns | [Artikel](https://rareskills.io/post/invariant-testing-solidity) |
-| Solidity Best Practices | ConsenSys security recommendations | [Docs](https://consensysdiligence.github.io/smart-contract-best-practices/development-recommendations/) |
-| Function Selectors | Understanding function selectors | [Artikel](https://rareskills.io/post/function-selector) |
-| EOAs, CREATE & CREATE2 | Address derivation | [Artikel](https://rareskills.io/post/ethereum-address-derivation) |
-| Solidity Staticcall | Low-level staticcall | [Artikel](https://rareskills.io/post/solidity-staticcall) |
-| Low Level Call | Low-level call patterns | [Artikel](https://rareskills.io/post/low-level-call-solidity) |
-
-**🟥 Advanced Track**
-
-| Materi | Deskripsi | Link |
-|--------|-----------|------|
-| Proxy Patterns | Upgrade patterns guide | [Link](https://rareskills.io/proxy-patterns) |
-| Smart Contract Security | Cyfrin security course | [Kursus](https://updraft.cyfrin.io/courses/security) |
-| Gas Optimization | Optimizing gas usage | [Artikel](https://rareskills.io/post/gas-optimization) |
-| Smart Contract Security | RareSkills security guide | [Artikel](https://rareskills.io/post/smart-contract-security) |
-| Diamond Proxy | EIP-2535 implementation | [Artikel](https://rareskills.io/post/diamond-proxy) |
-| Awesome Diamonds | Diamond resources collection | [GitHub](https://github.com/mudgen/awesome-diamonds) |
+|------|-----------|------|
+| Blockchain Basics | Fundamental blockchain dari nol (Cyfrin Updraft) | https://updraft.cyfrin.io/courses/blockchain-basics |
+| Mastering Ethereum | Buku wajib developer Ethereum | https://github.com/ethereumbook/ethereumbook |
+| Ethereum Yellow Paper | Spesifikasi teknis & matematis Ethereum | https://ethereum.github.io/yellowpaper/paper.pdf |
+| Yellow Paper Source | LaTeX source Ethereum Yellow Paper | https://github.com/ethereum/yellowpaper |
+| Upgrading Ethereum | Consensus Layer / Ethereum 2.0 | https://eth2book.info/latest/ |
 
 ---
 
-### 📖 Buku & Referensi
+## Solidity & Smart Contract Development
 
-| Materi | Deskripsi | Link |
-|--------|-----------|------|
-| Upgrading Ethereum | Panduan lengkap Ethereum 2.0 / Consensus Layer | [Buku](https://eth2book.info/latest/) |
-| Uniswap V3 Development Book | Belajar build DEX seperti Uniswap V3 | [Buku](https://uniswapv3book.com/index.html) |
-| RareSkills Blog | Artikel & tutorial Web3 berkualitas | [Blog](https://rareskills.io/blog) |
-| Chainlight Web3 Hacks | Koleksi studi kasus hack Web3 | [PDF](https://drive.google.com/file/d/1G3obulCm_Z88ajsMc63oSHRIssLsXUhI/view) |
-| Web3 Security Playbook | Whitepaper keamanan Web3 dari Immunefi | [PDF](https://immunefi.com/whitepapers/web3-security-playbook.pdf) |
-| Math in Solidity Part 1 | Numbers — dasar operasi angka | [Artikel](https://medium.com/coinmonks/math-in-solidity-part-1-numbers-384c8377f26d) |
-| Math in Solidity Part 2 | Overflow — handle overflow/underflow | [Artikel](https://medium.com/coinmonks/math-in-solidity-part-2-overflow-3cd7283714b4) |
-| Math in Solidity Part 3 | Percents & Proportions | [Artikel](https://medium.com/coinmonks/math-in-solidity-part-3-percents-and-proportions-4db014e080b1) |
-| Math in Solidity Part 4 | Compound Interest | [Artikel](https://medium.com/coinmonks/math-in-solidity-part-4-compound-interest-512d9e13041b) |
-| Math in Solidity Part 5 | Exponent & Logarithm | [Artikel](https://medium.com/coinmonks/math-in-solidity-part-5-exponent-and-logarithm-9aef8515136e) |
+z### Beginner
+
+| Materi | Fokus | Link |
+|------|------|------|
+| Basics of Solidity | Pengenalan Solidity | https://rareskills.io/learn-solidity |
+| Smart Contract Development | Solidity course (Cyfrin) | https://updraft.cyfrin.io/courses/solidity |
+| CryptoZombies | Belajar Solidity interaktif | https://cryptozombies.io |
+| Solidity Beginner Mistakes | Pitfall umum pemula | https://rareskills.io/post/solidity-beginner-mistakes |
+| Solidity Events | Event & log Ethereum | https://rareskills.io/post/ethereum-events |
+| ERC-4626 | Tokenized Vault standard | https://rareskills.io/post/erc4626 |
 
 ---
 
-### 🔬 Research & Reference
+### Intermediate
 
-| Materi | Deskripsi | Link |
-|--------|-----------|------|
-| Solodit | Database laporan audit smart contract | [Link](http://solodit.xyz) |
-| Ultimate DeFi Research Base | Koleksi riset DeFi lengkap | [GitHub](http://github.com/OffcierCia/ultimate-defi-research-base) |
-| One Bug Per Day | Belajar vulnerability smart contract harian | [Link](https://www.onebugperday.com/) |
+| Materi | Fokus | Link |
+|------|------|------|
+| Foundry Fundamentals | Tooling & testing | https://updraft.cyfrin.io/courses/foundry |
+| Foundry Testing | Testing pattern | https://rareskills.io/post/foundry-testing-solidity |
+| Function Selectors | ABI & selector | https://rareskills.io/post/function-selector |
+| EOAs, CREATE & CREATE2 | Address derivation | https://rareskills.io/post/ethereum-address-derivation |
+| Low-Level Call | call / delegatecall | https://rareskills.io/post/low-level-call-solidity |
+| Staticcall | Read-only execution | https://rareskills.io/post/solidity-staticcall |
+| Solidity Best Practices | ConsenSys standard | https://consensysdiligence.github.io/smart-contract-best-practices/development-recommendations/ |
 
 ---
 
-### 🎬 Video Pembelajaran
+### Advanced
+
+| Materi | Fokus | Link |
+|------|------|------|
+| Advanced Foundry | Fuzz & invariant | https://updraft.cyfrin.io/courses/advanced-foundry |
+| Invariant Testing | Property-based testing | https://rareskills.io/post/invariant-testing-solidity |
+| Gas Optimization | Efisiensi EVM | https://rareskills.io/post/gas-optimization |
+| Proxy Patterns | Upgradeability | https://rareskills.io/proxy-patterns |
+| Diamond Proxy (EIP-2535) | Modular contracts | https://rareskills.io/post/diamond-proxy |
+| Awesome Diamonds | Resource Diamond | https://github.com/mudgen/awesome-diamonds |
+
+---
+
+## Smart Contract Security & Auditing
+
+### Artikel & Dokumentasi
+
+| Materi | Fokus | Link |
+|------|------|------|
+| Smart Contract Security | Security overview | https://rareskills.io/post/smart-contract-security |
+| Secureum Articles | Deep security dives | https://secureum.substack.com |
+| OpenZeppelin Docs | Secure patterns | https://docs.openzeppelin.com |
+| Trail of Bits Docs | Research & audits | https://trailofbits.com/docs/ |
+| Immunefi Learn | Web3 security fundamentals | https://immunefi.com/learn/ |
+| Web3 Security Playbook | Whitepaper | https://immunefi.com/whitepapers/web3-security-playbook.pdf |
+
+---
+
+### Video & Playlist
+
+| Materi | Fokus | Link |
+|------|------|------|
+| Hack Solidity Playlist | Vulnerability tutorial | https://www.youtube.com/playlist?list=PLO5VPQH6OWdWsCgXJT9UuzgbC8SPvTRi5 |
+| Reentrancy Attack | Contoh exploit | https://www.youtube.com/watch?v=4Mm3BCyHtDY |
+| Secureum Videos | Bootcamp security | https://www.youtube.com/@SecureumVideos |
+
+---
+
+### CTF & Practice
+
+| Platform | Level | Link |
+|--------|------|------|
+| Ethernaut | Beginner | https://ethernaut.openzeppelin.com |
+| Capture The Ether | Intermediate | https://capturetheether.com |
+| Damn Vulnerable DeFi | Intermediate | https://damnvulnerabledefi.xyz |
+| Paradigm CTF | Advanced | https://ctf.paradigm.xyz |
+
+---
+
+### Research & Vulnerability Database
+
+| Resource | Fokus | Link |
+|--------|------|------|
+| Solodit | Audit reports | http://solodit.xyz |
+| DeFiHack Labs | Hack case study | https://github.com/DeFiHackLabs |
+| One Bug Per Day | Daily vuln | https://www.onebugperday.com |
+| Ultimate DeFi Research Base | DeFi research | https://github.com/OffcierCia/ultimate-defi-research-base |
+
+---
+
+## Math & Finance in Solidity
+
+| Materi | Topik | Link |
+|------|------|------|
+| Math in Solidity (Part 1–5) | Numbers → Logarithm | https://medium.com/coinmonks/math-in-solidity-part-1-numbers-384c8377f26d |
+| Uniswap V3 Development Book | AMM math & DEX | https://uniswapv3book.com/index.html |
+
+---
+
+## Video Learning (General)
 
 | Materi | Platform | Link |
-|--------|----------|------|
-| Blockchain, Solidity, Full Stack Web3 | FreeCodeCamp | [Video](https://www.youtube.com/watch?v=gyMwXuJrbJQ) |
-| Solidity Beginner to Expert | FreeCodeCamp | [Video](https://www.youtube.com/watch?v=M576WGiDBdQ) |
+|------|----------|------|
+| Blockchain & Solidity Full Course | freeCodeCamp | https://www.youtube.com/watch?v=gyMwXuJrbJQ |
+| Solidity Beginner to Expert | freeCodeCamp | https://www.youtube.com/watch?v=M576WGiDBdQ |
 
 ---
 
-### 📺 Web3 YouTube Channels
-
-| Channel | Deskripsi | Link |
-|---------|-----------|------|
-| Dapp University | Tutorials on blockchain dev, smart contracts, and full-stack web3 | [YouTube](https://www.youtube.com/c/DappUniversity) |
-| Smart Contract Programmer | In-depth Solidity & smart contract topics | [YouTube](https://www.youtube.com/c/SmartContractProgrammer) |
-| EatTheBlocks | Ethereum, Solidity, and dApp dev tutorials | [YouTube](https://www.youtube.com/c/EatTheBlocks) |
-
----
-
-### 🔐 Security & Hacking
-
-**Video & Tutorials:**
-
-| Materi | Deskripsi | Link |
-|--------|-----------|------|
-| Hack Solidity Playlist | Tutorial vulnerabilities smart contract | [Playlist](https://www.youtube.com/playlist?list=PLO5VPQH6OWdWsCgXJT9UuzgbC8SPvTRi5) |
-| Reentrancy Attack | Contoh serangan reentrancy | [Video](https://www.youtube.com/watch?v=4Mm3BCyHtDY) |
-| Secureum Articles | Deep dive security | [Substack](https://secureum.substack.com/) |
-| Secureum Videos | Video bootcamp security | [YouTube](https://www.youtube.com/@SecureumVideos) |
-| CryptoZombies | Free interactive Solidity lessons | [Link](https://cryptozombies.io/) |
-
-**Resources & Documentation:**
-
-| Materi | Deskripsi | Link |
-|--------|-----------|------|
-| Immunefi Learn | Fundamental keamanan Web3 | [Link](https://immunefi.com/learn/) |
-| Trail of Bits | Security research & publications | [Docs](https://trailofbits.com/docs/) |
-| OpenZeppelin Docs | Ethereum dev & security documentation | [Docs](https://docs.openzeppelin.com/) |
-
-**Community & Socials:**
-
-| Materi | Deskripsi | Link |
-|--------|-----------|------|
-| CodeHawks | Smart contract security research & audit community | [Twitter](https://x.com/CodeHawks) |
-| SoloditOfficial | Blockchain vulnerabilities database | [Twitter](https://x.com/SoloditOfficial) |
-| pashov | Public bug findings & threads | [Twitter](https://x.com/pashov) |
-
----
-
-### ⚔️ CTF Practice
-
-| Platform | Kesulitan | Deskripsi | Link |
-|----------|-----------|-----------|------|
-| Ethernaut | 🟢 Beginner | CTF dari OpenZeppelin | [Play](https://ethernaut.openzeppelin.com) |
-| Capture the Ether | 🟡 Intermediate | Classic Ethereum CTF | [Play](https://capturetheether.com) |
-| Damn Vulnerable DeFi | 🟡 Intermediate | CTF fokus DeFi | [Play](https://damnvulnerabledefi.xyz) |
-| Paradigm CTF | 🔴 Advanced | CTF level kompetisi | [Play](https://ctf.paradigm.xyz) |
-
----
-
-### 💰 Bug Bounty Platforms
-
-| Platform | Deskripsi | Link |
-|----------|-----------|------|
-| Code4rena | Audit contest kompetitif | [Link](https://code4rena.com/) |
-| Sherlock | Platform audit dengan asuransi | [Link](https://app.sherlock.xyz/overview) |
-| Immunefi | Bug bounty crypto terbesar | [Link](https://immunefi.com/) |
-
----
-
-### 💼 Web3 Jobs & Career
-
-**Job Boards:**
-
-| Platform | Link |
-|----------|------|
-| Crypto Careers | [Link](https://crypto-careers.com) |
-| Web3 Career | [Link](https://web3.career) |
-| Cryptocurrency Jobs | [Link](https://cryptocurrencyjobs.co) |
-| Crypto Jobs List | [Link](https://cryptojobslist.com) |
-| BeInCrypto Jobs | [Link](https://beincrypto.com/jobs/) |
-| Job Stash | [Link](https://jobstash.xyz/jobs) |
-| Remote3 | [Link](https://remote3.co) |
-| Midnight Careers | [Link](https://midnight.network/careers) |
-| Dragonfly Jobs | [Link](https://jobs.dragonfly.xyz/jobs) |
-| Block Careers | [Link](https://block.xyz/careers/jobs) |
-| Solana Jobs | [Link](https://jobs.solana.com/jobs) |
-| Avax Jobs | [Link](https://jobs.avax.network/jobs) |
-| Ethereum Job Board | [Link](https://ethereumjobboard.com/jobs) |
-
-**Contest & Bounty Sites:**
-
-| Platform | Link |
-|----------|------|
-| Super Team | [Link](https://earn.superteam.fun/all/?tab=bounties) |
-| Scribble DAO | [Link](https://scribble.network/) |
-| Wizz HQ | [Link](https://wizzhq.xyz) |
-| First Dollar | [Link](https://app.firstdollar.money) |
-| Rova | [Link](https://rova.xyz/) |
-
-### 🔒 Best GitHub Repos to Learn Web3 Security (2026)
+## Web3 Security GitHub Repositories
 
 | Repository | Fokus | Link |
-|------------|-------|------|
-| Awesome Solana Security | Keamanan ekosistem Solana | [GitHub](https://github.com/0xMacro/awesome-solana-security) |
-| Web3 Bounties & Exploits | Kumpulan bug bounty & exploit nyata | [GitHub](https://github.com/ArsenSecurity/Bounties-Exploit-Bugs) |
-| Awesome Move Security | Security untuk Move (Aptos/Sui) | [GitHub](https://github.com/Monethic/awesome-move-security) |
-| DeFiHack Labs | Studi kasus hack DeFi lengkap | [GitHub](https://github.com/DeFiHackLabs) |
-| Awesome Smart Contracts | Koleksi resource smart contract | [GitHub](https://github.com/shafu0x/awesome-smart-contracts) |
-| Blockchain Attack Vectors | Pola serangan blockchain umum | [GitHub](https://github.com/ImmuneBytes-Security-Audit/Blockchain-Attack-Vectors) |
-| Smart Contract Vulnerabilities | Database vulnerability Solidity | [GitHub](https://github.com/kadenzipfel/smart-contract-vulnerabilities) |
-| Web3 Audit Skills | Roadmap skill auditor Web3 | [GitHub](https://github.com/0x-Shashi/WEB3-AUDIT-SKILLS) |
+|----------|------|------|
+| Smart Contract Vulnerabilities | Database vuln | https://github.com/kadenzipfel/smart-contract-vulnerabilities |
+| Web3 Audit Skills | Auditor roadmap | https://github.com/0x-Shashi/WEB3-AUDIT-SKILLS |
+| Blockchain Attack Vectors | Attack patterns | https://github.com/ImmuneBytes-Security-Audit/Blockchain-Attack-Vectors |
+| Web3 Bounties & Exploits | Real exploits | https://github.com/ArsenSecurity/Bounties-Exploit-Bugs |
+| Awesome Smart Contracts | Resource list | https://github.com/shafu0x/awesome-smart-contracts |
 
 ---
 
-## 📐 Matematika
+## Bug Bounty & Career
 
-Buku matematika kurikulum merdeka dari Kemdikbud untuk semua jenjang.
+### Bug Bounty Platforms
+- https://code4rena.com  
+- https://app.sherlock.xyz  
+- https://immunefi.com  
 
-### 🎬 Video Pembelajaran
+### Job Boards
+- https://web3.career  
+- https://cryptojobslist.com  
+- https://cryptocurrencyjobs.co  
+- https://jobstash.xyz/jobs  
+- https://remote3.co  
+- https://ethereumjobboard.com/jobs  
+
+---
+
+## Matematika
+
+Buku **Matematika Kurikulum Merdeka** resmi dari Kemdikbud untuk semua jenjang, dilengkapi video pembelajaran dan sumber pendukung.
+
+---
+
+## Video Pembelajaran
 
 | Materi | Deskripsi | Link |
-|--------|-----------|------|
-| Pre-Algebra | Full course playlist | [Playlist](https://www.youtube.com/playlist?list=PL0o_zxa4K1BVoTlaXWFcFZ7fU3RvmFMMG) |
-| FreeCodeCamp Math | Math playlist collection | [Playlist](https://www.youtube.com/playlist?list=PLWKjhJtqVAbl5SlE6aBHzUVZ1e6q1Wz0v) |
+|------|-----------|------|
+| Pre-Algebra | Fondasi matematika (aritmetika, pecahan, rasio) | https://www.youtube.com/playlist?list=PL0o_zxa4K1BVoTlaXWFcFZ7fU3RvmFMMG |
+| FreeCodeCamp Math | Koleksi matematika dasar hingga lanjut | https://www.youtube.com/playlist?list=PLWKjhJtqVAbl5SlE6aBHzUVZ1e6q1Wz0v |
+| Khan Academy | Video + latihan interaktif (ID/EN) | https://www.khanacademy.org |
+| 3Blue1Brown | Visualisasi & intuisi matematika | https://www.youtube.com/@3blue1brown |
 
 ---
 
-### 🏫 SD (Kelas 1-6)
+## SD (Kelas 1–6)
 
-| Kelas | Download |
-|-------|----------|
-| Kelas 1 | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-I.pdf) |
-| Kelas 2 | [Download PDF](https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-ii) |
-| Kelas 3 | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_III.pdf) |
-| Kelas 4 | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-IV.pdf) |
-| Kelas 5 | [Download PDF](https://repo.mahadewa.ac.id/id/eprint/661/1/BUKU%20SISWA%20MATEMATIKA%20KELAS%20V%20SD.pdf) |
-| Kelas 6 | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_VI.pdf) |
-
----
-
-### 🏫 SMP (Kelas 7-9)
-
-| Kelas | Download |
-|-------|----------|
-| Kelas 7 | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-VII.pdf) |
-| Kelas 8 | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-VIII-Baru.pdf) |
-| Kelas 9 | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_IX.pdf) |
+| Kelas | Fokus Materi | Download |
+|------|-------------|----------|
+| Kelas 1 | Bilangan, penjumlahan dasar | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-I.pdf |
+| Kelas 2 | Pengurangan, pengukuran | https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-ii |
+| Kelas 3 | Perkalian, pembagian | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_III.pdf |
+| Kelas 4 | Pecahan, bangun datar | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-IV.pdf |
+| Kelas 5 | Desimal, volume | https://repo.mahadewa.ac.id/id/eprint/661/1/BUKU%20SISWA%20MATEMATIKA%20KELAS%20V%20SD.pdf |
+| Kelas 6 | Perbandingan, statistika dasar | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_VI.pdf |
 
 ---
 
-### 🏫 SMA (Kelas 10-12)
+## SMP (Kelas 7–9)
 
-| Kelas | Download |
-|-------|----------|
-| Kelas 10 | [Download PDF](https://sman20-jkt.sch.id/E-Learning/siswa_merdeka/MATEMATIKA-BS-KLS_X_Rev.pdf) |
-| Kelas 11 | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XI.pdf) |
-| Kelas 12 | [Download PDF](https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XII.pdf) |
+| Kelas | Fokus Materi | Download |
+|------|-------------|----------|
+| Kelas 7 | Aljabar dasar, himpunan | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-VII.pdf |
+| Kelas 8 | Persamaan, fungsi, geometri | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-VIII-Baru.pdf |
+| Kelas 9 | Peluang, statistika, trigonometri awal | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_IX.pdf |
 
 ---
 
-> 📦 **Link Alternatif:** Jika link di atas ada yang tidak berfungsi, semua modul matematika bisa didownload di [Google Drive (Kelas 1-12)](https://drive.google.com/drive/folders/1bfALWoLIhzF_XUsw6hZdBTvu9jLxGC0x?usp=sharing)
+## SMA (Kelas 10–12)
+
+| Kelas | Fokus Materi | Download |
+|------|-------------|----------|
+| Kelas 10 | Fungsi, persamaan kuadrat | https://sman20-jkt.sch.id/E-Learning/siswa_merdeka/MATEMATIKA-BS-KLS_X_Rev.pdf |
+| Kelas 11 | Trigonometri, limit, turunan | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XI.pdf |
+| Kelas 12 | Integral, peluang, matriks | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XII.pdf |
+
+---
+
+## Materi Pendukung
+
+### Referensi Teori
+- OpenStax Math: https://openstax.org
+- Paul’s Online Math Notes: https://tutorial.math.lamar.edu
+
+### Latihan & Problem Solving
+- Project Euler: https://projecteuler.net
+- Brilliant.org: https://brilliant.org
+
+### Tools Interaktif
+- Desmos: https://www.desmos.com
+- GeoGebra: https://www.geogebra.org
+
+---
+
+## Link Alternatif Lengkap
+
+Jika link PDF tidak berfungsi, semua buku Matematika Kelas 1–12 tersedia di:  
+https://drive.google.com/drive/folders/1bfALWoLIhzF_XUsw6hZdBTvu9jLxGC0x
 
 ### Roadmap Matematika
 
