@@ -3,7 +3,7 @@ title: "Proses Hari ke 56"
 date: "2026-02-06 17:13"
 category: "proses"
 tags: []
-description: "Trusted Setup, ZKP: ZKPoK vs ZKPoC, Completeness, Soundness, and Zero-Knowledge"
+description: "Trusted Setup, ZKP: ZKPoK vs ZKPoC, Completeness, Soundness, and Zero-Knowledge."
 draft: false
 ---
 

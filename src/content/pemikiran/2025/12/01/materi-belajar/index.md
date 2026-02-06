@@ -27,7 +27,7 @@ berdasarkan **learning path**: dari fundamental → development → security →
 
 ## Solidity & Smart Contract Development
 
-z### Beginner
+### Beginner
 
 | Materi | Fokus | Link |
 |------|------|------|
