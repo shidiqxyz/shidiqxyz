@@ -180,34 +180,34 @@ Buku **Matematika Kurikulum Merdeka** resmi dari Kemdikbud untuk semua jenjang, 
 
 ## SD (Kelas 1–6)
 
-| Kelas | Fokus Materi | Download |
-|------|-------------|----------|
-| Kelas 1 | Bilangan, penjumlahan dasar | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-I.pdf |
-| Kelas 2 | Pengurangan, pengukuran | https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-ii |
-| Kelas 3 | Perkalian, pembagian | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_III.pdf |
-| Kelas 4 | Pecahan, bangun datar | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-IV.pdf |
-| Kelas 5 | Desimal, volume | https://repo.mahadewa.ac.id/id/eprint/661/1/BUKU%20SISWA%20MATEMATIKA%20KELAS%20V%20SD.pdf |
-| Kelas 6 | Perbandingan, statistika dasar | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_VI.pdf |
+| Kelas | Download |
+|------|----------|
+| Kelas 1 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-I.pdf |
+| Kelas 2 | https://buku.kemendikdasmen.go.id/katalog/matematika-untuk-sdmi-kelas-ii |
+| Kelas 3 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_III.pdf |
+| Kelas 4 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-IV.pdf |
+| Kelas 5 | https://repo.mahadewa.ac.id/id/eprint/661/1/BUKU%20SISWA%20MATEMATIKA%20KELAS%20V%20SD.pdf |
+| Kelas 6 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_VI.pdf |
 
 ---
 
 ## SMP (Kelas 7–9)
 
-| Kelas | Fokus Materi | Download |
-|------|-------------|----------|
-| Kelas 7 | Aljabar dasar, himpunan | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-VII.pdf |
-| Kelas 8 | Persamaan, fungsi, geometri | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-VIII-Baru.pdf |
-| Kelas 9 | Peluang, statistika, trigonometri awal | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_IX.pdf |
+| Kelas | Download |
+|------|----------|
+| Kelas 7 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-VII.pdf |
+| Kelas 8 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-VIII-Baru.pdf |
+| Kelas 9 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika_BS_KLS_IX.pdf |
 
 ---
 
 ## SMA (Kelas 10–12)
 
-| Kelas | Fokus Materi | Download |
-|------|-------------|----------|
-| Kelas 10 | Fungsi, persamaan kuadrat | https://sman20-jkt.sch.id/E-Learning/siswa_merdeka/MATEMATIKA-BS-KLS_X_Rev.pdf |
-| Kelas 11 | Trigonometri, limit, turunan | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XI.pdf |
-| Kelas 12 | Integral, peluang, matriks | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XII.pdf |
+| Kelas | Download |
+|------|----------|
+| Kelas 10 | https://sman20-jkt.sch.id/E-Learning/siswa_merdeka/MATEMATIKA-BS-KLS_X_Rev.pdf |
+| Kelas 11 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XI.pdf |
+| Kelas 12 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XII.pdf |
 
 ---
 
