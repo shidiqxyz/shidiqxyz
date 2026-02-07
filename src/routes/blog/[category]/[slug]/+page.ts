@@ -3,10 +3,11 @@ import { calculateReadingTime } from '$lib/utils/readingTime';
 import { getPostsByCategory } from '$lib/utils/posts';
 
 /**
- * Mengekstrak URL gambar pertama dari konten markdown
- * Format yang didukung: ![alt](url) atau ![alt](url?params)
+ * Mengekstrak URL gambar pertama dari konten markdown.
+ * Jika path gambar adalah relatif (dimulai dengan ./), maka akan diubah menjadi absolute path
+ * yang mengarah ke folder static content yang sesuai.
  */
-function extractFirstImage(content: string): string | null {
+function extractFirstImage(content: string, postPath: string): string | null {
     // Regex untuk mencocokkan gambar markdown: ![alt](url)
     const imageRegex = /!\[[^\]]*\]\(([^)\s]+)/;
     const match = content.match(imageRegex);
@@ -15,6 +16,31 @@ function extractFirstImage(content: string): string | null {
         let imageUrl = match[1];
         // Hapus query params seperti ?width=600&a=center
         imageUrl = imageUrl.split('?')[0];
+
+        // Jika URL adalah eksternal (http) atau sudah absolute path (/), kembalikan apa adanya
+        if (imageUrl.startsWith('http') || imageUrl.startsWith('/')) {
+            return imageUrl;
+        }
+
+        // Jika URL adalah relatif (./ atau nama-file.jpg)
+        // Hilangkan ./ di awal jika ada
+        const cleanImageUrl = imageUrl.replace(/^\.\//, '');
+
+        // Dapatkan path relatif dari folder /src/content/
+        // postPath: /src/content/proses/2026/02/01/proses-hari-ke-57/index.md
+        // Kita butuh bagian: proses/2026/02/01/proses-hari-ke-57/
+        const contentBase = '/src/content/';
+        if (postPath.startsWith(contentBase)) {
+            const relativeDir = postPath
+                .substring(contentBase.length)
+                .split('/')
+                .slice(0, -1)
+                .join('/');
+
+            // Gambar yang dikolokasi disajikan dari /content/ di static
+            return `/content/${relativeDir}/${cleanImageUrl}`;
+        }
+
         return imageUrl;
     }
 
@@ -54,8 +80,9 @@ export async function load({ params }) {
     const post = await modules[matchPath]() as any;
     const rawContent = rawModules[matchPath] as string;
 
-    // Ekstrak gambar pertama dari konten markdown
-    const firstImage = extractFirstImage(rawContent);
+    // Ekstrak gambar pertama dari konten markdown dengan menyertakan matchPath untuk resolusi URL
+    const firstImage = extractFirstImage(rawContent, matchPath);
+
 
     try {
         // Use reading time from metadata (remark plugin) or calculate it manually as fallback

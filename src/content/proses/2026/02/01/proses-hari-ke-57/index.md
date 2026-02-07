@@ -3,23 +3,21 @@ title: "Proses Hari ke 57"
 date: "2026-02-07 00:14"
 category: "proses"
 tags: []
-description: "Belajar pra-aljabar"
+description: "Belajar pra-aljabar."
 draft: false
 ---
-
-![frieren-anime](./frieren-anime.gif?width=500&align=center)
-
-Sebelum melanjutkan materi matematika kelas 7 (tingkat SMP), saya ingin mempelajari dahulu pra-aljabar (pre-algebra). Saya menemukan video yang bagus di YouTube.
-
-**Pre-Algebra - Basic Introduction! - The Organic Chemistry Tutor**
-
-
 <script>
   import YouTube from '$lib/components/YouTube.svelte';
   import Penjumlahan from './Penjumlahan.svelte';
   import Pengurangan from './Pengurangan.svelte';
   import BilanganNegatif from './BilanganNegatif.svelte';
 </script>
+
+![frieren-anime](./frieren-anime.gif?width=500&align=center)
+
+Sebelum melanjutkan materi matematika kelas 7 (tingkat SMP), saya ingin mempelajari dahulu pra-aljabar (pre-algebra). Saya menemukan video yang bagus di YouTube.
+
+**Pre-Algebra - Basic Introduction! - The Organic Chemistry Tutor**
 
 <YouTube id="vhm8ri0XNBM" />
 
