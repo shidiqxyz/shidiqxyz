@@ -230,7 +230,7 @@ Buku **Matematika Kurikulum Merdeka** resmi dari Kemdikbud untuk semua jenjang, 
 ## Link Alternatif Lengkap
 
 Jika link PDF tidak berfungsi, semua buku Matematika Kelas 1–12 tersedia di:  
-https://drive.google.com/drive/folders/1bfALWoLIhzF_XUsw6hZdBTvu9jLxGC0x
+[Google Drive](https://drive.google.com/drive/folders/1bfALWoLIhzF_XUsw6hZdBTvu9jLxGC0x)
 
 ### Roadmap Matematika
 
