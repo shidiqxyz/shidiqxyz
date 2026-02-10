@@ -9,7 +9,7 @@ draft: false
 
 ![angry-anime](./angry-anime.gif?width=500&align=center)
 
-Akhirnya memasuki solidity, ke course [https://updraft.cyfrin.io/courses/solidity](https://updraft.cyfrin.io/courses/solidity).
+Akhirnya memasuki solidity, ke course [Solidity Smart Contract Development](https://updraft.cyfrin.io/courses/solidity).
 
 Awal ini hanya mencoba untuk mengcompile contract di [Remix](https://remix.ethereum.org/).
 
