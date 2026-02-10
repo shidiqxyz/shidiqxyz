@@ -7,7 +7,7 @@ description: "Awal memasuki solidity."
 draft: false
 ---
 
-![angry-anime](./angry-anime.gif)
+![angry-anime](./angry-anime.gif?width=500&align=center)
 
 Akhirnya memasuki solidity, ke course [https://updraft.cyfrin.io/courses/solidity](https://updraft.cyfrin.io/courses/solidity).
 

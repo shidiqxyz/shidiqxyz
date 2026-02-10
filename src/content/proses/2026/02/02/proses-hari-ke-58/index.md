@@ -6,7 +6,7 @@ tags: []
 description: "Belajar tentang persamaan linear."
 draft: false
 ---
-![love you](./love-you-love.gif)
+![love you](./love-you-love.gif?width=500&align=center)
 
 Masih di pra-aljabar, kali ini belajar tentang persamaan linear.
 
