@@ -3,7 +3,7 @@ title: "Proses Hari ke 58"
 date: "2026-02-08 13:34"
 category: "proses"
 tags: []
-description: "Belajar tentang persamaan linear"
+description: "Belajar tentang persamaan linear."
 draft: false
 ---
 ![love you](./love-you-love.gif)
