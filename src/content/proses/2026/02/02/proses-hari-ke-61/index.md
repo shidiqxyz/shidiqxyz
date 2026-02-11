@@ -75,7 +75,7 @@ bytes data = "John Doe";
 
 Jawaban:
 
-### 📕 1. What's the difference between a variable and a value?
+### 1. What's the difference between a variable and a value?
 
 A **variable** is a named storage location that holds data in a smart contract.  
 It consists of:
@@ -95,7 +95,7 @@ uint256 favoriteNumber = 88;
 - `uint256` → data type  
 - `88` → value  
 
-### 📕 2. Default Values of Solidity Types
+### 2. Default Values of Solidity Types
 
 In Solidity, every variable has a default value if it is not initialized.
 
@@ -112,7 +112,7 @@ In Solidity, every variable has a default value if it is not initialized.
 Solidity automatically assigns these zero-values when variables are declared but not explicitly initialized.
 
 
-### 📕 3. How does `uint` differ from `bytes`?
+### 3. How does `uint` differ from `bytes`?
 
 `uint` and `bytes` differ in purpose and behavior.
 
@@ -148,7 +148,7 @@ Additionally:
 - `string` is a dynamic byte array used specifically for text.
 - `bytes` is dynamic and allows indexing and manipulation.
 
-### 📕 4. Write a smart contract that contains at least five storage variables, each with a distinct data type.
+### 4. Write a smart contract that contains at least five storage variables, each with a distinct data type.
 
 ```solidity
 // SPDX-License-Identifier: MIT
