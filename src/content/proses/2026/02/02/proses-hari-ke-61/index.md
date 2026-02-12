@@ -77,76 +77,84 @@ Jawaban:
 
 ### 1. What's the difference between a variable and a value?
 
-A **variable** is a named storage location that holds data in a smart contract.  
-It consists of:
-- A name
-- A data type
-- A storage location (storage/memory)
+Sebuah **variable** adalah lokasi penyimpanan bernama yang digunakan untuk menyimpan data di dalam smart contract.  
+Variable terdiri dari:
+- Sebuah nama
+- Sebuah tipe data
+- Sebuah lokasi penyimpanan (storage/memory)
 
-A **value** is the actual data stored inside the variable.
+Sedangkan **value** adalah data aktual yang tersimpan di dalam variable tersebut.
 
-Example:
+Contoh:
 
 ```solidity
 uint256 favoriteNumber = 88;
 ```
 
 - `favoriteNumber` → variable  
-- `uint256` → data type  
+- `uint256` → tipe data  
 - `88` → value  
+
+
+---
 
 ### 2. Default Values of Solidity Types
 
-In Solidity, every variable has a default value if it is not initialized.
+Di dalam Solidity, setiap variable memiliki nilai default apabila tidak diinisialisasi secara eksplisit.
 
-| Type      | Default Value |
+| Type      | Nilai Default |
 |-----------|--------------|
 | bool      | false |
 | uint      | 0 |
 | int256    | 0 |
-| string    | "" (empty string) |
+| string    | "" (string kosong) |
 | address   | 0x0000000000000000000000000000000000000000 |
-| bytes     | 0x (empty) |
+| bytes     | 0x (kosong) |
 | bytes32   | 0x0000000000000000000000000000000000000000000000000000000000000000 |
 
-Solidity automatically assigns these zero-values when variables are declared but not explicitly initialized.
+Solidity secara otomatis memberikan nilai nol (zero-value) ini ketika variable dideklarasikan tetapi tidak diberi nilai awal.
 
+
+---
 
 ### 3. How does `uint` differ from `bytes`?
 
-`uint` and `bytes` differ in purpose and behavior.
+`uint` dan `bytes` memiliki perbedaan dalam tujuan penggunaan dan perilakunya.
 
 #### `uint`
-- Represents an unsigned integer (positive whole number).
-- Used for mathematical operations.
-- Supports arithmetic operations like `+`, `-`, `*`, `/`.
-- Example:
+- Merepresentasikan bilangan bulat positif (unsigned integer).
+- Digunakan untuk operasi matematika.
+- Mendukung operasi aritmatika seperti `+`, `-`, `*`, `/`.
+- Contoh:
 
 ```solidity
 uint256 number = 10;
 ```
 
 #### `bytes`
-- Represents raw binary data.
-- Stored in hexadecimal form.
-- Used for low-level data manipulation.
-- Cannot be directly used in arithmetic operations.
-- Example:
+- Merepresentasikan data biner mentah (raw binary data).
+- Disimpan dalam bentuk heksadesimal.
+- Digunakan untuk manipulasi data tingkat rendah (low-level).
+- Tidak dapat langsung digunakan untuk operasi aritmatika.
+- Contoh:
 
 ```solidity
 bytes data = "ETH";
 ```
 
-#### Key Difference
+#### Perbedaan Utama
 
-- `uint` is a numeric type meant for calculations.
-- `bytes` is a raw data type meant for storing and manipulating binary data.
+- `uint` adalah tipe numerik yang digunakan untuk perhitungan.
+- `bytes` adalah tipe data mentah yang digunakan untuk menyimpan dan memanipulasi data biner.
 
-Additionally:
+Tambahan:
 
-- `bytes32` is a fixed-size 32-byte data type.
-- `string` is a dynamic byte array used specifically for text.
-- `bytes` is dynamic and allows indexing and manipulation.
+- `bytes32` adalah tipe data berukuran tetap 32 byte.
+- `string` adalah dynamic byte array yang digunakan khusus untuk teks.
+- `bytes` bersifat dynamic dan memungkinkan akses per indeks serta manipulasi data.
+
+
+---
 
 ### 4. Write a smart contract that contains at least five storage variables, each with a distinct data type.
 
