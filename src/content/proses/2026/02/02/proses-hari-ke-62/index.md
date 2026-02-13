@@ -152,22 +152,9 @@ Perbedaan utama terletak pada struktur transaksi dan tujuan eksekusinya, bukan h
 - a view function that can be accessed only by the current contract
 
 ```solidity
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.18; 
-
- contract SimpleStorage {
-
-    uint256 public myNumber;  // State variable
-
-    function addNumber (uint256 _myNumber) public {
-        myNumber = _myNumber;
-    }
-
-
-    function seeNumber () private view returns (uint256) {
-        return myNumber;
-    }
- }
+function seeNumber () private view returns (uint256) {
+    return myNumber;
+}
 ```
 
 - a pure function that's not accessible within the current contract
