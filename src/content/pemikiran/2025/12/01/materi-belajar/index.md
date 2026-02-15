@@ -150,6 +150,9 @@ berdasarkan **learning path**: dari fundamental → development → security →
 - https://code4rena.com  
 - https://app.sherlock.xyz  
 - https://immunefi.com  
+- https://codehawks.cyfrin.io/
+- https://cantina.xyz/welcome
+- https://hackenproof.com/
 
 ### Job Boards
 - https://web3.career  

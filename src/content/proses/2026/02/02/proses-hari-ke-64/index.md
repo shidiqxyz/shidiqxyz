@@ -3,7 +3,7 @@ title: "Proses Hari ke 64"
 date: "2026-02-14 02:18"
 category: "proses"
 tags: []
-description: "Error & Warning"
+description: "Error & Warning."
 draft: false
 ---
 
