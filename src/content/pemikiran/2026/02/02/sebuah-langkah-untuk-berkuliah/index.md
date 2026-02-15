@@ -4,7 +4,7 @@ date: "2026-02-14 02:56"
 category: "pemikiran"
 tags: []
 description: ""
-draft: false
+draft: true
 ---
 
 Tahun ini saya memutuskan untuk berkuliah. Jika orang mendengar nama dari kampus saya, mungkin pada tahu. Ada pro cons dari kampus ini. Itu hal yang normal seperti pada umumnya. Tapi setidaknya ini adalah bentuk percobaan atas diri saya terhadap keinginan yang sudah bertahun-tahun didambakan. Meskipun tidak dalam bentuk yang ideal.
