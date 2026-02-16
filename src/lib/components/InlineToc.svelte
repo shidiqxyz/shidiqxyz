@@ -1,6 +1,7 @@
 <script lang="ts">
     import { slide } from "svelte/transition";
-    import { onMount } from "svelte";
+    import { onMount, tick } from "svelte";
+    import { afterNavigate } from "$app/navigation";
 
     export let title = "Daftar Isi";
     export let selector = "h2, h3";
@@ -13,8 +14,7 @@
         isOpen = !isOpen;
     }
 
-    onMount(() => {
-        // We wait a bit or use a more robust way to find headings after mdsvex renders
+    function scanHeadings() {
         const container = document.querySelector(containerSelector);
         if (container) {
             const elements = Array.from(
@@ -26,6 +26,18 @@
                 level: parseInt(el.tagName.substring(1)),
             }));
         }
+    }
+
+    onMount(() => {
+        scanHeadings();
+    });
+
+    // Re-scan headings after SvelteKit client-side navigation
+    afterNavigate(async () => {
+        await tick();
+        setTimeout(() => {
+            scanHeadings();
+        }, 50);
     });
 
     function scrollTo(id: string) {

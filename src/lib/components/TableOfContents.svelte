@@ -1,5 +1,6 @@
 <script lang="ts">
-    import { onMount, onDestroy } from "svelte";
+    import { onMount, onDestroy, tick } from "svelte";
+    import { afterNavigate } from "$app/navigation";
 
     export let contentElement: HTMLElement;
 
@@ -9,6 +10,10 @@
 
     function updateHeadings() {
         if (!contentElement) return;
+
+        // Disconnect observer from old headings
+        if (observer) observer.disconnect();
+
         const elements = Array.from(
             contentElement.querySelectorAll("h2, h3"),
         ) as HTMLElement[];
@@ -18,12 +23,31 @@
             text: el.innerText,
             level: parseInt(el.tagName.substring(1)),
         }));
-        console.log("TOC Headings:", headings);
+
+        // Re-observe the new headings
+        if (observer) {
+            headings.forEach((heading) => {
+                const element = document.getElementById(heading.id);
+                if (element) observer.observe(element);
+            });
+        }
+
+        // Reset active heading
+        activeId = "";
     }
 
     $: if (contentElement) {
         updateHeadings();
     }
+
+    // Re-scan headings after SvelteKit client-side navigation
+    afterNavigate(async () => {
+        await tick();
+        // Small delay to ensure mdsvex content has rendered
+        setTimeout(() => {
+            updateHeadings();
+        }, 50);
+    });
 
     function scrollToHeading(id: string) {
         const element = document.getElementById(id);
@@ -56,14 +80,10 @@
         };
 
         observer = new IntersectionObserver(callback, options);
-    });
 
-    $: if (observer && headings.length > 0) {
-        headings.forEach((heading) => {
-            const element = document.getElementById(heading.id);
-            if (element) observer.observe(element);
-        });
-    }
+        // Initial observation
+        updateHeadings();
+    });
 
     onDestroy(() => {
         if (observer) observer.disconnect();
