@@ -13,7 +13,7 @@ Saya mengambil studi Matematika di Fakultas Sains Teknologi(FST), Universitas Te
 
 Pilihan ini dibentuk dari dua alasan yang saya ingat. Karena saya menonton anime yang berjudul "Silent Witch: Chinmoku no Majo no Kakushigoto"[^1]. Yang bercerita mengenai Monica Everett, yang terlalu malu untuk tampil di depan orang lain. Karena itu dia disebut dengan julukan "Silent Witch". Ketertarikannya juga terhadap matematika untuk segala sesuatu, bahkan untuk sihirnya.
 
-Alasan kedua adalah karena Jim Simons[^2]. Seorang yang bisa menyelesaikan market(pasar) dengan matematika. Saya menonton beberapa video dokumentasinya di YouTube yang membahas dia. Itu sangalah keren sekali. Dari dokumentasinya, sejak remaja ia sangat suka matematika (berbeda sekali dengan saya). Hingga lulus di MIT dan Berkeley. Dan hingga memncipkan manajemen dana sendiri yang dinamakan " Renaissance Technologies".
+Alasan kedua adalah karena Jim Simons[^2]. Seorang yang bisa menyelesaikan market (pasar) dengan matematika. Saya menonton beberapa video dokumentasinya di YouTube yang membahas dia. Itu sangalah keren sekali. Dari dokumentasinya, sejak remaja ia sangat suka matematika (berbeda sekali dengan saya). Hingga lulus di MIT dan Berkeley. Dan hingga memncipkan manajemen dana sendiri yang dinamakan " Renaissance Technologies".
 
 Sebelumnya, ada dua jurusan yang saya inginkan. Pada awal lulus SMK, saya ingin untuk berkuliah pada jurusan yang berhubungan dengan komputer. Ilmu Komputer, Teknik Informatika, Sistem Informasi dan sebagainya. Tetapi keinginan itu gugur ketika saya sedang belajar filsafat secara otodidak (hingga saat kini). Sepertinya untuk belajar berkuliah yang berhubungan dengan komputer lebih baik secara otodidak pikir saya.
 

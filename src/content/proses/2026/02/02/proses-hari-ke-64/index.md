@@ -34,9 +34,9 @@ Jawaban:
 
 Saat melakukan compile di Remix, sering muncul pesan error atau warning.
 
-## 🔴 Error
+#### Error
 
-Error adalah masalah dalam kode yang **menghentikan proses kompilasi**.
+Error adalah masalah dalam kode yang menghentikan proses kompilasi.
 
 Ciri-ciri:
 - Ditampilkan dengan warna merah
@@ -44,7 +44,7 @@ Ciri-ciri:
 - Contract tidak bisa di-deploy
 - Biasanya disebabkan oleh kesalahan sintaks atau struktur
 
-### Contoh Error
+Contoh Error:
 
 Missing semicolon:
 
@@ -54,7 +54,7 @@ uint256 public number
 
 Compiler akan menghasilkan error karena kurang `;`.
 
-## 🟡 Warning
+#### Warning
 
 Warning adalah peringatan bahwa ada praktik yang kurang tepat atau berpotensi bermasalah.
 
@@ -64,7 +64,7 @@ Ciri-ciri:
 - Contract tetap bisa di-deploy
 - Sebaiknya tetap diperbaiki
 
-### Contoh Warning
+Contoh Warning:
 
 Tidak menambahkan SPDX License:
 
