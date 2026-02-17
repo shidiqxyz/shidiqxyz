@@ -3,7 +3,7 @@ title: "Proses Hari ke 67"
 date: "2026-02-17 20:52"
 category: "proses"
 tags: []
-description: ""
+description: "Deploy Contract."
 draft: false
 ---
 
