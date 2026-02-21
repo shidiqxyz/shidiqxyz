@@ -3,7 +3,7 @@ title: "Proses Hari ke 70"
 date: "2026-02-20 19:16"
 category: "proses"
 tags: []
-description: "ABI & Inheritance"
+description: "ABI & Inheritance."
 draft: false
 ---
 
