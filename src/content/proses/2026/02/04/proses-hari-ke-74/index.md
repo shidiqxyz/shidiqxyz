@@ -35,9 +35,9 @@ Alurnya:
 
 3. Membagi hasilnya dengan 1e18 untuk menormalkan kembali presisi.
 
-$$ \frac{ETH \times Price}{1e18} = USD $$
+$\frac{ETH \times Price}{1e18} = USD$
 
-$$ \frac{0.1 \times 2000}{1e18} = 200 $$
+$\frac{0.1 \times 2000}{1e18} = 200$
 
 ### 3. Create a function convertUsdToEth(uint256 usdAmount, uint256 ethPrice) public returns(uint256), that converts a given amount of USD to its equivalent value in ETH.
 
