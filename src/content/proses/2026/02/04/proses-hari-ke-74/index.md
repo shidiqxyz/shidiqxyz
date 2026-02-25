@@ -3,7 +3,7 @@ title: "Proses Hari ke 74"
 date: "2026-02-24 13:47"
 category: "proses"
 tags: []
-description: ""
+description: "Solidity Math, msg.sender."
 draft: false
 ---
 

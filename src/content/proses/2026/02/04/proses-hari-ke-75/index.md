@@ -3,7 +3,7 @@ title: "Proses Hari ke 75"
 date: "2026-02-25 18:46"
 category: "proses"
 tags: []
-description: ""
+description: "Make own libraries."
 draft: false
 ---
 
