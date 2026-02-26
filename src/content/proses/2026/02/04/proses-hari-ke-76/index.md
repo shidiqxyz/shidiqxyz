@@ -3,7 +3,7 @@ title: "Proses Hari ke 76"
 date: "2026-02-26 14:47"
 category: "proses"
 tags: []
-description: ""
+description: "SafeMath, For Loop."
 draft: false
 ---
 
@@ -163,7 +163,7 @@ contract NumberPusher {
 
 1. Loop dimulai dari 1
 
-2. Berjalan sampai i <= 10
+2. Berjalan sampai i &lt;= 10
 
 3. Setiap iterasi akan memasukkan angka ke dalam array numbers
 
