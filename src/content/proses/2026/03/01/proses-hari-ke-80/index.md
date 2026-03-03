@@ -3,7 +3,7 @@ title: "Proses Hari ke 80"
 date: "2026-03-02 19:11"
 category: "proses"
 tags: []
-description: ""
+description: "Immutability and Constants, Creating Custom Errors."
 draft: false
 ---
 
