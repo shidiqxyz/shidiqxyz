@@ -1,27 +1,37 @@
 <script lang="ts">
-	import PostCard from "$lib/components/PostCard.svelte";
-	import Pagination from "$lib/components/Pagination.svelte";
-	import { page } from "$app/stores";
-	import { goto } from "$app/navigation";
+	import BoxLink from "$lib/components/BoxLink.svelte";
 
-	export let data;
-
-	const itemsPerPage = 6;
-
-	$: currentPage = Number($page.url.searchParams.get("page")) || 1;
-	$: totalPages = Math.ceil(data.posts.length / itemsPerPage);
-	$: paginatedPosts = data.posts.slice(
-		(currentPage - 1) * itemsPerPage,
-		currentPage * itemsPerPage,
-	);
-
-	function handlePageChange(event: CustomEvent) {
-		const newPage = event.detail.page;
-		const url = new URL($page.url);
-		url.searchParams.set("page", String(newPage));
-		goto(url.toString());
-		window.scrollTo({ top: 0, behavior: "smooth" });
-	}
+	const boxes = [
+		{
+			title: "Proses",
+			description:
+				"Catatan rekam jejak, perjalanan, dan proses belajar sehari-hari.",
+			href: "/proses",
+		},
+		{
+			title: "Pemikiran",
+			description: "Esai, opini, dan sudut pandang tentang berbagai hal.",
+			href: "/pemikiran",
+		},
+		{
+			title: "Projects",
+			description:
+				"Kumpulan portofolio, eksperimen, dan karya yang sedang atau telah dibangun.",
+			href: "/projects",
+		},
+		{
+			title: "Panduan",
+			description:
+				"Tutorial, langkah-langkah, dan dokumentasi teknis yang bermanfaat.",
+			href: "/panduan",
+		},
+		{
+			title: "About",
+			description:
+				"Tentang saya, latar belakang, dan hal-hal personal lainnya.",
+			href: "/about",
+		},
+	];
 </script>
 
 <svelte:head>
@@ -51,12 +61,10 @@
 	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
 
-<section class="space-y-12">
-	<div class="space-y-6">
-		{#each paginatedPosts as post}
-			<PostCard {post} />
+<section class="py-10">
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+		{#each boxes as box}
+			<BoxLink {box} />
 		{/each}
 	</div>
-
-	<Pagination {currentPage} {totalPages} on:change={handlePageChange} />
 </section>
