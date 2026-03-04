@@ -61,7 +61,7 @@
 	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
 
-<section class="py-10">
+<section class="pb-10 pt-4">
 	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 		{#each boxes as box}
 			<BoxLink {box} />

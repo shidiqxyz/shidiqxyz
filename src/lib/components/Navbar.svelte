@@ -18,9 +18,9 @@
 				{ href: "/proses", label: "Proses" },
 			],
 		},
+		{ href: "/panduan", label: "Panduan" },
 		{ href: "/projects", label: "Projects" },
 		{ href: "/about", label: "About" },
-		{ href: "/panduan", label: "Panduan" },
 	];
 
 	function toggleMobileMenu() {
