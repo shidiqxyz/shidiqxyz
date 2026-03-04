@@ -278,7 +278,23 @@ $$
 (10,6,8)
 $$
 
-dapat divisualisasikan dalam bentuk batang.
+Dapat divisualisasikan dalam bentuk batang.
+
+<script>
+  import Mermaid from '$lib/components/Mermaid.svelte';
+
+  const myChart = `xychart-beta
+    title "Diagram Batang"
+    x-axis ["A", "B", "C"]
+    y-axis "Nilai" 0 --> 12
+    bar [10, 6, 8]`;
+
+    const myChart2 = `pie title Preferensi Olahraga Siswa
+    "Sepak Bola" : 12
+    "Tidak Sepak Bola" : 12`;
+</script>
+
+<Mermaid chart={myChart} />
 
 ### Diagram Lingkaran
 
@@ -299,5 +315,8 @@ $$
 maka persentasenya
 
 $$
-\frac{12}{24} \times 100% = 50%
+\frac{12}{24} \times 100\% = 50\%
 $$
+
+
+<Mermaid chart={myChart2} />
