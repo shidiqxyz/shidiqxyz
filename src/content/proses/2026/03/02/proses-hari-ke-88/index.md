@@ -3,7 +3,7 @@ title: "Proses Hari ke 88"
 date: "2026-03-10 02:08"
 category: "proses"
 tags: []
-description: ""
+description: "Forge script."
 draft: false
 ---
 
