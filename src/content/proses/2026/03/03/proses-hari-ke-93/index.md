@@ -15,4 +15,4 @@ Tetapi setelah, menonton introduksi mengenai geometri, setidaknya tidak semumet 
     import YouTube from "$lib/components/YouTube.svelte";
 </script>
 
-<YouTube videoId="302eJ3TzJQU" />
+<YouTube id="302eJ3TzJQU" />
