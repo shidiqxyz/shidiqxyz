@@ -4,31 +4,27 @@
 	const boxes = [
 		{
 			title: "Proses",
-			description:
-				"Catatan rekam jejak, perjalanan, dan proses belajar sehari-hari.",
+			description: "Catatan perjalanan belajar.",
 			href: "/proses",
 		},
 		{
 			title: "Pemikiran",
-			description: "Esai, opini, dan sudut pandang tentang berbagai hal.",
+			description: "Kumpulan tulisan acak.",
 			href: "/pemikiran",
 		},
 		{
 			title: "Projects",
-			description:
-				"Kumpulan portofolio, eksperimen, dan karya yang sedang atau telah dibangun.",
+			description: "Kumpulan portofolio yang tidak bagus-bagus amat.",
 			href: "/projects",
 		},
 		{
 			title: "Panduan",
-			description:
-				"Tutorial, langkah-langkah, dan dokumentasi teknis yang bermanfaat.",
+			description: "Cara menggunakan blog ini.",
 			href: "/panduan",
 		},
 		{
 			title: "About",
-			description:
-				"Tentang saya, latar belakang, dan hal-hal personal lainnya.",
+			description: "Tentang saya.",
 			href: "/about",
 		},
 	];
@@ -62,9 +58,15 @@
 </svelte:head>
 
 <section class="pb-10 pt-4">
-	<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+	<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 		{#each boxes as box}
-			<BoxLink {box} />
+			<div
+				class={box.title === "Proses"
+					? "md:col-span-2 lg:col-span-2"
+					: "md:col-span-1"}
+			>
+				<BoxLink {box} />
+			</div>
 		{/each}
 	</div>
 </section>

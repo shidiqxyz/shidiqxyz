@@ -26,6 +26,6 @@
     <meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
 
-<article class="prose prose-lg dark:prose-invert max-w-none">
+<article class="prose dark:prose-invert max-w-none">
     <slot />
 </article>

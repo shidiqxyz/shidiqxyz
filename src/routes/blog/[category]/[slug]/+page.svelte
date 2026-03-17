@@ -113,7 +113,7 @@
 
     <article
         bind:this={articleElement}
-        class="prose prose-lg dark:prose-invert max-w-none"
+        class="prose dark:prose-invert max-w-none"
     >
         <div class="mb-8 not-prose">
             <div
@@ -139,7 +139,7 @@
                 <span class="hidden sm:inline">•</span>
 
                 <div class="flex items-center gap-2">
-                    <span class="capitalize text-blue-600 dark:text-blue-400"
+                    <span class="capitalize text-brand"
                         >{data.meta.category}</span
                     >
                     {#if data.meta.readingTime > 0}
@@ -178,7 +178,7 @@
                             <a
                                 href="/blog/{data.meta.category}/{data.prevPost
                                     .slug}"
-                                class="group flex flex-col p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-blue-500 dark:hover:border-blue-500 transition-colors"
+                                class="group flex flex-col p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-brand dark:hover:border-brand transition-colors"
                             >
                                 <span
                                     class="text-sm text-gray-500 dark:text-gray-400 mb-1 flex items-center gap-1"
@@ -200,7 +200,7 @@
                                     Previous
                                 </span>
                                 <span
-                                    class="text-base font-medium text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2"
+                                    class="text-base font-medium text-gray-900 dark:text-gray-100 group-hover:text-brand transition-colors line-clamp-2"
                                 >
                                     {data.prevPost.title}
                                 </span>
@@ -216,7 +216,7 @@
                             <a
                                 href="/blog/{data.meta.category}/{data.nextPost
                                     .slug}"
-                                class="group flex flex-col p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-blue-500 dark:hover:border-blue-500 transition-colors text-right"
+                                class="group flex flex-col p-4 rounded-lg border border-gray-200 dark:border-gray-800 hover:border-brand dark:hover:border-brand transition-colors text-right"
                             >
                                 <span
                                     class="text-sm text-gray-500 dark:text-gray-400 mb-1 flex items-center justify-end gap-1"
@@ -238,7 +238,7 @@
                                     </svg>
                                 </span>
                                 <span
-                                    class="text-base font-medium text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors line-clamp-2"
+                                    class="text-base font-medium text-gray-900 dark:text-gray-100 group-hover:text-brand transition-colors line-clamp-2"
                                 >
                                     {data.nextPost.title}
                                 </span>

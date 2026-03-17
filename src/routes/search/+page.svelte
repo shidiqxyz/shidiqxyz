@@ -14,7 +14,6 @@
             post.description.toLowerCase().includes(term) ||
             (post.tags &&
                 post.tags.some((tag) => tag.toLowerCase().includes(term))) ||
-            (post.content && post.content.toLowerCase().includes(term)) ||
             post.date.includes(term)
         );
     });
@@ -31,7 +30,7 @@
             type="text"
             bind:value={searchTerm}
             placeholder="Cari judul, isi, tanggal, atau tag..."
-            class="w-full px-5 py-4 pl-12 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all shadow-sm"
+            class="w-full px-5 py-4 pl-12 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand focus:border-transparent outline-none transition-all shadow-sm"
         />
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -79,10 +78,10 @@
                 <h3
                     class="text-lg font-medium text-gray-900 dark:text-gray-100 mb-1"
                 >
-                    Tidak ditemukan
+                    Belum menemukan yang dicari?
                 </h3>
-                <p class="text-gray-500 dark:text-gray-400">
-                    Maaf, tidak ada tulisan yang cocok dengan "{searchTerm}"
+                <p class="text-gray-500 dark:text-gray-400 max-w-sm mx-auto">
+                    Maaf, tidak ada tulisan yang cocok dengan kata kunci "{searchTerm}". Cobalah kata kunci lain yang lebih umum.
                 </p>
             </div>
         {/if}

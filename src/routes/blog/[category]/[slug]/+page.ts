@@ -1,6 +1,6 @@
 import { error } from '@sveltejs/kit';
 import { calculateReadingTime } from '$lib/utils/readingTime';
-import { getPostsByCategory } from '$lib/utils/posts';
+import { getPostsByCategory, getPostContent } from '$lib/utils/posts';
 
 /**
  * Mengekstrak URL gambar pertama dari konten markdown.
@@ -48,49 +48,25 @@ function extractFirstImage(content: string, postPath: string): string | null {
 }
 
 export async function load({ params }) {
-    // 1. Find the file path using glob, same as we do in posts.ts
-    const modules = import.meta.glob('/src/content/**/*.md');
-    // Also get raw content for extracting first image
-    const rawModules = import.meta.glob('/src/content/**/*.md', { query: '?raw', import: 'default', eager: true });
+    const postData = await getPostContent(params.category, params.slug);
 
-    let matchPath: string | undefined;
-
-    for (const path in modules) {
-        // Support both folder structure (index.md) and legacy file structure
-        const pathParts = path.split('/');
-        const filename = pathParts.at(-1);
-        const fileSlug = filename === 'index.md'
-            ? pathParts.at(-2)  // folder name for colocation structure
-            : filename?.replace('.md', '');  // legacy: filename without extension
-
-        // Check if category matches (must be the top-level folder under content)
-        // path: /src/content/proses/post-name/index.md -> parts[3] = proses
-        const fileCategory = pathParts[3];
-
-        if (fileSlug === params.slug && fileCategory === params.category) {
-            matchPath = path;
-            break;
-        }
-    }
-
-    if (!matchPath) {
+    if (!postData) {
         throw error(404, `Could not find ${params.category}/${params.slug}`);
     }
 
-    const post = await modules[matchPath]() as any;
-    const rawContent = rawModules[matchPath] as string;
+    const { content, metadata, rawContent, path } = postData;
 
-    // Ekstrak gambar pertama dari konten markdown dengan menyertakan matchPath untuk resolusi URL
-    const firstImage = extractFirstImage(rawContent, matchPath);
+    // Ekstrak gambar pertama dari konten markdown dengan menyertakan path untuk resolusi URL
+    const firstImage = extractFirstImage(rawContent, path);
 
 
     try {
         // Use reading time from metadata (remark plugin) or calculate it manually as fallback
-        let readingTime = post.metadata.readingTime;
+        let readingTime = metadata.readingTime;
 
         if (!readingTime) {
             try {
-                const rendered = post.default.render();
+                const rendered = content.render();
                 if (rendered && rendered.html) {
                     readingTime = calculateReadingTime(rendered.html);
                 }
@@ -115,9 +91,9 @@ export async function load({ params }) {
             : null;
 
         return {
-            content: post.default,
+            content,
             meta: {
-                ...post.metadata,
+                ...metadata,
                 slug: params.slug,
                 category: params.category,
                 readingTime,

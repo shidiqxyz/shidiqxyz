@@ -5,47 +5,35 @@ export interface Post {
     category: string;
     tags: string[];
     slug: string;
-    content: string;
     draft?: boolean;
+    readingTime?: number;
 }
 
 export async function getPosts() {
     let posts: Post[] = [];
 
-    // Use recursive glob to find all markdown files in any subdirectory
-    const paths = import.meta.glob('/src/content/**/*.md', { eager: true });
-
-    // For raw content, we also need to match the same recursive pattern
-    // Note: In newer Vite, we might not need the second glob if we don't use 'content' string directly from it here,
-    // but preserving original logic structure.
-    const rawPaths = import.meta.glob('/src/content/**/*.md', { query: '?raw', import: 'default', eager: true });
+    // Optimize: only import 'metadata' eagerly to keep bundle small
+    const paths = import.meta.glob('/src/content/**/*.md', { eager: true, import: 'metadata' });
 
     for (const path in paths) {
-        const file = paths[path];
-        // Support both folder structure (index.md) and legacy file structure
+        const metadata = paths[path] as any;
+        if (!metadata) continue;
+
         const pathParts = path.split('/');
         const filename = pathParts.at(-1);
         const slug = filename === 'index.md'
-            ? pathParts.at(-2)  // folder name for colocation structure
-            : filename?.replace('.md', '');  // legacy: filename without extension
+            ? pathParts.at(-2)
+            : filename?.replace('.md', '');
 
-        // Category is always the folder directly under /src/content/
-        // path example: /src/content/proses/post-name/index.md -> parts[3] is 'proses'
-        // path example: /src/content/pemikiran/idea.md -> parts[3] is 'pemikiran'
         const category = pathParts[3];
 
-
-        const content = rawPaths[path];
-
-        if (file && typeof file === 'object' && 'metadata' in file && slug && category) {
-            const metadata = file.metadata as Omit<Post, 'slug' | 'category' | 'content'>;
-
+        if (slug && category) {
             // Skip drafts in production
             if (metadata.draft && !import.meta.env.DEV) {
                 continue;
             }
 
-            const post = { ...metadata, slug, category, content } as Post;
+            const post = { ...metadata, slug, category } as Post;
             posts.push(post);
         }
     }
@@ -60,4 +48,33 @@ export async function getPosts() {
 export async function getPostsByCategory(category: string) {
     const posts = await getPosts();
     return posts.filter((post) => post.category === category);
+}
+
+/**
+ * Dynamically imports post content and raw source only when needed.
+ */
+export async function getPostContent(category: string, slug: string) {
+    const modules = import.meta.glob('/src/content/**/*.md');
+    const rawModules = import.meta.glob('/src/content/**/*.md', { query: '?raw', import: 'default' });
+
+    for (const path in modules) {
+        const pathParts = path.split('/');
+        const filename = pathParts.at(-1);
+        const fileSlug = filename === 'index.md' ? pathParts.at(-2) : filename?.replace('.md', '');
+        const fileCategory = pathParts[3];
+
+        if (fileSlug === slug && fileCategory === category) {
+            const [post, rawContent] = await Promise.all([
+                modules[path](),
+                rawModules[path]()
+            ]);
+            return {
+                content: (post as any).default,
+                metadata: (post as any).metadata,
+                rawContent: rawContent as string,
+                path
+            };
+        }
+    }
+    return null;
 }

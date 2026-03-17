@@ -37,3 +37,8 @@ pnpm-debug.log*
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+
+.agents
+skills-lock.json
+.impeccable.md
+svelte_check_output.txt

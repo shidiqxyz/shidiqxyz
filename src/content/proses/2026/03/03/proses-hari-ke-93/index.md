@@ -7,6 +7,8 @@ description: "Geometri."
 draft: false
 ---
 
+![rashii](./rashi-anmie.gif?width=600&a=center)
+
 Hari ini hanya lihat-lihat kembali mmateri kelas 7, pada bagian kesebangunan. Hal ini seperti yang tidak bisa hilang dalam benak saya, sebelum saya benar-benar memahami ini.
 
 Tetapi setelah, menonton introduksi mengenai geometri, setidaknya tidak semumet apa yang saya bayangkan. Meskipun mesti diakui ini sulit sih.

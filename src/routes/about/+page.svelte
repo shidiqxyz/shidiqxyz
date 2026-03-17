@@ -32,7 +32,7 @@
 	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
 
-<article class="prose prose-lg dark:prose-invert">
+<article class="prose dark:prose-invert max-w-none">
 	<h1>About Me</h1>
 
 	<h2>Halo!</h2>

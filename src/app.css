@@ -3,6 +3,20 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --color-brand-primary: theme('colors.blue.600');
+    --color-brand-primary-hover: theme('colors.blue.700');
+    --color-brand-primary-muted: theme('colors.blue.50');
+    --color-brand-primary-ring: theme('colors.blue.500 / 0.2');
+  }
+
+  html.dark {
+    --color-brand-primary: theme('colors.blue.400');
+    --color-brand-primary-hover: theme('colors.blue.300');
+    --color-brand-primary-muted: theme('colors.blue.950 / 0.3');
+    --color-brand-primary-ring: theme('colors.blue.400 / 0.2');
+  }
+
   html {
     scroll-behavior: smooth;
     font-size: 18px;
@@ -11,9 +25,7 @@
 
   body {
     @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 font-sans;
-    line-height: 1.7;
-    letter-spacing: 0.01em;
-    word-spacing: 0.05em;
+    line-height: 1.5;
   }
 }
 
@@ -39,7 +51,7 @@
   }
 
   .data-footnote-backref {
-    @apply no-underline ml-1 text-blue-600 dark:text-blue-400 hover:underline;
+    @apply no-underline ml-1 text-brand hover:underline;
   }
 
   /* Hide footnote backref (↩ symbol) - covers multiple formats */
@@ -58,6 +70,25 @@
   */
   .prose table {
     @apply block overflow-x-auto;
+  }
+
+  .prose p {
+    margin-top: 1em !important;
+    margin-bottom: 1em !important;
+    line-height: 1.6 !important;
+  }
+
+  .prose h1 {
+    margin-top: 0em !important;
+    margin-bottom: 0em !important;
+    line-height: 1em !important;
+  }
+
+  .prose h2,
+  .prose h3 {
+    margin-top: 1em !important;
+    margin-bottom: 0.5em !important;
+    line-height: 1.2 !important;
   }
 
   @media (max-width: 768px) {

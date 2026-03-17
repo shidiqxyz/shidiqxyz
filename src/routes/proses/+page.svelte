@@ -25,48 +25,43 @@
 </script>
 
 <svelte:head>
-	<title>Proses - shidiq</title>
+	<title>Proses | shidiq</title>
 	<meta
 		name="description"
 		content="Dokumentasi perjalanan belajar, eksperimen teknis, dan catatan pengembangan skill baru."
 	/>
 
 	<!-- Open Graph -->
-	<meta property="og:site_name" content="shidiq" />
-	<meta property="og:title" content="Proses - shidiq" />
+	<meta property="og:title" content="Proses | shidiq" />
 	<meta
 		property="og:description"
 		content="Dokumentasi perjalanan belajar, eksperimen teknis, dan catatan pengembangan skill baru."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://shidiq.xyz/proses" />
-	<meta property="og:image" content="https://shidiq.xyz/og-image.png" />
-	<meta property="og:image:width" content="1200" />
-	<meta property="og:image:height" content="630" />
 
 	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:title" content="Proses - shidiq" />
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:title" content="Proses | shidiq" />
 	<meta
 		name="twitter:description"
 		content="Dokumentasi perjalanan belajar, eksperimen teknis, dan catatan pengembangan skill baru."
 	/>
-	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
 
-<section class="space-y-12">
-	<div class="space-y-4">
+<section class="space-y-8">
+	<div class="space-y-2">
 		<h1
 			class="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100"
 		>
 			Proses
 		</h1>
 		<p class="text-gray-600 dark:text-gray-400 max-w-lg">
-			Dokumentasi perjalanan belajar dan eksperimen teknis.
+			Catatan perjalanan belajar.
 		</p>
 	</div>
 
-	<div class="space-y-6">
+	<div class="space-y-4">
 		{#each paginatedPosts as post}
 			<PostCard {post} />
 		{/each}

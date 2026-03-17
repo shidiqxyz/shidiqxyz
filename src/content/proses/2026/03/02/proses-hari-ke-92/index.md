@@ -3,7 +3,7 @@ title: "Proses Hari ke 92"
 date: "2026-03-14 15:15"
 category: "proses"
 tags: []
-description: ""
+description: "Masih FundMe."
 draft: false
 ---
 

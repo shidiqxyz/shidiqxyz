@@ -10,7 +10,7 @@
 	let searchInput: HTMLInputElement;
 
 	const links = [
-		{ href: "/", label: "Home" },
+		{ href: "/", label: "Beranda" },
 		{
 			label: "Kategori",
 			children: [
@@ -56,7 +56,7 @@
 		>
 			<a
 				href="/"
-				class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+				class="hover:text-brand transition-colors"
 				>shidiq</a
 			>
 		</h1>

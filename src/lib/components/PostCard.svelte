@@ -16,24 +16,26 @@
 	}
 </script>
 
-<article class="group">
-	<a href="/blog/{post.category}/{post.slug}" class="block space-y-3">
-		<div
-			class="flex items-center gap-3 text-xs font-medium text-gray-500 dark:text-gray-400"
+<article class="group relative flex flex-col space-y-1.5 p-4 rounded-xl transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50">
+	<div
+		class="flex items-center gap-3 text-xs font-medium text-gray-500 dark:text-gray-400"
+	>
+		<time datetime={post.date}>{formatDate(post.date)}</time>
+		<span>•</span>
+		<span class="capitalize text-brand"
+			>{post.category}</span
 		>
-			<time datetime={post.date}>{formatDate(post.date)}</time>
-			<span>•</span>
-			<span class="capitalize text-blue-600 dark:text-blue-400"
-				>{post.category}</span
-			>
-		</div>
-		<h2
-			class="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors"
-		>
+	</div>
+	
+	<h2
+		class="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-brand transition-colors"
+	>
+		<a href="/blog/{post.category}/{post.slug}" class="after:absolute after:inset-0 after:z-10 focus:outline-none">
 			{post.title}
-		</h2>
-		<p class="text-gray-600 dark:text-gray-300 leading-relaxed">
-			{post.description}
-		</p>
-	</a>
+		</a>
+	</h2>
+	
+	<p class="text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-2">
+		{post.description}
+	</p>
 </article>
