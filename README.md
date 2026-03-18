@@ -1,25 +1,23 @@
 # Muhamad Shidiq Maulana (@shidiqxyz)
 
-Hai, saya Shidiq. Saya sedang dalam perjalanan "Proses" untuk menjadi seorang **Smart Contract Auditor** dan **Bug Hunter**.
+Halo nama saya Muhamad Shidiq Maulana. Biasa dipanggil Shidiq. Saya sedang dalam perjalanan "Proses" untuk menjadi seorang Security Researcher.
 
-Saat ini saya sedang fokus mempelajari:
-- **Blockchain & Smart Contract** (Solidity, Ethereum EVM)
-- **Web3 Security** (Vulnerabilities, Auditing)
-- **Matematika** (Mulai dari dasar untuk menunjang pemahaman kriptografi & blockchain)
+2 Hal besar ini yang sedang saya pelajari:
 
-Repo ini (Blog) berfungsi sebagai "Second Brain" atau dokumentasi digital dari apa yang saya pelajari (materi) dan apa yang saya alami (proses) setiap harinya.
+- Blockchain & Smart Contract.
+- Dan Matematika.
+
+Repo ini semcam catatan atau dokumentasi digital dari apa yang saya pelajari dan apa yang saya alami setiap harinya.
 
 ## Sumber Belajar Utama
-- **Cyfrin Updraft** (Blockchain Basics, Solidity)
-- **Mastering Ethereum** (Andreas M. Antonopoulos & Gavin Wood)
-- **Secureum**
-- **Buku Matematika Sekolah** (SD - SMA)
+- Cyfrin Updraft (Blockchain Basics, Solidity, Foundry)
+- Buku Matematika Sekolah (SD - SMA)
+
 
 ## Hubungi Saya
-- 🐦 [Twitter/X](https://x.com/shidiqxyz)
-- 🐙 [GitHub](https://github.com/shidiqxyz)
-- 🌐 [Website](https://shidiq.xyz)
-- 📸 [Instagram](https://www.instagram.com/muhamad.shidiq.m/)
+- [Twitter/X](https://x.com/shidiqxyz)
+- [GitHub](https://github.com/shidiqxyz)
+- [Website](https://shidiq.xyz)
 
----
+
 *"My math isn't mathing, but I'm working on it."*
