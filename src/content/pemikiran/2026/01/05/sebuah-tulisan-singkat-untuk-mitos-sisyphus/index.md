@@ -4,7 +4,7 @@ date: "2026-01-31 22:16"
 category: "pemikiran"
 tags: []
 description: "Beberapa hari yang lalu saya baru menyelesaikan buku mitos Sisyphus yang ditulis oleh Albert Camus."
-draft: false
+draft: true
 ---
 
 Beberapa hari yang lalu saya baru menyelesaikan buku mitos Sisyphus yang ditulis oleh Albert Camus. 

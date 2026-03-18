@@ -6,12 +6,11 @@ tags: []
 description: "Kumpulan materi dan sumber belajar."
 draft: false
 ---
-# Blockchain & Smart Contract — Curated Learning Path
+
+## Blockchain & Smart Contract
 
 Kumpulan resource Web3, Solidity, dan Smart Contract Security yang disusun
-berdasarkan **learning path**: dari fundamental → development → security → karier.
-
----
+berdasarkan learning path dari fundamental → development → tooling → security → karier.
 
 ## Dasar & Fondasi Blockchain
 
@@ -67,6 +66,106 @@ berdasarkan **learning path**: dari fundamental → development → security →
 
 ---
 
+## Tooling & Development Environment
+
+| Materi | Fokus | Link |
+|------|------|------|
+| Hardhat Docs | Alternative build & test framework | https://hardhat.org/docs |
+| Hardhat vs Foundry | Perbandingan toolchain | https://hardhat.org/hardhat-runner/docs/advanced/hardhat-and-foundry |
+| Tenderly | Debugging, simulation & monitoring | https://docs.tenderly.co |
+| Tenderly Simulator | Fork & simulate transactions | https://docs.tenderly.co/simulator-ui/transaction-simulator |
+| Etherscan API | Block explorer API | https://docs.etherscan.io |
+| Alchemy SDK | Node provider & enhanced APIs | https://docs.alchemy.com/reference/alchemy-sdk-quickstart |
+| viem | TypeScript Ethereum interface | https://viem.sh/docs/getting-started |
+| ethers.js | JavaScript Ethereum library | https://docs.ethers.org/v6/ |
+
+---
+
+## Account Abstraction (ERC-4337)
+
+| Materi | Fokus | Link |
+|------|------|------|
+| ERC-4337 Official Site | Spec & overview | https://www.erc4337.io |
+| EIP-4337 Full Spec | Technical specification | https://eips.ethereum.org/EIPS/eip-4337 |
+| Account Abstraction Course | Cyfrin Updraft | https://updraft.cyfrin.io/courses/account-abstraction |
+| Alchemy AA Docs | UserOperation, Bundler, Paymaster | https://docs.alchemy.com/docs/account-abstraction |
+| ERC-4337 by Example | Walkthrough kode | https://www.erc4337.io/docs/understanding-ERC-4337/user-operation |
+| EIP-7702 | AA untuk EOA (Ethereum Pectra) | https://eips.ethereum.org/EIPS/eip-7702 |
+
+---
+
+## DeFi Protocols & Finance
+
+### Konsep & Arsitektur
+
+| Materi | Fokus | Link |
+|------|------|------|
+| Uniswap V3 Development Book | AMM math & DEX deep dive | https://uniswapv3book.com/index.html |
+| How Aave Works | Lending protocol mechanics | https://docs.aave.com/developers/getting-started/readme |
+| Aave V3 Technical Paper | Formal spec lending | https://github.com/aave/aave-v3-core/blob/master/techpaper/Aave_V3_Technical_Paper.pdf |
+| Compound Finance Docs | Money market protocol | https://docs.compound.finance |
+| MakerDAO Purple Paper | DAI stablecoin mechanics | https://makerdao.com/en/whitepaper/ |
+| Curve Finance Docs | Stablecoin AMM | https://docs.curve.fi |
+| DeFi Developer Roadmap | Komprehensif DeFi overview | https://github.com/OffcierCia/DeFi-Developer-Road-Map |
+
+### Math & Finance in Solidity
+
+| Materi | Topik | Link |
+|------|------|------|
+| Math in Solidity (Part 1–5) | Numbers → Logarithm | https://medium.com/coinmonks/math-in-solidity-part-1-numbers-384c8377f26d |
+| Fixed Point Arithmetic | Presisi bilangan desimal di Solidity | https://rareskills.io/post/solidity-fixed-point |
+| TWAP Oracle | Time-weighted average price | https://rareskills.io/post/twap-uniswap-v2 |
+
+---
+
+## L2 & Scaling
+
+### Fondasi & Arsitektur
+
+| Materi | Fokus | Link |
+|------|------|------|
+| L2Beat | Overview ekosistem L2 & risk analysis | https://l2beat.com |
+| Rollup Overview (Ethereum.org) | Optimistic vs ZK rollup | https://ethereum.org/en/layer-2/ |
+| The Rollup Bible | Deep dive arsitektur rollup | https://thedailygwei.substack.com/p/the-rollup-bible |
+| Optimism Specs | OP Stack technical specs | https://specs.optimism.io |
+| Arbitrum Docs | Nitro architecture | https://docs.arbitrum.io/how-arbitrum-works/inside-arbitrum-nitro |
+| zkSync Era Docs | ZK rollup development | https://docs.zksync.io |
+| Starknet Docs | Cairo & STARK proofs | https://docs.starknet.io |
+
+### ZK & Cryptography
+
+| Materi | Fokus | Link |
+|------|------|------|
+| ZK Learning (zk-learning.org) | Course ZK proof dari nol | https://zk-learning.org |
+| zkEVM Overview (Polygon) | zkEVM architecture | https://wiki.polygon.technology/docs/zkevm/ |
+| EIP-4844 (Proto-Danksharding) | Blob transactions & DA | https://eips.ethereum.org/EIPS/eip-4844 |
+| Danksharding Overview | Full data availability roadmap | https://ethereum.org/en/roadmap/danksharding/ |
+
+### Real-time & High-throughput EVM
+
+| Materi | Fokus | Link |
+|------|------|------|
+| MegaETH Docs | Real-time EVM, node architecture | https://docs.megaeth.com |
+| MegaETH Whitepaper | Technical deep dive | https://megaeth.com/research |
+| EIP-7702 Context for L2 | EOA delegation on L2 | https://eips.ethereum.org/EIPS/eip-7702 |
+
+---
+
+## Formal Verification
+
+| Materi | Fokus | Link |
+|------|------|------|
+| Certora Prover Docs | CVL spec language | https://docs.certora.com |
+| Certora Tutorials | Hands-on formal verification | https://docs.certora.com/en/latest/docs/tutorials/index.html |
+| Halmos Docs | Symbolic testing untuk Foundry | https://a16zcrypto.com/posts/article/symbolic-testing-with-halmos-breaking-down-the-key-concepts/ |
+| Halmos GitHub | Symbolic bounded model checker | https://github.com/a16z/halmos |
+| Echidna | Property-based fuzzer Trail of Bits | https://github.com/crytic/echidna |
+| Slither | Static analyzer Trail of Bits | https://github.com/crytic/slither |
+| Manticore | Symbolic execution | https://github.com/trailofbits/manticore |
+| hevm | EVM symbolic execution (DappTools) | https://github.com/ethereum/hevm |
+
+---
+
 ## Smart Contract Security & Auditing
 
 ### Artikel & Dokumentasi
@@ -114,21 +213,14 @@ berdasarkan **learning path**: dari fundamental → development → security →
 
 ---
 
-## Math & Finance in Solidity
-
-| Materi | Topik | Link |
-|------|------|------|
-| Math in Solidity (Part 1–5) | Numbers → Logarithm | https://medium.com/coinmonks/math-in-solidity-part-1-numbers-384c8377f26d |
-| Uniswap V3 Development Book | AMM math & DEX | https://uniswapv3book.com/index.html |
-
----
-
-## Video Learning (General)
+## Video Learning
 
 | Materi | Platform | Link |
 |------|----------|------|
 | Blockchain & Solidity Full Course | freeCodeCamp | https://www.youtube.com/watch?v=gyMwXuJrbJQ |
 | Solidity Beginner to Expert | freeCodeCamp | https://www.youtube.com/watch?v=M576WGiDBdQ |
+| ZK Whiteboard Sessions | ZK proofs series | https://zkhack.dev/whiteboard/ |
+| L2 Architecture Deep Dives | Bankless / The Daily Gwei | https://www.youtube.com/@BanklessHQ |
 
 ---
 
@@ -141,6 +233,7 @@ berdasarkan **learning path**: dari fundamental → development → security →
 | Blockchain Attack Vectors | Attack patterns | https://github.com/ImmuneBytes-Security-Audit/Blockchain-Attack-Vectors |
 | Web3 Bounties & Exploits | Real exploits | https://github.com/ArsenSecurity/Bounties-Exploit-Bugs |
 | Awesome Smart Contracts | Resource list | https://github.com/shafu0x/awesome-smart-contracts |
+| Not So Smart Contracts | Vuln patterns by ToB | https://github.com/crytic/not-so-smart-contracts |
 
 ---
 
@@ -166,8 +259,7 @@ berdasarkan **learning path**: dari fundamental → development → security →
 
 ## Matematika
 
-Buku **Matematika Kurikulum Merdeka** resmi dari Kemdikbud untuk semua jenjang, dilengkapi video pembelajaran dan sumber pendukung.
-
+Buku Matematika Kurikulum Merdeka resmi dari Kemdikbud untuk semua jenjang, dilengkapi video pembelajaran.
 ---
 
 ## Video Pembelajaran
@@ -212,23 +304,6 @@ Buku **Matematika Kurikulum Merdeka** resmi dari Kemdikbud untuk semua jenjang, 
 | Kelas 11 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XI.pdf |
 | Kelas 12 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XII.pdf |
 
----
-
-## Materi Pendukung
-
-### Referensi Teori
-- OpenStax Math: https://openstax.org
-- Paul’s Online Math Notes: https://tutorial.math.lamar.edu
-
-### Latihan & Problem Solving
-- Project Euler: https://projecteuler.net
-- Brilliant.org: https://brilliant.org
-
-### Tools Interaktif
-- Desmos: https://www.desmos.com
-- GeoGebra: https://www.geogebra.org
-
----
 
 ## Link Alternatif Lengkap
 
