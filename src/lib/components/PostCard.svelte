@@ -16,7 +16,7 @@
 	}
 </script>
 
-<article class="group relative flex flex-col space-y-1.5 p-4 rounded-xl transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50">
+<article class="group relative flex flex-col space-y-1.5 p-4 rounded-xl border border-gray-200 dark:border-gray-800 transition-colors hover:bg-gray-50 dark:hover:bg-gray-800/50">
 	<div
 		class="flex items-center gap-3 text-xs font-medium text-gray-500 dark:text-gray-400"
 	>

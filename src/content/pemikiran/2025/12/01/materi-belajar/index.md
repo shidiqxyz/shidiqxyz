@@ -259,21 +259,18 @@ berdasarkan learning path dari fundamental → development → tooling → secur
 
 ## Matematika
 
-Buku Matematika Kurikulum Merdeka resmi dari Kemdikbud untuk semua jenjang, dilengkapi video pembelajaran.
----
 
-## Video Pembelajaran
+### Video Pembelajaran
 
 | Materi | Deskripsi | Link |
 |------|-----------|------|
 | Pre-Algebra | Fondasi matematika (aritmetika, pecahan, rasio) | https://www.youtube.com/playlist?list=PL0o_zxa4K1BVoTlaXWFcFZ7fU3RvmFMMG |
 | FreeCodeCamp Math | Koleksi matematika dasar hingga lanjut | https://www.youtube.com/playlist?list=PLWKjhJtqVAbl5SlE6aBHzUVZ1e6q1Wz0v |
 | Khan Academy | Video + latihan interaktif (ID/EN) | https://www.khanacademy.org |
-| 3Blue1Brown | Visualisasi & intuisi matematika | https://www.youtube.com/@3blue1brown |
 
 ---
 
-## SD (Kelas 1–6)
+### SD (Kelas 1–6)
 
 | Kelas | Download |
 |------|----------|
@@ -286,7 +283,7 @@ Buku Matematika Kurikulum Merdeka resmi dari Kemdikbud untuk semua jenjang, dile
 
 ---
 
-## SMP (Kelas 7–9)
+### SMP (Kelas 7–9)
 
 | Kelas | Download |
 |------|----------|
@@ -296,16 +293,13 @@ Buku Matematika Kurikulum Merdeka resmi dari Kemdikbud untuk semua jenjang, dile
 
 ---
 
-## SMA (Kelas 10–12)
+### SMA (Kelas 10–12)
 
 | Kelas | Download |
 |------|----------|
 | Kelas 10 | https://sman20-jkt.sch.id/E-Learning/siswa_merdeka/MATEMATIKA-BS-KLS_X_Rev.pdf |
 | Kelas 11 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XI.pdf |
 | Kelas 12 | https://static.buku.kemdikbud.go.id/content/pdf/bukuteks/kurikulum21/Matematika-BS-KLS-XII.pdf |
-
-
-## Link Alternatif Lengkap
 
 Jika link PDF tidak berfungsi, semua buku Matematika Kelas 1–12 tersedia di:  
 [Google Drive](https://drive.google.com/drive/folders/1bfALWoLIhzF_XUsw6hZdBTvu9jLxGC0x)
