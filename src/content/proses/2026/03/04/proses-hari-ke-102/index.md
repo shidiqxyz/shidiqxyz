@@ -17,4 +17,4 @@ Dalam materi:
 
 Bahwa variabel `subscriptionId` didefinisikan dalam tipe `uint256` sedangkan pada dokumentasi menggunakan `uint64`. Sehingga harus mengupdate tipenya.
 
-Sepertinya belum di upddate makanya terjadi kekeliruan ini.
+Sepertinya belum di update makanya terjadi kekeliruan ini. Saya sendiri sudah mengganti dengan yang sesuai yaitu dengan menggunakan `uint64`.
