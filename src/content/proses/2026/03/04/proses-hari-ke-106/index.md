@@ -8,3 +8,5 @@ draft: false
 ---
 
 Untuk hari ini, kembali mengoprek autoclipper. Coba fix beberapa masalah, seperti subtitle kurang pas, nambah source video dan juga agar lebih pas potongan shortnya.
+
+Sepertinya saya ingin melanjutkan matematika kelas 8, sudah lama tidak lanjut.
