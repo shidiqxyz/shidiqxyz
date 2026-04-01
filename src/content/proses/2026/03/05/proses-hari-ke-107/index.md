@@ -7,4 +7,6 @@ description: "Tidak."
 draft: false
 ---
 
+![osaka](./osaka-ayumu-kasuga.gif?width=600&align=center)
+
 Sepertinya sulit untuk memulainya kembali. Butuh lingkungan yang tepat agar bisa kembali fokus.
