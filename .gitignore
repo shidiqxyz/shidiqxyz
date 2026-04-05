@@ -42,3 +42,5 @@ pnpm-debug.log*
 skills-lock.json
 .impeccable.md
 svelte_check_output.txt
+
+static/content/*

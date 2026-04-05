@@ -27,14 +27,18 @@ export async function GET() {
       .join('')}
   ${posts
       .map(
-        (post) => `
+        (post) => {
+          const date = new Date(post.date);
+          const lastmod = isNaN(date.getTime()) ? '' : `<lastmod>${date.toISOString()}</lastmod>`;
+          return `
   <url>
     <loc>${siteUrl}/blog/${encodeURIComponent(post.category)}/${encodeURIComponent(post.slug)}</loc>
-    <lastmod>${new Date(post.date).toISOString()}</lastmod>
+    ${lastmod}
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-  `
+  `;
+        }
       )
       .join('')}
 </urlset>`;

@@ -3,7 +3,7 @@ title: "Proses Hari ke 112"
 date: "2026-04-05 09:33"
 category: "proses"
 tags: []
-description: "Masih AI Ethics.
+description: "Masih AI Ethics."
 draft: false
 ---
 

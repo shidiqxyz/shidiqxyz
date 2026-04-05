@@ -3,7 +3,8 @@ import { getPosts } from '$lib/utils/posts';
 export const prerender = true;
 
 // Escape XML entities to prevent injection
-function escapeXml(str: string): string {
+function escapeXml(str: string | undefined): string {
+  if (!str) return '';
   return str
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
