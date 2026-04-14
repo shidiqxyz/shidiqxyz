@@ -3,7 +3,7 @@ title: "Proses Hari ke 116"
 date: "2026-04-12 19:46"
 category: "proses"
 tags: []
-description: ""
+description: "Sedikit update."
 draft: false
 ---
 
