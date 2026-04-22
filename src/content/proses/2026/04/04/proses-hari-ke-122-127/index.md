@@ -3,7 +3,7 @@ title: "Proses Hari ke 122 - 127"
 date: "2026-04-22 19:02"
 category: "proses"
 tags: []
-description: ""
+description: "Kebanyakan skip."
 draft: false
 ---
 Kebanyakan skip hari karena lupa untuk nulis. 5 Harian gak update. Baru keinget hari ini.
