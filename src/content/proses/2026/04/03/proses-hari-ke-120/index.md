@@ -21,5 +21,3 @@ Dan beres juga untuk diskusinya, awalnya saya coba pake [mathcha](https://www.ma
 Ada [overleaf](http://overleaf.com/project), ternyata ini menggunakan latex. Saya coba copy versi latex dari mathcha dan error. Dan akhirnya suruh gpt untuk memperbaiki formatingnya.
 
 Ini hasil tuganya. Honest work.
-
-[Diskusi Matematika Dasar Sesi 1](./DISKUSI_MD_SESI_1.pdf)
