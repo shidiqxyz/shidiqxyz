@@ -3,7 +3,7 @@ title: "Proses Hari ke 128 - 144"
 date: "2026-05-08 18:08"
 category: "proses"
 tags: []
-description: ""
+description: "timeskip."
 draft: false
 ---
 
