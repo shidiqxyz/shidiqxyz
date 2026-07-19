@@ -11,16 +11,14 @@
             link: "https://tukangseblak.vercel.app/",
         },
         {
-            title: "Ramalan Haru",
-            description:
-                "Aplikasi ramalan sederhana untuk hiburan sehari-hari.",
-            link: "https://ramalan-haru.vercel.app/",
+            title: "see you on july",
+            description: "Situs personal untuk band shoegaze.",
+            link: "https://syoj.vercel.app/",
         },
         {
-            title: "gensynImpek_bot",
-            description:
-                "Bot Telegram untuk membantu cek kontibusi project Gensyn.",
-            link: "https://t.me/gensynImpek_bot/",
+            title: "Paranada Records",
+            description: "Situs resmi label musik dengan desain profesional.",
+            link: "https://paranada.vercel.app/",
         },
     ];
 
@@ -30,35 +28,35 @@
             description:
                 "Menjalankan node validator untuk jaringan Avail pada saat testnet.",
             link: "https://www.availproject.org/",
-            status: "Active",
+            status: "Finished",
         },
         {
             title: "PolymerLabs",
             description:
                 "Kontribusi pada jaringan PolymerLabs sebagai node operator pada saat testnet.",
             link: "https://www.polymerlabs.org/",
-            status: "Active",
+            status: "Finished",
         },
         {
             title: "Lava",
             description:
                 "Menyediakan layanan RPC melalui jaringan Lava Network pada saat testnet.",
             link: "https://www.lavanet.xyz/",
-            status: "Active",
+            status: "Finished",
         },
         {
             title: "Nillion",
             description:
                 "Berpartisipasi dalam jaringan komputasi privat Nillion pada saat testnet.",
             link: "https://nillion.com/",
-            status: "Active",
+            status: "Finished",
         },
         {
             title: "Gensyn",
             description:
                 "Berkontribusi dalam penyediaan komputasi terdesentralisasi untuk pelatihan model Machine Learning pada fase testnet.",
             link: "https://www.gensyn.ai/",
-            status: "Active",
+            status: "Finished",
         },
     ];
 </script>
