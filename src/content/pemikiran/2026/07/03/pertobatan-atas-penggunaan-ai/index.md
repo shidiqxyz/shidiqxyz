@@ -3,7 +3,7 @@ title: "Pertobatan atas penggunaan AI"
 date: "2026-07-19 19:24"
 category: "pemikiran"
 tags: []
-description: ""
+description: "Keresahan terhadap AI"
 draft: false
 ---
 
