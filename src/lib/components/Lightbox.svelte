@@ -39,18 +39,26 @@
         }
     }
 
-    onMount(() => {
-        if (contentElement) {
+    let attachedTo: HTMLElement | null = null;
+
+    // Re-attach when contentElement arrives late (article bind:this resolves
+    // after Lightbox mounts) and detach from the old element.
+    $: {
+        if (contentElement && contentElement !== attachedTo) {
+            attachedTo?.removeEventListener("click", handleImageClick);
             contentElement.addEventListener("click", handleImageClick);
+            attachedTo = contentElement;
         }
+    }
+
+    onMount(() => {
         window.addEventListener("keydown", handleKeydown);
     });
 
     onDestroy(() => {
         if (!browser) return;
-        if (contentElement) {
-            contentElement.removeEventListener("click", handleImageClick);
-        }
+        attachedTo?.removeEventListener("click", handleImageClick);
+        attachedTo = null;
         window.removeEventListener("keydown", handleKeydown);
         document.body.style.overflow = "";
     });

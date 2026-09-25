@@ -9,14 +9,20 @@ export interface Post {
     readingTime?: number;
 }
 
+// Hoisted: import.meta.glob is resolved at build time, so create the maps once.
+const metaModules = import.meta.glob('/src/content/**/*.md', { eager: true, import: 'metadata' });
+const contentModules = import.meta.glob('/src/content/**/*.md');
+const rawModules = import.meta.glob('/src/content/**/*.md', { query: '?raw', import: 'default' });
+
+let postsCache: Post[] | null = null;
+
 export async function getPosts() {
+    if (postsCache) return postsCache;
+
     let posts: Post[] = [];
 
-    // Optimize: only import 'metadata' eagerly to keep bundle small
-    const paths = import.meta.glob('/src/content/**/*.md', { eager: true, import: 'metadata' });
-
-    for (const path in paths) {
-        const metadata = paths[path] as any;
+    for (const path in metaModules) {
+        const metadata = metaModules[path] as any;
         if (!metadata) continue;
 
         const pathParts = path.split('/');
@@ -42,6 +48,7 @@ export async function getPosts() {
         new Date(second.date).getTime() - new Date(first.date).getTime()
     );
 
+    postsCache = posts;
     return posts;
 }
 
@@ -54,10 +61,7 @@ export async function getPostsByCategory(category: string) {
  * Dynamically imports post content and raw source only when needed.
  */
 export async function getPostContent(category: string, slug: string) {
-    const modules = import.meta.glob('/src/content/**/*.md');
-    const rawModules = import.meta.glob('/src/content/**/*.md', { query: '?raw', import: 'default' });
-
-    for (const path in modules) {
+    for (const path in contentModules) {
         const pathParts = path.split('/');
         const filename = pathParts.at(-1);
         const fileSlug = filename === 'index.md' ? pathParts.at(-2) : filename?.replace('.md', '');
@@ -65,7 +69,7 @@ export async function getPostContent(category: string, slug: string) {
 
         if (fileSlug === slug && fileCategory === category) {
             const [post, rawContent] = await Promise.all([
-                modules[path](),
+                contentModules[path](),
                 rawModules[path]()
             ]);
             return {

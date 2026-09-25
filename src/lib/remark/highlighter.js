@@ -11,7 +11,9 @@ async function getHighlighter() {
     if (!highlighter) {
         highlighter = await createHighlighter({
             themes: ['github-dark', 'github-light'],
-            langs: ['javascript', 'typescript', 'svelte', 'html', 'css', 'json', 'bash', 'markdown', 'diff', 'solidity', 'python', 'yaml', 'sql', 'go', 'rust', 'java', 'c', 'cpp', 'latex', 'tex']
+            // Only grammars actually used in content (checked via ``` fence census).
+            // Dropping python/sql/go/rust/java/c/cpp/diff/tex saves build time + memory.
+            langs: ['javascript', 'typescript', 'svelte', 'html', 'css', 'json', 'bash', 'markdown', 'yaml', 'solidity', 'latex', 'text']
         });
     }
     return highlighter;

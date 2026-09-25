@@ -1,39 +1,78 @@
 <script lang="ts">
-    import { onMount, mount } from "svelte";
+    import "katex/dist/katex.min.css";
+    import { onMount, onDestroy } from "svelte";
     import TableOfContents from "$lib/components/TableOfContents.svelte";
     import ReadingProgress from "$lib/components/ReadingProgress.svelte";
-    import CopyButton from "$lib/components/CopyButton.svelte";
     import Lightbox from "$lib/components/Lightbox.svelte";
 
     export let data;
 
     let articleElement: HTMLElement;
+    let cleanupCopy: (() => void) | null = null;
+
+    const COPY_SVG =
+        '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>';
+
+    // Single delegated copy handler: one listener + vanilla buttons,
+    // instead of one Svelte root per <pre>.
+    function setupCopyButtons(root: HTMLElement) {
+        const blocks = root.querySelectorAll("pre");
+        const buttons: HTMLButtonElement[] = [];
+
+        const onClick = async (e: Event) => {
+            const btn = (e.target as HTMLElement).closest(
+                "[data-copy-btn]",
+            ) as HTMLButtonElement | null;
+            if (!btn || !root.contains(btn)) return;
+            const pre = btn.closest("pre");
+            const code =
+                pre?.querySelector("code")?.innerText ?? pre?.innerText ?? "";
+            try {
+                await navigator.clipboard.writeText(code);
+                const original = btn.innerHTML;
+                btn.innerHTML =
+                    '<span class="text-xs font-mono text-green-400">Copied!</span>';
+                setTimeout(() => {
+                    btn.innerHTML = original;
+                }, 1500);
+            } catch (err) {
+                console.error("Failed to copy!", err);
+            }
+        };
+
+        blocks.forEach((block) => {
+            if (
+                getComputedStyle(block).position === "static" &&
+                !block.style.position
+            ) {
+                block.style.position = "relative";
+            }
+            const btn = document.createElement("button");
+            btn.setAttribute("data-copy-btn", "");
+            btn.setAttribute("aria-label", "Copy code");
+            btn.className =
+                "absolute top-2 right-2 p-1.5 rounded-md bg-gray-700/50 hover:bg-gray-700 text-gray-300 hover:text-white transition-colors border border-transparent hover:border-gray-500 focus:outline-none focus:ring-1 focus:ring-gray-400";
+            btn.innerHTML = COPY_SVG;
+            block.appendChild(btn);
+            buttons.push(btn);
+        });
+
+        root.addEventListener("click", onClick);
+        return () => {
+            root.removeEventListener("click", onClick);
+            buttons.forEach((b) => b.remove());
+        };
+    }
 
     onMount(() => {
         if (articleElement) {
-            // Mount CopyButton to all code blocks
-            const codeBlocks = articleElement.querySelectorAll("pre");
-            codeBlocks.forEach((block) => {
-                // Create a container for the button
-                const buttonContainer = document.createElement("div");
-                // Make sure block is relative so button is positioned correctly
-                if (getComputedStyle(block).position === "static") {
-                    block.style.position = "relative";
-                }
-                block.appendChild(buttonContainer);
-
-                // Get the code text
-                const code =
-                    block.querySelector("code")?.innerText || block.innerText;
-
-                mount(CopyButton, {
-                    target: buttonContainer,
-                    props: {
-                        text: code,
-                    },
-                });
-            });
+            cleanupCopy = setupCopyButtons(articleElement);
         }
+    });
+
+    onDestroy(() => {
+        cleanupCopy?.();
+        cleanupCopy = null;
     });
 </script>
 

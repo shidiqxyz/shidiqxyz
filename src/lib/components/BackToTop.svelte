@@ -3,12 +3,17 @@
     import { fade } from "svelte/transition";
 
     let showButton = false;
+    let ticking = false;
+
+    function update() {
+        ticking = false;
+        showButton = window.scrollY > 500;
+    }
 
     function handleScroll() {
-        if (window.scrollY > 500) {
-            showButton = true;
-        } else {
-            showButton = false;
+        if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(update);
         }
     }
 
@@ -20,7 +25,8 @@
     }
 
     onMount(() => {
-        window.addEventListener("scroll", handleScroll);
+        window.addEventListener("scroll", handleScroll, { passive: true });
+        update();
     });
 
     onDestroy(() => {

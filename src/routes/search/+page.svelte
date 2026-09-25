@@ -1,22 +1,47 @@
 <script lang="ts">
     import PostCard from "$lib/components/PostCard.svelte";
     import { page } from "$app/stores";
+    import { goto } from "$app/navigation";
     export let data;
 
-    let searchTerm = "";
+    let input = $page.url.searchParams.get("q") || "";
+    let debouncedTerm = input;
+    let debounceTimer: ReturnType<typeof setTimeout>;
 
-    $: searchTerm = $page.url.searchParams.get("q") || "";
+    // Debounce typing -> URL (?q=) so filtering + history stay cheap
+    $: {
+        clearTimeout(debounceTimer);
+        const value = input;
+        debounceTimer = setTimeout(() => {
+            debouncedTerm = value;
+            const params = new URLSearchParams($page.url.searchParams);
+            if (value) params.set("q", value);
+            else params.delete("q");
+            goto(`?${params.toString()}`, {
+                replaceState: true,
+                keepFocus: true,
+                noScroll: true,
+            });
+        }, 150);
+    }
 
-    $: filteredPosts = data.posts.filter((post) => {
-        const term = searchTerm.toLowerCase();
-        return (
-            post.title.toLowerCase().includes(term) ||
-            post.description.toLowerCase().includes(term) ||
-            (post.tags &&
-                post.tags.some((tag) => tag.toLowerCase().includes(term))) ||
-            post.date.includes(term)
-        );
-    });
+    $: term = debouncedTerm.trim().toLowerCase();
+    $: filteredPosts =
+        term === ""
+            ? data.posts.slice(0, 20)
+            : data.posts
+                  .filter((post) => {
+                      return (
+                          post.title.toLowerCase().includes(term) ||
+                          post.description.toLowerCase().includes(term) ||
+                          (post.tags &&
+                              post.tags.some((tag) =>
+                                  tag.toLowerCase().includes(term),
+                              )) ||
+                          post.date.includes(term)
+                      );
+                  })
+                  .slice(0, 20);
 </script>
 
 <svelte:head>
@@ -28,7 +53,7 @@
     <div class="relative">
         <input
             type="text"
-            bind:value={searchTerm}
+            bind:value={input}
             placeholder="Cari judul, isi, tanggal, atau tag..."
             class="w-full px-5 py-4 pl-12 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand focus:border-transparent outline-none transition-all shadow-sm"
         />
@@ -81,7 +106,7 @@
                     Belum menemukan yang dicari?
                 </h3>
                 <p class="text-gray-500 dark:text-gray-400 max-w-sm mx-auto">
-                    Maaf, tidak ada tulisan yang cocok dengan kata kunci "{searchTerm}". Cobalah kata kunci lain yang lebih umum.
+                    Maaf, tidak ada tulisan yang cocok dengan kata kunci "{debouncedTerm}". Cobalah kata kunci lain yang lebih umum.
                 </p>
             </div>
         {/if}

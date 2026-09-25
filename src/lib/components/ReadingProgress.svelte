@@ -6,8 +6,10 @@
     export let height = "4px";
 
     let progress = 0;
+    let ticking = false;
 
     function updateProgress() {
+        ticking = false;
         const scrollHeight =
             document.documentElement.scrollHeight - window.innerHeight;
         if (scrollHeight > 0) {
@@ -17,14 +19,21 @@
         }
     }
 
+    function onScroll() {
+        if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(updateProgress);
+        }
+    }
+
     onMount(() => {
-        window.addEventListener("scroll", updateProgress);
+        window.addEventListener("scroll", onScroll, { passive: true });
         updateProgress();
     });
 
     onDestroy(() => {
         if (typeof window !== "undefined") {
-            window.removeEventListener("scroll", updateProgress);
+            window.removeEventListener("scroll", onScroll);
         }
     });
 </script>

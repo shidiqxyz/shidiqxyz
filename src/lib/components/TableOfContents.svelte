@@ -76,17 +76,14 @@
         activeId = "";
     }
 
-    $: if (contentElement) {
+    $: if (contentElement && observer) {
         updateHeadings();
     }
 
     // Re-scan headings after SvelteKit client-side navigation
     afterNavigate(async () => {
         await tick();
-        // Small delay to ensure mdsvex content has rendered
-        setTimeout(() => {
-            updateHeadings();
-        }, 50);
+        updateHeadings();
     });
 
     function scrollToHeading(id: string) {

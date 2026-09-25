@@ -1,5 +1,27 @@
+<script lang="ts" context="module">
+    // Singleton mermaid loader — shared across all instances so the
+    // ~1MB lib is fetched at most once, and only when a diagram scrolls into view.
+    let mermaidPromise: Promise<any> | null = null;
+    let idCounter = 0;
+
+    function loadMermaid() {
+        if (!mermaidPromise) {
+            mermaidPromise = import("mermaid").then((mod) => {
+                const mermaid = mod.default;
+                mermaid.initialize({
+                    startOnLoad: false,
+                    theme: "default",
+                    securityLevel: "loose",
+                });
+                return mermaid;
+            });
+        }
+        return mermaidPromise;
+    }
+</script>
+
 <script lang="ts">
-    import { onMount } from "svelte";
+    import { onMount, onDestroy } from "svelte";
     import { browser } from "$app/environment";
 
     export let chart = "";
@@ -8,14 +30,34 @@
     let rendered = false;
     let isZoomed = false;
     let svgContent = "";
+    let observer: IntersectionObserver | null = null;
+    let cancelled = false;
+
+    async function render() {
+        if (rendered || !chart || !container) return;
+        try {
+            const mermaid = await loadMermaid();
+            if (cancelled) return;
+            const { svg } = await mermaid.render(
+                `mermaid-${++idCounter}-${Date.now().toString(36)}`,
+                chart,
+            );
+            if (cancelled) return;
+            svgContent = svg;
+            container.innerHTML = svg;
+            rendered = true;
+        } catch (e) {
+            console.error("Mermaid render error:", e);
+            if (container && !cancelled) {
+                container.innerHTML =
+                    '<pre style="color: red;">Error rendering diagram</pre>';
+            }
+        }
+    }
 
     function toggleZoom() {
         isZoomed = !isZoomed;
-        if (isZoomed) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "";
-        }
+        document.body.style.overflow = isZoomed ? "hidden" : "";
     }
 
     function handleKeydown(e: KeyboardEvent) {
@@ -24,29 +66,34 @@
         }
     }
 
-    onMount(async () => {
-        if (browser && chart) {
-            const mermaid = (await import("mermaid")).default;
-            mermaid.initialize({
-                startOnLoad: false,
-                theme: "default",
-                securityLevel: "loose",
-            });
-
-            try {
-                const { svg } = await mermaid.render(
-                    "mermaid-" + Math.random().toString(36).slice(2),
-                    chart,
-                );
-                svgContent = svg;
-                container.innerHTML = svg;
-                rendered = true;
-            } catch (e) {
-                console.error("Mermaid render error:", e);
-                container.innerHTML =
-                    '<pre style="color: red;">Error rendering diagram</pre>';
-            }
+    onMount(() => {
+        if (!browser || !chart || !container) return;
+        // Lazy-render only when visible
+        if ("IntersectionObserver" in window) {
+            observer = new IntersectionObserver(
+                (entries) => {
+                    for (const entry of entries) {
+                        if (entry.isIntersecting) {
+                            render();
+                            observer?.disconnect();
+                            observer = null;
+                            break;
+                        }
+                    }
+                },
+                { rootMargin: "200px" },
+            );
+            observer.observe(container);
+        } else {
+            render();
         }
+    });
+
+    onDestroy(() => {
+        cancelled = true;
+        observer?.disconnect();
+        observer = null;
+        if (isZoomed) document.body.style.overflow = "";
     });
 </script>
 

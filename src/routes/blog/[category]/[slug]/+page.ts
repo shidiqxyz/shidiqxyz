@@ -61,19 +61,12 @@ export async function load({ params }) {
 
 
     try {
-        // Use reading time from metadata (remark plugin) or calculate it manually as fallback
+        // Reading time comes from the remark plugin metadata; fall back to a
+        // cheap word-count on the raw markdown (no component render() needed).
         let readingTime = metadata.readingTime;
 
         if (!readingTime) {
-            try {
-                const rendered = content.render();
-                if (rendered && rendered.html) {
-                    readingTime = calculateReadingTime(rendered.html);
-                }
-            } catch {
-                // If render fails and no metadata, default to 0
-                readingTime = 0;
-            }
+            readingTime = calculateReadingTime(rawContent);
         }
 
         // Get all posts from the same category for prev/next navigation

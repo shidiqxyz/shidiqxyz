@@ -4,36 +4,16 @@
 	import "@fontsource/inter/500.css";
 	import "@fontsource/inter/600.css";
 	import "@fontsource/inter/700.css";
-	import "@fontsource/outfit/400.css";
-	import "@fontsource/outfit/500.css";
 	import "@fontsource/outfit/600.css";
 	import "@fontsource/outfit/700.css";
-	import "@fontsource/merriweather/400.css";
-	import "@fontsource/merriweather/400-italic.css";
-	import "@fontsource/merriweather/700.css";
-	import "@fontsource/merriweather/700-italic.css";
-	import "katex/dist/katex.min.css";
 	import Navbar from "$lib/components/Navbar.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 	import BackToTop from "$lib/components/BackToTop.svelte";
 	import { page } from "$app/stores";
-	import { onMount } from "svelte";
-	import { browser } from "$app/environment";
-
-	onMount(async () => {
-		if (browser) {
-			const mermaid = (await import("mermaid")).default;
-			mermaid.initialize({
-				startOnLoad: true,
-				theme: "default",
-				securityLevel: "loose",
-			});
-		}
-	});
 </script>
 
 <svelte:head>
-	<link rel="canonical" href={$page.url.href} />
+	<link rel="canonical" href={$page.url.origin + $page.url.pathname} />
 </svelte:head>
 <div class="min-h-screen px-4 sm:px-6 lg:px-8 mx-auto max-w-6xl flex flex-col">
 	<Navbar />

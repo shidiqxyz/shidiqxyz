@@ -1,3 +1,7 @@
+<script>
+    import "katex/dist/katex.min.css";
+</script>
+
 <svelte:head>
     <title>Panduan Penulisan - shidiq</title>
     <meta

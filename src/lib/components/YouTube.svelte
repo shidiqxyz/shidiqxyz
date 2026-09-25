@@ -9,6 +9,11 @@
     }
 </script>
 
+<svelte:head>
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link rel="preconnect" href="https://www.youtube.com" />
+</svelte:head>
+
 <div
     class="relative w-full aspect-video my-8 rounded-xl overflow-hidden shadow-lg bg-gray-100 dark:bg-gray-800"
 >
@@ -29,12 +34,19 @@
             class="group absolute top-0 left-0 w-full h-full flex items-center justify-center cursor-pointer"
             aria-label="Play Video"
         >
-            <!-- Thumbnail Image -->
+            <!-- Thumbnail Image (maxres 404s on many videos -> fall back to hqdefault) -->
             <img
                 src="https://i.ytimg.com/vi/{id}/maxresdefault.jpg"
+                on:error={(e) => {
+                    const img = /** @type {HTMLImageElement} */ (e.currentTarget);
+                    if (!img.src.includes("hqdefault")) {
+                        img.src = `https://i.ytimg.com/vi/${id}/hqdefault.jpg`;
+                    }
+                }}
                 alt={title}
                 class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 loading="lazy"
+                decoding="async"
             />
 
             <!-- Play Button Overlay -->
