@@ -61,11 +61,19 @@
 		</p>
 	</div>
 
-	<div class="space-y-4">
-		{#each paginatedPosts as post}
-			<PostCard {post} />
-		{/each}
-	</div>
+	{#if paginatedPosts.length === 0}
+		<p class="text-gray-600 dark:text-gray-400">
+			Belum ada tulisan.
+		</p>
+	{:else}
+		<div class="space-y-4">
+			{#each paginatedPosts as post}
+				<PostCard {post} />
+			{/each}
+		</div>
+	{/if}
 
-	<Pagination {currentPage} {totalPages} on:change={handlePageChange} />
+	{#if totalPages > 1}
+		<Pagination {currentPage} {totalPages} on:change={handlePageChange} />
+	{/if}
 </section>
