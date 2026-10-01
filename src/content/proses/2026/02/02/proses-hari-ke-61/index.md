@@ -7,7 +7,7 @@ description: "Basic data types di Solidity"
 draft: false
 ---
 
-![masha-roshidere](./masha-roshidere.gif?width=500&align=center)
+![masha-roshidere](./masha-roshidere.webp?width=500&align=center)
 
 ## Basic Data Types in Solidity
 

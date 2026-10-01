@@ -7,7 +7,7 @@ description: "Foundry FundMe"
 draft: false
 ---
 
-![anime-tired-anime](./anime-tired-anime.gif?width=600&a=center)
+![anime-tired-anime](./anime-tired-anime.webp?width=600&a=center)
 
 Sekarang ke section FundMe di Foundry.
 

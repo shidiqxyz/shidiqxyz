@@ -7,7 +7,7 @@ description: "Matematika dilanjutkan ke buku paket kelas tiga sekolah dasar"
 draft: false
 ---
 
-![frieren-excited](./frieren-excited.gif?width=600&a=center)
+![frieren-excited](./frieren-excited.webp?width=600&a=center)
 
 Matematika dilanjutkan ke buku paket kelas tiga sekolah dasar.
 

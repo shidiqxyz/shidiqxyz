@@ -7,7 +7,7 @@ description: "Hari cukup malas untuk melakukan sesuatu (padahal mah tiap hari gi
 draft: false
 ---
 
-![anime-shupogaki](./anime-shupogaki.gif?width=600&a=center)
+![anime-shupogaki](./anime-shupogaki.webp?width=600&a=center)
 
 Hari cukup malas untuk melakukan sesuatu (padahal mah tiap hari gitu, alesan mulu nih).
 

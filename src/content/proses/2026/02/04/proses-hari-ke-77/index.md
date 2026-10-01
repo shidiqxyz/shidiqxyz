@@ -7,7 +7,7 @@ description: "Resetting an Array, Sending ETH From a Contract"
 draft: false
 ---
 
-![woahm-anime-girl](./woahm-anime-girl.gif?width=600&align=center)
+![woahm-anime-girl](./woahm-anime-girl.webp?width=600&align=center)
 
 ## Resetting an Array
 

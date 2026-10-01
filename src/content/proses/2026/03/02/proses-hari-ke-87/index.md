@@ -7,7 +7,7 @@ description: "Anvil"
 draft: false
 ---
 
-![sleep](./sleep-anime.gif?width=600&a=center)
+![sleep](./sleep-anime.webp?width=600&a=center)
 
 Dilanjutkan mencoba menjalankan blockchain secara lokal. Menggunakan `anvil`. Pada contoh juga dikenalkan ganache, namun karena pengembangan tidak dilanjutkan sebaiknya menggunakan anvil saja.
 

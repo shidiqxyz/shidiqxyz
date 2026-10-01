@@ -7,7 +7,7 @@ description: "Gen-AI"
 draft: false
 ---
 
-![meowbah](./meowbah-meowbahh.gif?width=600&align=center)
+![meowbah](./meowbah-meowbahh.webp?width=600&align=center)
 
 ## Notes
 

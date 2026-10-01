@@ -7,7 +7,7 @@ description: "Trusted Setup, ZKP: ZKPoK vs ZKPoC, Completeness, Soundness, and Z
 draft: false
 ---
 
-![anime-girl-anime](./anime-girl-anime.gif?width=600&a=center)
+![anime-girl-anime](./anime-girl-anime.webp?width=600&a=center)
 
 ## Trusted Setup
 

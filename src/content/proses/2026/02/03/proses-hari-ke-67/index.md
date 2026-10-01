@@ -7,7 +7,7 @@ description: "Deploy Contract"
 draft: false
 ---
 
-![natusko-hirose-hirose-natsuko](./natusko-hirose-hirose-natsuko.gif?width=500&align=center)
+![natusko-hirose-hirose-natsuko](./natusko-hirose-hirose-natsuko.webp?width=500&align=center)
 
 ## Deploy Contract
 

@@ -7,7 +7,7 @@ description: "Blockchain use cases, DeFi, Token, NFTs"
 draft: false
 ---
 
-![lonely-lonely-lonely](./lonely-lonely-lonely.gif?width=600&a=center)
+![lonely-lonely-lonely](./lonely-lonely-lonely.webp?width=600&a=center)
 
 Blockchain use cases,
 

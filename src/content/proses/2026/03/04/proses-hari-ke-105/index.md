@@ -7,7 +7,7 @@ description: "Chainlink Automation"
 draft: false
 ---
 
-![cute-mafu](./cute-mafu.gif?width=600&align=center)
+![cute-mafu](./cute-mafu.webp?width=600&align=center)
 
 Pengenalan `Chainlink Automation`, jadinya ini bisa digunakan.
 

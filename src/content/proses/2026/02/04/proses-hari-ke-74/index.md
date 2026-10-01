@@ -7,7 +7,7 @@ description: "Solidity Math dan msg sender"
 draft: false
 ---
 
-![reze-reze-chainsaw-man](./reze-reze-chainsaw-man.gif?width=500&align=center)
+![reze-reze-chainsaw-man](./reze-reze-chainsaw-man.webp?width=500&align=center)
 
 ## Solidity Math
 

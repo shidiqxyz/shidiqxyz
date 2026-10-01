@@ -7,7 +7,7 @@ description: "Kembali lagi belajar course cyfrin, karena itu matematika belum di
 draft: false
 ---
 
-![rem-rotating-the-finger](./rem-rotating-the-finger.gif?width=600&a=center)
+![rem-rotating-the-finger](./rem-rotating-the-finger.webp?width=600&a=center)
 
 Kembali lagi belajar course cyfrin, karena itu matematika belum dilanjutkan.
 

@@ -7,7 +7,7 @@ description: "Setelah kemarin matematika memasuki bilangan dari 1 - 50"
 draft: false
 ---
 
-![freaking-out](./freaking-out.gif?width=600&a=center)
+![freaking-out](./freaking-out.webp?width=600&a=center)
 
 Setelah kemarin matematika memasuki bilangan dari 1 - 50. Sekarang berlanjut ke penambahan dan pengurangan untuk bilangan 1 - 50. Untuk bilangan bisa dikatakan baru memasuki puluhan.
 

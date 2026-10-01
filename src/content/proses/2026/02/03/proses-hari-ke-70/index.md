@@ -7,7 +7,7 @@ description: "ABI & Inheritance"
 draft: false
 ---
 
-![glooomiz-vtuber](./glooomiz-vtuber.gif?width=500&align=center)
+![glooomiz-vtuber](./glooomiz-vtuber.webp?width=500&align=center)
 
 ## ABI Contract
 

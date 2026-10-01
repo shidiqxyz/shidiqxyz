@@ -7,7 +7,7 @@ description: "AI Ethics"
 draft: false
 ---
 
-![higuruma](./higuruma-facepalm.gif?width=600&align=center)
+![higuruma](./higuruma-facepalm.webp?width=600&align=center)
 
 ## Notes
 

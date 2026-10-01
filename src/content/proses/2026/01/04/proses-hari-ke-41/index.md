@@ -7,7 +7,7 @@ description: "Seperti, kemarin kondisi masih kurang enak badan"
 draft: false
 ---
 
-![wata-mote](./wata-mote.gif?width=600&a=center)
+![wata-mote](./wata-mote.webp?width=600&a=center)
 
 Seperti, kemarin kondisi masih kurang enak badan.
 

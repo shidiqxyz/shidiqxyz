@@ -7,7 +7,7 @@ description: "Lebaran"
 draft: false
 ---
 
-![hijab-manga](./hijab-manga.gif?width=600&align=center)
+![hijab-manga](./hijab-manga.webp?width=600&align=center)
 
 Untuk 2 hari ini, sepertinya libur karena lebaran.
 

@@ -7,7 +7,7 @@ description: "Hari ini membereskan materi kelas 5"
 draft: false
 ---
 
-![happy-blue-hair](./happy-blue-hair.gif?width=600&a=center)
+![happy-blue-hair](./happy-blue-hair.webp?width=600&a=center)
 
 Hari ini membereskan materi kelas 5.
 

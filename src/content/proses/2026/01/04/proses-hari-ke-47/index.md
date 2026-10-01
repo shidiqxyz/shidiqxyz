@@ -7,7 +7,7 @@ description: "Scalability, Rollup Stages and etc"
 draft: false
 ---
 
-![anime-anime-girl](./anime-anime-girl.gif?width=600&a=center)
+![anime-anime-girl](./anime-anime-girl.webp?width=600&a=center)
 
 ## Scalability
 

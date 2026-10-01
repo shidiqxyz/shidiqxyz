@@ -7,7 +7,7 @@ description: "SafeMath, For Loop"
 draft: false
 ---
 
-![nopers-nope](./nopers-nope.gif?width=500&align=center)
+![nopers-nope](./nopers-nope.webp?width=500&align=center)
 
 ## Using Safemath
 

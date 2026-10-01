@@ -6,7 +6,7 @@ tags: []
 description: "Sekarang untuk course blockchain"
 ---
 
-![konata](./konata.gif?width=600&a=center)
+![konata](./konata.webp?width=600&a=center)
 
 Sekarang untuk course blockchain memasuki bagian penggunaan dari blockchain itu sendiri, dalam bagian Use Cases Of Blockchains[^1].
 

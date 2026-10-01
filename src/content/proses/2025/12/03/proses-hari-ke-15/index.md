@@ -7,7 +7,7 @@ description: "Hari ini dilanjutkan unsur-unsur bangun datar"
 draft: false
 ---
 
-![jade-unjaded](./jade-unjaded.gif?width=600&a=center)
+![jade-unjaded](./jade-unjaded.webp?width=600&a=center)
 
 Hari ini dilanjutkan unsur-unsur bangun datar.
 

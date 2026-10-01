@@ -7,7 +7,7 @@ description: "Social Recovery"
 draft: false
 ---
 
-![sad-cute](./sad-cute.gif?width=600&a=center)
+![sad-cute](./sad-cute.webp?width=600&a=center)
 
 Untuk level advanced, bisa juga menggunakan social recovery. 
 

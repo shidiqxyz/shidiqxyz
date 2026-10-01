@@ -7,7 +7,7 @@ description: "100 hari"
 draft: false
 ---
 
-![Yui Hirasawa](./yui-yui-hirasawa.gif?width=600&align=center)
+![Yui Hirasawa](./yui-yui-hirasawa.webp?width=600&align=center)
 
 Sampai juga ke hari 100. Sebuah pencapaian kecil yang mesti dirayakan. Jadi inget clip mas Pandji Pragiwaksono di Marapthon.
 

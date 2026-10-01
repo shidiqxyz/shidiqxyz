@@ -7,7 +7,7 @@ description: "Smart Contract Constructor"
 draft: false
 ---
 
-![kanna-anime](./kanna-anime.gif?width=600&a=center)
+![kanna-anime](./kanna-anime.webp?width=600&a=center)
 
 ## Smart Contract Constructor
 

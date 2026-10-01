@@ -7,7 +7,7 @@ description: "Masih AI Ethics"
 draft: false
 ---
 
-![amimir](./amimir-mimir.gif?width=600&align=center)
+![amimir](./amimir-mimir.webp?width=600&align=center)
 
 ## Notes
 

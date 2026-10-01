@@ -7,7 +7,7 @@ description: "receive and fallback function"
 draft: false
 ---
 
-![anime-frieren](./anime-frieren.gif?width=600&a=center)
+![anime-frieren](./anime-frieren.webp?width=600&a=center)
 
 ## Implementing The Receive Fallback
 

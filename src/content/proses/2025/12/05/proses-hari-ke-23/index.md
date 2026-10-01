@@ -7,7 +7,7 @@ description: "Pola dalam gambar dan bilangan"
 draft: false
 ---
 
-![anime-poke](./anime-poke.gif?width=600&a=center)
+![anime-poke](./anime-poke.webp?width=600&a=center)
 
 Pola dalam gambar dan bilangan.
 

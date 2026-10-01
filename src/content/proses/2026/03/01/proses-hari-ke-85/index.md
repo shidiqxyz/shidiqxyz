@@ -7,7 +7,7 @@ description: "Foundry"
 draft: false
 ---
 
-![girl-catgirl](./girl-catgirl.gif?width=600&a=center)
+![girl-catgirl](./girl-catgirl.webp?width=600&a=center)
 
 Kini memasuki ke course Foundry.
 

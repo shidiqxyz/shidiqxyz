@@ -13,7 +13,7 @@ draft: false
   import BilanganNegatif from './BilanganNegatif.svelte';
 </script>
 
-![frieren-anime](./frieren-anime.gif?width=500&align=center)
+![frieren-anime](./frieren-anime.webp?width=500&align=center)
 
 Sebelum melanjutkan materi matematika kelas 7 (tingkat SMP), saya ingin mempelajari dahulu pra-aljabar (pre-algebra). Saya menemukan video yang bagus di YouTube.
 

@@ -7,7 +7,7 @@ description: "Berlanjut ke The Lifecycle Of A Transaction"
 draft: false
 ---
 
-![1111](./1111.gif?width=600&a=center)
+![1111](./1111.webp?width=600&a=center)
 
 Berlanjut ke The Lifecycle Of A Transaction[^1].
 

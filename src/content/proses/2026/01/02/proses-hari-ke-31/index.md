@@ -7,7 +7,7 @@ description: "Selanjutnya ke pembahasan mengenai pecahan"
 draft: false
 ---
 
-![miku-miku-dance](./miku-miku-dance.gif?width=600&a=center)
+![miku-miku-dance](./miku-miku-dance.webp?width=600&a=center)
 
 Selanjutnya ke pembahasan mengenai pecahan.
 

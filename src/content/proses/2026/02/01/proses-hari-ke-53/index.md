@@ -7,7 +7,7 @@ description: "Rasio, Kubus dan Balok dan Peluang"
 draft: false
 ---
 
-![clannad-fujibayashi-kyou](./clannad-fujibayashi-kyou.gif?width=600&a=center)
+![clannad-fujibayashi-kyou](./clannad-fujibayashi-kyou.webp?width=600&a=center)
 
 ## Rasio
 

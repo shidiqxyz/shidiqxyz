@@ -7,6 +7,6 @@ description: "Baca-baca dikit"
 draft: false
 ---
 
-![osaka-spin](./osaka-spin.gif?width=500&align=center)
+![osaka-spin](./osaka-spin.webp?width=500&align=center)
 
 Untuk hari ini seperti hanya akan baca-baca dikit di [Immunefi Learn](https://immunefi.com/learn/).

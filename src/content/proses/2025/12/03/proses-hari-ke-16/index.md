@@ -7,7 +7,7 @@ description: "Pagi ini menlanjutkan kembali materi sebelumnya"
 draft: false
 ---
 
-![inunaka-akari](./inunaka-akari.gif?width=600&a=center)
+![inunaka-akari](./inunaka-akari.webp?width=600&a=center)
 
 Pagi ini menlanjutkan kembali materi sebelumnya.
 

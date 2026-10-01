@@ -7,7 +7,7 @@ description: "Masih Gen-AI"
 draft: false
 ---
 
-![hitori](./hitori-gotoh.gif?width=600&align=center)
+![hitori](./hitori-gotoh.webp?width=600&align=center)
 
 ## Notes
 

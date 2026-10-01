@@ -7,7 +7,7 @@ description: "Belanjut ke Account Abstraction"
 draft: false
 ---
 
-![ouka-shiunji-family-children](./ouka-shiunji-family-children.gif?width=600&a=center)
+![ouka-shiunji-family-children](./ouka-shiunji-family-children.webp?width=600&a=center)
 
 Belanjut ke Account Abstraction[^1].
 

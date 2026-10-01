@@ -7,7 +7,7 @@ description: "Make own libraries"
 draft: false
 ---
 
-![gintoki-no-sleep](./gintoki-no-sleep.gif?width=500&align=center)
+![gintoki-no-sleep](./gintoki-no-sleep.webp?width=500&align=center)
 
 ## Creating Your Own Libraries
 

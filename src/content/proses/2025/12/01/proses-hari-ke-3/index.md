@@ -7,7 +7,7 @@ description: "Saya akan memulai dengan matematika kelas 1 SD"
 draft: false
 ---
 
-![bocchi](./bocchi.gif?width=600&a=center)
+![bocchi](./bocchi.webp?width=600&a=center)
 
 Saya akan memulai dengan matematika kelas 1 SD. Melanjutkan yang kemarin. Sepertinya saya akan membereskan buku modul ini.
 

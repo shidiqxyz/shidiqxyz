@@ -7,7 +7,7 @@ description: "Kini berlanjut ke course ZK"
 draft: false
 ---
 
-![meowbah-meowbahh](./meowbah-meowbahh.gif?width=600&a=center)
+![meowbah-meowbahh](./meowbah-meowbahh.webp?width=600&a=center)
 
 Kini berlanjut ke course ZK.
 

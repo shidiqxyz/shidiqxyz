@@ -7,7 +7,7 @@ description: "Sekarang di lanjut ke blockchain lagi"
 draft: false
 ---
 
-![nonono-anime-no](./nonono-anime-no.gif?width=600&a=center)
+![nonono-anime-no](./nonono-anime-no.webp?width=600&a=center)
 
 Sekarang di lanjut ke blockchain lagi.
 

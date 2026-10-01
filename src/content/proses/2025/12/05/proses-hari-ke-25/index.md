@@ -7,7 +7,7 @@ description: "Sekarang di lanjut ke piktogram dan diagram batang"
 draft: false
 ---
 
-![menhera](./menhera.gif?width=600&a=center)
+![menhera](./menhera.webp?width=600&a=center)
 
 Sekarang di lanjut ke piktogram dan diagram batang.
 

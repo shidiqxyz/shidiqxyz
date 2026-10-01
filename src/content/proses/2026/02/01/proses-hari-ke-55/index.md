@@ -7,6 +7,6 @@ description: "Hari ini tidak belajar"
 draft: false
 ---
 
-![blabbing-blab.gif](./blabbing-blab.gif?width=600&a=center)
+![blabbing-blab](./blabbing-blab.webp?width=600&a=center)
 
 Hari ini tidak belajar.

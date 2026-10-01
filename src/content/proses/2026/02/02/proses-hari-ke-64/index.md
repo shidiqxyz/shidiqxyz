@@ -7,7 +7,7 @@ description: "Error & Warning"
 draft: false
 ---
 
-![evil-smug](./evil-smug.gif?width=500&align=center)
+![evil-smug](./evil-smug.webp?width=500&align=center)
 
 ## Error & Warning
 

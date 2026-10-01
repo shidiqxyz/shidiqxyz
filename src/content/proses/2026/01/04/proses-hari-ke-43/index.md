@@ -7,7 +7,7 @@ description: "Setelah libur beberapa hari, dilanjutkan ke sudut"
 draft: false
 ---
 
-![moss-mossmellow](./moss-mossmellow.gif?width=600&a=center)
+![moss-mossmellow](./moss-mossmellow.webp?width=600&a=center)
 
 Setelah libur beberapa hari, dilanjutkan ke sudut.
 

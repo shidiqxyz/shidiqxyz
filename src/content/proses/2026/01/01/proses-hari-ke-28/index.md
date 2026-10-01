@@ -7,7 +7,7 @@ description: "Berlajut ke EIP vs ERC"
 draft: false
 ---
 
-![satsuki-mei-satsuki-mei-vtuber](./satsuki-mei-satsuki-mei-vtuber.gif?width=600&a=center)
+![satsuki-mei-satsuki-mei-vtuber](./satsuki-mei-satsuki-mei-vtuber.webp?width=600&a=center)
 
 Berlajut ke EIP vs ERC[^1].
 

@@ -7,7 +7,7 @@ description: "Matematika kelas 8"
 draft: false
 ---
 
-![anime girl tired](./anime-girl-tired-anime-tired.gif?width=600&a=center)
+![anime girl tired](./anime-girl-tired-anime-tired.webp?width=600&a=center)
 
 Matematika kelas 8.
 

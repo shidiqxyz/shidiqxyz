@@ -7,7 +7,7 @@ description: "Sedikit lagi FundMe"
 draft: false
 ---
 
-![](./bath-anime-girl.gif?width=600&align=center)
+![](./bath-anime-girl.webp?width=600&align=center)
 
 Saya hampir lupa untuk mengupdate proses. 
 

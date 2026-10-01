@@ -7,7 +7,7 @@ description: "Memasuki keliling bangun datar"
 draft: false
 ---
 
-![k-on](./k-on.gif?width=600&a=center)
+![k-on](./k-on.webp?width=600&a=center)
 
 ## Memasuki keliling bangun datar.
 

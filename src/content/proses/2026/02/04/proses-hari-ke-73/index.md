@@ -7,7 +7,7 @@ description: "Importing Libaries, Price Data From Chainlink"
 draft: false
 ---
 
-![log-shock](./log-shock.gif?width=500&align=center)
+![log-shock](./log-shock.webp?width=500&align=center)
 
 ## Importing Libaries From NPM and Github
 

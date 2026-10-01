@@ -7,6 +7,6 @@ description: "Lanjut foundry"
 draft: false
 ---
 
-![anime girl tired](./tired-anime-girl-tired-shark.gif?width=600&a=center)
+![anime girl tired](./tired-anime-girl-tired-shark.webp?width=600&a=center)
 
 Masih dalam setup, namun kini install foundry, ekstensi vscode dan coba `forge init`.

@@ -7,7 +7,7 @@ description: "Function di Solidity"
 draft: false
 ---
 
-![cat-meme-cat](./cat-meme-cat.gif?width=500&align=center)
+![cat-meme-cat](./cat-meme-cat.webp?width=500&align=center)
 
 ## Function
 

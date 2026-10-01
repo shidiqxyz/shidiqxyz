@@ -7,7 +7,7 @@ description: "Kembali berotasi ke blockchain dan smart contract"
 draft: false
 ---
 
-![kitagawa](./kitagawa.gif?width=600&a=center)
+![kitagawa](./kitagawa.webp?width=600&a=center)
 
 Kembali berotasi ke blockchain dan smart contract.
 

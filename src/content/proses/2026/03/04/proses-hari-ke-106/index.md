@@ -7,7 +7,7 @@ description: "Ngoprek autoclipper"
 draft: false
 ---
 
-![osaka](./osaka-azumanga.gif?width=600&align=center)
+![osaka](./osaka-azumanga.webp?width=600&align=center)
 
 Untuk hari ini, kembali mengoprek autoclipper. Coba fix beberapa masalah, seperti subtitle kurang pas, nambah source video dan juga agar lebih pas potongan shortnya.
 

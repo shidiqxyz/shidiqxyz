@@ -7,7 +7,7 @@ description: "Awal memasuki solidity"
 draft: false
 ---
 
-![angry-anime](./angry-anime.gif?width=500&align=center)
+![angry-anime](./angry-anime.webp?width=500&align=center)
 
 Akhirnya memasuki solidity, ke course [Solidity Smart Contract Development](https://updraft.cyfrin.io/courses/solidity).
 

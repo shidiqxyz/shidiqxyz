@@ -7,7 +7,7 @@ description: "Kembali ke bangun datar"
 draft: false
 ---
 
-![ave](./ave.gif?width=600&a=center)
+![ave](./ave.webp?width=600&a=center)
 
 Kembali ke bangun datar.
 

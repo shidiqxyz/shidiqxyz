@@ -7,7 +7,7 @@ description: "Sekarang saya mau mendalami faktorisasi prima"
 draft: false
 ---
 
-![marin](./marin.gif?width=600&a=center)
+![marin](./marin.webp?width=600&a=center)
 
 Sekarang saya mau mendalami faktorisasi prima.
 

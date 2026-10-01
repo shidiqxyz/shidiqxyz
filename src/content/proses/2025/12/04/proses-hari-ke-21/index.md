@@ -7,7 +7,7 @@ description: "Akhirnya kini memasuki matematika kelas 4 sd (cukup bangga dengan 
 draft: false
 ---
 
-![bluearchive-blue](./bluearchive-blue.gif?width=600&a=center)
+![bluearchive-blue](./bluearchive-blue.webp?width=600&a=center)
 
 Akhirnya kini memasuki matematika kelas 4 sd (cukup bangga dengan proses ini). Mungkin, beberapa hari kemarin setelah membereskan pendaftaran kuliah, setelah sekian lama gapyear, adakali 6 tahun (setara tamat sd) akhirnya beres juga pendaftaran.
 

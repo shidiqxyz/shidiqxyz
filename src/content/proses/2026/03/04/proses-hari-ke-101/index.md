@@ -7,7 +7,7 @@ description: "Smart Contract Lottery"
 draft: false
 ---
 
-![chibi](./chibi-anime.gif?width=600&a=center)
+![chibi](./chibi-anime.webp?width=600&a=center)
 
 Masih di Foundry, kini berlanjut ke bagian `Smart Contract Lottery`. Pada contoh kasus ini membuat lottery yang menggunakan `Chainlink VRF` sebagai pemilihan nomor pemenang secara acak.
 

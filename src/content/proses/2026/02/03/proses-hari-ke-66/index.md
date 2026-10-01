@@ -7,7 +7,7 @@ description: "Calldata, Memory, Storage, Mappings"
 draft: false
 ---
 
-![blonde-big-eyes](./blonde-big-eyes.gif?width=500&align=center)
+![blonde-big-eyes](./blonde-big-eyes.webp?width=500&align=center)
 
 ## Calldata, Memory, Storage
 

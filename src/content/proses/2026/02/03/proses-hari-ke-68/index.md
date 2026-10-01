@@ -7,7 +7,7 @@ description: "ZKSync Deploy"
 draft: false
 ---
 
-![anime-sleepy](./anime-sleepy.gif?width=500&align=center)
+![anime-sleepy](./anime-sleepy.webp?width=500&align=center)
 
 ## ZKSync Deploy
 

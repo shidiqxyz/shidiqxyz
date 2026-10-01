@@ -7,7 +7,7 @@ description: "Storage Factory & Import"
 draft: false
 ---
 
-![wanwan-onlinepetclub](./wanwan-onlinepetclub.gif?width=500&align=center)
+![wanwan-onlinepetclub](./wanwan-onlinepetclub.webp?width=500&align=center)
 
 ## StorageFactory
 

@@ -7,7 +7,7 @@ description: "Memasuki bagian Hardfork"
 draft: false
 ---
 
-![ifera-anime](./ifera-anime.gif?width=600&a=center)
+![ifera-anime](./ifera-anime.webp?width=600&a=center)
 
 Memasuki bagian Hardfork[^1].
 

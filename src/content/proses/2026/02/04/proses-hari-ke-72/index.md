@@ -7,7 +7,7 @@ description: "Chainlink, Interface"
 draft: false
 ---
 
-![russaki-tama-tama-twins](./russaki-tama-tama-twins.gif?width=500&align=center)
+![russaki-tama-tama-twins](./russaki-tama-tama-twins.webp?width=500&align=center)
 
 ## Intro to Oracles - Getting Real World Price Data
 

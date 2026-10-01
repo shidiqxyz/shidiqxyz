@@ -7,7 +7,7 @@ description: "Berotasi ke matematika"
 draft: false
 ---
 
-![oz-oz-yarimasu](./oz-oz-yarimasu.gif?width=600&a=center)
+![oz-oz-yarimasu](./oz-oz-yarimasu.webp?width=600&a=center)
 
 Berotasi ke matematika.
 

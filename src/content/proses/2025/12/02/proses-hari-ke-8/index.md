@@ -7,7 +7,7 @@ description: "Sepertinya hari minggu tepat untuk menjadi hari libur atau mungkin
 draft: false
 ---
 
-![eren-yeager](./eren-yeager.gif?width=600&a=center)
+![eren-yeager](./eren-yeager.webp?width=600&a=center)
 
 Sepertinya, hari minggu tepat untuk menjadi hari libur. Atau mungkin sabtu dan minggu bisa libur dahulu? Ya, akan saya pikir-pikir terlebih dahulu saja. 
 

@@ -7,7 +7,7 @@ description: "Function Modifiers"
 draft: false
 ---
 
-![gen-dr-stone](./gen-dr-stone.gif?width=600&a=center)
+![gen-dr-stone](./gen-dr-stone.webp?width=600&a=center)
 
 ## Solidity Function Modifiers
 

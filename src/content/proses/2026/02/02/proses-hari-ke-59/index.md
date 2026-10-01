@@ -7,7 +7,7 @@ description: "Melanjutkan pra-aljabar"
 draft: false
 ---
 
-![meowbah](./meowbah-meowbahh.gif?width=500&align=center)
+![meowbah](./meowbah-meowbahh.webp?width=500&align=center)
 
 Melanjutkan pra-aljabar.
 

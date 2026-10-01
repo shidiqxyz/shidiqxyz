@@ -7,7 +7,7 @@ description: "Kembali ke course cyfrin mengenai blockchain basic"
 draft: false
 ---
 
-![lain](./lain.gif?width=600&a=center)
+![lain](./lain.webp?width=600&a=center)
 
 Kembali ke course cyfrin mengenai blockchain basic.
 

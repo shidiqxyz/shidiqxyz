@@ -7,7 +7,7 @@ description: "Masih VRF"
 draft: false
 ---
 
-![card-captor-sakura-kinomoto-sakura](./card-captor-sakura-kinomoto-sakura.gif?width=600&align=center)
+![card-captor-sakura-kinomoto-sakura](./card-captor-sakura-kinomoto-sakura.webp?width=600&align=center)
 
 Berlanjut untuk implementasi dari `Chainlink VRF`, ya ini agak sulit untuk dipahami.
 

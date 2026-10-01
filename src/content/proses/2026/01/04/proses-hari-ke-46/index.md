@@ -7,7 +7,7 @@ description: "CEX vs DEX"
 draft: false
 ---
 
-![vtuber-anime](./vtuber-anime.gif?width=600&a=center)
+![vtuber-anime](./vtuber-anime.webp?width=600&a=center)
 
 ## CEX vs DEX
 

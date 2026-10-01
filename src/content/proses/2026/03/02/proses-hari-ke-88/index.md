@@ -7,7 +7,7 @@ description: "Forge script"
 draft: false
 ---
 
-![ashita no joe](./ashita-no-joe-joe-yabuki.gif?width=600&a=center)
+![ashita no joe](./ashita-no-joe-joe-yabuki.webp?width=600&a=center)
 
 Kini menanjutkan mengenai deploy smart contract via anvil menggunakan script. Yaitu dengan cara membuat folder `scripts` dan membuat file `<nama>.s.sol`.
 

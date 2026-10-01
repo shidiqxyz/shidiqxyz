@@ -7,7 +7,7 @@ description: "Sekarang lanjut ke What Is The EVM"
 draft: false
 ---
 
-![unjadedvtuber-jade](./unjadedvtuber-jade.gif?width=600&a=center)
+![unjadedvtuber-jade](./unjadedvtuber-jade.webp?width=600&a=center)
 
 Sekarang lanjut ke What Is The EVM[^1].
 

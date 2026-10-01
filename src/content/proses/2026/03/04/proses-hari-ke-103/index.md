@@ -7,7 +7,7 @@ description: "CEI"
 draft: false
 ---
 
-![](./ghibli-studio-ghibli.gif?width=600&align=center)
+![](./ghibli-studio-ghibli.webp?width=600&align=center)
 
 Pada bagian kode `Raffle.sol` dilanjut untuk mereset array dari pemenangnya.
 

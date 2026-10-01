@@ -7,7 +7,7 @@ description: "Bentuk-Bentuk Pecahan"
 draft: false
 ---
 
-![hinata](./hinata.gif?width=600&a=center)
+![hinata](./hinata.webp?width=600&a=center)
 
 Bentuk-Bentuk Pecahan.
 

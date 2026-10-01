@@ -7,7 +7,7 @@ description: "Masih FundMe"
 draft: false
 ---
 
-![anime](./anime.gif?width=600&a=center)
+![anime](./anime.webp?width=600&a=center)
 
 Masih melanjutkan FundMe di Foundry.
 

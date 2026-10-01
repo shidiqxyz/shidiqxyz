@@ -7,7 +7,7 @@ description: "Array & Struct"
 draft: false
 ---
 
-![chione-rin](./chione-rin.gif?width=500&align=center)
+![chione-rin](./chione-rin.webp?width=500&align=center)
 
 ## Array & Struct
 

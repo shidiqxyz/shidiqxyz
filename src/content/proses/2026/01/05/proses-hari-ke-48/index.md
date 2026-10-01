@@ -7,7 +7,7 @@ description: "Setelah kemarin beres menyelesaikan course Blockchain Basics"
 draft: false
 ---
 
-![the-fragrant-flower-blooms-with-dignity-kaoruko-waguri.gif](./the-fragrant-flower-blooms-with-dignity-kaoruko-waguri.gif?width=600&a=center)
+![the-fragrant-flower-blooms-with-dignity-kaoruko-waguri](./the-fragrant-flower-blooms-with-dignity-kaoruko-waguri.webp?width=600&a=center)
 
 Setelah kemarin beres menyelesaikan course Blockchain Basics.
 

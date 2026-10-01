@@ -7,6 +7,6 @@ description: "Chisel"
 draft: false
 ---
 
-![fran](./anime-fran.gif?width=600&align=center)
+![fran](./anime-fran.webp?width=600&align=center)
 
 Pengenalan cara penggunaan `chisel` serta sedikit penjelasan gas optimization. Yaitu dengan cara memanfaatkan storage (this stuff really confusing).

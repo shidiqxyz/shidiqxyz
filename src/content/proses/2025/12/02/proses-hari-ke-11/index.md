@@ -7,7 +7,7 @@ description: "Kayaknya hari ini untuk course dari cyfrin tidak dilanjut dulu"
 draft: false
 ---
 
-![maomao](./maomao.gif?width=600&a=center)
+![maomao](./maomao.webp?width=600&a=center)
 
 Kayaknya hari ini untuk course dari cyfrin tidak dilanjut dulu. Karena bosan kali dan malas jadinya perlu melakukan pencarian-pencarian lagi dalam bidang ini.
 

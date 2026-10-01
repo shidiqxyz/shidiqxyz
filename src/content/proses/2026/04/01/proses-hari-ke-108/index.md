@@ -7,7 +7,7 @@ description: "Introduction AI"
 draft: false
 ---
 
-![yui](./yui-yui-hirasawa-learn.gif?width=600&align=center)
+![yui](./yui-yui-hirasawa-learn.webp?width=600&align=center)
 
 Seharusnya hari ini proses hari ke 110. Namun sekitar 3 harian tidak mood luar biasa untuk belajar.
 

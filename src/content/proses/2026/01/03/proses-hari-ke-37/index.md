@@ -6,7 +6,7 @@ tags: []
 description: "Hari ini hanya ngotak-ngatik tampilan antigravity (vscode fork with ai from google)"
 draft: false
 ---
-![anime-apothecary-diaries](./anime-apothecary-diaries.gif?width=600&a=center)
+![anime-apothecary-diaries](./anime-apothecary-diaries.webp?width=600&a=center)
 
 Hari ini hanya ngotak-ngatik tampilan antigravity (vscode fork with ai from google).
 

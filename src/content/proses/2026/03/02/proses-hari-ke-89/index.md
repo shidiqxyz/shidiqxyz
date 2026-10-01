@@ -7,7 +7,7 @@ description: "foundry-zksync"
 draft: false
 ---
 
-![konakonagifs-keion](./konakonagifs-keion.gif?width=600&a=center)
+![konakonagifs-keion](./konakonagifs-keion.webp?width=600&a=center)
 
 Sekarang memcoba untuk verifikasi smart contract di etherscan. Masih dengan cara manual, yaitu dengan cara copy paste kode soliditynya langsung.
 

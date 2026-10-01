@@ -7,7 +7,7 @@ description: "Frontend Fund Me"
 draft: false
 ---
 
-![sakuya-izayoi-touhou](./sakuya-izayoi-touhou.gif?width=600&a=center)
+![sakuya-izayoi-touhou](./sakuya-izayoi-touhou.webp?width=600&a=center)
 
 Sekarang hanya disiruh untuk mengclone repo frontend untuk contract fundme yang sudah dibuat sebelumnya.
 

@@ -7,7 +7,7 @@ description: "Hari ini tidak banyak yang dilakukan"
 draft: false
 ---
 
-![wiggly-girls'-last-tour.gif](./wiggly-girls'-last-tour.gif?width=600&a=center)
+![wiggly-girls'-last-tour](./wiggly-girls'-last-tour.webp?width=600&a=center)
 
 Hari ini tidak banyak yang dilakukan.
 

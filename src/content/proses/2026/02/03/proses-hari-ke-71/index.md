@@ -7,7 +7,7 @@ description: "FundMe, Payable, Require, Reverts"
 draft: false
 ---
 
-![nyaruru-fishy-fight](./nyaruru-fishy-fight-nyaruru.gif?width=500&align=center)
+![nyaruru-fishy-fight](./nyaruru-fishy-fight-nyaruru.webp?width=500&align=center)
 
 ## FundMe
 

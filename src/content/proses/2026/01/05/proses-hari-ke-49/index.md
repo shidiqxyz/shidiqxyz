@@ -7,7 +7,7 @@ description: "Hanya menonton gigs teman"
 draft: false
 ---
 
-![evernight-hsr-lonely-lonely-i-guess-i'm-lonely](./evernight-hsr-lonely-lonely-i-guess-i'm-lonely.gif?width=600&a=center)
+![evernight-hsr-lonely-lonely-i-guess-i'm-lonely](./evernight-hsr-lonely-lonely-i-guess-i'm-lonely.webp?width=600&a=center)
 
 Hari ini tidak banyak di lakukan.
 

@@ -7,7 +7,7 @@ description: "Immutability and Constants, Creating Custom Errors"
 draft: false
 ---
 
-![tired-anime](./tired-anime.gif?width=600&a=center)
+![tired-anime](./tired-anime.webp?width=600&a=center)
 
 ## Immutability and Constants
 

@@ -7,7 +7,7 @@ description: "Hari ini berlanjut pembahasan mengenai Oracle Problem"
 draft: false
 ---
 
-![mythikore-anime-girl](./mythikore-anime-girl.gif?width=600&a=center)
+![mythikore-anime-girl](./mythikore-anime-girl.webp?width=600&a=center)
 
 Hari ini berlanjut pembahasan mengenai Oracle Problem[^1].
 

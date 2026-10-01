@@ -7,7 +7,7 @@ description: "Hari ini dimulai dengan membaca tweet dari user @deadrosesxyz"
 draft: false
 ---
 
-![frieren](./frieren.gif?width=600&a=center)
+![frieren](./frieren.webp?width=600&a=center)
 
 Hari ini dimulai dengan membaca tweet dari user @deadrosesxyz dalam yang memenangkan bounty 40k dari immunefi. 
 

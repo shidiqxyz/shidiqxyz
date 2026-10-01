@@ -7,7 +7,7 @@ description: "Memasuki bagian How PoW Blockchains Work"
 draft: false
 ---
 
-![panic-ahhhhh](./panic-ahhhhh.gif?width=600&a=center)
+![panic-ahhhhh](./panic-ahhhhh.webp?width=600&a=center)
 
 Memasuki bagian How PoW Blockchains Work[^1].
 

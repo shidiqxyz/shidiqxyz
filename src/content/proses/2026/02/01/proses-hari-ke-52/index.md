@@ -7,7 +7,7 @@ description: "Perkalian dan Pembagian Pecahan serta Desimal"
 draft: false
 ---
 
-![ryo](./anime-meme.gif?width=600&a=center)
+![ryo](./anime-meme.webp?width=600&a=center)
 
 Saatnya kembali ke matematika.
 

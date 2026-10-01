@@ -7,7 +7,7 @@ description: "Bikin autoclipper"
 draft: false
 ---
 
-![cute](./cute-anime-girl.gif?width=600&align=center)
+![cute](./cute-anime-girl.webp?width=600&align=center)
 
 Hari ini tidak belajar foundry karena terdistraksi oleh hal yang lain. Tadi saya mencoba build `autoclipper` untuk video. Hanya dengan masukan video akan menjadi clip-clip yang tinggal di upload.
 

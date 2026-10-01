@@ -7,7 +7,7 @@ description: "Matematika kelas 7"
 draft: false
 ---
 
-![kashima-kamome](./kashima-kamome.gif?width=600&a=center)
+![kashima-kamome](./kashima-kamome.webp?width=600&a=center)
 
 Sudah lama tidak merekap mengenai pelajaran matematika. Kini sudah memasuki materi kelas 7.
 

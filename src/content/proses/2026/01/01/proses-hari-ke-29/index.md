@@ -7,7 +7,7 @@ description: "Hari ini saya akan rotasi belajar ke matematika"
 draft: false
 ---
 
-![alya](./alya.gif?width=600&a=center)
+![alya](./alya.webp?width=600&a=center)
 
 Hari ini saya akan rotasi belajar ke matematika.
 
