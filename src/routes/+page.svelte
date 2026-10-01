@@ -13,6 +13,11 @@
 			href: "/pemikiran",
 		},
 		{
+			title: "Writeup",
+			description: "Kumpulan writeup bug bounty.",
+			href: "/writeup",
+		},
+		{
 			title: "Projects",
 			description: "Kumpulan portofolio yang tidak bagus-bagus amat.",
 			href: "/projects",

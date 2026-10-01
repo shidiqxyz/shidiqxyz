@@ -16,6 +16,7 @@
 			children: [
 				{ href: "/pemikiran", label: "Pemikiran" },
 				{ href: "/proses", label: "Proses" },
+				{ href: "/writeup", label: "Writeup" },
 			],
 		},
 		{ href: "/panduan", label: "Panduan" },
