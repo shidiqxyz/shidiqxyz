@@ -50,24 +50,33 @@ async function main() {
 
     // 2. Category (Required)
     const categories = fs.readdirSync(CONTENT_DIR).filter(f => fs.statSync(path.join(CONTENT_DIR, f)).isDirectory());
-    console.log(`Kategori tersedia: ${categories.join(', ')}`);
+    console.log('Kategori tersedia:');
+    categories.forEach((c, i) => console.log(`  ${i + 1}. ${c}`));
 
     let category = '';
     while (!category) {
-        category = await question(`Kategori (${categories[0]}): `);
-        if (!category) category = categories[0]; // Default to first category
-
-        // Check if category exists
-        if (!fs.existsSync(path.join(CONTENT_DIR, category))) {
-            const create = await question(`Kategori "${category}" belum ada. Buat baru? (y/n): `);
-            if (create.toLowerCase() !== 'y') {
-                category = '';
-            }
+        const answer = (await question(`Pilih kategori [1-${categories.length}] atau ketik nama (${categories[0]}): `)).trim().toLowerCase();
+        if (!answer) {
+            category = categories[0]; // Default to first category
+        } else if (/^\d+$/.test(answer)) {
+            const idx = parseInt(answer, 10) - 1;
+            if (idx >= 0 && idx < categories.length) category = categories[idx];
+            else console.log('Nomor kategori tidak valid!');
+        } else if (categories.includes(answer)) {
+            category = answer;
+        } else {
+            // Kategori baru (mis. writeup saat belum ada foldernya)
+            const create = await question(`Kategori "${answer}" belum ada. Buat baru? (y/n): `);
+            if (create.toLowerCase() === 'y') category = answer;
         }
     }
 
-    // 3. Description (Optional)
-    const description = await question('Deskripsi (Optional): ');
+    // 3. Description (Optional, tanpa titik akhir)
+    const descriptionInput = await question('Deskripsi (Optional): ');
+    let description = descriptionInput.trim();
+    while (description.endsWith('.')) {
+        description = description.slice(0, -1).trim();
+    }
 
     // 4. Tags (Optional)
     const tagsInput = await question('Tags (pisahkan dengan koma, Optional): ');
@@ -97,12 +106,14 @@ async function main() {
     // Create post folder
     fs.mkdirSync(postDir, { recursive: true });
 
+    const safeTitle = title.replace(/"/g, '\\"');
+    const safeDescription = description.replace(/"/g, '\\"');
     const content = `---
-title: "${title}"
+title: "${safeTitle}"
 date: "${dateStr}"
 category: "${category}"
 tags: ${JSON.stringify(tags)}
-description: "${description}"
+description: "${safeDescription}"
 draft: false
 ---
 
