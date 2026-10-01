@@ -3,7 +3,7 @@ title: "Proses Hari ke 87"
 date: "2026-03-09 05:29"
 category: "proses"
 tags: []
-description: "Anvil."
+description: "Anvil"
 draft: false
 ---
 

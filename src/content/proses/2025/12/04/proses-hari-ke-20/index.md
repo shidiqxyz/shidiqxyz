@@ -3,7 +3,7 @@ title: "Proses Hari ke 20"
 date: "2025-12-24 06:33"
 category: "proses"
 tags: []
-description: "Berlanjut ke How PoS Blockchains Work."
+description: "Berlanjut ke How PoS Blockchains Work"
 draft: false
 ---
 

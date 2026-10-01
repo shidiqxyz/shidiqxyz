@@ -3,7 +3,7 @@ title: "Proses Hari ke 59"
 date: "2026-02-09 02:14"
 category: "proses"
 tags: []
-description: "Melanjutkan pra-aljabar."
+description: "Melanjutkan pra-aljabar"
 draft: false
 ---
 

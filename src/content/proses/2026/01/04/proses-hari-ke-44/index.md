@@ -3,7 +3,7 @@ title: "Proses Hari ke 44"
 date: "2026-01-25 16:39"
 category: "proses"
 tags: []
-description: "Hari ini membereskan materi kelas 5."
+description: "Hari ini membereskan materi kelas 5"
 draft: false
 ---
 

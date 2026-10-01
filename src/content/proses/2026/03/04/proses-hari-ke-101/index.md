@@ -3,7 +3,7 @@ title: "Proses Hari ke 101"
 date: "2026-03-23 22:05"
 category: "proses"
 tags: []
-description: "Smart Contract Lottery."
+description: "Smart Contract Lottery"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 25"
 date: "2025-12-31 21:09"
 category: "proses"
 tags: []
-description: "Sekarang di lanjut ke piktogram dan diagram batang."
+description: "Sekarang di lanjut ke piktogram dan diagram batang"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 65"
 date: "2026-02-15 18:41"
 category: "proses"
 tags: []
-description: "Baca-baca dikit."
+description: "Baca-baca dikit"
 draft: false
 ---
 

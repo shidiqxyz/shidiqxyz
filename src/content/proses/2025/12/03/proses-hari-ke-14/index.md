@@ -3,7 +3,7 @@ title: "Proses Hari ke 14"
 date: "2025-12-16 03:30"
 category: "proses"
 tags: []
-description: "Matematika dilanjutkan ke buku paket kelas tiga sekolah dasar."
+description: "Matematika dilanjutkan ke buku paket kelas tiga sekolah dasar"
 draft: false
 ---
 

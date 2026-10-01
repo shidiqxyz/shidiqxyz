@@ -3,7 +3,7 @@ title: "Proses Hari ke 26"
 date: "2026-01-01 19:24"
 category: "proses"
 tags: []
-description: "Sekarang di lanjut ke blockchain lagi."
+description: "Sekarang di lanjut ke blockchain lagi"
 draft: false
 ---
 

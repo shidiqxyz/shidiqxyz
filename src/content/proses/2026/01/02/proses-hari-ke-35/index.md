@@ -3,7 +3,7 @@ title: "Proses Hari ke 35"
 date: "2026-01-14 21:55"
 category: "proses"
 tags: []
-description: "Belanjut ke Account Abstraction."
+description: "Belanjut ke Account Abstraction"
 draft: false
 ---
 

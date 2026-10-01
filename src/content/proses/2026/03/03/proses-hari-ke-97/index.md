@@ -3,7 +3,7 @@ title: "Proses Hari ke 97"
 date: "2026-03-19 21:06"
 category: "proses"
 tags: []
-description: "Frontend Fund Me."
+description: "Frontend Fund Me"
 draft: false
 ---
 

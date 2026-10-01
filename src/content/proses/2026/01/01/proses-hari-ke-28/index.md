@@ -3,7 +3,7 @@ title: "Proses Hari ke 28"
 date: "2026-01-05 21:05"
 category: "proses"
 tags: []
-description: "Berlajut ke EIP vs ERC."
+description: "Berlajut ke EIP vs ERC"
 draft: false
 ---
 

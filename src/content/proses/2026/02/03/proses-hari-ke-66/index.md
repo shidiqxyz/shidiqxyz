@@ -3,7 +3,7 @@ title: "Proses Hari ke 66"
 date: "2026-02-16 12:11"
 category: "proses"
 tags: []
-description: "Calldata, Memory, Storage, Mappings."
+description: "Calldata, Memory, Storage, Mappings"
 draft: false
 ---
 

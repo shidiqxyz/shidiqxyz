@@ -3,7 +3,7 @@ title: "Proses Hari ke 85"
 date: "2026-03-07 20:07"
 category: "proses"
 tags: []
-description: "Foundry."
+description: "Foundry"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 2"
 date: "2025-12-01 05:13"
 category: "proses"
 tags: []
-description: "Setelah hari kemarin libur."
+description: "Setelah hari kemarin libur"
 draft: false
 ---
 

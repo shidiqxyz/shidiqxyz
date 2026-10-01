@@ -3,7 +3,7 @@ title: "Proses Hari ke 62"
 date: "2026-02-12 16:08"
 category: "proses"
 tags: []
-description: "Function di Solidity."
+description: "Function di Solidity"
 draft: false
 ---
 

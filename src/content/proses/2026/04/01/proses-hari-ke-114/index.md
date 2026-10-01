@@ -3,7 +3,7 @@ title: "Proses Hari ke 114"
 date: "2026-04-07 17:20"
 category: "proses"
 tags: []
-description: "Kembali ke Foundry."
+description: "Kembali ke Foundry"
 draft: false
 ---
 

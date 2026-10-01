@@ -3,7 +3,7 @@ title: "Proses Hari ke 22"
 date: "2025-12-26 17:14"
 category: "proses"
 tags: []
-description: "Hari cukup malas untuk melakukan sesuatu (padahal mah tiap hari gitu, alesan mulu nih)."
+description: "Hari cukup malas untuk melakukan sesuatu (padahal mah tiap hari gitu, alesan mulu nih)"
 draft: false
 ---
 

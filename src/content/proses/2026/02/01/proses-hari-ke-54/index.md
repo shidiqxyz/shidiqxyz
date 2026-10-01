@@ -3,7 +3,7 @@ title: "Proses Hari ke 54"
 date: "2026-02-04 17:46"
 category: "proses"
 tags: []
-description: "Kini berlanjut ke course ZK."
+description: "Kini berlanjut ke course ZK"
 draft: false
 ---
 

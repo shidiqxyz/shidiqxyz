@@ -3,7 +3,7 @@ title: "Proses Hari ke 33"
 date: "2026-01-12 12:29"
 category: "proses"
 tags: []
-description: "Kembali berotasi ke blockchain dan smart contract."
+description: "Kembali berotasi ke blockchain dan smart contract"
 draft: false
 ---
 

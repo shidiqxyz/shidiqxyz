@@ -3,7 +3,7 @@ title: "Proses Hari ke 84"
 date: "2026-03-06 19:58"
 category: "proses"
 tags: []
-description: "Capek."
+description: "Capek"
 draft: false
 ---
 

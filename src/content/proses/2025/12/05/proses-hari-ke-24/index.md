@@ -3,7 +3,7 @@ title: "Proses Hari ke 24"
 date: "2025-12-30 09:59"
 category: "proses"
 tags: []
-description: "Kembali ke bangun datar."
+description: "Kembali ke bangun datar"
 draft: false
 ---
 

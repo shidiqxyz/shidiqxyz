@@ -3,7 +3,7 @@ title: "Proses Hari ke 91"
 date: "2026-03-13 02:45"
 category: "proses"
 tags: []
-description: "Foundry FundMe."
+description: "Foundry FundMe"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 16"
 date: "2025-12-18 09:05"
 category: "proses"
 tags: []
-description: "Pagi ini menlanjutkan kembali materi sebelumnya."
+description: "Pagi ini menlanjutkan kembali materi sebelumnya"
 draft: false
 ---
 

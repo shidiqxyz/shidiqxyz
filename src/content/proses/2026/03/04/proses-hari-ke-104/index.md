@@ -3,7 +3,7 @@ title: "Proses Hari ke 104"
 date: "2026-03-26 18:57"
 category: "proses"
 tags: []
-description: "Bikin autoclipper."
+description: "Bikin autoclipper"
 draft: false
 ---
 

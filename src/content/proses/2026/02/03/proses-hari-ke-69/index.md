@@ -3,7 +3,7 @@ title: "Proses Hari ke 69"
 date: "2026-02-19 16:00"
 category: "proses"
 tags: []
-description: "Storage Factory & Import."
+description: "Storage Factory & Import"
 draft: false
 ---
 

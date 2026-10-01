@@ -3,7 +3,7 @@ title: "Proses Hari ke 145 - 150"
 date: "2026-05-13 08:55"
 category: "proses"
 tags: []
-description: "Mulai lagi."
+description: "Mulai lagi"
 draft: false
 ---
 

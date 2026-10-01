@@ -3,7 +3,7 @@ title: "Proses Hari ke 98 - 99"
 date: "2026-03-21 05:19"
 category: "proses"
 tags: []
-description: "Lebaran."
+description: "Lebaran"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 73"
 date: "2026-02-23 19:05"
 category: "proses"
 tags: []
-description: "Importing Libaries, Price Data From Chainlink."
+description: "Importing Libaries, Price Data From Chainlink"
 draft: false
 ---
 

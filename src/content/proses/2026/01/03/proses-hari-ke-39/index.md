@@ -3,7 +3,7 @@ title: "Proses Hari ke 39"
 date: "2026-01-20 01:42"
 category: "proses"
 tags: []
-description: "Hari ini oprek web tools TukangSeblak."
+description: "Hari ini oprek web tools TukangSeblak"
 draft: false
 ---
 

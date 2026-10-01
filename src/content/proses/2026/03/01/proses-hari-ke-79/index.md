@@ -3,7 +3,7 @@ title: "Proses Hari ke 79"
 date: "2026-03-01 16:10"
 category: "proses"
 tags: []
-description: "Function Modifiers."
+description: "Function Modifiers"
 draft: false
 ---
 

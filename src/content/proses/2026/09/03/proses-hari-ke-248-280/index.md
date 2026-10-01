@@ -3,7 +3,7 @@ title: "Proses Hari ke 248 - 280"
 date: "2026-09-19 15:04"
 category: "proses"
 tags: []
-description: ""
+description: "Browser selesai"
 draft: false
 ---
 

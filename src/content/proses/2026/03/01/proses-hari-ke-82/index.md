@@ -3,7 +3,7 @@ title: "Proses Hari ke 82"
 date: "2026-03-04 19:37"
 category: "proses"
 tags: []
-description: "Matematika kelas 7."
+description: "Matematika kelas 7"
 draft: false
 ---
 

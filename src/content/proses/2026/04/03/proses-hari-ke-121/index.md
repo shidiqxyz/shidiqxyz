@@ -3,7 +3,7 @@ title: "Proses Hari ke 121"
 date: "2026-04-18 00:11"
 category: "proses"
 tags: []
-description: "Masih di Himpunan."
+description: "Masih di Himpunan"
 draft: false
 ---
 

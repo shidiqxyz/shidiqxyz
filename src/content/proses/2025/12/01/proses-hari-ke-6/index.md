@@ -3,7 +3,7 @@ title: "Proses Hari ke 6"
 date: "2025-12-05 03:46"
 category: "proses"
 tags: []
-description: "Setelah kemarin matematika memasuki bilangan dari 1 - 50."
+description: "Setelah kemarin matematika memasuki bilangan dari 1 - 50"
 draft: false
 ---
 

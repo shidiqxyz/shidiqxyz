@@ -3,7 +3,7 @@ title: "Proses Hari ke 15"
 date: "2025-12-17 08:56"
 category: "proses"
 tags: []
-description: "Hari ini dilanjutkan unsur-unsur bangun datar."
+description: "Hari ini dilanjutkan unsur-unsur bangun datar"
 draft: false
 ---
 

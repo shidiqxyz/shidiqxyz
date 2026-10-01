@@ -3,7 +3,7 @@ title: "Proses Hari ke 30"
 date: "2026-01-07 14:52"
 category: "proses"
 tags: []
-description: "Sekarang saya mau mendalami faktorisasi prima."
+description: "Sekarang saya mau mendalami faktorisasi prima"
 draft: false
 ---
 

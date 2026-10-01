@@ -3,7 +3,7 @@ title: "Proses Hari ke 110"
 date: "2026-04-03 20:39"
 category: "proses"
 tags: []
-description: "Masih Gen-AI."
+description: "Masih Gen-AI"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 57"
 date: "2026-02-07 00:14"
 category: "proses"
 tags: []
-description: "Belajar pra-aljabar."
+description: "Belajar pra-aljabar"
 draft: false
 ---
 <script>

@@ -3,7 +3,7 @@ title: "Sebuah Roadmap"
 date: "2025-11-25"
 category: "pemikiran" 
 tags: []
-description: "Ini adalah ekpresi saya saat memikirkan untuk membuat roadmap ini."
+description: "Ini adalah ekpresi saya saat memikirkan untuk membuat roadmap ini"
 ---
 
 ![Monkey](./monkey.webp?w=600&a=center)

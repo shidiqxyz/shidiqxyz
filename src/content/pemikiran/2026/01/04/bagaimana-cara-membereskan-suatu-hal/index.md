@@ -3,7 +3,7 @@ title: "Bagaimana cara membereskan suatu hal?"
 date: "2026-01-24 14:22"
 category: "pemikiran"
 tags: []
-description: "Saya sering sekali melakukan hal ini."
+description: "Saya sering sekali melakukan hal ini"
 draft: false
 ---
 

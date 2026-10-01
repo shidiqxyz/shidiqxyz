@@ -3,7 +3,7 @@ title: "Proses Hari ke 76"
 date: "2026-02-26 14:47"
 category: "proses"
 tags: []
-description: "SafeMath, For Loop."
+description: "SafeMath, For Loop"
 draft: false
 ---
 

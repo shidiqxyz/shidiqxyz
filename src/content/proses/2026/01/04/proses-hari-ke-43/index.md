@@ -3,7 +3,7 @@ title: "Proses Hari ke 43"
 date: "2026-01-24 20:57"
 category: "proses"
 tags: []
-description: "Setelah libur beberapa hari, dilanjutkan ke sudut."
+description: "Setelah libur beberapa hari, dilanjutkan ke sudut"
 draft: false
 ---
 

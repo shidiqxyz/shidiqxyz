@@ -3,7 +3,7 @@ title: "Proses Hari ke 94"
 date: "2026-03-16 22:53"
 category: "proses"
 tags: []
-description: "Masih forge test."
+description: "Masih forge test"
 draft: false
 ---
 

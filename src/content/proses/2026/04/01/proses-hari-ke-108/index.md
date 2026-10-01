@@ -3,7 +3,7 @@ title: "Proses Hari ke 108"
 date: "2026-04-01 14:56"
 category: "proses"
 tags: []
-description: "Introduction AI."
+description: "Introduction AI"
 draft: false
 ---
 

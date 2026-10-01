@@ -3,7 +3,7 @@ title: "Proses Hari ke 38"
 date: "2026-01-19 06:48"
 category: "proses"
 tags: []
-description: "Memasuki keliling bangun datar."
+description: "Memasuki keliling bangun datar"
 draft: false
 ---
 

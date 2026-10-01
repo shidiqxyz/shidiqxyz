@@ -3,7 +3,7 @@ title: "Proses Hari ke 86"
 date: "2026-03-08 18:54"
 category: "proses"
 tags: []
-description: "Lanjut foundry."
+description: "Lanjut foundry"
 draft: false
 ---
 

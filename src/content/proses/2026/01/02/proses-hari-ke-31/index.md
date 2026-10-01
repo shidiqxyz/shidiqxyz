@@ -3,7 +3,7 @@ title: "Proses Hari ke 31"
 date: "2026-01-08 12:12"
 category: "proses"
 tags: []
-description: "Selanjutnya ke pembahasan mengenai pecahan."
+description: "Selanjutnya ke pembahasan mengenai pecahan"
 draft: false
 ---
 

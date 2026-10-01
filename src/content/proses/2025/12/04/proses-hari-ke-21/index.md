@@ -3,7 +3,7 @@ title: "Proses Hari ke 21"
 date: "2025-12-25 11:02"
 category: "proses"
 tags: []
-description: "Akhirnya kini memasuki matematika kelas 4 sd (cukup bangga dengan proses ini)."
+description: "Akhirnya kini memasuki matematika kelas 4 sd (cukup bangga dengan proses ini)"
 draft: false
 ---
 

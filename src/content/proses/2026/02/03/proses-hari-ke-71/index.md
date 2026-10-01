@@ -3,7 +3,7 @@ title: "Proses Hari ke 71"
 date: "2026-02-21 13:58"
 category: "proses"
 tags: []
-description: "FundMe, Payable, Require, Reverts."
+description: "FundMe, Payable, Require, Reverts"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 119"
 date: "2026-04-15 14:10"
 category: "proses"
 tags: []
-description: "Belajar Himpunan."
+description: "Belajar Himpunan"
 draft: false
 ---
 

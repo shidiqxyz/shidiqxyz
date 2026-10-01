@@ -3,7 +3,7 @@ title: "Proses Hari ke 18"
 date: "2025-12-22 14:42"
 category: "proses"
 tags: []
-description: "Kembali lagi belajar course cyfrin, karena itu matematika belum dilanjutkan."
+description: "Kembali lagi belajar course cyfrin, karena itu matematika belum dilanjutkan"
 draft: false
 ---
 

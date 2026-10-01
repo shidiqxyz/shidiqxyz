@@ -3,7 +3,7 @@ title: "Proses hari ke 89"
 date: "2026-03-11 04:22"
 category: "proses"
 tags: []
-description: "foundry-zksync."
+description: "foundry-zksync"
 draft: false
 ---
 

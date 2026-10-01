@@ -3,7 +3,7 @@ title: "Proses Hari ke 42"
 date: "2026-01-23 22:31"
 category: "proses"
 tags: []
-description: "Sama saja seperti kemarin."
+description: "Sama saja seperti kemarin"
 draft: false
 ---
 

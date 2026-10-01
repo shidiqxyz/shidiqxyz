@@ -3,7 +3,7 @@ title: "Proses Hari ke 72"
 date: "2026-02-22 14:34"
 category: "proses"
 tags: []
-description: "Chainlink, Interface."
+description: "Chainlink, Interface"
 draft: false
 ---
 

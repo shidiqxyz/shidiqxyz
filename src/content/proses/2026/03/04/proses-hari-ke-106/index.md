@@ -3,7 +3,7 @@ title: "Proses Hari ke 106"
 date: "2026-03-28 22:19"
 category: "proses"
 tags: []
-description: "Ngoprek autoclipper."
+description: "Ngoprek autoclipper"
 draft: false
 ---
 

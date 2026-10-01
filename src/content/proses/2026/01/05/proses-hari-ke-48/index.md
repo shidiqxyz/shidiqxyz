@@ -3,7 +3,7 @@ title: "Proses Hari ke 48"
 date: "2026-01-29 21:57"
 category: "proses"
 tags: []
-description: "Setelah kemarin beres menyelesaikan course Blockchain Basics."
+description: "Setelah kemarin beres menyelesaikan course Blockchain Basics"
 draft: false
 ---
 

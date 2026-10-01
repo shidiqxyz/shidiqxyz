@@ -3,7 +3,7 @@ title: "Proses Hari ke 34"
 date: "2026-01-13 20:51"
 category: "proses"
 tags: []
-description: "Berlanjut ke The Lifecycle Of A Transaction."
+description: "Berlanjut ke The Lifecycle Of A Transaction"
 draft: false
 ---
 

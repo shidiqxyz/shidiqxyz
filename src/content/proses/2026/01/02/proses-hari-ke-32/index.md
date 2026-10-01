@@ -3,7 +3,7 @@ title: "Proses Hari ke 32"
 date: "2026-01-09 22:40"
 category: "proses"
 tags: []
-description: "Bentuk-Bentuk Pecahan."
+description: "Bentuk-Bentuk Pecahan"
 draft: false
 ---
 

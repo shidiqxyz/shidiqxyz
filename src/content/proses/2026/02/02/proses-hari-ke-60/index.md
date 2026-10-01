@@ -3,7 +3,7 @@ title: "Proses Hari ke 60"
 date: "2026-02-10 16:20"
 category: "proses"
 tags: []
-description: "Awal memasuki solidity."
+description: "Awal memasuki solidity"
 draft: false
 ---
 

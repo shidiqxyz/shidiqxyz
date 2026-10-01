@@ -3,7 +3,7 @@ title: "Proses Hari ke 78"
 date: "2026-02-28 19:13"
 category: "proses"
 tags: []
-description: "Smart Contract Constructor."
+description: "Smart Contract Constructor"
 draft: false
 ---
 

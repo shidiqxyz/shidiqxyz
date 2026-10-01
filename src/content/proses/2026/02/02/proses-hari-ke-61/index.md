@@ -3,7 +3,7 @@ title: "Proses Hari ke 61"
 date: "2026-02-11 19:42"
 category: "proses"
 tags: []
-description: "Basic data types di Solidity."
+description: "Basic data types di Solidity"
 draft: false
 ---
 

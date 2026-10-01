@@ -3,7 +3,7 @@ title: "Proses Hari ke 40"
 date: "2026-01-21 21:40"
 category: "proses"
 tags: []
-description: "Hari ini tidak banyak yang dilakukan."
+description: "Hari ini tidak banyak yang dilakukan"
 draft: false
 ---
 

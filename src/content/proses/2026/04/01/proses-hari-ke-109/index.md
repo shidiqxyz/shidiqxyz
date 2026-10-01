@@ -3,7 +3,7 @@ title: "Proses Hari ke 109"
 date: "2026-04-02 12:24"
 category: "proses"
 tags: []
-description: "Gen-AI."
+description: "Gen-AI"
 draft: false
 ---
 

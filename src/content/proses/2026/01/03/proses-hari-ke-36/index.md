@@ -3,7 +3,7 @@ title: "Proses Hari ke 36"
 date: "2026-01-15 16:39"
 category: "proses"
 tags: []
-description: "Berotasi ke matematika."
+description: "Berotasi ke matematika"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 83"
 date: "2026-03-05 22:15"
 category: "proses"
 tags: []
-description: "Matematika kelas 8."
+description: "Matematika kelas 8"
 draft: false
 ---
 

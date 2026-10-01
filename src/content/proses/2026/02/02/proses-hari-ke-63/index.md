@@ -3,7 +3,7 @@ title: "Proses Hari ke 63"
 date: "2026-02-13 20:40"
 category: "proses"
 tags: []
-description: "Array & Struct."
+description: "Array & Struct"
 draft: false
 ---
 

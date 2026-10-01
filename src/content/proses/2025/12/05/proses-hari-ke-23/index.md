@@ -3,7 +3,7 @@ title: "Proses Hari ke 23"
 date: "2025-12-29 20:13"
 category: "proses"
 tags: []
-description: "Pola dalam gambar dan bilangan."
+description: "Pola dalam gambar dan bilangan"
 draft: false
 ---
 

@@ -3,7 +3,7 @@ title: "Proses Hari ke 50"
 date: "2026-01-31 17:22"
 category: "proses"
 tags: []
-description: "Sekarang berlanjut course Web3 Wallet Security Basics."
+description: "Sekarang berlanjut course Web3 Wallet Security Basics"
 draft: false
 ---
 

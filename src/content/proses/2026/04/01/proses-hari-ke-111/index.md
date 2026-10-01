@@ -3,7 +3,7 @@ title: "Proses Hari ke 111"
 date: "2026-04-04 09:05"
 category: "proses"
 tags: []
-description: "AI Ethics."
+description: "AI Ethics"
 draft: false
 ---
 

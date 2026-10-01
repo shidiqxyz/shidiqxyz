@@ -3,7 +3,7 @@ title: "Proses Hari ke 68"
 date: "2026-02-18 20:44"
 category: "proses"
 tags: []
-description: "ZKSync Deploy."
+description: "ZKSync Deploy"
 draft: false
 ---
 

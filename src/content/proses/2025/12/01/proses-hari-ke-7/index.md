@@ -3,7 +3,7 @@ title: "Proses Hari ke 7"
 date: "2025-12-06 19:05"
 category: "proses"
 tags: []
-description: "Hari ini berlanjut pembahasan mengenai Oracle Problem."
+description: "Hari ini berlanjut pembahasan mengenai Oracle Problem"
 draft: false
 ---
 

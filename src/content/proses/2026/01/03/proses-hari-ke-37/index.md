@@ -3,7 +3,7 @@ title: "Proses Hari ke 37"
 date: "2026-01-16 20:48"
 category: "proses"
 tags: []
-description: "Hari ini hanya ngotak-ngatik tampilan antigravity (vscode fork with ai from google)."
+description: "Hari ini hanya ngotak-ngatik tampilan antigravity (vscode fork with ai from google)"
 draft: false
 ---
 ![anime-apothecary-diaries](./anime-apothecary-diaries.gif?width=600&a=center)

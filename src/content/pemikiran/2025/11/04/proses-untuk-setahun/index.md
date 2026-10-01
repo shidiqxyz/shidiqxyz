@@ -3,7 +3,7 @@ title: "Proses untuk setahun"
 date: "2025-11-23"
 category: "pemikiran" 
 tags: []
-description: "Sebenarnya tulisan ini terlalu awal untuk rencana tahunan."
+description: "Sebenarnya tulisan ini terlalu awal untuk rencana tahunan"
 ---
 
 Sebenarnya tulisan ini terlalu awal untuk rencana tahunan (meskipun biasanya rencana doang tanpa eksekusi yang baik).

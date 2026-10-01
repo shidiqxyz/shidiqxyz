@@ -3,7 +3,7 @@ title: "Proses Hari ke 81"
 date: "2026-03-03 07:36"
 category: "proses"
 tags: []
-description: "receive and fallback function."
+description: "receive and fallback function"
 draft: false
 ---
 

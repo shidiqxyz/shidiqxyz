@@ -3,7 +3,7 @@ title: "Proses Hari ke 102"
 date: "2026-03-24 10:55"
 category: "proses"
 tags: []
-description: "Masih VRF."
+description: "Masih VRF"
 draft: false
 ---
 

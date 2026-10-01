@@ -3,7 +3,7 @@ title: "Proses Hari ke 12"
 date: "2025-12-12 08:31"
 category: "proses"
 tags: []
-description: "Akhirnya lanjut juga belajar Cyfrin course."
+description: "Akhirnya lanjut juga belajar Cyfrin course"
 draft: false
 ---
 

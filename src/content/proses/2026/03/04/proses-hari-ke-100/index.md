@@ -3,7 +3,7 @@ title: "Proses Hari ke 100"
 date: "2026-03-22 09:47"
 category: "proses"
 tags: []
-description: "100 hari."
+description: "100 hari"
 draft: false
 ---
 

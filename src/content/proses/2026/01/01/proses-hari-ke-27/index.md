@@ -3,7 +3,7 @@ title: "Proses Hari ke 27"
 date: "2026-01-02 20:05"
 category: "proses"
 tags: []
-description: "Memasuki bagian Hardfork."
+description: "Memasuki bagian Hardfork"
 draft: false
 ---
 

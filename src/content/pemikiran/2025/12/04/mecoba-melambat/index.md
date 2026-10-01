@@ -3,7 +3,7 @@ title: "Mencoba melambat"
 date: "2025-12-24 20:06"
 category: "pemikiran"
 tags: []
-description: "Akhirnya setelah beberapa minggu, akhirnya saya bisa menyelesaikan buku ini."
+description: "Akhirnya setelah beberapa minggu, akhirnya saya bisa menyelesaikan buku ini"
 draft: true
 ---
 

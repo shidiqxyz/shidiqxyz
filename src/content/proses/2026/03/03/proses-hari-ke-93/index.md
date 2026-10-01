@@ -3,7 +3,7 @@ title: "Proses Hari ke 93"
 date: "2026-03-15 23:54"
 category: "proses"
 tags: []
-description: "Geometri."
+description: "Geometri"
 draft: false
 ---
 

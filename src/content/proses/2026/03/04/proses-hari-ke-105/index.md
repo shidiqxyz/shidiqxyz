@@ -3,7 +3,7 @@ title: "Proses Hari ke 105"
 date: "2026-03-27 14:44"
 category: "proses"
 tags: []
-description: "Chainlink Automation."
+description: "Chainlink Automation"
 draft: false
 ---
 

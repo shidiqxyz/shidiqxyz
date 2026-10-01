@@ -3,7 +3,7 @@ title: "Proses Hari ke 13"
 date: "2025-12-15 08:38"
 category: "proses"
 tags: []
-description: "Sekarang lanjut ke What Is The EVM."
+description: "Sekarang lanjut ke What Is The EVM"
 draft: false
 ---
 

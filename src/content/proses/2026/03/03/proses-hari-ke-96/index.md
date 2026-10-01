@@ -3,7 +3,7 @@ title: "Proses Hari ke 96"
 date: "2026-03-19 02:58"
 category: "proses"
 tags: []
-description: "Sedikit lagi FundMe. "
+description: "Sedikit lagi FundMe"
 draft: false
 ---
 

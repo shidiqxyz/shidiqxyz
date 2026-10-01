@@ -3,7 +3,7 @@ title: "sebuah langkah untuk berkuliah"
 date: "2026-02-14 02:56"
 category: "pemikiran"
 tags: []
-description: ""
+description: "Mencoba pengalaman baru"
 draft: true
 ---
 

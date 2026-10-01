@@ -3,7 +3,7 @@ title: "Proses Hari ke 41"
 date: "2026-01-22 18:50"
 category: "proses"
 tags: []
-description: "Seperti, kemarin kondisi masih kurang enak badan."
+description: "Seperti, kemarin kondisi masih kurang enak badan"
 draft: false
 ---
 

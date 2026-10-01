@@ -3,7 +3,7 @@ title: "Materi Belajar"
 date: "2025-12-04 04:52"
 category: "pemikiran"
 tags: []
-description: "Kumpulan materi dan sumber belajar."
+description: "Kumpulan materi dan sumber belajar"
 draft: false
 ---
 

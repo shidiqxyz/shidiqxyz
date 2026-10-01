@@ -3,7 +3,7 @@ title: "Proses Hari ke 49"
 date: "2026-01-30 23:33"
 category: "proses"
 tags: []
-description: "Hanya menonton gigs teman."
+description: "Hanya menonton gigs teman"
 draft: false
 ---
 
