@@ -14,17 +14,17 @@
 		},
 		{
 			title: "Writeup",
-			description: "Kumpulan writeup bug bounty.",
+			description: "Writeup bug bounty.",
 			href: "/writeup",
 		},
 		{
 			title: "Projects",
-			description: "Kumpulan portofolio yang tidak bagus-bagus amat.",
+			description: "Portofolio dan eksperimen.",
 			href: "/projects",
 		},
 		{
 			title: "Panduan",
-			description: "Cara menggunakan blog ini.",
+			description: "Cara menggunakan blog.",
 			href: "/panduan",
 		},
 		{
@@ -37,14 +37,14 @@
 
 <svelte:head>
 	<title>shidiq</title>
-	<meta name="description" content="Seseorang yang mencoba hidup." />
+	<meta name="description" content="Seseorang yang berusaha untuk hidup." />
 
 	<!-- Open Graph -->
 	<meta property="og:site_name" content="shidiq" />
 	<meta property="og:title" content="shidiq - Blog Pribadi" />
 	<meta
 		property="og:description"
-		content="Seseorang yang mencoba hidup. Blog tentang pemikiran dan proses belajar."
+		content="Seseorang yang berusaha untuk hidup. Blog tentang pemikiran dan proses belajar."
 	/>
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://shidiq.xyz" />
@@ -57,7 +57,7 @@
 	<meta name="twitter:title" content="shidiq - Blog Pribadi" />
 	<meta
 		name="twitter:description"
-		content="Seseorang yang mencoba hidup. Blog tentang pemikiran dan proses belajar."
+		content="Seseorang yang berusaha untuk hidup. Blog tentang pemikiran dan proses belajar."
 	/>
 	<meta name="twitter:image" content="https://shidiq.xyz/og-image.png" />
 </svelte:head>
