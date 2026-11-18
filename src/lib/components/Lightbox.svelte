@@ -1,171 +1,261 @@
 <script lang="ts">
-    import { onMount, onDestroy } from "svelte";
-    import { browser } from "$app/environment";
+	import { onMount, onDestroy } from "svelte";
 
-    export let contentElement: HTMLElement | undefined = undefined;
+	export let contentElement: HTMLElement | undefined = undefined;
 
-    let isOpen = false;
-    let currentImage: HTMLImageElement | null = null;
-    let lightboxImage = "";
-    let lightboxAlt = "";
+	let dialogElement: HTMLDialogElement;
+	let lightboxImage = "";
+	let lightboxAlt = "";
+	let enhancedImages: HTMLImageElement[] = [];
 
-    function openLightbox(img: HTMLImageElement) {
-        currentImage = img;
-        lightboxImage = img.src;
-        lightboxAlt = img.alt || "";
-        isOpen = true;
-        document.body.style.overflow = "hidden";
-    }
+	function openLightbox(img: HTMLImageElement) {
+		lightboxImage = img.currentSrc || img.src;
+		lightboxAlt = img.alt || "";
+		if (!dialogElement.open) dialogElement.showModal();
+	}
 
-    function closeLightbox() {
-        isOpen = false;
-        currentImage = null;
-        lightboxImage = "";
-        lightboxAlt = "";
-        document.body.style.overflow = "";
-    }
+	function handleDialogClick(event: MouseEvent) {
+		// A click on the dialog's own padding (or on ::backdrop in browsers
+		// without closedby) should dismiss it. Clicks on the image or caption
+		// keep it open.
+		if (event.target === dialogElement) dialogElement.close();
+	}
 
-    function handleKeydown(e: KeyboardEvent) {
-        if (e.key === "Escape" && isOpen) {
-            closeLightbox();
-        }
-    }
+	function handleImageClick(event: MouseEvent) {
+		const target = event.target as HTMLElement;
+		if (target.tagName === "IMG" && !target.closest("a")) {
+			event.preventDefault();
+			openLightbox(target as HTMLImageElement);
+		}
+	}
 
-    function handleImageClick(e: Event) {
-        const target = e.target as HTMLElement;
-        if (target.tagName === "IMG" && !target.closest("a")) {
-            e.preventDefault();
-            openLightbox(target as HTMLImageElement);
-        }
-    }
+	function handleImageKeydown(event: KeyboardEvent) {
+		const target = event.target as HTMLElement;
+		if (
+			target.tagName === "IMG" &&
+			!target.closest("a") &&
+			(event.key === "Enter" || event.key === " ")
+		) {
+			event.preventDefault();
+			openLightbox(target as HTMLImageElement);
+		}
+	}
 
-    let attachedTo: HTMLElement | null = null;
+	function enhanceImages(root: HTMLElement) {
+		root.querySelectorAll<HTMLImageElement>("img").forEach((img) => {
+			if (img.closest("a") || img.dataset.lightboxReady) return;
 
-    // Re-attach when contentElement arrives late (article bind:this resolves
-    // after Lightbox mounts) and detach from the old element.
-    $: {
-        if (contentElement && contentElement !== attachedTo) {
-            attachedTo?.removeEventListener("click", handleImageClick);
-            contentElement.addEventListener("click", handleImageClick);
-            attachedTo = contentElement;
-        }
-    }
+			img.dataset.lightboxReady = "true";
+			img.tabIndex = 0;
+			img.setAttribute("role", "button");
+			img.setAttribute("aria-haspopup", "dialog");
+			if (!img.hasAttribute("aria-label")) {
+				img.setAttribute(
+					"aria-label",
+					img.alt ? `Perbesar gambar: ${img.alt}` : "Perbesar gambar",
+				);
+			}
+			enhancedImages.push(img);
+		});
+	}
 
-    onMount(() => {
-        window.addEventListener("keydown", handleKeydown);
-    });
+	function cleanupImages(root: HTMLElement | null) {
+		if (!root) return;
+		root.removeEventListener("click", handleImageClick);
+		root.removeEventListener("keydown", handleImageKeydown);
 
-    onDestroy(() => {
-        if (!browser) return;
-        attachedTo?.removeEventListener("click", handleImageClick);
-        attachedTo = null;
-        window.removeEventListener("keydown", handleKeydown);
-        document.body.style.overflow = "";
-    });
+		enhancedImages.forEach((img) => {
+			delete img.dataset.lightboxReady;
+			img.removeAttribute("tabindex");
+			img.removeAttribute("role");
+			img.removeAttribute("aria-haspopup");
+			img.removeAttribute("aria-label");
+		});
+		enhancedImages = [];
+	}
+
+	let attachedTo: HTMLElement | null = null;
+
+	// Re-attach when contentElement arrives late (article bind:this resolves
+	// after Lightbox mounts) and detach from the old element.
+	$: if (contentElement && contentElement !== attachedTo) {
+		cleanupImages(attachedTo);
+		attachedTo = contentElement;
+		contentElement.addEventListener("click", handleImageClick);
+		contentElement.addEventListener("keydown", handleImageKeydown);
+		enhanceImages(contentElement);
+	}
+
+	onMount(() => {
+		// Nothing to do here yet, but keep the lifecycle hook so the dialog is
+		// definitely in the document before showModal() can be called.
+	});
+
+	onDestroy(() => {
+		cleanupImages(attachedTo);
+		attachedTo = null;
+	});
 </script>
 
-{#if isOpen}
-    <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_static_element_interactions -->
-    <div class="lightbox-overlay" on:click={closeLightbox}>
-        <button class="lightbox-close" aria-label="Close lightbox">
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-                class="w-8 h-8"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M6 18L18 6M6 6l12 12"
-                />
-            </svg>
-        </button>
-        <!-- svelte-ignore a11y_click_events_have_key_events a11y_no_noninteractive_element_interactions -->
-        <img
-            src={lightboxImage}
-            alt={lightboxAlt}
-            class="lightbox-image"
-            on:click|stopPropagation
-        />
-        {#if lightboxAlt}
-            <p class="lightbox-caption">{lightboxAlt}</p>
-        {/if}
-    </div>
-{/if}
+<dialog
+	bind:this={dialogElement}
+	class="lightbox"
+	closedby="any"
+	aria-label={lightboxAlt
+		? `Pratinjau gambar: ${lightboxAlt}`
+		: "Pratinjau gambar"}
+	on:click={handleDialogClick}
+>
+	<button type="button" class="lightbox-close" aria-label="Tutup pratinjau" autofocus>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			fill="none"
+			viewBox="0 0 24 24"
+			stroke="currentColor"
+			class="w-8 h-8"
+			aria-hidden="true"
+		>
+			<path
+				stroke-linecap="round"
+				stroke-linejoin="round"
+				stroke-width="2"
+				d="M6 18L18 6M6 6l12 12"
+			/>
+		</svg>
+	</button>
+	{#if lightboxImage}
+		<img
+			src={lightboxImage}
+			alt={lightboxAlt}
+			class="lightbox-image"
+			decoding="async"
+		/>
+	{/if}
+	{#if lightboxAlt}
+		<p class="lightbox-caption">{lightboxAlt}</p>
+	{/if}
+</dialog>
 
 <style>
-    .lightbox-overlay {
-        position: fixed;
-        inset: 0;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(0, 0, 0, 0.7);
-        backdrop-filter: blur(4px);
-        cursor: zoom-out;
-        padding: 2rem;
-        animation: fadeIn 0.2s ease-out;
-    }
+	.lightbox {
+		position: fixed;
+		inset: 0;
+		width: 100%;
+		max-width: none;
+		height: 100%;
+		max-height: none;
+		margin: 0;
+		padding: 2rem;
+		border: 0;
+		background: transparent;
+		overflow: auto;
+		overscroll-behavior: contain;
+		opacity: 0;
+		transition-property: opacity, display, overlay;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-out;
+		transition-behavior: allow-discrete;
+	}
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
+	.lightbox[open] {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		opacity: 1;
+	}
 
-    .lightbox-close {
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-        color: white;
-        background: rgba(255, 255, 255, 0.1);
-        border: none;
-        border-radius: 50%;
-        padding: 0.5rem;
-        cursor: pointer;
-        transition: all 0.2s ease;
-        z-index: 10000;
-    }
+	@media (prefers-reduced-motion: no-preference) {
+		.lightbox {
+			transform: scale(0.96);
+			transition-property: opacity, transform, display, overlay;
+		}
 
-    .lightbox-close:hover {
-        background: rgba(255, 255, 255, 0.2);
-        transform: scale(1.1);
-    }
+		.lightbox[open] {
+			transform: scale(1);
+		}
 
-    .lightbox-image {
-        max-width: 90vw;
-        max-height: 85vh;
-        object-fit: contain;
-        border-radius: 8px;
-        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-        cursor: default;
-        animation: zoomIn 0.2s ease-out;
-    }
+		@starting-style {
+			.lightbox[open] {
+				opacity: 0;
+				transform: scale(0.96);
+			}
+		}
+	}
 
-    @keyframes zoomIn {
-        from {
-            transform: scale(0.9);
-            opacity: 0;
-        }
-        to {
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
+	@media (prefers-reduced-motion: reduce) {
+		.lightbox,
+		.lightbox::backdrop {
+			transition-duration: 0.1s;
+		}
+	}
 
-    .lightbox-caption {
-        margin-top: 1rem;
-        color: rgba(255, 255, 255, 0.8);
-        font-size: 0.875rem;
-        text-align: center;
-        max-width: 80vw;
-    }
+	.lightbox::backdrop {
+		overflow: hidden;
+		overscroll-behavior: contain;
+		background-color: rgb(0 0 0 / 0);
+		backdrop-filter: blur(0);
+		transition-property: background-color, backdrop-filter, display, overlay;
+		transition-duration: 0.2s;
+		transition-timing-function: ease-out;
+		transition-behavior: allow-discrete;
+	}
+
+	.lightbox[open]::backdrop {
+		background-color: rgb(0 0 0 / 0.7);
+		backdrop-filter: blur(4px);
+	}
+
+	@starting-style {
+		.lightbox[open]::backdrop {
+			background-color: rgb(0 0 0 / 0);
+			backdrop-filter: blur(0);
+		}
+	}
+
+	.lightbox-close {
+		position: fixed;
+		top: 1rem;
+		right: 1rem;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 44px;
+		min-height: 44px;
+		color: white;
+		background: rgb(255 255 255 / 0.1);
+		border: none;
+		border-radius: 50%;
+		padding: 0.5rem;
+		cursor: pointer;
+		transition: background-color 0.2s ease, transform 0.2s ease;
+		z-index: 1;
+	}
+
+	.lightbox-close:hover {
+		background: rgb(255 255 255 / 0.2);
+	}
+
+	@media (prefers-reduced-motion: no-preference) {
+		.lightbox-close:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	.lightbox-image {
+		max-width: 90vw;
+		max-height: 85vh;
+		object-fit: contain;
+		border-radius: 8px;
+		box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.5);
+		cursor: default;
+	}
+
+	.lightbox-caption {
+		margin-top: 1rem;
+		color: rgb(255 255 255 / 0.8);
+		font-size: 0.875rem;
+		text-align: center;
+		max-width: 80vw;
+	}
 </style>

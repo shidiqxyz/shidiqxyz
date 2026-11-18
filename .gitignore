@@ -44,3 +44,5 @@ skills-lock.json
 svelte_check_output.txt
 
 static/content/*
+
+.playwright-mcp

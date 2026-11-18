@@ -11,13 +11,45 @@
     let cleanupCopy: (() => void) | null = null;
 
     const COPY_SVG =
-        '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>';
+        '<svg xmlns="http://www.w3.org/2000/svg" class="copy-icon copy-icon-copy h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>' +
+        '<svg xmlns="http://www.w3.org/2000/svg" class="copy-icon copy-icon-check h-4 w-4 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>';
 
     // Single delegated copy handler: one listener + vanilla buttons,
     // instead of one Svelte root per <pre>.
     function setupCopyButtons(root: HTMLElement) {
         const blocks = root.querySelectorAll("pre");
         const buttons: HTMLButtonElement[] = [];
+        const statuses: HTMLElement[] = [];
+        const timers = new WeakMap<HTMLButtonElement, ReturnType<typeof setTimeout>>();
+
+        function report(btn: HTMLButtonElement, ok: boolean) {
+            clearTimeout(timers.get(btn));
+            btn.removeAttribute("data-copied");
+            btn.removeAttribute("data-failed");
+
+            // The status bubble lives outside the button: a button's children
+            // are presentational, so a live region inside one is unreliable.
+            const status = btn.nextElementSibling as HTMLElement | null;
+            if (status) status.textContent = "";
+
+            btn.setAttribute(ok ? "data-copied" : "data-failed", "");
+            requestAnimationFrame(() => {
+                if (status) {
+                    status.textContent = ok
+                        ? "Kode tersalin"
+                        : "Gagal menyalin kode";
+                }
+            });
+
+            timers.set(
+                btn,
+                setTimeout(() => {
+                    btn.removeAttribute("data-copied");
+                    btn.removeAttribute("data-failed");
+                    if (status) status.textContent = "";
+                }, 2000),
+            );
+        }
 
         const onClick = async (e: Event) => {
             const btn = (e.target as HTMLElement).closest(
@@ -27,16 +59,13 @@
             const pre = btn.closest("pre");
             const code =
                 pre?.querySelector("code")?.innerText ?? pre?.innerText ?? "";
+            if (!code) return;
             try {
                 await navigator.clipboard.writeText(code);
-                const original = btn.innerHTML;
-                btn.innerHTML =
-                    '<span class="text-xs font-mono text-green-400">Copied!</span>';
-                setTimeout(() => {
-                    btn.innerHTML = original;
-                }, 1500);
+                report(btn, true);
             } catch (err) {
                 console.error("Failed to copy!", err);
+                report(btn, false);
             }
         };
 
@@ -47,20 +76,32 @@
             ) {
                 block.style.position = "relative";
             }
+            const controls = document.createElement("span");
+            controls.className = "copy-controls";
+
             const btn = document.createElement("button");
+            btn.type = "button";
             btn.setAttribute("data-copy-btn", "");
-            btn.setAttribute("aria-label", "Copy code");
+            btn.setAttribute("aria-label", "Salin kode");
             btn.className =
-                "absolute top-2 right-2 p-1.5 rounded-md bg-gray-700/50 hover:bg-gray-700 text-gray-300 hover:text-white transition-colors border border-transparent hover:border-gray-500 focus:outline-none focus:ring-1 focus:ring-gray-400";
+                "p-1.5 rounded-md bg-gray-800/90 hover:bg-gray-700 text-gray-300 hover:text-white transition-colors border border-gray-600 focus:outline-none focus:ring-1 focus:ring-gray-400";
             btn.innerHTML = COPY_SVG;
-            block.appendChild(btn);
+
+            const status = document.createElement("span");
+            status.className = "sr-only";
+            status.setAttribute("role", "status");
+
+            controls.append(btn, status);
+            block.appendChild(controls);
             buttons.push(btn);
+            statuses.push(controls);
         });
 
         root.addEventListener("click", onClick);
         return () => {
             root.removeEventListener("click", onClick);
             buttons.forEach((b) => b.remove());
+            statuses.forEach((s) => s.remove());
         };
     }
 

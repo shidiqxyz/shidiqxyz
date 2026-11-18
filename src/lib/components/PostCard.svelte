@@ -28,14 +28,17 @@
 	</div>
 	
 	<h2
-		class="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-brand transition-colors"
+		class="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-brand transition-colors text-balance"
 	>
-		<a href="/blog/{post.category}/{post.slug}" class="after:absolute after:inset-0 after:z-10 focus:outline-none">
+		<a
+			href="/blog/{post.category}/{post.slug}"
+			class="after:absolute after:inset-0 after:z-10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 dark:focus-visible:ring-offset-gray-900"
+		>
 			{post.title}
 		</a>
 	</h2>
 	
-	<p class="text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-2">
+	<p class="text-gray-600 dark:text-gray-300 leading-relaxed line-clamp-2 text-pretty">
 		{post.description}
 	</p>
 </article>

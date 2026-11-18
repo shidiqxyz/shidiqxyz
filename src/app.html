@@ -5,12 +5,28 @@
 	<meta charset="utf-8" />
 	<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="color-scheme" content="light dark" />
+	<meta name="theme-color" content="#ffffff" />
 	<script>
-		if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-			document.documentElement.classList.add('dark')
-		} else {
-			document.documentElement.classList.remove('dark')
-		}
+		(() => {
+			const root = document.documentElement;
+			const schemeMeta = document.querySelector('meta[name="color-scheme"]');
+			const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+			const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+			let stored = null;
+			try {
+				const value = localStorage.getItem('theme');
+				if (value === 'light' || value === 'dark') stored = value;
+			} catch {
+				// Storage can be unavailable (private mode, blocked site data).
+			}
+
+			const isDark = stored ? stored === 'dark' : systemDark;
+			schemeMeta.content = stored ?? 'light dark';
+			root.classList.toggle('dark', isDark);
+			if (themeColorMeta) themeColorMeta.content = isDark ? '#111827' : '#ffffff';
+		})();
 	</script>
 	<!-- Google tag (gtag.js) -->
 	<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />

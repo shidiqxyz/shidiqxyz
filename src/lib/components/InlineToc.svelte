@@ -81,29 +81,17 @@
         }, 50);
     });
 
-    function scrollTo(id: string) {
-        const el = document.getElementById(id);
-        if (el) {
-            const offset = 80;
-            const bodyRect = document.body.getBoundingClientRect().top;
-            const elementRect = el.getBoundingClientRect().top;
-            const elementPosition = elementRect - bodyRect;
-            const offsetPosition = elementPosition - offset;
-
-            window.scrollTo({
-                top: offsetPosition,
-                behavior: "smooth",
-            });
-            history.pushState(null, "", `#${id}`);
-        }
-    }
+    // Native hash links plus `scroll-margin-top` on headings handle
+    // scrolling, URL updates, and deep links without custom JS.
 </script>
 
 <div
     class="not-prose inline-toc my-8 border border-gray-200 dark:border-gray-800 rounded-xl overflow-hidden bg-gray-50/80 dark:bg-gray-800/50 backdrop-blur-sm transition-all duration-300"
 >
     <button
+        type="button"
         on:click={toggle}
+        aria-expanded={isOpen}
         class="w-full flex items-center justify-between px-4 py-3 text-left hover:bg-gray-100/50 dark:hover:bg-gray-700/30 transition-colors"
     >
         <div class="flex items-center gap-3">
@@ -166,23 +154,25 @@
                         <div class="flex items-center">
                             {#if heading.children.length > 0}
                                 <button
-                                    on:click|preventDefault={() => toggleNode(heading)}
+                                    type="button"
+                                    on:click={() => toggleNode(heading)}
+                                    aria-expanded={heading.isOpen}
                                     aria-label={heading.isOpen ? `Tutup sub-menu ${heading.text}` : `Buka sub-menu ${heading.text}`}
                                     class="p-1 mr-1 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 rounded transition-transform {heading.isOpen ? 'rotate-90' : ''}"
                                 >
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                                     </svg>
                                 </button>
                             {:else}
                                 <div class="w-6 mr-1 flex-shrink-0"></div>
                             {/if}
-                            <button
-                                on:click|preventDefault={() => scrollTo(heading.id)}
+                            <a
+                                href="#{heading.id}"
                                 class="flex-1 text-left py-1.5 pr-3 pl-2 rounded-lg text-base font-medium text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 transition-all flex items-start gap-2.5 group"
                             >
                                 <span class="leading-relaxed">{heading.text}</span>
-                            </button>
+                            </a>
                         </div>
 
                         {#if heading.isOpen && heading.children.length > 0}
@@ -190,12 +180,12 @@
                                 {#each heading.children as child}
                                     <li class="relative">
                                         <div class="absolute w-2 h-px bg-gray-200 dark:bg-gray-700 left-0 top-1/2 -translate-y-1/2"></div>
-                                        <button
-                                            on:click|preventDefault={() => scrollTo(child.id)}
+                                        <a
+                                            href="#{child.id}"
                                             class="w-full text-left py-1 pr-3 pl-4 rounded-lg text-[14px] text-gray-600 dark:text-gray-400 hover:bg-blue-50 dark:hover:bg-blue-900/20 hover:text-blue-600 dark:hover:text-blue-400 transition-all group"
                                         >
                                             <span class="leading-relaxed block">{child.text}</span>
-                                        </button>
+                                        </a>
                                     </li>
                                 {/each}
                             </ul>

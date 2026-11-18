@@ -8,6 +8,24 @@
     --color-brand-primary-hover: theme('colors.blue.700');
     --color-brand-primary-muted: theme('colors.blue.50');
     --color-brand-primary-ring: theme('colors.blue.500 / 0.2');
+
+    /* Native browser UI (scrollbars, form controls, selection) follows the
+       scheme set by <meta name="color-scheme">. */
+    color-scheme: light dark;
+    accent-color: var(--color-brand-primary);
+    --color-scrollbar-track: light-dark(theme('colors.gray.100'), theme('colors.gray.800'));
+    --color-scrollbar-thumb: light-dark(theme('colors.gray.400'), theme('colors.gray.600'));
+    scrollbar-color: var(--color-scrollbar-thumb) var(--color-scrollbar-track);
+  }
+
+  /* A meta tag is only a presentational hint; author CSS wins. Map the meta
+     value back to color-scheme so the stored override actually applies. */
+  :root:has(> head > meta[name="color-scheme"][content="dark"]) {
+    color-scheme: dark;
+  }
+
+  :root:has(> head > meta[name="color-scheme"][content="light"]) {
+    color-scheme: light;
   }
 
   html.dark {
@@ -18,14 +36,43 @@
   }
 
   html {
-    scroll-behavior: smooth;
     font-size: 18px;
     /* Base font size */
+
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
   }
 
   body {
     @apply bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300 font-sans;
     line-height: 1.5;
+    overflow-wrap: break-word;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+
+  p,
+  blockquote,
+  li {
+    text-wrap: pretty;
+  }
+
+  ::selection {
+    background-color: light-dark(theme('colors.blue.200'), theme('colors.blue.900'));
+    color: light-dark(theme('colors.blue.950'), theme('colors.blue.50'));
+  }
+
+  :where(a, button, input, textarea, select, summary, [tabindex]):focus-visible {
+    outline: 2px solid var(--color-brand-primary);
+    outline-offset: 2px;
   }
 }
 
@@ -113,6 +160,37 @@ html.dark .shiki span {
 /* Pre block styling override to match container */
 .prose pre {
   @apply rounded-none m-0 border-none bg-inherit p-4 overflow-x-auto;
+  padding-inline-end: 4rem;
+}
+
+/* Copy button injected into rendered code blocks */
+.copy-controls {
+  position: absolute;
+  inset-block-start: 0.5rem;
+  inset-inline-end: 0.5rem;
+  z-index: 1;
+}
+
+.copy-controls .copy-icon-check {
+  display: none;
+}
+
+.copy-controls [data-copy-btn][data-copied] .copy-icon-copy {
+  display: none;
+}
+
+.copy-controls [data-copy-btn][data-copied] .copy-icon-check {
+  display: block;
+}
+
+.copy-controls [data-copy-btn][data-failed] {
+  color: #fca5a5;
+  border-color: #ef4444;
+}
+
+/* Native in-page anchor navigation should clear the top edge */
+.prose :is(h2, h3, h4) {
+  scroll-margin-top: 6rem;
 }
 
 /* Lightbox - clickable images */
@@ -120,6 +198,13 @@ html.dark .shiki span {
   @apply cursor-zoom-in transition-transform duration-200;
 }
 
-.prose img:not(a img):hover {
-  @apply scale-[1.02];
+@media (prefers-reduced-motion: no-preference) {
+  .prose img:not(a img):hover {
+    @apply scale-[1.02];
+  }
+}
+
+.prose img[role="button"]:focus-visible {
+  outline: 2px solid var(--color-brand-primary);
+  outline-offset: 4px;
 }

@@ -26,22 +26,21 @@
     }
 
     $: term = debouncedTerm.trim().toLowerCase();
-    $: filteredPosts =
+    $: matchingPosts =
         term === ""
-            ? data.posts.slice(0, 20)
-            : data.posts
-                  .filter((post) => {
-                      return (
-                          post.title.toLowerCase().includes(term) ||
-                          post.description.toLowerCase().includes(term) ||
-                          (post.tags &&
-                              post.tags.some((tag) =>
-                                  tag.toLowerCase().includes(term),
-                              )) ||
-                          post.date.includes(term)
-                      );
-                  })
-                  .slice(0, 20);
+            ? data.posts
+            : data.posts.filter((post) => {
+                  return (
+                      post.title.toLowerCase().includes(term) ||
+                      post.description.toLowerCase().includes(term) ||
+                      (post.tags &&
+                          post.tags.some((tag) =>
+                              tag.toLowerCase().includes(term),
+                          )) ||
+                      post.date.includes(term)
+                  );
+              });
+    $: filteredPosts = matchingPosts.slice(0, 20);
 </script>
 
 <svelte:head>
@@ -50,11 +49,16 @@
 </svelte:head>
 
 <div class="space-y-8">
-    <div class="relative">
+    <search class="relative block" aria-label="Pencarian tulisan">
         <input
-            type="text"
+            type="search"
             bind:value={input}
             placeholder="Cari judul, isi, tanggal, atau tag..."
+            enterkeyhint="search"
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Cari judul, isi, tanggal, atau tag"
+            aria-controls="search-results"
             class="w-full px-5 py-4 pl-12 rounded-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-brand focus:border-transparent outline-none transition-all shadow-sm"
         />
         <svg
@@ -63,6 +67,7 @@
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
+            aria-hidden="true"
         >
             <path
                 stroke-linecap="round"
@@ -71,9 +76,19 @@
                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
             />
         </svg>
-    </div>
+    </search>
 
-    <div class="space-y-8">
+    <p class="sr-only" role="status" aria-live="polite">
+        {#if matchingPosts.length === 0}
+            Tidak ada hasil ditemukan
+        {:else if filteredPosts.length < matchingPosts.length}
+            Menampilkan {filteredPosts.length} dari {matchingPosts.length} hasil
+        {:else}
+            {matchingPosts.length} hasil ditemukan
+        {/if}
+    </p>
+
+    <div id="search-results" class="space-y-8">
         {#if filteredPosts.length > 0}
             <div class="grid gap-8">
                 {#each filteredPosts as post (post.slug)}

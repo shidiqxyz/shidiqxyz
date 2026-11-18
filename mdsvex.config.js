@@ -58,6 +58,11 @@ function rehypeImgSize() {
 	return (tree) => {
 		visit(tree, 'element', (node) => {
 			if (node.tagName === 'img' && node.properties && node.properties.src) {
+				// Content images are below the article title/metadata, so let the
+				// browser defer them until they approach the viewport.
+				if (!node.properties.loading) node.properties.loading = 'lazy';
+				if (!node.properties.decoding) node.properties.decoding = 'async';
+
 				const src = node.properties.src;
 				const widthMatch = src.match(/[?&]w(?:idth)?=(\d+)/);
 				const heightMatch = src.match(/[?&]h(?:eight)?=(\d+)/);

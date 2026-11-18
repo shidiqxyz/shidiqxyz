@@ -86,21 +86,8 @@
         updateHeadings();
     });
 
-    function scrollToHeading(id: string) {
-        const element = document.getElementById(id);
-        if (element) {
-            const yOffset = -80; // Offset for sticky header if any
-            const y =
-                element.getBoundingClientRect().top +
-                window.pageYOffset +
-                yOffset;
-            window.scrollTo({ top: y, behavior: "smooth" });
-            // Update activeId immediately for better UX
-            activeId = id;
-            // Update URL hash without scrolling
-            history.pushState(null, "", `#${id}`);
-        }
-    }
+    // Native hash links plus `scroll-margin-top` on headings handle
+    // scrolling, URL updates, and deep links without custom JS.
 
     onMount(() => {
         const callback = (entries: IntersectionObserverEntry[]) => {
@@ -150,9 +137,12 @@
                                 : 'bg-transparent group-hover:bg-gray-300 dark:group-hover:bg-gray-700'} transition-colors duration-200"
                         ></div>
 
-                        <button
-                            on:click|preventDefault={() =>
-                                scrollToHeading(heading.id)}
+                        <a
+                            href="#{heading.id}"
+                            aria-current={activeId === heading.id
+                                ? "location"
+                                : undefined}
+                            on:click={() => (activeId = heading.id)}
                             class="flex-1 text-left pl-3 py-1.5 transition-colors duration-200 text-sm
                             {activeId === heading.id ||
                             (heading.children.some((c) => c.id === activeId) &&
@@ -161,12 +151,13 @@
                                 : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'}"
                         >
                             {heading.text}
-                        </button>
+                        </a>
 
                         {#if heading.children.length > 0}
                             <button
-                                on:click|preventDefault={() =>
-                                    toggleNode(heading)}
+                                type="button"
+                                on:click={() => toggleNode(heading)}
+                                aria-expanded={heading.isOpen}
                                 aria-label={heading.isOpen
                                     ? `Tutup sub-menu ${heading.text}`
                                     : `Buka sub-menu ${heading.text}`}
@@ -180,6 +171,7 @@
                                     fill="none"
                                     viewBox="0 0 24 24"
                                     stroke="currentColor"
+                                    aria-hidden="true"
                                 >
                                     <path
                                         stroke-linecap="round"
@@ -206,16 +198,19 @@
                                             ? 'bg-blue-600 dark:bg-blue-400'
                                             : 'bg-transparent group-hover:bg-gray-300 dark:group-hover:bg-gray-700'} transition-colors duration-200"
                                     ></div>
-                                    <button
-                                        on:click|preventDefault={() =>
-                                            scrollToHeading(child.id)}
+                                    <a
+                                        href="#{child.id}"
+                                        aria-current={activeId === child.id
+                                            ? "location"
+                                            : undefined}
+                                        on:click={() => (activeId = child.id)}
                                         class="block text-left w-full pl-6 pr-2 py-1 transition-colors duration-200 text-[13px]
                                         {activeId === child.id
                                             ? 'text-blue-600 dark:text-blue-400 font-medium'
                                             : 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'}"
                                     >
                                         {child.text}
-                                    </button>
+                                    </a>
                                 </li>
                             {/each}
                         </ul>
