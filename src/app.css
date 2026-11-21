@@ -36,8 +36,8 @@
   }
 
   html {
-    font-size: 18px;
-    /* Base font size */
+    font-size: 1.125rem;
+    /* Base font size (18px at the default root size) */
 
     @media (prefers-reduced-motion: no-preference) {
       scroll-behavior: smooth;

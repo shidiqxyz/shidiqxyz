@@ -60,6 +60,13 @@
         document.body.style.overflow = isZoomed ? "hidden" : "";
     }
 
+    function handleContainerKeydown(e: KeyboardEvent) {
+        if (rendered && (e.key === "Enter" || e.key === " ")) {
+            e.preventDefault();
+            toggleZoom();
+        }
+    }
+
     function handleKeydown(e: KeyboardEvent) {
         if (e.key === "Escape" && isZoomed) {
             toggleZoom();
@@ -104,7 +111,11 @@
 <div
     bind:this={container}
     class="mermaid-container"
+    role="button"
+    aria-label="Buka diagram pada pembesaran penuh"
+    tabindex="0"
     on:click={rendered ? toggleZoom : undefined}
+    on:keydown={handleContainerKeydown}
     title={rendered ? "Klik untuk zoom" : ""}
 >
     {#if !rendered}

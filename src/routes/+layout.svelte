@@ -9,6 +9,7 @@
 	import Navbar from "$lib/components/Navbar.svelte";
 	import Footer from "$lib/components/Footer.svelte";
 	import BackToTop from "$lib/components/BackToTop.svelte";
+	import ConsentBanner from "$lib/components/ConsentBanner.svelte";
 	import { page } from "$app/stores";
 </script>
 
@@ -28,4 +29,5 @@
 	</main>
 	<Footer />
 	<BackToTop />
+	<ConsentBanner />
 </div>
